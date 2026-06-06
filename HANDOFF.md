@@ -1,6 +1,15 @@
 # HANDOFF — MINUTES OF THE MEETING
 *Paste this (or its current version) at the start of a new chat, with the repo raw README URL. Keep it SHORT — the repo carries the detail.*
 
+## ⚡ FIRST LINE — THE CARPENTER TEST (before anything else)
+This must be a TOOL-ENABLED session (code execution + web/file tools). Prove it NOW: try to `curl`/fetch
+the README raw URL below.
+- **Pulls the file → master carpenter, full belt. Proceed.**
+- **Can't reach it → wrong room. STOP, tell Mark "no tools — switch rooms," and wait.** Do NOT limp
+  through a build session hand-fed by Mark; that wastes both your time. (Strategy talk is fine tool-less;
+  BUILDING requires the belt — verifying files, running builders, auditing the repo.)
+Mark's rule: no half-Claude on build work. The audit step below doubles as this test.
+
 ## REPO (fetch this first)
 Raw README: `https://raw.githubusercontent.com/bionicbutterflyai/bionicbutterfly-goldmine/main/README.md`
 Repo: `https://github.com/bionicbutterflyai/bionicbutterfly-goldmine` (PUBLIC, verified fetchable 2026-06-06).
