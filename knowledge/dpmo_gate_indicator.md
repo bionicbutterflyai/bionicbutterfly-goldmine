@@ -1,5 +1,5 @@
 # GOLD ARTIFACT — THE DPMO 3-GREEN GATE (the patience engine)
-*TAGS: coaching, build | AUDIENCE: founder + build/the Oracle's grader.*
+*TAGS: coaching, build | AUDIENCE: founder + build/the grader.*
 *Captured June 4 2026, Chat 3. Verified against the Pinescript + Mark's live TradingView settings.*
 *This amends/supersedes the candle-color mechanism implied in CUE #1 (coaching_cue_library).*
 
@@ -52,7 +52,7 @@ fires when price is already well **above** the 144 (e.g. the June 4 dev trade: e
 the spine). The engine flags "behaviour leg missing" — a **false negative**. The correct grade
 credits the 3-green discipline. **BUILD IMPLICATION:** model the gate (close>144 → pullback →
 candle+price-cloud+DPMO-cloud all green) as the behaviour leg, and/or consume DPMO bar-colour state
-as a confirmation input. Until then the Oracle must ASK, then this cue teaches her.
+as a confirmation input. Until then the grader must ASK, then this cue teaches it.
 
 ## STATUS
 - **NOT being built into the grader yet.** Mark's call (June 4): June 4 was "loose coaching" — the

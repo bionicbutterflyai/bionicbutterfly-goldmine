@@ -10,7 +10,7 @@ SPINE=round(sum(sp)/len(sp),2); ABOVE=round(ENTRY-SPINE,1)
 
 html=f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Oracle — DPMO Trade Lesson (June 4)</title>
+<title>bionicbutterfly — DPMO Trade Lesson (June 4)</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap');
 :root{{--bg:#0a0e14;--panel:#0f1620;--grid:#1a2330;--ink:#e6edf3;--dim:#7d8da3;--spine:#4d9fff;
@@ -50,7 +50,7 @@ border-radius:8px;padding:12px 16px;font-size:12.5px;line-height:1.6;color:#e8d9
 .fade{{animation:rise .7s ease both;}} @keyframes rise{{from{{opacity:0;transform:translateY(8px);}}to{{opacity:1;transform:none;}}}}
 </style></head><body><div class="wrap">
 <div class="provbar fade"><b>DEV — REAL TRADE, DPMO-NATIVE.</b> Real June 4 2026 MNQ 1-min tape (export UTC, shown ET). Candles coloured by a <b>JS port of your DPMO (20/50/7)</b> — dull/vibrant green &amp; red driven by <code>d = pmo − signal</code> and the high-volume rule, same logic as your TradingView indicator. Oscillator pane below mirrors your lower-pane cloud. Entry/exit coached &amp; manually keyed; awaiting NinjaTrader fills export. <b>Compare candle colours to your TV chart and flag any bar that disagrees.</b></div>
-<div class="head fade"><div class="title">The <span class="o">Oracle</span> · DPMO Trade Lesson</div>
+<div class="head fade"><div class="title"><span class="o">bionicbutterfly</span> · DPMO Trade Lesson</div>
 <div class="meta">MNQ 06-26 · JUN 4 2026 · LONG · 1-MIN · ET</div></div>
 <div class="verdict-bar fade">
 <div class="leg miss"><div class="k">Behavior (engine)</div><div class="v">⚠ no fresh break</div><div class="s">false neg vs gate</div></div>
@@ -70,7 +70,7 @@ border-radius:8px;padding:12px 16px;font-size:12.5px;line-height:1.6;color:#e8d9
 <span><i class="dot" style="background:var(--pull)"></i> Pullback</span>
 <span><i class="line-key" style="border-color:#e5484d"></i> Exit (GEX) / Stop</span>
 </div></div>
-<div class="lesson fade"><div class="who">The Oracle reflects</div>
+<div class="lesson fade"><div class="who">From the data</div>
 <p id="lessonText"></p><div class="gapnote" id="gapNote"></div><div class="math" id="mathNote"></div></div>
 </div>
 <script>

@@ -103,5 +103,6 @@ session end. If a Claude can't reach URLs, Mark feeds it the Vault copy instead.
 
 ---
 ## QUICKSTART FOR A WAKING CLAUDE
-1. Read this README + ARTIFACT_INDEX.md.  2. Read HANDOFF.md (minutes).  3. Read MAINTENANCE_AND_BACKUP.md (the law).  4. Fetch only what the task
-needs.  5. Be the PHD.  6. Write durable work back + cut a dated snapshot + give Mark his Vault-update checklist before you sleep.
+1. Read this README + ARTIFACT_INDEX.md.  2. Read **master_strategy_vision.md** (THE primer — the whole
+thesis, business + product-experience + build).  3. Read HANDOFF.md (minutes).  4. Read MAINTENANCE_AND_BACKUP.md (the law).  5. Fetch only what the task
+needs.  6. Be the PHD.  7. Write durable work back + cut a dated snapshot + give Mark his Vault-update checklist before you sleep.

@@ -8,15 +8,15 @@ extend the schema here, then use it.*
 ## 1. THE BLOCK — goes at the TOP of every knowledge/doc artifact (markdown)
 ```
 *TAGS: <comma list from the controlled vocab> | AUDIENCE: <who/what retrieves this>*
-*CREATED: <YYYY-MM-DD, Chat N> | UPDATED: <YYYY-MM-DD, Chat N> | STATUS: <captured | built | pending | superseded>*
+*CREATED: <YYYY-MM-DD, Chat N> | UPDATED: <YYYY-MM-DD, Chat N> | STATUS: <draft | captured | built | pending | superseded>*
 *SUPERSEDES: <file or "—"> | RELATED: <files, comma list or "—">*
 # <TITLE>
 ```
 - **TAGS** — controlled vocab ONLY: `coaching, marketing, build, business-plan, legal, support`.
   Tags scope retrieval (per tagging_strategy.md): `legal`/`business-plan` never reach support-Claude.
-- **AUDIENCE** — who/what reads it (founder, build, the Oracle's grader, support, etc.).
+- **AUDIENCE** — who/what reads it (founder, build, the grader, support, etc.).
 - **CREATED / UPDATED** — date + chat number. UPDATED bumps every time the file changes.
-- **STATUS** — `captured` (written, not built) · `built` (in product) · `pending` (decision/build open) · `superseded`.
+- **STATUS** — `draft` (first cut, not yet refined) · `captured` (written, not built) · `built` (in product) · `pending` (decision/build open) · `superseded`.
 - **SUPERSEDES / RELATED** — lineage links so a Claude can follow the thread without guessing.
 
 ## 2. THE INDEX LINE — one per artifact in ARTIFACT_INDEX.md

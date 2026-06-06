@@ -1,5 +1,5 @@
 # GOLD — COACHING CUE LIBRARY · ADDITIONS (Chat 3, June 4 2026)
-*TAGS: coaching, build, business-plan | AUDIENCE: founder + the Oracle's grader.*
+*TAGS: coaching, build, business-plan | AUDIENCE: founder + the grader.*
 *Companion to GOLD_coaching_cue_library.md (the original is read-only; these are appended here).*
 *Two items: (A) an AMENDMENT to CUE #1's mechanism; (B) a NEW cue, CUE #2.*
 
@@ -52,7 +52,7 @@ tacit edge). Reinforces **adherence over prediction** — it praises the behavio
 in the same breath. This is "she predicts you, not the market" in one coaching line.
 
 **NOTE — the witness that remembers:**
-The Oracle should still surface the standard look-left cues a trader "knows but forgets." CUE #2's job
+The grader should still surface the standard look-left cues a trader "knows but forgets." CUE #2's job
 is to be the witness that remembers them in the moment AND ties them to the patience that earned the
 entry. Generic knowledge + behavioural credit = the fused cue no commodity tool delivers.
 

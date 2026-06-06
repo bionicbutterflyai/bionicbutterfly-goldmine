@@ -1,7 +1,7 @@
 # GOLD — MASTER JOURNEY FLOW (the coordinate system)
 *TAGS: business-plan, build, coaching | AUDIENCE: founder + every future Claude (orient here first).*
-*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-06-06, Chat 4 | STATUS: captured*
-*SUPERSEDES: — | RELATED: strat_zone_taxonomy.md, brand_funnel_architecture (pending), repo_as_memory_and_handoff.md*
+*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-06-06, Chat 5 | STATUS: captured*
+*SUPERSEDES: — | RELATED: master_strategy_vision.md (THE primer), funnel_routing_and_closer.md (the door + sort + close detail), strat_zone_taxonomy.md, brand_funnel_architecture.md, repo_as_memory_and_handoff.md*
 
 ---
 
@@ -36,9 +36,12 @@ the source, neither drifts from the other. "Less dropped visions."
   self-onboarding. Journal-alone is NOT a product; the coaching wrapper is.
 
 ## THE THREE FORKS (open decisions, marked so they're not hidden assumptions)
-1. **Mark-is-the-product → system-is-the-product.** Today Mark coaches; the engine assumes the system
-   eventually carries it. WHEN/HOW does coaching de-personalize without losing trust? Biggest
-   strategic question in the architecture.
+1. **Mark-is-the-product → system-is-the-product.** Today Mark coaches AND closes 1:1; the engine
+   assumes the system eventually carries it. WHEN/HOW does coaching de-personalize without losing trust?
+   Biggest strategic question in the architecture. **Sales-layer destination = the John Whiting model**
+   (replace the human appointment-setter → closer with AI agents; AI drip → prospect binges →
+   self-qualifies → you filter FOR the clients you want). RESOLVED for now: AI takes drip/qualify/sort
+   immediately; the **human close stays with Mark** and de-personalizes over time (see funnel_routing_and_closer.md).
 2. **The funnel must REMEMBER.** "We already know you" requires foyer behavior (queries, binges,
    lingering) → a per-candidate dossier → the coaching brain. One shared memory, funnel↔coaching.
    Likely a BUILD not a buy (Whiting's TEDI summarizes socials+expenses; it does NOT build this).
@@ -48,7 +51,7 @@ the source, neither drifts from the other. "Less dropped visions."
 ```mermaid
 flowchart TD
     H[Hook<br/>wide-net ad + course bait]:::funnel
-    D[Foyer door<br/>identity + card · troll filter]:::funnel
+    D[Foyer door<br/>$10 toll on a real card<br/>= verified human · troll filter]:::funnel
     F[The foyer · almost-free<br/>qualify · demo · seduce]:::funnel
     S{Behavioral sort<br/>how they move = the signal}:::gate
     N[Nurture loop<br/>'not yet' + 90% off course<br/>↻ deferred pipeline]:::defer
@@ -73,8 +76,9 @@ flowchart TD
 ## CHILD FLOWS TO BUILD (each = a box above, its own matched pair)
 - foyer + the AI drip/qualify (the ambient interview — behavior IS the interview)
 - the behavioral sort: the three buckets (noob / guidable / ICP) and what signal sorts them
+  *(logic captured → funnel_routing_and_closer.md; diagram pair still to build)*
 - the funnel-memory pipeline (Fork 2) — how behavior becomes the profile/calling-card
-- the sales cycle incl. the fit-filter (now = Mark on the call)
+- the sales cycle incl. the fit-filter (now = Mark on the call) *(logic → funnel_routing_and_closer.md)*
 - the Lab: journal → tag → the coaching drawdown loop
 - the now→later automation overlay (Fork 1) — how Mark hands off to the system over time
 - **ARCHITECTURE flow (separate, next):** the technical/system architecture as its own diagram, not

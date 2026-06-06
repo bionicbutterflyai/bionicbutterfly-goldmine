@@ -45,6 +45,9 @@ WHY this matters: your kickoff LOCKS "no Oracle character / no Morphosis / no Ma
 arc — voice is the unnamed 'voice from the data'." Finn's character & voice files contradict that
 lock. They're not deleted (you paid for them) — they're quarantined in PRIVATE/ip-paid with
 STATUS: locked-out, so no future Claude ever treats them as live and starts building the arc you killed.
+CARVE-OUT (don't get this wrong): the lock is **PRODUCT-side only**. The Matrix/Morphosis *caricature*
+IS sanctioned as **top-of-funnel hook bait** (the wink that stops the scroll) — see
+funnel_brainstorm_reasoning.md. Quarantine the in-product CHARACTER; the marketing HOOK skin lives.
 
 ## _control/ — the goldmine's operating system (public-safe)
 ```

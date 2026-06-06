@@ -1,4 +1,4 @@
-*TAGS: build, support | AUDIENCE: founder + build/the Oracle's grader + whoever maintains the data-import pipeline.*
+*TAGS: build, support | AUDIENCE: founder + build/the grader + whoever maintains the data-import pipeline.*
 
 # GOLD ARTIFACT — DATA PROVENANCE & THE TIMESTAMP PIN
 *Captured June 4 2026, Chat 4 (Claude-4). Verified against Mark's live TradingView via anchor candle.*

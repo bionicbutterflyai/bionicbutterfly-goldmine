@@ -1,4 +1,4 @@
-*TAGS: coaching, build | AUDIENCE: founder + build/the Oracle's grader.*
+*TAGS: coaching, build | AUDIENCE: founder + build/the grader.*
 
 # GOLD ARTIFACT — THE STRAT: ZONE & LEVEL TAXONOMY
 *Captured June 4 2026, Chat 4 (Claude-4), from Mark's written spec. This is the core strategy IP —

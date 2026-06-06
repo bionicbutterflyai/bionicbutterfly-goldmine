@@ -44,11 +44,11 @@ When a Claude hands you an updated file:
   course-draft, or it's superseded by the master_journey_flow + curriculum work — review on import).
 
 ## CANONICAL FILE LIST — what SHOULD exist, and WHERE (the audit reference)
-**In the GitHub repo (the truth) — 48 files:**
-- root: README, HANDOFF, ARTIFACT_INDEX, METADATA_SCHEMA, MAINTENANCE_AND_BACKUP, HIERARCHY, FINN_FOLDER_SPEC
+**In the GitHub repo (the truth) — 50 files tracked (51 once this session's tech_architecture_master.svg lands); use `git ls-files | grep -v '^.git' | wc -l` as the live count:**
+- root: README, HANDOFF, ARTIFACT_INDEX, METADATA_SCHEMA, MAINTENANCE_AND_BACKUP, HIERARCHY, FINN_FOLDER_SPEC, VAULT_PROTOCOL
 - knowledge/: master_journey_flow, brand_funnel_architecture, two_strategy_split, strat_zone_taxonomy,
   dpmo_gate_indicator, coaching_cue_library_additions, data_provenance_and_timestamp_pin,
-  voice_tts_decision, repo_as_memory_and_handoff
+  voice_tts_decision, repo_as_memory_and_handoff, tech_architecture_skeleton, tech_architecture_master.svg
 - charts/: trade_lesson_june4_dpmo_v6, trade_lesson_june4_kitchensink, trade_lesson_june4_v7_cvd,
   lesson_viewport, trade_journal_upload_box
 - build/: build_v6, build_v7, build_ks, build_viewport, calc_dpmo_v6, calc_dpmo_v7, calc_levels

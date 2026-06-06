@@ -1,7 +1,7 @@
 # GOLD — BRAND-FUNNEL ARCHITECTURE (the contrast IS the conversion)
 *TAGS: marketing, business-plan, coaching | AUDIENCE: founder + marketing-Claude.*
 *CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-06-06, Chat 4 | STATUS: captured*
-*SUPERSEDES: — | RELATED: master_journey_flow.md*
+*SUPERSEDES: — | RELATED: master_journey_flow.md, funnel_brainstorm_reasoning.md (the WHY)*
 
 ## ONE-LINE
 Loud hook-skin at the top, sober quant-serious spine underneath — and the **gap between them is the
