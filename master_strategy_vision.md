@@ -12,20 +12,26 @@ PRODUCT-EXPERIENCE thesis (why it feels like nothing else), and the BUILD & MONE
 paid for). A new Claude needs all three to "get it."
 
 ## THE FOUNDER & THE PRIME DIRECTIVE (the lens for every decision)
-Mark (turning 59 this December) is a seasoned operator, not a novice anywhere this touches: he ran an
-ad agency and a custom software firm (1996–2006) — deep brand instinct plus tech roots he knows are now
-dated (which is *why* he weighs current Claude tech advice heavily) — then built a 20-year custom
-home-building business in Toronto, earning architecture designations by challenging the exams. As a
+Mark (turning 59 this December) is a seasoned operator, not a novice anywhere this touches. From
+1996–2006 he ran an ad agency + custom software firm of **~35 people** that built **2,500+ websites**,
+served as the **exclusive agency franchising hundreds of locations** for its clients, and built
+**corporate learning portals for Canadian banks, law firms, and automotive** — so the "effective
+learning" thesis is *lived*, not borrowed (he built the old "boring" portals himself, which is why he
+and Lisa both know that model is dead). That stack is ~20 years old now — deep brand instinct, dated
+tech — which is *why* he weighs current Claude tech advice heavily. He then built a **20-year custom
+home-building business** in Toronto, earning architecture designations by challenging the exams. As a
 trader he lived the full arc — failing through crypto and options before finding discipline in futures —
 so the coaching is **earned authenticity, not guru cosplay**; he has stood on both sides of the journey
-he sells (which is exactly what makes the anti-guru funnel honest rather than a pose).
+he sells (what makes the anti-guru funnel honest, not a pose).
 **THE PRIME DIRECTIVE: build a business that SCALES WITHOUT depending on the founder or a large staff** —
 a self-sufficient system, not another all-hours job stitched from a dozen roles (owner, dev, IT, support,
-accounting, coach, creator, funnel, closer). Two things are therefore non-negotiable and load-bearing:
-the **funnel must FILTER** (qualifying is the system's job, not Mark's), and the **repo's
+accounting, coach, creator, funnel, closer). **The mechanism is franchise/licensing — Mark's actual
+background:** build the system once, *duplicatable*, so operators and coached coaches run their own
+businesses on it while Mark monetizes the creation, not the daily labour. That is why two things are
+non-negotiable: the **funnel must FILTER** (qualifying is the system's job, not Mark's), and the **repo's
 metadata/exposure tags GOVERN what any automation may surface** — so a support bot or the coach can run
-without ever leaking private contacts, financials, or unreleased work (see HIERARCHY.md, exposure-first).
-It isn't a filing system; it's access control. Judge every build decision by one test: **does it reduce
+without leaking private contacts, financials, or unreleased work (see HIERARCHY.md, exposure-first). It
+isn't a filing system; it's access control. Judge every build decision by one test: **does it reduce
 Mark's dependence, or add to it?**
 
 # PART A — THE BUSINESS THESIS
@@ -60,7 +66,9 @@ real-identity/card). The funnel exists to sort these three and only escalate the
   it. He IS the product at this stage. Records onboarding snippets over time → future self-onboarding.
 - **Next:** the system (no-name voice + dossier + engine) carries more coaching, scaling past Mark's hours.
 - **End:** **coach the coaches** — Mark trains coaches who run the playbook inside the platform; the
-  system makes a coach consistent. Accountability at scale, Mark's method as the spine.
+  system makes a coach consistent. Accountability at scale, Mark's method as the spine. **This is a
+  franchise/licensing play at heart** (Mark's background): a duplicatable system that operators run as
+  their own businesses — scale through licensees, not through Mark's hours or headcount.
 - BIG FORK (master_journey_flow.md, Fork 1): WHEN/HOW coaching de-personalizes without losing the trust 1:1 builds.
 - **The John Whiting model (the sales-layer de-personalization blueprint).** Whiting is a YouTube
   influencer *to* YouTube influencers — he sells online businesses on killing the old

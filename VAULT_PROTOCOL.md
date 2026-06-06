@@ -1,6 +1,6 @@
 # VAULT PROTOCOL — one truth, no sprawl
 *TAGS: build, support | AUDIENCE: founder (Mark) — this is YOUR offsite discipline.*
-*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-06-06, Chat 4 | STATUS: captured*
+*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-06-06, Chat 5 (current as of commit 1400dbb) | STATUS: captured*
 *RELATED: MAINTENANCE_AND_BACKUP.md, README.md*
 
 ## THE ONE RULE (everything else follows from this)
@@ -35,20 +35,22 @@ When a Claude hands you an updated file:
    the copy. Saving a third loose copy is the sprawl.
 4. Rule of thumb: **if it's in the repo, it does NOT live loose in the Vault.** Ever.
 
-## CLEANUP OF THE CURRENT DROPBOX MESS (one-time)
-- `GOLD_strat_zone_taxonomy.md`, `_1`, `_2` → DELETE all three (canonical is in repo `knowledge/`).
-- `GOLD_voice_tts_decision.md`, `lesson_viewport.html`, `trade_journal_upload_box.html`,
-  `MNQ 06-26 April to June 5 noon Last.txt` → DELETE (all in the repo already, current).
-- `ANTHROPIC INV CREDITS` → move to `orphans-keep/` (yours, not Claude's memory).
-- `INCUBATOR COURSE DRAFT 053126.txt` → move to `to-import/` (decide: file into repo `knowledge/` as a
-  course-draft, or it's superseded by the master_journey_flow + curriculum work — review on import).
+## CLEAN-START (done 2026-06-06, Chat 5)
+Started a fresh empty `BIONICBUTTERFLY VAULT/` with the three folders below; abandoned the old sprawled
+folder rather than migrating the mess. Current contents:
+- `snapshots/` : `bionicbutterfly_goldmine_20260606_10.zip` (matches commit 1400dbb). Earlier `_2`–`_9` deleted.
+- `to-import/` : Chat-3 verbatim Pinescript (DPMO-gate math); `tagging_strategy.md`; INCUBATOR COURSE DRAFT (review). (Finn's Butterfly set stays at Finn's — not downloaded.)
+- `orphans-keep/` : ANTHROPIC INV CREDITS; Matrix-theme parked IP; raw heavy media.
+RULE re-affirmed: committed trade data (`data/verified/…`, `data/unverified/…`) lives in the REPO, so it is NOT kept loose in the Vault.
 
 ## CANONICAL FILE LIST — what SHOULD exist, and WHERE (the audit reference)
-**In the GitHub repo (the truth) — 50 files tracked (51 once this session's tech_architecture_master.svg lands); use `git ls-files | grep -v '^.git' | wc -l` as the live count:**
+**In the GitHub repo (the truth) — 56 files tracked as of commit 1400dbb (2026-06-06); use `git ls-files | wc -l` as the live count:**
 - root: README, HANDOFF, ARTIFACT_INDEX, METADATA_SCHEMA, MAINTENANCE_AND_BACKUP, HIERARCHY, FINN_FOLDER_SPEC, VAULT_PROTOCOL
 - knowledge/: master_journey_flow, brand_funnel_architecture, two_strategy_split, strat_zone_taxonomy,
   dpmo_gate_indicator, coaching_cue_library_additions, data_provenance_and_timestamp_pin,
-  voice_tts_decision, repo_as_memory_and_handoff, tech_architecture_skeleton, tech_architecture_master.svg
+  voice_tts_decision, repo_as_memory_and_handoff, tech_architecture_skeleton, tech_architecture_master.svg,
+  coaching_philosophy, funnel_brainstorm_reasoning, funnel_routing_and_closer, learning_design_standards
+- root (Chat 5): master_strategy_vision.md (THE primer)
 - charts/: trade_lesson_june4_dpmo_v6, trade_lesson_june4_kitchensink, trade_lesson_june4_v7_cvd,
   lesson_viewport, trade_journal_upload_box
 - build/: build_v6, build_v7, build_ks, build_viewport, calc_dpmo_v6, calc_dpmo_v7, calc_levels
