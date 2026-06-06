@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Oracle — Trade Journal · Chart Upload</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap');
+:root{
+ --bg:#0a0e14;--panel:#0f1620;--panel2:#0c1320;--grid:#1a2330;--ink:#e6edf3;--dim:#7d8da3;
+ --spine:#4d9fff;--accent:#9b6dff;--vbull:#39ff88;--vbear:#ff4db8;--warn:#e5a73c;
+ --tv:#4d9fff;--bm:#39ff88;--gex:#e5a73c;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:radial-gradient(ellipse at top,#11192480,var(--bg)),var(--bg);color:var(--ink);
+ font-family:'Spline Sans Mono',monospace;min-height:100vh;padding:26px;}
+.wrap{max-width:1180px;margin:0 auto;}
+.brand{font-family:'Fraunces',serif;font-size:23px;font-weight:600;letter-spacing:-0.4px;margin-bottom:3px;}
+.brand .o{color:var(--accent);}
+.sub{font-size:11.5px;color:var(--dim);margin-bottom:20px;letter-spacing:.3px;}
+/* journal strip */
+.journal{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px;}
+.jcard{background:var(--panel);border:1px solid var(--grid);border-radius:10px;padding:11px 14px;cursor:pointer;
+ min-width:150px;transition:.18s;position:relative;}
+.jcard:hover{border-color:var(--accent);transform:translateY(-2px);}
+.jcard .sym{font-size:13px;font-weight:600;}
+.jcard .dt{font-size:10px;color:var(--dim);margin-top:2px;}
+.jcard .pnl{font-size:12px;font-weight:600;margin-top:6px;color:var(--vbull);}
+.jcard .pnl.neg{color:var(--vbear);}
+.jcard .badge{position:absolute;top:9px;right:10px;font-size:9px;color:var(--dim);}
+.jcard .badge b{color:var(--spine);}
+.hint{font-size:11px;color:var(--dim);margin-top:4px;}
+/* modal */
+.backdrop{position:fixed;inset:0;background:#04070cd9;backdrop-filter:blur(3px);display:none;
+ align-items:center;justify-content:center;padding:24px;z-index:50;}
+.backdrop.open{display:flex;animation:fade .2s ease;}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.modal{background:linear-gradient(180deg,#0f1722,var(--panel));border:1px solid #233246;border-radius:16px;
+ width:min(96vw,1700px);max-height:92vh;display:flex;flex-direction:column;overflow:hidden;
+ box-shadow:0 30px 80px #000a;animation:rise .25s ease;}
+@keyframes rise{from{opacity:0;transform:translateY(14px) scale(.99)}to{opacity:1;transform:none}}
+.mhead{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--grid);}
+.mhead .t{font-family:'Fraunces',serif;font-size:18px;font-weight:600;}
+.mhead .t .o{color:var(--accent);}
+.mhead .meta{font-size:11px;color:var(--dim);margin-top:2px;}
+.x{background:none;border:1px solid var(--grid);color:var(--dim);width:30px;height:30px;border-radius:8px;
+ cursor:pointer;font-size:16px;line-height:1;transition:.15s;}
+.x:hover{border-color:var(--vbear);color:var(--vbear);}
+.mbody{padding:18px 20px;overflow:auto;}
+.lead{font-size:12px;color:#aab9cc;line-height:1.55;margin-bottom:14px;}
+.lead b{color:var(--ink);}
+/* 3-pane grid: right large (TV), left stacked (Bookmap top, GEX bottom) */
+.panes{display:grid;grid-template-columns:minmax(0,0.92fr) minmax(0,1.55fr);
+ grid-template-rows:1fr 1fr;gap:14px;height:min(64vh,760px);min-height:340px;}
+/* narrow screens: stack TV over Bookmap over GEX, each its own row */
+@media (max-width:680px){
+ .panes{grid-template-columns:1fr;grid-template-rows:repeat(3,minmax(150px,1fr));height:auto;}
+ .p-tv{grid-column:1;grid-row:1;} .p-bm{grid-column:1;grid-row:2;} .p-gex{grid-column:1;grid-row:3;}
+}
+.pane{position:relative;border:1.5px dashed #2a3a4e;border-radius:12px;overflow:hidden;
+ background:var(--panel2);cursor:pointer;transition:.16s;display:flex;}
+.pane:hover{border-color:#3a536e;}
+.pane.sel{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset;}
+.pane.drag{border-style:solid;border-color:var(--vbull);background:#0e1a16;}
+.pane.filled{border-style:solid;cursor:default;}
+.p-bm{grid-column:1;grid-row:1;} .p-gex{grid-column:1;grid-row:2;} .p-tv{grid-column:2;grid-row:1 / span 2;}
+.pane.p-bm{--c:var(--bm);} .pane.p-gex{--c:var(--gex);} .pane.p-tv{--c:var(--tv);}
+.ghost{position:absolute;inset:0;opacity:.16;pointer-events:none;}
+.tag{position:absolute;top:9px;left:11px;font-size:9.5px;letter-spacing:1.4px;text-transform:uppercase;
+ color:var(--c);font-weight:600;z-index:2;}
+.center{margin:auto;text-align:center;padding:14px;z-index:2;}
+.center .ico{font-size:21px;color:var(--c);opacity:.9;}
+.center .lbl{font-size:12.5px;font-weight:600;margin-top:7px;}
+.center .ops{font-size:10px;color:var(--dim);margin-top:7px;line-height:1.7;}
+.center .ops kbd{background:#16202e;border:1px solid #2a3a4e;border-radius:4px;padding:1px 5px;color:#bcd2e6;font-size:9px;}
+.pick{margin-top:9px;background:#16202e;border:1px solid #2c3e54;color:var(--ink);font-family:inherit;
+ font-size:10.5px;padding:6px 12px;border-radius:7px;cursor:pointer;transition:.15s;}
+.pick:hover{border-color:var(--c);color:var(--c);}
+.preview{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#05080d;z-index:1;}
+.pmeta{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;
+ padding:7px 10px;background:linear-gradient(0deg,#000d,#0000);font-size:10px;color:#cdd9e6;z-index:3;}
+.rm{background:#2a1118;border:1px solid #5a2730;color:#ff8aa8;font-family:inherit;font-size:10px;
+ padding:3px 9px;border-radius:6px;cursor:pointer;}
+.rm:hover{background:#3a1620;}
+/* footer */
+.mfoot{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:14px 20px;border-top:1px solid var(--grid);flex-wrap:wrap;}
+.count{font-size:11.5px;color:var(--dim);} .count b{color:var(--ink);}
+.count .ok{color:var(--vbull);}
+.fbtns{display:flex;gap:10px;}
+.btn{font-family:inherit;font-size:12px;font-weight:600;padding:9px 18px;border-radius:9px;cursor:pointer;transition:.16s;border:1px solid;}
+.btn.ghostb{background:transparent;border-color:var(--grid);color:var(--dim);}
+.btn.ghostb:hover{border-color:var(--dim);color:var(--ink);}
+.btn.arch{background:var(--accent);border-color:var(--accent);color:#0a0512;}
+.btn.arch:disabled{opacity:.4;cursor:not-allowed;}
+.btn.arch:not(:disabled):hover{filter:brightness(1.1);}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);opacity:0;
+ background:#0e1f16;border:1px solid #1f5a3a;color:#bfeccd;padding:12px 18px;border-radius:10px;font-size:12.5px;
+ z-index:80;transition:.3s;max-width:520px;line-height:1.5;}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+.toast b{color:var(--vbull);}
+.note{font-size:10px;color:#5d6b80;margin-top:10px;line-height:1.5;}
+</style></head>
+<body><div class="wrap">
+ <div class="brand">The <span class="o">Oracle</span> · Trade Journal</div>
+ <div class="sub">Pick a trade to attach its charts — TradingView, Bookmap, GEX. The coach reviews what you upload.</div>
+ <div class="journal" id="journal"></div>
+ <div class="hint">↑ Click a trade to open its chart-upload box.</div>
+</div>
+
+<div class="backdrop" id="backdrop">
+ <div class="modal" role="dialog" aria-modal="true">
+  <div class="mhead">
+   <div><div class="t">Attach charts · <span class="o" id="mTitle">—</span></div>
+    <div class="meta" id="mMeta">—</div></div>
+   <button class="x" id="closeBtn" aria-label="Close">×</button>
+  </div>
+  <div class="mbody">
+   <div class="lead">Drop, paste, or pick up to <b>three charts</b> for this trade. Upload <b>1, 2, or all 3</b> — whatever you have. They archive to this trade so the coach can read them for the lesson.</div>
+   <div class="panes" id="panes">
+    <!-- panes injected -->
+   </div>
+   <div class="note">Prototype: images are held in memory for this session. In production this writes to the trade's record (Supabase storage) and the coach reads the archived images. No live system is touched here.</div>
+  </div>
+  <div class="mfoot">
+   <div class="count" id="count"><b>0</b> of 3 attached</div>
+   <div class="fbtns">
+    <button class="btn ghostb" id="clearBtn">Clear all</button>
+    <button class="btn arch" id="archBtn" disabled>Archive to trade</button>
+   </div>
+  </div>
+ </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+// ---- mock journal trades ----
+const TRADES=[
+ {id:'t1',sym:'MNQ 06-26',dt:'Jun 4 2026 · LONG',pnl:'+101 pts',neg:false},
+ {id:'t2',sym:'MNQ 06-26',dt:'Jun 3 2026 · SHORT',pnl:'-18 pts',neg:true},
+ {id:'t3',sym:'MES 06-26',dt:'Jun 2 2026 · LONG',pnl:'+34 pts',neg:false},
+ {id:'t4',sym:'MNQ 06-26',dt:'May 30 2026 · LONG',pnl:'+62 pts',neg:false},
+];
+// per-trade archive (in-memory): { tradeId: {tv,bookmap,gex} dataURLs }
+const ARCHIVE={};
+
+// pane definitions
+const PANES=[
+ {key:'bookmap',cls:'p-bm',tag:'Bookmap',ico:'▦',color:'var(--bm)'},
+ {key:'gex',cls:'p-gex',tag:'GEX',ico:'⊟',color:'var(--gex)'},
+ {key:'tv',cls:'p-tv',tag:'TradingView',ico:'◫',color:'var(--tv)'},
+];
+// faint ghost SVGs evoking each chart type (original, generic)
+const GHOST={
+ tv:`<svg class="ghost" viewBox="0 0 320 200" preserveAspectRatio="none"><g stroke="#4d9fff" fill="none" stroke-width="2">
+   <line x1="0" y1="120" x2="320" y2="70"/><line x1="0" y1="60" x2="320" y2="60" stroke="#9b6dff" stroke-dasharray="5 4"/>
+   <line x1="0" y1="150" x2="320" y2="150" stroke="#e5a73c" stroke-dasharray="5 4"/></g>
+   <g>${[30,55,80,105,130,155,180,205,230,255,280].map((x,i)=>{const up=i%3;const y=120-i*4;const c=up?'#39ff88':'#ff4db8';return `<rect x="${x-3}" y="${y-12}" width="6" height="24" fill="${c}"/><line x1="${x}" y1="${y-20}" x2="${x}" y2="${y+18}" stroke="${c}" stroke-width="1.2"/>`}).join('')}</g></svg>`,
+ bookmap:`<svg class="ghost" viewBox="0 0 240 200" preserveAspectRatio="none">
+   ${[20,45,70,95,120,145,170].map((y,i)=>`<rect x="0" y="${y}" width="240" height="7" fill="${i%2?'#ff7a18':'#1f6fff'}" opacity="${0.4+0.08*(i%3)}"/>`).join('')}
+   ${[40,90,140,190].map((x,i)=>`<circle cx="${x}" cy="${60+i*22}" r="${10-i}" fill="${i%2?'#39ff88':'#b04449'}"/>`).join('')}</svg>`,
+ gex:`<svg class="ghost" viewBox="0 0 240 200" preserveAspectRatio="none">
+   <line x1="120" y1="0" x2="120" y2="200" stroke="#7d8da3" stroke-dasharray="3 4"/>
+   ${[18,38,58,78,98,118,138,158,178].map((y,i)=>{const w=20+((i*37)%80);const pos=i%2;const x=pos?120:120-w;return `<rect x="${x}" y="${y}" width="${w}" height="11" fill="${pos?'#39ff88':'#b04449'}" opacity=".8"/>`}).join('')}</svg>`,
+};
+
+let currentTrade=null, selectedPane=null;
+const $=id=>document.getElementById(id);
+
+// build journal
+$('journal').innerHTML=TRADES.map(t=>`<div class="jcard" data-id="${t.id}">
+ <div class="sym">${t.sym}</div><div class="dt">${t.dt}</div>
+ <div class="pnl ${t.neg?'neg':''}">${t.pnl}</div>
+ <div class="badge" id="b_${t.id}"></div></div>`).join('');
+document.querySelectorAll('.jcard').forEach(c=>c.onclick=()=>openModal(c.dataset.id));
+
+function archCount(id){const a=ARCHIVE[id]||{};return ['tv','bookmap','gex'].filter(k=>a[k]).length;}
+function refreshBadges(){TRADES.forEach(t=>{const n=archCount(t.id);$('b_'+t.id).innerHTML=n?`<b>${n}</b>📎`:'';});}
+
+function openModal(id){
+ currentTrade=id;selectedPane=null;
+ const t=TRADES.find(x=>x.id===id);
+ $('mTitle').textContent=t.sym; $('mMeta').textContent=t.dt;
+ // build panes
+ $('panes').innerHTML=PANES.map(p=>`
+  <div class="pane ${p.cls}" data-key="${p.key}" tabindex="0">
+   ${GHOST[p.key]}
+   <span class="tag">${p.tag}</span>
+   <div class="center" data-role="center">
+     <div class="ico">${p.ico}</div>
+     <div class="lbl">${p.tag} chart</div>
+     <div class="ops">drag &amp; drop &nbsp;·&nbsp; <kbd>${navigator.platform.includes('Mac')?'⌘':'Ctrl'}+V</kbd> paste<br>
+       <button class="pick" data-role="pick">Choose file</button></div>
+     <input type="file" accept="image/*" data-role="file" hidden>
+   </div>
+  </div>`).join('');
+ // restore any archived previews
+ const a=ARCHIVE[id]||{};
+ PANES.forEach(p=>{ if(a[p.key]) setImage(p.key,a[p.key]); });
+ wirePanes();
+ updateFooter();
+ $('backdrop').classList.add('open');
+}
+function closeModal(){$('backdrop').classList.remove('open');}
+
+function paneEl(key){return document.querySelector(`.pane[data-key="${key}"]`);}
+
+function wirePanes(){
+ document.querySelectorAll('.pane').forEach(pane=>{
+  const key=pane.dataset.key;
+  const file=pane.querySelector('[data-role="file"]');
+  pane.querySelector('[data-role="pick"]').onclick=e=>{e.stopPropagation();file.click();};
+  file.onchange=e=>{const f=e.target.files[0];if(f)readImage(f,key);};
+  pane.onclick=()=>selectPane(key);
+  pane.ondragover=e=>{e.preventDefault();pane.classList.add('drag');};
+  pane.ondragleave=()=>pane.classList.remove('drag');
+  pane.ondrop=e=>{e.preventDefault();pane.classList.remove('drag');
+    const f=[...e.dataTransfer.files].find(f=>f.type.startsWith('image/'));if(f)readImage(f,key);};
+ });
+}
+function selectPane(key){selectedPane=key;
+ document.querySelectorAll('.pane').forEach(p=>p.classList.toggle('sel',p.dataset.key===key));}
+
+// auto-resize on intake: cap width at 1400px, re-encode JPEG ~0.82 — the big file never gets stored
+function autoResize(file, cb){
+ const MAXW=1400, Q=0.82;
+ const fr=new FileReader();
+ fr.onload=()=>{ const im=new Image();
+   im.onload=()=>{ let{naturalWidth:w,naturalHeight:h}=im;
+     if(w<=MAXW){ cb(fr.result, {w,h,resized:false}); return; }
+     const nh=Math.round(h*MAXW/w);
+     const cv=document.createElement('canvas'); cv.width=MAXW; cv.height=nh;
+     cv.getContext('2d').drawImage(im,0,0,MAXW,nh);
+     cb(cv.toDataURL('image/jpeg',Q), {w:MAXW,h:nh,resized:true}); };
+   im.onerror=()=>cb(fr.result,{resized:false});
+   im.src=fr.result; };
+ fr.readAsDataURL(file);
+}
+function readImage(file,key){
+ autoResize(file,(dataURL)=>{
+   if(!ARCHIVE[currentTrade])ARCHIVE[currentTrade]={};
+   paneEl(key)._staged=dataURL; setImage(key,dataURL); updateFooter();
+ });
+}
+function setImage(key,dataURL){
+ const pane=paneEl(key); if(!pane)return;
+ pane.classList.add('filled'); pane.classList.remove('sel');
+ const center=pane.querySelector('[data-role="center"]'); if(center)center.style.display='none';
+ let img=pane.querySelector('.preview'); if(!img){img=document.createElement('img');img.className='preview';pane.appendChild(img);}
+ img.src=dataURL;
+ let meta=pane.querySelector('.pmeta');
+ if(!meta){meta=document.createElement('div');meta.className='pmeta';pane.appendChild(meta);}
+ const tag=PANES.find(p=>p.key===key).tag;
+ meta.innerHTML=`<span>${tag} · attached</span><button class="rm" data-role="rm">remove</button>`;
+ meta.querySelector('[data-role="rm"]').onclick=e=>{e.stopPropagation();removeImage(key);};
+ pane._staged=dataURL;
+}
+function removeImage(key){
+ const pane=paneEl(key); pane._staged=null;
+ if(ARCHIVE[currentTrade])delete ARCHIVE[currentTrade][key];
+ const img=pane.querySelector('.preview'); if(img)img.remove();
+ const meta=pane.querySelector('.pmeta'); if(meta)meta.remove();
+ pane.classList.remove('filled');
+ const center=pane.querySelector('[data-role="center"]'); if(center)center.style.display='';
+ updateFooter(); refreshBadges();
+}
+function stagedCount(){return PANES.filter(p=>{const el=paneEl(p.key);return el&&el._staged;}).length;}
+function updateFooter(){
+ const n=stagedCount();
+ $('count').innerHTML=`<b class="${n?'ok':''}">${n}</b> of 3 attached`;
+ $('archBtn').disabled=n===0;
+}
+
+// global paste -> selected pane (or first empty)
+window.addEventListener('paste',e=>{
+ if(!$('backdrop').classList.contains('open'))return;
+ const item=[...(e.clipboardData?.items||[])].find(i=>i.type.startsWith('image/'));
+ if(!item)return;
+ let key=selectedPane;
+ if(!key){const empty=PANES.find(p=>!paneEl(p.key)._staged);key=empty?empty.key:'tv';}
+ const f=item.getAsFile(); if(f)readImage(f,key);
+});
+
+$('closeBtn').onclick=closeModal;
+$('backdrop').onclick=e=>{if(e.target===$('backdrop'))closeModal();};
+$('clearBtn').onclick=()=>PANES.forEach(p=>{if(paneEl(p.key)._staged)removeImage(p.key);});
+$('archBtn').onclick=()=>{
+ if(!ARCHIVE[currentTrade])ARCHIVE[currentTrade]={};
+ PANES.forEach(p=>{const el=paneEl(p.key);if(el&&el._staged)ARCHIVE[currentTrade][p.key]=el._staged;});
+ const n=archCount(currentTrade);
+ refreshBadges();
+ showToast(`<b>Archived ✓</b> — ${n} chart${n>1?'s':''} saved to ${TRADES.find(t=>t.id===currentTrade).sym} (${TRADES.find(t=>t.id===currentTrade).dt}). The coach can now review ${n>1?'them':'it'} for the lesson.`);
+ closeModal();
+};
+function showToast(html){const t=$('toast');t.innerHTML=html;t.classList.add('show');
+ clearTimeout(t._tm);t._tm=setTimeout(()=>t.classList.remove('show'),4200);}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('backdrop').classList.contains('open'))closeModal();});
+refreshBadges();
+</script>
+</body></html>

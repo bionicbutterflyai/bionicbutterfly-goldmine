@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Oracle — Trade Lesson (June 4, dev)</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap');
+  :root {
+    --bg:#0a0e14; --panel:#0f1620; --grid:#1a2330; --ink:#e6edf3; --dim:#7d8da3;
+    --up:#2ecc8f; --down:#e5484d; --spine:#4d9fff; --alert:#d4a017; --pull:#9b6dff; --you:#2ecc8f;
+    --tp:#2ecc8f; --sl:#e5484d; --accent:#9b6dff; --warn:#e5a73c; --vib:#39ff88;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:radial-gradient(ellipse at top,#11192480,var(--bg)),var(--bg); color:var(--ink);
+    font-family:'Spline Sans Mono',monospace; padding:28px; min-height:100vh; }
+  .wrap { max-width:1040px; margin:0 auto; }
+  .provbar { background:#0c1622; border:1px solid #1f3347; border-left:3px solid var(--spine);
+    border-radius:8px; padding:9px 14px; font-size:11.5px; line-height:1.55; color:#bcd2e6; margin-bottom:14px; letter-spacing:0.2px; }
+  .provbar b { color:var(--spine); letter-spacing:0.8px; }
+  .head { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px; flex-wrap:wrap; gap:8px; }
+  .title { font-family:'Fraunces',serif; font-size:26px; font-weight:600; letter-spacing:-0.5px; }
+  .title .o { color:var(--accent); }
+  .meta { font-size:12px; color:var(--dim); letter-spacing:0.5px; }
+  .verdict-bar { display:flex; gap:10px; margin:16px 0; flex-wrap:wrap; }
+  .leg { flex:1; min-width:120px; background:var(--panel); border:1px solid var(--grid); border-radius:10px; padding:12px 14px; }
+  .leg .k { font-size:10px; letter-spacing:1.2px; color:var(--dim); text-transform:uppercase; }
+  .leg .v { font-size:14px; font-weight:600; margin-top:4px; }
+  .leg .s { font-size:9.5px; color:var(--dim); margin-top:3px; letter-spacing:0.3px; }
+  .leg.miss .v { color:var(--warn); } .leg.gate .v { color:var(--up); } .leg.bias .v { color:var(--up); }
+  .leg.max .v { color:var(--accent); } .leg.cap .v { color:var(--up); }
+  .chartcard { background:var(--panel); border:1px solid var(--grid); border-radius:14px; padding:18px; overflow:hidden; }
+  svg { width:100%; height:auto; display:block; }
+  .legend { display:flex; gap:14px; margin-top:14px; flex-wrap:wrap; font-size:11px; }
+  .legend span { display:flex; align-items:center; gap:6px; color:var(--dim); }
+  .dot { width:10px; height:10px; border-radius:50%; display:inline-block; }
+  .line-key { width:16px; height:0; border-top:2px dashed; display:inline-block; }
+  .lesson { margin-top:18px; background:linear-gradient(135deg,#14101e,var(--panel)); border:1px solid #2a2140;
+    border-left:3px solid var(--accent); border-radius:10px; padding:18px 20px; }
+  .lesson .who { font-size:11px; letter-spacing:2px; color:var(--accent); text-transform:uppercase; margin-bottom:8px; }
+  .lesson p { font-size:14px; line-height:1.65; margin-bottom:10px; } .lesson .hl { color:var(--spine); font-weight:600; }
+  .lesson em { color:var(--up); font-style:normal; } .lesson .vib { color:var(--vib); font-weight:600; }
+  .gapnote { margin-top:14px; background:#1a140a; border:1px solid #3a2e15; border-left:3px solid var(--warn);
+    border-radius:8px; padding:12px 16px; font-size:12.5px; line-height:1.6; color:#e8d9b8; }
+  .gapnote b { color:var(--warn); }
+  .math { margin-top:14px; font-size:11px; color:var(--dim); line-height:1.7; border-top:1px solid var(--grid); padding-top:12px; }
+  .math code { color:var(--ink); } .math b { color:var(--ink); }
+  .fade { animation:rise .7s ease both; }
+  @keyframes rise { from{opacity:0;transform:translateY(8px);} to{opacity:1;transform:none;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="provbar fade"><b>DEV — REAL TRADE, AWAITING EXPORT.</b> Plotted on the <b>real June 4 2026 MNQ 1-min tape</b> (NinjaTrader export, UTC; shown in ET). Entry/exit are <b>coached live &amp; manually keyed by Mark</b>, not yet reconciled against a NinjaTrader fills export. Candle color here = <b>close direction (illustrative)</b>; Mark's live chart colors bars by the DPMO 3-green confluence, which the OHLC export doesn't carry.</div>
+
+  <div class="head fade">
+    <div class="title">The <span class="o">Oracle</span> · Trade Lesson</div>
+    <div class="meta">MNQ 06-26 · JUN 4 2026 · LONG · 1-MIN · times ET</div>
+  </div>
+
+  <div class="verdict-bar fade">
+    <div class="leg miss"><div class="k">Behavior (engine)</div><div class="v">⚠ no fresh break</div><div class="s">false neg vs the gate</div></div>
+    <div class="leg gate"><div class="k">3-green gate</div><div class="v">✓ aligned</div><div class="s">144 → pullback → 3 green</div></div>
+    <div class="leg bias"><div class="k">Bias</div><div class="v">✓ bullish</div></div>
+    <div class="leg max"><div class="k">Move available</div><div class="v">+101 pts</div><div class="s">10.1R · $202/contract</div></div>
+    <div class="leg cap"><div class="k">Realistic capture</div><div class="v">~+40 pts</div><div class="s">5 micros · ~$400 (illustrative)</div></div>
+  </div>
+
+  <div class="chartcard fade">
+    <svg id="chart" viewBox="0 0 1000 480" preserveAspectRatio="xMidYMid meet"></svg>
+    <div class="legend">
+      <span><i class="line-key" style="border-color:var(--spine)"></i> 144 spine</span>
+      <span><i class="dot" style="background:var(--alert)"></i> Alert (10:24)</span>
+      <span><i class="dot" style="background:var(--pull)"></i> Pullback low (10:49)</span>
+      <span><i class="dot" style="background:var(--you)"></i> Entry (10:57, 3-green)</span>
+      <span><i class="dot" style="background:var(--vib)"></i> High-vol confirm (11:01)</span>
+      <span><i class="line-key" style="border-color:var(--tp)"></i> Exit (GEX line)</span>
+      <span><i class="line-key" style="border-color:var(--sl)"></i> Stop (40t)</span>
+    </div>
+  </div>
+
+  <div class="lesson fade">
+    <div class="who">The Oracle reflects</div>
+    <p id="lessonText"></p>
+    <div class="gapnote" id="gapNote"></div>
+    <div class="math" id="mathNote"></div>
+  </div>
+</div>
+
+<script>
+const bars = [{"et": "10:18", "o": 30294.25, "h": 30306.5, "l": 30267.0, "c": 30298.25, "v": 10314, "sma": 30274.99, "vib": false}, {"et": "10:19", "o": 30298.25, "h": 30300.75, "l": 30269.25, "c": 30282.0, "v": 7921, "sma": 30275.13, "vib": false}, {"et": "10:20", "o": 30282.0, "h": 30286.0, "l": 30262.5, "c": 30263.5, "v": 7293, "sma": 30275.11, "vib": false}, {"et": "10:21", "o": 30263.25, "h": 30275.75, "l": 30256.0, "c": 30259.5, "v": 8629, "sma": 30275.16, "vib": false}, {"et": "10:22", "o": 30258.75, "h": 30290.0, "l": 30251.25, "c": 30273.25, "v": 8166, "sma": 30275.11, "vib": false}, {"et": "10:23", "o": 30273.0, "h": 30292.0, "l": 30271.0, "c": 30291.0, "v": 5368, "sma": 30275.27, "vib": false}, {"et": "10:24", "o": 30290.75, "h": 30310.75, "l": 30277.5, "c": 30308.25, "v": 7930, "sma": 30275.47, "vib": false}, {"et": "10:25", "o": 30308.75, "h": 30324.5, "l": 30296.5, "c": 30323.75, "v": 8100, "sma": 30275.8, "vib": false}, {"et": "10:26", "o": 30323.25, "h": 30330.75, "l": 30314.0, "c": 30327.75, "v": 7086, "sma": 30276.35, "vib": false}, {"et": "10:27", "o": 30328.0, "h": 30333.0, "l": 30316.0, "c": 30320.25, "v": 6863, "sma": 30276.76, "vib": false}, {"et": "10:28", "o": 30320.0, "h": 30338.5, "l": 30308.75, "c": 30333.5, "v": 7948, "sma": 30277.23, "vib": false}, {"et": "10:29", "o": 30334.0, "h": 30348.25, "l": 30331.25, "c": 30337.25, "v": 6865, "sma": 30277.84, "vib": false}, {"et": "10:30", "o": 30337.0, "h": 30342.75, "l": 30325.5, "c": 30341.25, "v": 5248, "sma": 30278.49, "vib": false}, {"et": "10:31", "o": 30341.25, "h": 30348.0, "l": 30319.0, "c": 30324.5, "v": 8139, "sma": 30278.88, "vib": false}, {"et": "10:32", "o": 30324.0, "h": 30331.25, "l": 30305.75, "c": 30316.75, "v": 8416, "sma": 30279.14, "vib": true}, {"et": "10:33", "o": 30317.75, "h": 30320.25, "l": 30300.0, "c": 30307.0, "v": 6446, "sma": 30279.37, "vib": false}, {"et": "10:34", "o": 30307.0, "h": 30332.0, "l": 30302.75, "c": 30326.5, "v": 6183, "sma": 30279.8, "vib": false}, {"et": "10:35", "o": 30326.0, "h": 30343.75, "l": 30317.75, "c": 30326.5, "v": 6359, "sma": 30280.23, "vib": false}, {"et": "10:36", "o": 30326.25, "h": 30335.25, "l": 30294.0, "c": 30303.25, "v": 7210, "sma": 30280.65, "vib": false}, {"et": "10:37", "o": 30303.0, "h": 30326.75, "l": 30293.75, "c": 30310.25, "v": 8403, "sma": 30281.2, "vib": false}, {"et": "10:38", "o": 30309.75, "h": 30324.5, "l": 30305.0, "c": 30321.5, "v": 4528, "sma": 30281.8, "vib": false}, {"et": "10:39", "o": 30321.0, "h": 30333.25, "l": 30313.75, "c": 30315.5, "v": 5466, "sma": 30282.34, "vib": false}, {"et": "10:40", "o": 30314.75, "h": 30320.0, "l": 30304.5, "c": 30311.75, "v": 5122, "sma": 30282.85, "vib": false}, {"et": "10:41", "o": 30312.0, "h": 30337.0, "l": 30312.0, "c": 30330.5, "v": 4969, "sma": 30283.43, "vib": false}, {"et": "10:42", "o": 30330.0, "h": 30339.25, "l": 30326.0, "c": 30333.5, "v": 3961, "sma": 30284.12, "vib": false}, {"et": "10:43", "o": 30333.25, "h": 30335.25, "l": 30314.75, "c": 30317.75, "v": 4614, "sma": 30284.63, "vib": false}, {"et": "10:44", "o": 30318.0, "h": 30331.0, "l": 30312.75, "c": 30317.75, "v": 4140, "sma": 30285.21, "vib": false}, {"et": "10:45", "o": 30317.75, "h": 30322.75, "l": 30299.25, "c": 30300.5, "v": 4425, "sma": 30285.7, "vib": false}, {"et": "10:46", "o": 30300.25, "h": 30310.5, "l": 30297.5, "c": 30306.0, "v": 4893, "sma": 30286.21, "vib": false}, {"et": "10:47", "o": 30305.75, "h": 30332.0, "l": 30302.0, "c": 30328.75, "v": 5878, "sma": 30286.88, "vib": false}, {"et": "10:48", "o": 30328.5, "h": 30334.25, "l": 30317.0, "c": 30317.25, "v": 4833, "sma": 30287.35, "vib": false}, {"et": "10:49", "o": 30316.75, "h": 30322.0, "l": 30286.75, "c": 30296.75, "v": 6415, "sma": 30287.76, "vib": true}, {"et": "10:50", "o": 30296.5, "h": 30315.75, "l": 30291.5, "c": 30315.5, "v": 4923, "sma": 30288.25, "vib": false}, {"et": "10:51", "o": 30315.25, "h": 30326.75, "l": 30297.75, "c": 30324.5, "v": 5180, "sma": 30288.87, "vib": false}, {"et": "10:52", "o": 30324.5, "h": 30328.75, "l": 30313.75, "c": 30326.75, "v": 3848, "sma": 30289.45, "vib": false}, {"et": "10:53", "o": 30326.25, "h": 30326.75, "l": 30311.25, "c": 30311.75, "v": 3544, "sma": 30289.96, "vib": false}, {"et": "10:54", "o": 30312.25, "h": 30314.25, "l": 30298.0, "c": 30301.75, "v": 4347, "sma": 30290.35, "vib": false}, {"et": "10:55", "o": 30302.0, "h": 30330.0, "l": 30300.25, "c": 30320.25, "v": 4725, "sma": 30290.71, "vib": false}, {"et": "10:56", "o": 30320.25, "h": 30331.75, "l": 30317.25, "c": 30327.25, "v": 3297, "sma": 30291.03, "vib": false}, {"et": "10:57", "o": 30327.0, "h": 30343.75, "l": 30326.75, "c": 30335.25, "v": 5077, "sma": 30291.45, "vib": false}, {"et": "10:58", "o": 30335.5, "h": 30347.0, "l": 30321.5, "c": 30343.0, "v": 4906, "sma": 30291.97, "vib": false}, {"et": "10:59", "o": 30343.25, "h": 30350.0, "l": 30338.75, "c": 30348.5, "v": 3751, "sma": 30292.54, "vib": false}, {"et": "11:00", "o": 30348.25, "h": 30359.5, "l": 30345.0, "c": 30356.75, "v": 4802, "sma": 30293.14, "vib": false}, {"et": "11:01", "o": 30356.5, "h": 30382.0, "l": 30354.0, "c": 30380.0, "v": 11827, "sma": 30293.82, "vib": true}, {"et": "11:02", "o": 30380.25, "h": 30380.5, "l": 30364.0, "c": 30371.25, "v": 5480, "sma": 30294.41, "vib": false}, {"et": "11:03", "o": 30371.25, "h": 30379.5, "l": 30365.0, "c": 30368.25, "v": 3809, "sma": 30294.99, "vib": false}, {"et": "11:04", "o": 30368.25, "h": 30376.0, "l": 30362.25, "c": 30368.75, "v": 3521, "sma": 30295.59, "vib": false}, {"et": "11:05", "o": 30367.75, "h": 30371.0, "l": 30355.75, "c": 30369.75, "v": 3652, "sma": 30296.21, "vib": false}, {"et": "11:06", "o": 30369.5, "h": 30390.25, "l": 30368.75, "c": 30385.75, "v": 5795, "sma": 30296.95, "vib": false}, {"et": "11:07", "o": 30385.5, "h": 30396.25, "l": 30384.25, "c": 30393.5, "v": 4319, "sma": 30297.66, "vib": false}, {"et": "11:08", "o": 30393.5, "h": 30408.0, "l": 30388.0, "c": 30407.25, "v": 5475, "sma": 30298.38, "vib": false}, {"et": "11:09", "o": 30407.0, "h": 30425.0, "l": 30404.75, "c": 30422.75, "v": 7289, "sma": 30299.17, "vib": false}, {"et": "11:10", "o": 30423.25, "h": 30437.75, "l": 30421.5, "c": 30429.75, "v": 6580, "sma": 30300.03, "vib": false}, {"et": "11:11", "o": 30430.25, "h": 30437.75, "l": 30418.0, "c": 30435.75, "v": 6738, "sma": 30301.04, "vib": false}, {"et": "11:12", "o": 30436.25, "h": 30442.25, "l": 30427.75, "c": 30435.5, "v": 4829, "sma": 30302.01, "vib": false}, {"et": "11:13", "o": 30435.25, "h": 30446.75, "l": 30430.75, "c": 30442.5, "v": 4449, "sma": 30302.87, "vib": false}, {"et": "11:14", "o": 30442.0, "h": 30446.0, "l": 30435.25, "c": 30437.5, "v": 3058, "sma": 30303.66, "vib": false}, {"et": "11:15", "o": 30437.0, "h": 30453.0, "l": 30436.5, "c": 30450.5, "v": 4464, "sma": 30304.53, "vib": false}, {"et": "11:16", "o": 30450.75, "h": 30460.0, "l": 30442.5, "c": 30460.0, "v": 5157, "sma": 30305.44, "vib": false}, {"et": "11:17", "o": 30459.75, "h": 30466.0, "l": 30456.0, "c": 30464.25, "v": 5093, "sma": 30306.5, "vib": false}, {"et": "11:18", "o": 30464.25, "h": 30469.0, "l": 30457.0, "c": 30466.0, "v": 4068, "sma": 30307.51, "vib": false}, {"et": "11:19", "o": 30466.25, "h": 30469.0, "l": 30451.0, "c": 30452.75, "v": 3964, "sma": 30308.46, "vib": false}, {"et": "11:20", "o": 30452.75, "h": 30465.0, "l": 30449.75, "c": 30462.5, "v": 3968, "sma": 30309.49, "vib": false}, {"et": "11:21", "o": 30462.5, "h": 30464.0, "l": 30438.5, "c": 30440.25, "v": 6259, "sma": 30310.38, "vib": false}, {"et": "11:22", "o": 30440.25, "h": 30451.75, "l": 30437.5, "c": 30445.5, "v": 4516, "sma": 30311.38, "vib": false}];
+const ENTRY=30350.0, EXIT=30451.0, SL=30340.0;
+const ALERT={et:"10:24",label:"ALERT"}, PULL={et:"10:49",label:"PULLBACK LOW"};
+const YOU={et:"10:57",label:"ENTRY"}, VIB={et:"11:01",label:"HIGH-VOL"}, EX={et:"11:15",label:"EXIT"};
+
+const W=1000,H=480, padL=8,padR=78,padT=22,padB=30;
+const plotW=W-padL-padR, plotH=H-padT-padB;
+const prices=bars.flatMap(b=>[b.h,b.l]).concat([SL,EXIT]);
+const pMin=Math.min(...prices)-5, pMax=Math.max(...prices)+5;
+const x=i=>padL+(i+0.5)/bars.length*plotW;
+const cw=Math.max(2,plotW/bars.length*0.58);
+const y=p=>padT+(pMax-p)/(pMax-pMin)*plotH;
+const idxOf=et=>bars.findIndex(b=>b.et===et);
+const svg=document.getElementById('chart'),NS='http://www.w3.org/2000/svg';
+const el=(t,a)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e;};
+const txt=(x_,y_,s,a={})=>{const t=el('text',Object.assign({x:x_,y:y_,'font-family':'Spline Sans Mono'},a));t.textContent=s;svg.appendChild(t);return t;};
+
+for(let gp=Math.ceil(pMin/25)*25; gp<pMax; gp+=25){
+  svg.appendChild(el('line',{x1:padL,y1:y(gp),x2:padL+plotW,y2:y(gp),stroke:'#1a2330','stroke-width':1}));
+  txt(W-padR+6,y(gp)+4,gp,{fill:'#5a6b80','font-size':11});
+}
+
+// exit (GEX) and stop lines from entry
+const ix=x(idxOf(YOU.et));
+svg.appendChild(el('rect',{x:ix,y:y(EXIT),width:padL+plotW-ix,height:y(ENTRY)-y(EXIT),fill:'#2ecc8f','fill-opacity':0.05}));
+svg.appendChild(el('rect',{x:ix,y:y(ENTRY),width:padL+plotW-ix,height:y(SL)-y(ENTRY),fill:'#e5484d','fill-opacity':0.07}));
+svg.appendChild(el('line',{x1:ix,y1:y(EXIT),x2:padL+plotW,y2:y(EXIT),stroke:'#e5484d','stroke-width':1.4,'stroke-dasharray':'2 2'}));
+txt(W-padR-4,y(EXIT)-5,'EXIT '+EXIT+' · GEX',{fill:'#e5484d','font-size':10,'text-anchor':'end','font-weight':600});
+svg.appendChild(el('line',{x1:ix,y1:y(SL),x2:padL+plotW,y2:y(SL),stroke:'#e5484d','stroke-width':1.1,'stroke-dasharray':'5 4'}));
+txt(W-padR-4,y(SL)+12,'SL '+SL+' (40t)',{fill:'#e5484d','font-size':10,'text-anchor':'end'});
+
+// 144 spine
+let d='';bars.forEach((b,i)=>{if(b.sma) d+=(d?'L':'M')+x(i)+','+y(b.sma)+' ';});
+svg.appendChild(el('path',{d,fill:'none',stroke:'#4d9fff','stroke-width':2.4,'stroke-dasharray':'7 4','stroke-opacity':0.95}));
+const lastSma=[...bars].reverse().find(b=>b.sma);
+txt(x(bars.length-1)-2,y(lastSma.sma)+14,'144',{fill:'#4d9fff','font-size':10,'text-anchor':'end','font-weight':600});
+
+// candles — close-direction color (illustrative); high-vol bars get a bright rim
+bars.forEach((b,i)=>{
+  const up=b.c>=b.o; const col=up?'#2ecc8f':'#e5484d';
+  svg.appendChild(el('line',{x1:x(i),y1:y(b.h),x2:x(i),y2:y(b.l),stroke:col,'stroke-width':1}));
+  const yo=y(b.o),yc=y(b.c);
+  const r=el('rect',{x:x(i)-cw/2,y:Math.min(yo,yc),width:cw,height:Math.max(1.5,Math.abs(yc-yo)),fill:col,rx:0.5});
+  if(b.vib){ r.setAttribute('stroke', up?'#39ff88':'#ff5470'); r.setAttribute('stroke-width','1.4'); }
+  svg.appendChild(r);
+});
+
+// above-144 bracket, anchored far-left to avoid label collision
+(function(){
+  const i=idxOf(YOU.et); const px=x(i); const yTop=y(ENTRY), yBot=y(bars[i].sma);
+  const bx=padL+8;
+  svg.appendChild(el('line',{x1:bx,y1:yTop,x2:bx,y2:yBot,stroke:'#e5a73c','stroke-width':1.2,'stroke-dasharray':'3 3'}));
+  svg.appendChild(el('line',{x1:bx,y1:yTop,x2:bx+6,y2:yTop,stroke:'#e5a73c','stroke-width':1.2}));
+  svg.appendChild(el('line',{x1:bx,y1:yBot,x2:bx+6,y2:yBot,stroke:'#e5a73c','stroke-width':1.2}));
+  txt(bx+10,(yTop+yBot)/2-2,'58 pts',{fill:'#e5a73c','font-size':10,'font-weight':600});
+  txt(bx+10,(yTop+yBot)/2+10,'above 144',{fill:'#e5a73c','font-size':8.5});
+})();
+
+function marker(m,price,color,dir){
+  const i=idxOf(m.et); if(i<0) return; const px=x(i),py=y(price);
+  const ay=dir==='down'?py-28:py+28;
+  svg.appendChild(el('line',{x1:px,y1:ay,x2:px,y2:dir==='down'?py-6:py+6,stroke:color,'stroke-width':2}));
+  svg.appendChild(el('circle',{cx:px,cy:py,r:3.5,fill:color,stroke:'#0f1620','stroke-width':1.5}));
+  const lblY=dir==='down'?ay-4:ay+13;
+  txt(px,lblY,m.label,{fill:color,'font-size':10,'font-weight':600,'text-anchor':'middle'});
+  txt(px,lblY+11,m.et,{fill:'#7d8da3','font-size':8.5,'text-anchor':'middle'});
+}
+marker(ALERT, bars[idxOf(ALERT.et)] ? bars[idxOf(ALERT.et)].l : ENTRY, '#d4a017','down');
+marker(PULL,  bars[idxOf(PULL.et)]  ? bars[idxOf(PULL.et)].l  : ENTRY, '#9b6dff','down');
+marker(YOU,   ENTRY, '#2ecc8f','down');
+marker(VIB,   bars[idxOf(VIB.et)] ? bars[idxOf(VIB.et)].h : ENTRY, '#39ff88','up');
+marker(EX,    EXIT, '#e5484d','up');
+
+document.getElementById('lessonText').innerHTML =
+  `The morning sold off to ~30152, then your sequence set up on the reclaim. An <span class="hl">alert</span> near 10:24 once price held back above the 144, a <span class="hl">pullback</span> into ~30287 by 10:49, then at <span class="hl">10:57</span> your <em>three confirmations aligned</em> — candle, the 20/50 price cloud, and the DPMO cloud all green — your gate to go long at 30350. `+
+  `One minute later the <span class="vib">11:01 breakout bar printed bright green on ~11.8k volume</span> — higher than the prior ten bars, your high-volume tell — and price ran to the heavy <em>GEX level at 30451</em>, where you exited ahead of the rollover. That is <em>+101 points</em> of available move.`;
+
+document.getElementById('gapNote').innerHTML =
+  `<b>⚠ Where the engine only sees half the picture:</b> my deterministic rule looks for a <b>fresh 144 break right before entry</b>, and there isn't one — by 10:57 price was ~<b>58 pts above the 144</b>. The engine flags "behavior leg missing." `+
+  `But that's a <b>false negative</b>: your real entry rule is the <b>3-green gate</b> (close &gt; 144 → wait for pullback → candle + price-cloud + DPMO-cloud all green), which my rules don't yet model. You waited for all three — that's the patience the gate enforces, not a missing behavior. `+
+  `<b>Captured as a cue to teach the engine.</b>`;
+
+document.getElementById('mathNote').innerHTML =
+  `<b>Reconciliation</b> — entry <code>30350</code> → exit <code>30451</code> = <code>+101 pts</code>; stop <code>30340</code> = <code>10 pts</code> → max <code>10.1R</code>; MNQ <code>$2/pt</code> → <code>$202/contract</code> max. `+
+  `<b>But that's the move, not the bank.</b> Realistic execution: enter 5 micros, scale via hotkeys, scratch to B/E, re-enter, trail to a significant level — capturing ~<code>40 pts</code> of the 101 (~70% of an avg ~75-pt move). On 5 micros ≈ <code>$400</code>. <b>Available ≠ executed</b> — the honest number is the smaller one.`;
+</script>
+</body>
+</html>

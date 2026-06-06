@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Oracle — DPMO Trade Lesson (June 4)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap');
+:root{--bg:#0a0e14;--panel:#0f1620;--grid:#1a2330;--ink:#e6edf3;--dim:#7d8da3;--spine:#4d9fff;
+--alert:#d4a017;--pull:#9b6dff;--accent:#9b6dff;--warn:#e5a73c;
+--dbull:#2e8b6f;--vbull:#39ff88;--dbear:#b04449;--vbear:#ff4db8;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:radial-gradient(ellipse at top,#11192480,var(--bg)),var(--bg);color:var(--ink);
+font-family:'Spline Sans Mono',monospace;padding:28px;min-height:100vh;}
+.wrap{max-width:1060px;margin:0 auto;}
+.provbar{background:#0c1622;border:1px solid #1f3347;border-left:3px solid var(--spine);border-radius:8px;
+padding:9px 14px;font-size:11.5px;line-height:1.55;color:#bcd2e6;margin-bottom:14px;}
+.provbar b{color:var(--spine);}
+.head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;flex-wrap:wrap;gap:8px;}
+.title{font-family:'Fraunces',serif;font-size:26px;font-weight:600;letter-spacing:-0.5px;} .title .o{color:var(--accent);}
+.meta{font-size:12px;color:var(--dim);}
+.verdict-bar{display:flex;gap:10px;margin:16px 0;flex-wrap:wrap;}
+.leg{flex:1;min-width:120px;background:var(--panel);border:1px solid var(--grid);border-radius:10px;padding:12px 14px;}
+.leg .k{font-size:10px;letter-spacing:1.2px;color:var(--dim);text-transform:uppercase;}
+.leg .v{font-size:14px;font-weight:600;margin-top:4px;} .leg .s{font-size:9.5px;color:var(--dim);margin-top:3px;}
+.leg.miss .v{color:var(--warn);} .leg.gate .v{color:var(--vbull);} .leg.bias .v{color:var(--vbull);}
+.leg.max .v{color:var(--accent);} .leg.cap .v{color:var(--vbull);}
+.chartcard{background:var(--panel);border:1px solid var(--grid);border-radius:14px;padding:18px;overflow:hidden;}
+svg{width:100%;height:auto;display:block;}
+.legend{display:flex;gap:13px;margin-top:14px;flex-wrap:wrap;font-size:10.5px;}
+.legend span{display:flex;align-items:center;gap:6px;color:var(--dim);}
+.sw{width:11px;height:11px;border-radius:2px;display:inline-block;} .dot{width:10px;height:10px;border-radius:50%;display:inline-block;}
+.line-key{width:15px;height:0;border-top:2px dashed;display:inline-block;}
+.lesson{margin-top:18px;background:linear-gradient(135deg,#14101e,var(--panel));border:1px solid #2a2140;
+border-left:3px solid var(--accent);border-radius:10px;padding:18px 20px;}
+.lesson .who{font-size:11px;letter-spacing:2px;color:var(--accent);text-transform:uppercase;margin-bottom:8px;}
+.lesson p{font-size:14px;line-height:1.65;margin-bottom:10px;} .lesson .hl{color:var(--spine);font-weight:600;}
+.lesson em{color:var(--vbull);font-style:normal;} .lesson .vib{color:var(--vbull);font-weight:600;}
+.gapnote{margin-top:14px;background:#1a140a;border:1px solid #3a2e15;border-left:3px solid var(--warn);
+border-radius:8px;padding:12px 16px;font-size:12.5px;line-height:1.6;color:#e8d9b8;} .gapnote b{color:var(--warn);}
+.math{margin-top:14px;font-size:11px;color:var(--dim);line-height:1.7;border-top:1px solid var(--grid);padding-top:12px;}
+.math code{color:var(--ink);} .math b{color:var(--ink);}
+.fade{animation:rise .7s ease both;} @keyframes rise{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
+.lvls .lv{transition:opacity .25s ease;}
+.lvls:hover .lv{opacity:.12;}
+.lvls .lv:hover{opacity:1;}
+</style></head><body><div class="wrap">
+<div class="provbar fade"><b>KITCHEN SINK v2 — ALL STRAT LEVELS ON (now with multi-day data).</b> Same June 4 trade &amp; v6 DPMO candles, with the full computable strat layered on: London / Pre-Market / Yellow / Red / IB / Weekly-IB, Prev-Day H/L &amp; Close, Overnight H/L, Anchored + Session VWAP, Quarterly 9:23 &amp; 10:53. Off-screen levels are edge-tagged (most prior-day structure sits ABOVE — June 4 traded in a lower value area). <b>Only proxy:</b> "4d-Hi*" = 4-day high, not true ATH (needs full history). This is the case FOR fill-on-relevance.</div>
+<div class="head fade"><div class="title">The <span class="o">Oracle</span> · DPMO Trade Lesson</div>
+<div class="meta">MNQ 06-26 · JUN 4 2026 · LONG · 1-MIN · ET</div></div>
+<div class="verdict-bar fade">
+<div class="leg miss"><div class="k">Behavior (engine)</div><div class="v">⚠ no fresh break</div><div class="s">false neg vs gate</div></div>
+<div class="leg gate"><div class="k">3-green gate</div><div class="v">✓ aligned 10:57</div><div class="s">candle+cloud+DPMO</div></div>
+<div class="leg bias"><div class="k">Bias</div><div class="v">✓ bullish</div></div>
+<div class="leg max"><div class="k">Move available</div><div class="v">+101 pts</div><div class="s">10.1R · $202/contract</div></div>
+<div class="leg cap"><div class="k">Realistic capture</div><div class="v">~+40 pts</div><div class="s">5 micros · ~$400 (illus.)</div></div>
+</div>
+<div class="chartcard fade"><svg id="chart" viewBox="0 0 1000 602" preserveAspectRatio="xMidYMid meet"></svg>
+<div class="legend">
+<span><i class="sw" style="background:var(--dbull)"></i> DPMO bull</span>
+<span><i class="sw" style="background:var(--vbull)"></i> bull + high-vol</span>
+<span><i class="sw" style="background:var(--dbear)"></i> DPMO bear</span>
+<span><i class="sw" style="background:var(--vbear)"></i> bear + high-vol</span>
+<span><i class="line-key" style="border-color:var(--spine)"></i> 144</span>
+<span><i class="dot" style="background:var(--alert)"></i> Alert</span>
+<span><i class="dot" style="background:var(--pull)"></i> Pullback</span>
+<span><i class="line-key" style="border-color:#e5484d"></i> Exit (GEX) / Stop</span>
+</div></div>
+<div class="lesson fade"><div class="who">The Oracle reflects</div>
+<p id="lessonText"></p><div class="gapnote" id="gapNote"></div><div class="math" id="mathNote"></div></div>
+</div>
+<script>
+const bars=[{"et": "10:17", "o": 30294.25, "h": 30306.5, "l": 30267.0, "c": 30298.25, "v": 10314, "sma": 30274.99, "e20": 30252.9, "e50": 30259.05, "pmo": -0.0117, "sig": -0.0309, "d": 0.0192, "st": "bull"}, {"et": "10:18", "o": 30298.25, "h": 30300.75, "l": 30269.25, "c": 30282.0, "v": 7921, "sma": 30275.13, "e20": 30255.67, "e50": 30259.95, "pmo": -0.0075, "sig": -0.0251, "d": 0.0176, "st": "bull"}, {"et": "10:19", "o": 30282.0, "h": 30286.0, "l": 30262.5, "c": 30263.5, "v": 7293, "sma": 30275.11, "e20": 30256.41, "e50": 30260.09, "pmo": -0.0062, "sig": -0.0203, "d": 0.0141, "st": "bull"}, {"et": "10:20", "o": 30263.25, "h": 30275.75, "l": 30256.0, "c": 30259.5, "v": 8629, "sma": 30275.16, "e20": 30256.71, "e50": 30260.06, "pmo": -0.0056, "sig": -0.0166, "d": 0.0111, "st": "bull"}, {"et": "10:21", "o": 30258.75, "h": 30290.0, "l": 30251.25, "c": 30273.25, "v": 8166, "sma": 30275.11, "e20": 30258.28, "e50": 30260.58, "pmo": -0.0032, "sig": -0.0133, "d": 0.0101, "st": "bull"}, {"et": "10:22", "o": 30273.0, "h": 30292.0, "l": 30271.0, "c": 30291.0, "v": 5368, "sma": 30275.27, "e20": 30261.4, "e50": 30261.77, "pmo": 0.0012, "sig": -0.0097, "d": 0.0108, "st": "bull"}, {"et": "10:23", "o": 30290.75, "h": 30310.75, "l": 30277.5, "c": 30308.25, "v": 7930, "sma": 30275.47, "e20": 30265.86, "e50": 30263.6, "pmo": 0.0072, "sig": -0.0055, "d": 0.0127, "st": "bull"}, {"et": "10:24", "o": 30308.75, "h": 30324.5, "l": 30296.5, "c": 30323.75, "v": 8100, "sma": 30275.8, "e20": 30271.37, "e50": 30265.95, "pmo": 0.0145, "sig": -0.0005, "d": 0.015, "st": "bull"}, {"et": "10:25", "o": 30323.25, "h": 30330.75, "l": 30314.0, "c": 30327.75, "v": 7086, "sma": 30276.35, "e20": 30276.74, "e50": 30268.38, "pmo": 0.0212, "sig": 0.005, "d": 0.0163, "st": "bull"}, {"et": "10:26", "o": 30328.0, "h": 30333.0, "l": 30316.0, "c": 30320.25, "v": 6863, "sma": 30276.76, "e20": 30280.89, "e50": 30270.41, "pmo": 0.026, "sig": 0.0102, "d": 0.0158, "st": "bull"}, {"et": "10:27", "o": 30320.0, "h": 30338.5, "l": 30308.75, "c": 30333.5, "v": 7948, "sma": 30277.23, "e20": 30285.9, "e50": 30272.89, "pmo": 0.0317, "sig": 0.0156, "d": 0.0161, "st": "bull"}, {"et": "10:28", "o": 30334.0, "h": 30348.25, "l": 30331.25, "c": 30337.25, "v": 6865, "sma": 30277.84, "e20": 30290.79, "e50": 30275.41, "pmo": 0.0371, "sig": 0.021, "d": 0.0161, "st": "bull"}, {"et": "10:29", "o": 30337.0, "h": 30342.75, "l": 30325.5, "c": 30341.25, "v": 5248, "sma": 30278.49, "e20": 30295.59, "e50": 30277.99, "pmo": 0.0421, "sig": 0.0262, "d": 0.0158, "st": "bull"}, {"et": "10:30", "o": 30341.25, "h": 30348.0, "l": 30319.0, "c": 30324.5, "v": 8139, "sma": 30278.88, "e20": 30298.35, "e50": 30279.82, "pmo": 0.044, "sig": 0.0307, "d": 0.0133, "st": "bull"}, {"et": "10:31", "o": 30324.0, "h": 30331.25, "l": 30305.75, "c": 30316.75, "v": 8416, "sma": 30279.14, "e20": 30300.1, "e50": 30281.26, "pmo": 0.0445, "sig": 0.0341, "d": 0.0103, "st": "vbull"}, {"et": "10:32", "o": 30317.75, "h": 30320.25, "l": 30300.0, "c": 30307.0, "v": 6446, "sma": 30279.37, "e20": 30300.76, "e50": 30282.27, "pmo": 0.0434, "sig": 0.0365, "d": 0.007, "st": "bull"}, {"et": "10:33", "o": 30307.0, "h": 30332.0, "l": 30302.75, "c": 30326.5, "v": 6183, "sma": 30279.8, "e20": 30303.21, "e50": 30284.01, "pmo": 0.0449, "sig": 0.0386, "d": 0.0063, "st": "bull"}, {"et": "10:34", "o": 30326.0, "h": 30343.75, "l": 30317.75, "c": 30326.5, "v": 6359, "sma": 30280.23, "e20": 30305.43, "e50": 30285.67, "pmo": 0.046, "sig": 0.0404, "d": 0.0056, "st": "bull"}, {"et": "10:35", "o": 30326.25, "h": 30335.25, "l": 30294.0, "c": 30303.25, "v": 7210, "sma": 30280.65, "e20": 30305.22, "e50": 30286.36, "pmo": 0.0437, "sig": 0.0413, "d": 0.0025, "st": "bull"}, {"et": "10:36", "o": 30303.0, "h": 30326.75, "l": 30293.75, "c": 30310.25, "v": 8403, "sma": 30281.2, "e20": 30305.7, "e50": 30287.3, "pmo": 0.0425, "sig": 0.0416, "d": 0.0009, "st": "bull"}, {"et": "10:37", "o": 30309.75, "h": 30324.5, "l": 30305.0, "c": 30321.5, "v": 4528, "sma": 30281.8, "e20": 30307.2, "e50": 30288.64, "pmo": 0.0427, "sig": 0.0419, "d": 0.0009, "st": "bull"}, {"et": "10:38", "o": 30321.0, "h": 30333.25, "l": 30313.75, "c": 30315.5, "v": 5466, "sma": 30282.34, "e20": 30307.99, "e50": 30289.69, "pmo": 0.042, "sig": 0.0419, "d": 0.0001, "st": "bull"}, {"et": "10:39", "o": 30314.75, "h": 30320.0, "l": 30304.5, "c": 30311.75, "v": 5122, "sma": 30282.85, "e20": 30308.35, "e50": 30290.56, "pmo": 0.0407, "sig": 0.0416, "d": -0.0009, "st": "bear"}, {"et": "10:40", "o": 30312.0, "h": 30337.0, "l": 30312.0, "c": 30330.5, "v": 4969, "sma": 30283.43, "e20": 30310.46, "e50": 30292.13, "pmo": 0.0419, "sig": 0.0417, "d": 0.0002, "st": "bull"}, {"et": "10:41", "o": 30330.0, "h": 30339.25, "l": 30326.0, "c": 30333.5, "v": 3961, "sma": 30284.12, "e20": 30312.66, "e50": 30293.75, "pmo": 0.0431, "sig": 0.042, "d": 0.0011, "st": "bull"}, {"et": "10:42", "o": 30333.25, "h": 30335.25, "l": 30314.75, "c": 30317.75, "v": 4614, "sma": 30284.63, "e20": 30313.14, "e50": 30294.69, "pmo": 0.0419, "sig": 0.042, "d": -0.0001, "st": "bear"}, {"et": "10:43", "o": 30318.0, "h": 30331.0, "l": 30312.75, "c": 30317.75, "v": 4140, "sma": 30285.21, "e20": 30313.58, "e50": 30295.59, "pmo": 0.0408, "sig": 0.0417, "d": -0.0009, "st": "bear"}, {"et": "10:44", "o": 30317.75, "h": 30322.75, "l": 30299.25, "c": 30300.5, "v": 4425, "sma": 30285.7, "e20": 30312.33, "e50": 30295.79, "pmo": 0.0373, "sig": 0.0406, "d": -0.0033, "st": "bear"}, {"et": "10:45", "o": 30300.25, "h": 30310.5, "l": 30297.5, "c": 30306.0, "v": 4893, "sma": 30286.21, "e20": 30311.73, "e50": 30296.19, "pmo": 0.0349, "sig": 0.0392, "d": -0.0043, "st": "bear"}, {"et": "10:46", "o": 30305.75, "h": 30332.0, "l": 30302.0, "c": 30328.75, "v": 5878, "sma": 30286.88, "e20": 30313.35, "e50": 30297.46, "pmo": 0.0357, "sig": 0.0383, "d": -0.0026, "st": "vbear"}, {"et": "10:47", "o": 30328.5, "h": 30334.25, "l": 30317.0, "c": 30317.25, "v": 4833, "sma": 30287.35, "e20": 30313.72, "e50": 30298.24, "pmo": 0.0347, "sig": 0.0374, "d": -0.0027, "st": "bear"}, {"et": "10:48", "o": 30316.75, "h": 30322.0, "l": 30286.75, "c": 30296.75, "v": 6415, "sma": 30287.76, "e20": 30312.11, "e50": 30298.18, "pmo": 0.031, "sig": 0.0358, "d": -0.0048, "st": "vbear"}, {"et": "10:49", "o": 30296.5, "h": 30315.75, "l": 30291.5, "c": 30315.5, "v": 4923, "sma": 30288.25, "e20": 30312.43, "e50": 30298.86, "pmo": 0.0302, "sig": 0.0344, "d": -0.0042, "st": "bear"}, {"et": "10:50", "o": 30315.25, "h": 30326.75, "l": 30297.75, "c": 30324.5, "v": 5180, "sma": 30288.87, "e20": 30313.58, "e50": 30299.87, "pmo": 0.0305, "sig": 0.0334, "d": -0.0029, "st": "bear"}, {"et": "10:51", "o": 30324.5, "h": 30328.75, "l": 30313.75, "c": 30326.75, "v": 3848, "sma": 30289.45, "e20": 30314.83, "e50": 30300.92, "pmo": 0.031, "sig": 0.0328, "d": -0.0018, "st": "bear"}, {"et": "10:52", "o": 30326.25, "h": 30326.75, "l": 30311.25, "c": 30311.75, "v": 3544, "sma": 30289.96, "e20": 30314.54, "e50": 30301.35, "pmo": 0.0293, "sig": 0.0319, "d": -0.0027, "st": "bear"}, {"et": "10:53", "o": 30312.25, "h": 30314.25, "l": 30298.0, "c": 30301.75, "v": 4347, "sma": 30290.35, "e20": 30313.32, "e50": 30301.36, "pmo": 0.0264, "sig": 0.0305, "d": -0.0042, "st": "bear"}, {"et": "10:54", "o": 30302.0, "h": 30330.0, "l": 30300.25, "c": 30320.25, "v": 4725, "sma": 30290.71, "e20": 30313.98, "e50": 30302.1, "pmo": 0.0262, "sig": 0.0294, "d": -0.0033, "st": "bear"}, {"et": "10:55", "o": 30320.25, "h": 30331.75, "l": 30317.25, "c": 30327.25, "v": 3297, "sma": 30291.03, "e20": 30315.25, "e50": 30303.09, "pmo": 0.0269, "sig": 0.0288, "d": -0.0019, "st": "bear"}, {"et": "10:56", "o": 30327.0, "h": 30343.75, "l": 30326.75, "c": 30335.25, "v": 5077, "sma": 30291.45, "e20": 30317.15, "e50": 30304.35, "pmo": 0.0284, "sig": 0.0287, "d": -0.0003, "st": "bear"}, {"et": "10:57", "o": 30335.5, "h": 30347.0, "l": 30321.5, "c": 30343.0, "v": 4906, "sma": 30291.97, "e20": 30319.61, "e50": 30305.86, "pmo": 0.0306, "sig": 0.0292, "d": 0.0014, "st": "bull"}, {"et": "10:58", "o": 30343.25, "h": 30350.0, "l": 30338.75, "c": 30348.5, "v": 3751, "sma": 30292.54, "e20": 30322.36, "e50": 30307.54, "pmo": 0.0331, "sig": 0.0302, "d": 0.003, "st": "bull"}, {"et": "10:59", "o": 30348.25, "h": 30359.5, "l": 30345.0, "c": 30356.75, "v": 4802, "sma": 30293.14, "e20": 30325.64, "e50": 30309.47, "pmo": 0.0363, "sig": 0.0317, "d": 0.0046, "st": "bull"}, {"et": "11:00", "o": 30356.5, "h": 30382.0, "l": 30354.0, "c": 30380.0, "v": 11827, "sma": 30293.82, "e20": 30330.82, "e50": 30312.23, "pmo": 0.0419, "sig": 0.0342, "d": 0.0077, "st": "vbull"}, {"et": "11:01", "o": 30380.25, "h": 30380.5, "l": 30364.0, "c": 30371.25, "v": 5480, "sma": 30294.41, "e20": 30334.67, "e50": 30314.55, "pmo": 0.0455, "sig": 0.0371, "d": 0.0084, "st": "bull"}, {"et": "11:02", "o": 30371.25, "h": 30379.5, "l": 30365.0, "c": 30368.25, "v": 3809, "sma": 30294.99, "e20": 30337.86, "e50": 30316.65, "pmo": 0.0479, "sig": 0.0398, "d": 0.0082, "st": "bull"}, {"et": "11:03", "o": 30368.25, "h": 30376.0, "l": 30362.25, "c": 30368.75, "v": 3521, "sma": 30295.59, "e20": 30340.81, "e50": 30318.7, "pmo": 0.05, "sig": 0.0423, "d": 0.0076, "st": "bull"}, {"et": "11:04", "o": 30367.75, "h": 30371.0, "l": 30355.75, "c": 30369.75, "v": 3652, "sma": 30296.21, "e20": 30343.56, "e50": 30320.7, "pmo": 0.0516, "sig": 0.0447, "d": 0.007, "st": "bull"}, {"et": "11:05", "o": 30369.5, "h": 30390.25, "l": 30368.75, "c": 30385.75, "v": 5795, "sma": 30296.95, "e20": 30347.58, "e50": 30323.25, "pmo": 0.055, "sig": 0.0472, "d": 0.0078, "st": "bull"}, {"et": "11:06", "o": 30385.5, "h": 30396.25, "l": 30384.25, "c": 30393.5, "v": 4319, "sma": 30297.66, "e20": 30351.95, "e50": 30326.0, "pmo": 0.0587, "sig": 0.0501, "d": 0.0086, "st": "bull"}, {"et": "11:07", "o": 30393.5, "h": 30408.0, "l": 30388.0, "c": 30407.25, "v": 5475, "sma": 30298.38, "e20": 30357.22, "e50": 30329.19, "pmo": 0.0635, "sig": 0.0534, "d": 0.01, "st": "bull"}, {"et": "11:08", "o": 30407.0, "h": 30425.0, "l": 30404.75, "c": 30422.75, "v": 7289, "sma": 30299.17, "e20": 30363.46, "e50": 30332.86, "pmo": 0.0694, "sig": 0.0574, "d": 0.0119, "st": "bull"}, {"et": "11:09", "o": 30423.25, "h": 30437.75, "l": 30421.5, "c": 30429.75, "v": 6580, "sma": 30300.03, "e20": 30369.77, "e50": 30336.66, "pmo": 0.0751, "sig": 0.0618, "d": 0.0133, "st": "bull"}, {"et": "11:10", "o": 30430.25, "h": 30437.75, "l": 30418.0, "c": 30435.75, "v": 6738, "sma": 30301.04, "e20": 30376.06, "e50": 30340.54, "pmo": 0.0806, "sig": 0.0665, "d": 0.014, "st": "bull"}, {"et": "11:11", "o": 30436.25, "h": 30442.25, "l": 30427.75, "c": 30435.5, "v": 4829, "sma": 30302.01, "e20": 30381.72, "e50": 30344.27, "pmo": 0.0849, "sig": 0.0711, "d": 0.0138, "st": "bull"}, {"et": "11:12", "o": 30435.25, "h": 30446.75, "l": 30430.75, "c": 30442.5, "v": 4449, "sma": 30302.87, "e20": 30387.51, "e50": 30348.12, "pmo": 0.0893, "sig": 0.0757, "d": 0.0136, "st": "bull"}, {"et": "11:13", "o": 30442.0, "h": 30446.0, "l": 30435.25, "c": 30437.5, "v": 3058, "sma": 30303.66, "e20": 30392.27, "e50": 30351.63, "pmo": 0.092, "sig": 0.0797, "d": 0.0123, "st": "bull"}, {"et": "11:14", "o": 30437.0, "h": 30453.0, "l": 30436.5, "c": 30450.5, "v": 4464, "sma": 30304.53, "e20": 30397.81, "e50": 30355.5, "pmo": 0.0957, "sig": 0.0837, "d": 0.012, "st": "bull"}, {"et": "11:15", "o": 30450.75, "h": 30460.0, "l": 30442.5, "c": 30460.0, "v": 5157, "sma": 30305.44, "e20": 30403.74, "e50": 30359.6, "pmo": 0.0998, "sig": 0.0877, "d": 0.012, "st": "bull"}, {"et": "11:16", "o": 30459.75, "h": 30466.0, "l": 30456.0, "c": 30464.25, "v": 5093, "sma": 30306.5, "e20": 30409.5, "e50": 30363.71, "pmo": 0.1034, "sig": 0.0917, "d": 0.0118, "st": "bull"}, {"et": "11:17", "o": 30464.25, "h": 30469.0, "l": 30457.0, "c": 30466.0, "v": 4068, "sma": 30307.51, "e20": 30414.88, "e50": 30367.72, "pmo": 0.1064, "sig": 0.0954, "d": 0.0111, "st": "bull"}, {"et": "11:18", "o": 30466.25, "h": 30469.0, "l": 30451.0, "c": 30452.75, "v": 3964, "sma": 30308.46, "e20": 30418.49, "e50": 30371.05, "pmo": 0.1068, "sig": 0.0982, "d": 0.0086, "st": "bull"}, {"et": "11:19", "o": 30452.75, "h": 30465.0, "l": 30449.75, "c": 30462.5, "v": 3968, "sma": 30309.49, "e20": 30422.68, "e50": 30374.64, "pmo": 0.1081, "sig": 0.1007, "d": 0.0074, "st": "bull"}, {"et": "11:20", "o": 30462.5, "h": 30464.0, "l": 30438.5, "c": 30440.25, "v": 6259, "sma": 30310.38, "e20": 30424.35, "e50": 30377.21, "pmo": 0.1058, "sig": 0.102, "d": 0.0038, "st": "vbull"}, {"et": "11:21", "o": 30440.25, "h": 30451.75, "l": 30437.5, "c": 30445.5, "v": 4516, "sma": 30311.38, "e20": 30426.37, "e50": 30379.89, "pmo": 0.104, "sig": 0.1025, "d": 0.0016, "st": "bull"}];
+const ENTRY=30350.0,EXIT=30451.0,SL=30340.0;
+const COL={bull:'#2e8b6f',vbull:'#39ff88',bear:'#b04449',vbear:'#ff4db8',flat:'#48566a'};
+const W=1000,H=580,padL=8,padR=80,gut=120;
+// price pane
+const pT=22,pB=372; const oT=410,oB=560;   // oscillator pane
+const plotW=W-padL-padR-gut;
+const idxOf=et=>bars.findIndex(b=>b.et===et);
+const svg=document.getElementById('chart'),NS='http://www.w3.org/2000/svg';
+const el=(t,a)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e;};
+const txt=(x,y,s,a={})=>{const t=el('text',Object.assign({x,y,'font-family':'Spline Sans Mono'},a));t.textContent=s;svg.appendChild(t);return t;};
+const x=i=>padL+(i+0.5)/bars.length*plotW;
+const cw=Math.max(2,plotW/bars.length*0.58);
+// price scale
+const pr=bars.flatMap(b=>[b.h,b.l]).concat([SL,EXIT]);
+const pMin=Math.min(...pr)-5,pMax=Math.max(...pr)+5;
+const y=p=>pT+(pMax-p)/(pMax-pMin)*(pB-pT);
+// gridlines
+for(let g=Math.ceil(pMin/25)*25;g<pMax;g+=25){svg.appendChild(el('line',{x1:padL,y1:y(g),x2:padL+plotW,y2:y(g),stroke:'#1a2330','stroke-width':1}));txt(W-padR+6,y(g)+4,g,{fill:'#5a6b80','font-size':11});}
+// EMA 20/50 cloud — FILL ONLY, no outlines (matches the DPMO pane's fill-only style)
+for(let i=0;i<bars.length-1;i++){const a=bars[i],b=bars[i+1];const up=((a.e20-a.e50)+(b.e20-b.e50))/2>=0;
+ const poly=`${x(i)},${y(a.e20)} ${x(i+1)},${y(b.e20)} ${x(i+1)},${y(b.e50)} ${x(i)},${y(a.e50)}`;
+ svg.appendChild(el('polygon',{points:poly,fill:up?'#2ecc8f':'#e5484d','fill-opacity':0.18,stroke:'none'}));}
+txt(x(bars.length-1)-2,y(bars[bars.length-1].e20)-4,'20/50',{fill:'#7d8da3','font-size':9,'text-anchor':'end'});
+// exit/stop zones
+const ix=x(idxOf('10:56'));
+svg.appendChild(el('rect',{x:ix,y:y(EXIT),width:padL+plotW-ix,height:y(ENTRY)-y(EXIT),fill:'#2ecc8f','fill-opacity':0.05}));
+svg.appendChild(el('rect',{x:ix,y:y(ENTRY),width:padL+plotW-ix,height:y(SL)-y(ENTRY),fill:'#e5484d','fill-opacity':0.07}));
+svg.appendChild(el('line',{x1:ix,y1:y(EXIT),x2:padL+plotW,y2:y(EXIT),stroke:'#e5484d','stroke-width':1.4,'stroke-dasharray':'2 2'}));
+txt(padL+plotW+8,y(EXIT)+3,'EXIT '+EXIT+' · GEX',{fill:'#e5484d','font-size':9.5,'font-weight':600});
+svg.appendChild(el('line',{x1:ix,y1:y(SL),x2:padL+plotW,y2:y(SL),stroke:'#e5484d','stroke-width':1.1,'stroke-dasharray':'5 4'}));
+txt(padL+plotW+8,y(SL)+12,'SL '+SL+' (40t)',{fill:'#e5484d','font-size':9.5});
+// 144 spine
+let ds='';bars.forEach((b,i)=>{if(b.sma)ds+=(ds?'L':'M')+x(i)+','+y(b.sma)+' ';});
+svg.appendChild(el('path',{d:ds,fill:'none',stroke:'#4d9fff','stroke-width':2.4,'stroke-dasharray':'7 4'}));
+
+// ===== KITCHEN-SINK: all strat levels layered on (drawn under candles) =====
+const LV={"hlines": [{"label": "Yellow L", "price": 30265.0, "color": "#e5c12e", "dash": "none"}, {"label": "Red H", "price": 30270.25, "color": "#e5484d", "dash": "none"}, {"label": "WklyIB L", "price": 30291.0, "color": "#9b6dff", "dash": "7 5"}, {"label": "Q 10:53", "price": 30301.75, "color": "#39ff88", "dash": "3 3"}, {"label": "Q 9:23", "price": 30324.0, "color": "#39ff88", "dash": "3 3"}, {"label": "PreMkt H / Yellow H", "price": 30331.0, "price_lbl": "30331", "color": "#4d9fff", "dash": "none", "merged": 2}, {"label": "IB H", "price": 30364.5, "color": "#9b6dff", "dash": "none"}, {"label": "London H", "price": 30546.0, "color": "#2e8b6f", "dash": "none"}, {"label": "London L", "price": 30489.25, "color": "#2e8b6f", "dash": "none"}, {"label": "PreMkt L", "price": 30163.0, "color": "#4d9fff", "dash": "none"}, {"label": "Red L", "price": 30210.0, "color": "#e5484d", "dash": "none"}, {"label": "IB L", "price": 30152.25, "color": "#9b6dff", "dash": "none"}, {"label": "PD-RTH H", "price": 30807.75, "color": "#d8dee6", "dash": "6 4"}, {"label": "PD-RTH L", "price": 30495.5, "color": "#d8dee6", "dash": "6 4"}, {"label": "PD-ETH H", "price": 30807.75, "color": "#d8dee6", "dash": "none"}, {"label": "PD-ETH L", "price": 30477.75, "color": "#d8dee6", "dash": "none"}, {"label": "PD Close", "price": 30635.75, "color": "#39ff88", "dash": "6 4"}, {"label": "O/N H", "price": 30546.0, "color": "#7d8da3", "dash": "none"}, {"label": "O/N L", "price": 30163.0, "color": "#7d8da3", "dash": "none"}, {"label": "WklyIB H", "price": 30763.5, "color": "#9b6dff", "dash": "7 5"}, {"label": "4d-Hi*", "price": 30807.75, "color": "#e5a73c", "dash": "2 4"}], "avwap": [{"et": "10:17", "p": 30260.96}, {"et": "10:18", "p": 30261.28}, {"et": "10:19", "p": 30261.39}, {"et": "10:20", "p": 30261.43}, {"et": "10:21", "p": 30261.56}, {"et": "10:22", "p": 30261.77}, {"et": "10:23", "p": 30262.25}, {"et": "10:24", "p": 30262.93}, {"et": "10:25", "p": 30263.62}, {"et": "10:26", "p": 30264.26}, {"et": "10:27", "p": 30265.04}, {"et": "10:28", "p": 30265.81}, {"et": "10:29", "p": 30266.38}, {"et": "10:30", "p": 30267.16}, {"et": "10:31", "p": 30267.8}, {"et": "10:32", "p": 30268.19}, {"et": "10:33", "p": 30268.66}, {"et": "10:34", "p": 30269.22}, {"et": "10:35", "p": 30269.65}, {"et": "10:36", "p": 30270.13}, {"et": "10:37", "p": 30270.43}, {"et": "10:38", "p": 30270.81}, {"et": "10:39", "p": 30271.1}, {"et": "10:40", "p": 30271.48}, {"et": "10:41", "p": 30271.82}, {"et": "10:42", "p": 30272.13}, {"et": "10:43", "p": 30272.4}, {"et": "10:44", "p": 30272.61}, {"et": "10:45", "p": 30272.82}, {"et": "10:46", "p": 30273.2}, {"et": "10:47", "p": 30273.51}, {"et": "10:48", "p": 30273.75}, {"et": "10:49", "p": 30273.96}, {"et": "10:50", "p": 30274.25}, {"et": "10:51", "p": 30274.49}, {"et": "10:52", "p": 30274.68}, {"et": "10:53", "p": 30274.84}, {"et": "10:54", "p": 30275.09}, {"et": "10:55", "p": 30275.3}, {"et": "10:56", "p": 30275.68}, {"et": "10:57", "p": 30276.05}, {"et": "10:58", "p": 30276.38}, {"et": "10:59", "p": 30276.83}, {"et": "11:00", "p": 30278.19}, {"et": "11:01", "p": 30278.81}, {"et": "11:02", "p": 30279.23}, {"et": "11:03", "p": 30279.61}, {"et": "11:04", "p": 30279.98}, {"et": "11:05", "p": 30280.67}, {"et": "11:06", "p": 30281.23}, {"et": "11:07", "p": 30281.99}, {"et": "11:08", "p": 30283.13}, {"et": "11:09", "p": 30284.24}, {"et": "11:10", "p": 30285.36}, {"et": "11:11", "p": 30286.18}, {"et": "11:12", "p": 30286.95}, {"et": "11:13", "p": 30287.47}, {"et": "11:14", "p": 30288.26}, {"et": "11:15", "p": 30289.21}, {"et": "11:16", "p": 30290.18}, {"et": "11:17", "p": 30290.96}, {"et": "11:18", "p": 30291.68}, {"et": "11:19", "p": 30292.4}, {"et": "11:20", "p": 30293.45}, {"et": "11:21", "p": 30294.19}], "svwap": [{"et": "10:17", "p": 30333.97}, {"et": "10:18", "p": 30333.72}, {"et": "10:19", "p": 30333.43}, {"et": "10:20", "p": 30333.05}, {"et": "10:21", "p": 30332.74}, {"et": "10:22", "p": 30332.58}, {"et": "10:23", "p": 30332.42}, {"et": "10:24", "p": 30332.33}, {"et": "10:25", "p": 30332.29}, {"et": "10:26", "p": 30332.25}, {"et": "10:27", "p": 30332.23}, {"et": "10:28", "p": 30332.26}, {"et": "10:29", "p": 30332.27}, {"et": "10:30", "p": 30332.26}, {"et": "10:31", "p": 30332.19}, {"et": "10:32", "p": 30332.1}, {"et": "10:33", "p": 30332.06}, {"et": "10:34", "p": 30332.05}, {"et": "10:35", "p": 30331.96}, {"et": "10:36", "p": 30331.85}, {"et": "10:37", "p": 30331.81}, {"et": "10:38", "p": 30331.78}, {"et": "10:39", "p": 30331.72}, {"et": "10:40", "p": 30331.71}, {"et": "10:41", "p": 30331.71}, {"et": "10:42", "p": 30331.68}, {"et": "10:43", "p": 30331.66}, {"et": "10:44", "p": 30331.6}, {"et": "10:45", "p": 30331.52}, {"et": "10:46", "p": 30331.49}, {"et": "10:47", "p": 30331.46}, {"et": "10:48", "p": 30331.36}, {"et": "10:49", "p": 30331.29}, {"et": "10:50", "p": 30331.25}, {"et": "10:51", "p": 30331.23}, {"et": "10:52", "p": 30331.2}, {"et": "10:53", "p": 30331.14}, {"et": "10:54", "p": 30331.1}, {"et": "10:55", "p": 30331.09}, {"et": "10:56", "p": 30331.1}, {"et": "10:57", "p": 30331.12}, {"et": "10:58", "p": 30331.15}, {"et": "10:59", "p": 30331.21}, {"et": "11:00", "p": 30331.47}, {"et": "11:01", "p": 30331.59}, {"et": "11:02", "p": 30331.67}, {"et": "11:03", "p": 30331.74}, {"et": "11:04", "p": 30331.81}, {"et": "11:05", "p": 30331.96}, {"et": "11:06", "p": 30332.1}, {"et": "11:07", "p": 30332.3}, {"et": "11:08", "p": 30332.63}, {"et": "11:09", "p": 30332.97}, {"et": "11:10", "p": 30333.32}, {"et": "11:11", "p": 30333.58}, {"et": "11:12", "p": 30333.83}, {"et": "11:13", "p": 30334.0}, {"et": "11:14", "p": 30334.27}, {"et": "11:15", "p": 30334.59}, {"et": "11:16", "p": 30334.93}, {"et": "11:17", "p": 30335.2}, {"et": "11:18", "p": 30335.46}, {"et": "11:19", "p": 30335.71}, {"et": "11:20", "p": 30336.07}, {"et": "11:21", "p": 30336.33}]};
+(function(){
+ const gx=padL+plotW+8;               // gutter label x (left-anchored, in the black free space)
+ const inView=p=>p>=pMin&&p<=pMax;
+ const lvls=el('g',{'class':'lvls'}); svg.appendChild(lvls);
+ const grp=()=>{const g=el('g',{'class':'lv'});lvls.appendChild(g);return g;};
+ const gtxt=(g,xx,yy,s,a)=>{const e=el('text',Object.assign({x:xx,y:yy,'font-family':'Spline Sans Mono'},a));e.textContent=s;g.appendChild(e);return e;};
+ LV.hlines.forEach(h=>{
+  const g=grp();
+  if(inView(h.price)){
+   const wt=h.merged?2.0:1.1, op=h.merged?0.95:0.8, plbl=h.price_lbl||h.price;
+   g.appendChild(el('line',{x1:padL,y1:y(h.price),x2:padL+plotW,y2:y(h.price),stroke:h.color,'stroke-width':wt,'stroke-opacity':op,'stroke-dasharray':h.merged?'none':h.dash}));
+   g.appendChild(el('line',{x1:padL,y1:y(h.price),x2:padL+plotW,y2:y(h.price),stroke:'transparent','stroke-width':10})); // hover hit-area
+   gtxt(g,gx,y(h.price)+3,h.label+' '+plbl,{fill:h.color,'font-size':8.5,'font-weight':600});
+  } else {
+   const top=h.price>pMax; const ey=top?pT+10:pB-4;
+   gtxt(g,padL+4,ey,(top?'↑ ':'↓ ')+h.label+' '+h.price+(top?' (above)':' (below)'),{fill:h.color,'font-size':8,'font-weight':600});
+  }
+ });
+ // Anchored VWAP (from 9:30) — weight matched to the 144
+ {const g=grp();let av='';LV.avwap.forEach(a=>{const i=idxOf(a.et);if(i>=0)av+=(av?'L':'M')+x(i)+','+y(a.p)+' ';});
+  g.appendChild(el('path',{d:av,fill:'none',stroke:'#ff4db8','stroke-width':2.4,'stroke-dasharray':'4 3','stroke-opacity':0.95}));
+  }
+ // Session VWAP (anchored 6pm prior day) — weight matched to the 144
+ if(LV.svwap){const g=grp();let sv='';LV.svwap.forEach(a=>{const i=idxOf(a.et);if(i>=0)sv+=(sv?'L':'M')+x(i)+','+y(a.p)+' ';});
+  g.appendChild(el('path',{d:sv,fill:'none',stroke:'#d8dee6','stroke-width':2.4,'stroke-dasharray':'5 4','stroke-opacity':0.9}));
+  }
+})();
+// candles — coloured by DPMO state
+bars.forEach((b,i)=>{const col=COL[b.st]||COL.flat;
+ svg.appendChild(el('line',{x1:x(i),y1:y(b.h),x2:x(i),y2:y(b.l),stroke:col,'stroke-width':1}));
+ const yo=y(b.o),yc=y(b.c);
+ svg.appendChild(el('rect',{x:x(i)-cw/2,y:Math.min(yo,yc),width:cw,height:Math.max(1.5,Math.abs(yc-yo)),fill:col,rx:0.5}));
+});
+// above-144 bracket far-left
+(function(){const i=idxOf('10:56'),px=x(i),yTop=y(ENTRY),yBot=y(bars[i].sma),bx=padL+8;
+ svg.appendChild(el('line',{x1:bx,y1:yTop,x2:bx,y2:yBot,stroke:'#e5a73c','stroke-width':1.2,'stroke-dasharray':'3 3'}));
+ svg.appendChild(el('line',{x1:bx,y1:yTop,x2:bx+6,y2:yTop,stroke:'#e5a73c','stroke-width':1.2}));
+ svg.appendChild(el('line',{x1:bx,y1:yBot,x2:bx+6,y2:yBot,stroke:'#e5a73c','stroke-width':1.2}));
+ txt(bx+10,(yTop+yBot)/2-2,'58 pts',{fill:'#e5a73c','font-size':10,'font-weight':600});
+ txt(bx+10,(yTop+yBot)/2+10,'above 144',{fill:'#e5a73c','font-size':8.5});})();
+// markers
+function mk(et,price,color,dir,label){const i=idxOf(et);if(i<0)return;const px=x(i),py=y(price);
+ const ay=dir==='down'?py-26:py+26;
+ svg.appendChild(el('line',{x1:px,y1:ay,x2:px,y2:dir==='down'?py-6:py+6,stroke:color,'stroke-width':2}));
+ svg.appendChild(el('circle',{cx:px,cy:py,r:3.5,fill:color,stroke:'#0f1620','stroke-width':1.5}));
+ const ly=dir==='down'?ay-4:ay+13;txt(px,ly,label,{fill:color,'font-size':10,'font-weight':600,'text-anchor':'middle'});
+ txt(px,ly+11,et,{fill:'#7d8da3','font-size':8.5,'text-anchor':'middle'});}
+mk('10:23',bars[idxOf('10:23')].l,'#d4a017','down','ALERT');
+mk('10:48',bars[idxOf('10:48')].l,'#9b6dff','down','PULLBACK');
+mk('10:57',ENTRY,'#39ff88','down','ENTRY');
+mk('11:14',EXIT,'#e5484d','up','EXIT');
+// ---- oscillator pane ----
+svg.appendChild(el('line',{x1:padL,y1:oT-8,x2:padL+plotW,y2:oT-8,stroke:'#1a2330','stroke-width':1}));
+txt(padL,oT-12,'DPMO 20/50/7  (cloud = pmo − signal)',{fill:'#7d8da3','font-size':9.5});
+const dv=bars.flatMap(b=>[b.pmo,b.sig]);const dMin=Math.min(...dv),dMax=Math.max(...dv);const pad=(dMax-dMin)*0.15||0.01;
+const oy=v=>oT+(dMax+pad-v)/((dMax+pad)-(dMin-pad))*(oB-oT);
+// zero line
+svg.appendChild(el('line',{x1:padL,y1:oy(0),x2:padL+plotW,y2:oy(0),stroke:'#ffffff','stroke-opacity':0.5,'stroke-width':1,'stroke-dasharray':'2 3'}));
+txt(W-padR+6,oy(0)+4,'0',{fill:'#8a9bb0','font-size':9});
+// cloud fill pmo vs sig, coloured by sign(d) — fill only, vibrant, NO lines (matches Mark's TV: cloud+zero only)
+for(let i=0;i<bars.length-1;i++){const a=bars[i],b=bars[i+1];const up=(a.d+b.d)/2>=0;
+ const poly=`${x(i)},${oy(a.pmo)} ${x(i+1)},${oy(b.pmo)} ${x(i+1)},${oy(b.sig)} ${x(i)},${oy(a.sig)}`;
+ svg.appendChild(el('polygon',{points:poly,fill:up?'#2ecc8f':'#e5484d','fill-opacity':0.9,stroke:'none'}));}
+// mark the cross at entry on oscillator
+const cx=x(idxOf('10:57'));svg.appendChild(el('line',{x1:cx,y1:oT,x2:cx,y2:oB,stroke:'#39ff88','stroke-width':1,'stroke-dasharray':'2 3','stroke-opacity':0.7}));
+txt(cx+3,oB-4,'cloud→green 10:57',{fill:'#39ff88','font-size':8.5});
+// time axis along the bottom (like TV) — every 6th bar
+bars.forEach((b,i)=>{ if(i%6===0 || i===bars.length-1){
+ svg.appendChild(el('line',{x1:x(i),y1:oB+3,x2:x(i),y2:oB+7,stroke:'#3a4658','stroke-width':1}));
+ txt(x(i),oB+18,b.et,{fill:'#7d8da3','font-size':9,'text-anchor':'middle'});
+} });
+
+document.getElementById('lessonText').innerHTML=
+ `Morning sold to ~30152, then the reclaim set up. <span class="hl">Alert</span> ~10:23 as price held back over the 144; <span class="hl">pullback</span> into ~30287 by 10:48; then the gate completed — <em>candle, the 20/50 cloud, and the DPMO cloud all green</em>. `+
+ `Watch the lower pane: the DPMO cloud flips <em>green at 10:57</em>, and one minute later the <span class="vib">11:00 bar prints vibrant green on ~11.8k volume</span> (your high-volume tell). Price ran to the heavy <em>GEX level at 30451</em>, where you exited ahead of the rollover — <em>+101 points</em> available.`;
+document.getElementById('gapNote').innerHTML=
+ `<b>⚠ Engine flag (false negative):</b> the deterministic engine reports <b>no fresh 144 break</b> before entry (~58 pts above the spine) and marks the behaviour leg missing — but that's a <b>false negative</b> vs the 3-green gate, which credits the patience that placed the entry at the real breakout, not a fresh-break chase. A cue to teach the engine.`;
+document.getElementById('mathNote').innerHTML=
+ `<b>Reconciliation</b> — entry <code>30350</code> → exit <code>30451</code> = <code>+101 pts</code>; stop <code>30340</code> = <code>10 pts</code> → max <code>10.1R</code>; MNQ <code>$2/pt</code> → <code>$202/contract</code> max. `+
+ `<b>Move ≠ bank:</b> 5 micros, scale + scratch to B/E + re-enter + trail → ~<code>40 pts</code> captured (~70% of an avg ~75-pt move) ≈ <code>$400</code>. Honest number is the smaller one.`;
+</script></body></html>
