@@ -2,9 +2,11 @@
 *Paste this (or its current version) at the start of a new chat, with the repo raw README URL. Keep it SHORT — the repo carries the detail.*
 
 ## REPO (fetch this first)
-Raw README: `https://raw.githubusercontent.com/<MARK_USER>/<REPO>/main/README.md`
+Raw README: `https://raw.githubusercontent.com/bionicbutterflyai/bionicbutterfly-goldmine/main/README.md`
+Repo: `https://github.com/bionicbutterflyai/bionicbutterfly-goldmine` (PUBLIC, verified fetchable 2026-06-06).
 → If you have code execution: `curl` README + ARTIFACT_INDEX, then fetch on demand. Be the PHD.
 → If you CANNOT do URLs/code: tell Mark; he'll paste the Vault copy of what you need.
+→ NOTE: the live website is a SEPARATE repo (`bionicbutterfly`, private, Netlify-deployed). Never mix the two.
 
 ## WHO / WHAT (one breath)
 bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. Mark = founder +
@@ -36,7 +38,7 @@ continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at g
       now EXTENDED — the whole foyer is the sober-spine proving the hook didn't lie); **two_strategy_split**
       (144 trend-continuation + 1-in-20 stand-down / Red-Yellow NYO breakout). OPEN Q: is the breakout
       9:30-zones ONLY or the same pop-retest-continue off ALL zone boxes? (Mark unanswered.)
-- [ ] Mark to create the public goldmine repo + paste raw URL here.
+- [x] DONE: public goldmine repo created + pushed + verified fetchable (bionicbutterflyai/bionicbutterfly-goldmine).
 - [ ] Import from Mark's offsite: Chat-3 verbatim Pinescript; tagging_strategy.md; Finn's Butterfly zip when sent.
 - [ ] Set the data-gate policy: auto-promote vs human-in-the-loop (recommend human-in-the-loop).
 - [ ] Parked builds: fill-on-relevance counterpart chart; Bookmap/GEX confluence CUE #3; marry the REAL

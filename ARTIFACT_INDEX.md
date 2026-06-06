@@ -2,6 +2,7 @@
 *Add a line here whenever you create or change a durable artifact. This is how the farm stays retrievable.*
 
 ## knowledge/
+- `tech_architecture_skeleton.md` | build, business-plan | PUBLIC | draft | First-cut system wiring in 4 layers (acquisition/platform/infra/external services). Matched diagram+Mermaid. DRAFT — fresh Claude refines; 6 open questions incl. Fork-2 funnel-memory pipeline.
 - `brand_funnel_architecture.md` | marketing, business-plan, coaching | PUBLIC | captured | Hook-skin top / sober-spine in-product; the contrast IS the conversion. Foyer = the spine proving the hook didn't lie. Guardrails + A/B validation.
 - `two_strategy_split.md` | coaching, build | PUBLIC | pending | Two strategies, one chart: 144 trend-continuation (+1-in-20 stand-down) and Red/Yellow NYO breakout. OPEN: 9:30-only vs all zone boxes.
 - `master_journey_flow.md` | business-plan, build, coaching | PUBLIC | captured | THE COORDINATE SYSTEM — one-page master journey (hook→foyer→sort→nurture/sales→Lab→coaching→loop). Mermaid source paired with rendered diagram; carries the locks (no-name voice, Lab=bench, course dual-role, ICP=capable-not-noob) + 3 forks. Every future Claude orients here.
@@ -42,6 +43,7 @@
 
 ## root
 - `METADATA_SCHEMA.md` | build, support | built | the metadata standard (read with the law).
+- `VAULT_PROTOCOL.md` | build, support | PUBLIC | captured | offsite discipline + canonical file list.
 - `README.md` | the orientation (read first). `HANDOFF.md` | the skinny minutes. `MAINTENANCE_AND_BACKUP.md` | build | THE LAW — where the goldmine lives, what's in it, per-session upkeep + the dated-snapshot backup scheme + handoff close-out rules.
 
 ## charts/ (additions)
