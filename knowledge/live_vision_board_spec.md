@@ -1,5 +1,5 @@
 *TAGS: build, business-plan, coaching | AUDIENCE: founder + every future Claude (the human-readable memory layer).*
-*CREATED: 2026-06-07, Chat 6 | UPDATED: 2026-06-07, Chat 6 | STATUS: captured (idea GREENLIT; ONE scope question open — see below)*
+*CREATED: 2026-06-07, Chat 6 | UPDATED: 2026-06-07, Chat 6 (added SEED PARAGRAPH — first distilled living vision, also in reports/ cost report) | STATUS: captured (idea GREENLIT; ONE scope question open — see below)*
 *SUPERSEDES: — | RELATED: master_strategy_vision.md (THE primer), repo_as_memory_and_handoff.md, bionic_briefing_spec.md, coaching_philosophy.md*
 
 # GOLD — THE LIVE VISION BOARD (so a vision never rots)
@@ -40,6 +40,19 @@ Who is "all," and what does the board summarize?
   journey" memory-moment flywheel.
 - **(C) Both** — start internal (A), generalize the same engine into the student feature (B) later.
 Captured as open so it isn't silently pinned. Leaning C pending Mark's call.
+
+## SEED PARAGRAPH (Chat 6 — the first distilled vision, also in reports/ report)
+*This is the living-paragraph the board would show; regenerate FROM the repo as things evolve, don't let it
+drift from the primer.*
+"Bioniq Trader is a coaching and accountability brand for traders — man plus machine, Be Bioniq. It is not
+a journal app; it is a coaching brand that happens to include a journal. The thesis is Weight-Watchers for
+traders: the journal is the food diary (daily logging), and the Bionic Lab is the weigh-in — where a trader
+requests honest, pattern-level coaching against their own stated plan, not empty praise for a green day.
+Accountability is the moat. The funnel filters for committed, verified humans — a small toll, an honest
+verdict, a human close while volume is low — and the product scales by coaching the pattern, not every
+scalp. The end game is coaching the coaches: a platform where coaches teach their own students, everyone
+identifying as a Bioniq Trader. Built on a lean stack, the costs are understood and small per session; the
+value is the relationship. Be Bioniq."
 
 ## INDEX LINE
 `knowledge/live_vision_board_spec.md | build, business-plan, coaching | PUBLIC | captured | LIVE VISION BOARD: an auto-updated distillation of convos/essays into a living paragraph, visible to all — the human-readable twin of repo-as-memory (repo = Claude's memory; board = the same memory shown to people), so a vision never rots. Feasible (a summarization VIEW over the repo source-of-truth; cheap, broadcast). Guardrails: generated FROM the repo not model memory (it's a view, primer stays canonical); distill Mark's actual words. OPEN: scope = internal vision distillation (A) / student-facing feature (B) / both (C, leaning) — Mark decides.`

@@ -1,5 +1,5 @@
 *TAGS: build, business-plan | AUDIENCE: founder + every future Claude (the SYSTEM coordinate system).*
-*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-06-07, Chat 6 (Mermaid now includes Bionic Briefing + Vision Board nodes — SVG re-render flagged as out-of-sync; datafeed node = Massive+Benzinga news. Earlier this session: TTS default corrected to pre-render premium / Web Speech fallback — see CHANGED FROM PRIOR at decision #4) | STATUS: captured (master resolved & confirmed Chat 5; child flows open; SVG re-sync pending)*
+*CREATED: 2026-06-04, Chat 4 | UPDATED: 2026-06-07, Chat 6 (added THE 7-TOOL STACK roster + Mermaid: Netlify/Supabase/Anthropic/GitHub + ElevenLabs/Cloudflare AI Gateway/Stripe + invideo→FINN; Stripe-vs-Cloudflare clarified; SVG RE-RENDERED to match — no longer out-of-sync. Briefing + Vision Board nodes; datafeed = Massive+Benzinga; TTS = pre-render premium / Web Speech fallback) | STATUS: captured (master resolved; SVG re-synced Chat 6)*
 *SUPERSEDES: — | RELATED: master_strategy_vision.md (THE primer), master_journey_flow.md (the JOURNEY; this is the SYSTEM), funnel_routing_and_closer.md, voice_tts_decision.md, repo_as_memory_and_handoff.md, brand_funnel_architecture.md, data_provenance_and_timestamp_pin.md*
 
 # GOLD — MASTER TECH ARCHITECTURE (the system coordinate system)
@@ -164,6 +164,42 @@ never does. This mirrors README §5 and the gate checklist — the data discipli
 - Exact Massive **free-tier delay** (10 vs 15 min) and whether v2 pulls MNQ directly or via a proxy symbol.
 - Per-student **$ tolerance** for the brain (sets the caching aggressiveness).
 - (Carried, not architecture) the `two_strategy_split.md` scope question — but it feeds the brain's grader.
+
+## THE 7-TOOL STACK + MARKETING (Chat 6 — full roster, SVG re-rendered to match)
+Current four (Netlify, Supabase, Anthropic, GitHub) + ElevenLabs, Cloudflare, Stripe; invideo.io/FINN is
+marketing, separate from the platform.
+- **GitHub** — repo = MEMORY + deploy source (feeds Netlify deploy + Claude's context).
+- **Netlify** — host + deploy (swappable later; Cloudflare Pages could absorb it — Mark's call).
+- **Cloudflare** — edge: CDN, security, the `.ai` registrar, AND the **AI Gateway** in front of Claude
+  (route + cache + meter). Cache hits cut the Anthropic bill; dollar spend-limits cap per-student runaway.
+- **Supabase** — auth · candidate_dossier · credit_ledger (the owned data / moat).
+- **Anthropic (Claude)** — the coaching brain, called *through* the CF AI Gateway.
+- **ElevenLabs** — pre-render premium voice (the locked default; Web Speech = fallback).
+- **Stripe [Phase 2]** — toll · subscription · credits; LLM-token metered billing (markup) can read token
+  usage from the CF gateway — but token-billing is private-preview/gated (DIY Meter-Events or a partner if
+  the waitlist hasn't opened).
+- **invideo.io → FINN** — marketing video / top-of-funnel content (separate from the platform).
+*Stripe vs Cloudflare clarified: not "Stripe does tokens via Cloudflare." Cloudflare AI Gateway meters +
+caches the AI traffic; Stripe bills it with your margin. Complementary, both Phase-2. Costs in
+credit_value_pricing_model.md + reports/.*
+```mermaid
+flowchart TD
+    U["Users · Trader + Coach"]
+    EDGE["Netlify host/deploy  +  Cloudflare CDN/security/.ai + AI Gateway"]
+    SUPA["Supabase · auth, dossier, credit_ledger"]
+    CLAUDE["Anthropic Claude · coaching brain (via CF AI Gateway)"]
+    EL["ElevenLabs · pre-render premium voice"]
+    STRIPE["Stripe [Phase 2] · toll, subs, credits + token billing"]
+    GH["GitHub · repo = MEMORY + deploy source"]
+    FINN["invideo.io → FINN · marketing (separate)"]
+    U --> EDGE --> SUPA
+    EDGE --> CLAUDE
+    EDGE --> EL
+    EDGE -.-> STRIPE
+    GH -.-> EDGE
+    GH -.-> CLAUDE
+    FINN -.-> U
+```
 
 ## INDEX LINE
 `knowledge/tech_architecture_skeleton.md | build, business-plan | PUBLIC | pending | MASTER system architecture (5 layers: Users/Frontend/Backend/External/DevOps; live-vs-designed honest split; Mermaid re-synced to the SVG). Chat-5 resolved: Fork-2 funnel-memory=BUILD (foyer->Supabase candidate_dossier->brain), datafeed v1 manual / v2 Massive.com free (ex-Polygon, 5/min, delayed, CME futures), human-in-the-loop gate, pre-render premium voice = default / Web Speech = fallback (CHANGED FROM PRIOR Chat 6). Paired with tech_architecture_master.svg. Child flows next.`

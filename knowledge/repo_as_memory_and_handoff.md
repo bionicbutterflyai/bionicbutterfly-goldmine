@@ -2,7 +2,7 @@
 
 # GOLD ARTIFACT — REPO-AS-MEMORY & THE SKINNY HANDOFF
 *Captured June 5 2026, Chat 4. The biggest structural nugget of the project — it changes cost and cold-start permanently.*
-*UPDATED June 7 2026, Chat 6: added THE PROPAGATION LAW (sync matrix + grep-verify + self-evolve) so banks reach every dependent view at bank-time, not at next session's audit. Added DELIVERY INTEGRITY (edit-in-place > drag-and-drop; delete-old-then-drop; watch Windows `_1`/`_2` collisions; path+action tags) — the handoff half. Matrix self-evolved: build/launch sequence → phase_roadmap.md.*
+*UPDATED June 7 2026, Chat 6: added THE PROPAGATION LAW (sync matrix + grep-verify + self-evolve) so banks reach every dependent view at bank-time, not at next session's audit. Added DELIVERY INTEGRITY (edit-in-place > drag-and-drop; delete-old-then-drop; watch Windows `_1`/`_2` collisions; path+action tags) — the handoff half. Matrix self-evolved: build/launch sequence → phase_roadmap.md; coaching engine → bionic_lab_spec.md; built deliverables → reports/. Added DELIVERY INTEGRITY rule 6: never a batch of loose files — multi-file change = ONE complete-repo zip + replace-all-and-push (proven by the Chat-6 8-file fiasco; the full-repo replace landed clean).*
 
 ## ONE-LINE
 Stop pasting fat handoffs that fill chats and cost a fortune to re-read. Keep the GOLD farm in a
@@ -63,6 +63,8 @@ layer. This law makes propagation a **close-out step, not a future catch.**
 - the project vision → the **Live Vision Board** (live_vision_board_spec.md; once built)
 - a NEW file → add it to **KICKOFF_AUDIT.md** presence list + bump its count note
 - the build/launch SEQUENCE or a phase decision (what ships when) → **phase_roadmap.md**
+- the COACHING engine / the Lab (how coaching is requested + delivered) → **bionic_lab_spec.md**
+- a BUILT deliverable (report / spreadsheet / printable template) → **reports/** + an ARTIFACT_INDEX entry; bank key numbers as TEXT in the relevant .md so a Claude needn't open a binary
 - it contradicts/sharpens a RELATED doc → update that doc, label **CHANGED FROM PRIOR**
 
 ### THE VERIFY STEP (CONFIRM = AUDIT, applied to propagation)

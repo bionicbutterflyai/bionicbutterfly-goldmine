@@ -1,5 +1,5 @@
 *TAGS: business-plan, build, marketing | AUDIENCE: founder + every future Claude (read this to know WHAT to build WHEN).*
-*CREATED: 2026-06-07, Chat 6 | UPDATED: 2026-06-07, Chat 6 | STATUS: living*
+*CREATED: 2026-06-07, Chat 6 | UPDATED: 2026-06-07, Chat 6 (added PHASE-2 ECONOMICS — verified cost stack: ~1.5¢/4.5¢/7.5¢ per session, ~6% small-charge skim) | STATUS: living*
 *SUPERSEDES: — | RELATED: master_strategy_vision.md (THE primer), build_vs_buy_and_competitive_read.md (sourcing), credit_value_pricing_model.md (the credit sauce), funnel_routing_and_closer.md (the funnel flow), tech_architecture_skeleton.md (components), master_journey_flow.md (the journey + the 3 Forks)*
 
 # GOLD — THE PHASE ROADMAP (the master build/launch sequence)
@@ -59,6 +59,13 @@ flowchart LR
     classDef build fill:#E1F5EE,stroke:#0F6E56,color:#04342C;
     classDef future fill:#EEEDFE,stroke:#534AB7,color:#26215C,stroke-dasharray:5 3;
 ```
+
+## PHASE-2 ECONOMICS (the cost stack, verified Chat 6)
+When Stripe goes live with credits, the numbers are known (full detail in credit_value_pricing_model.md +
+reports/): per coaching session ≈ **1.5¢ Haiku / 4.5¢ Sonnet / 7.5¢ Opus** (Anthropic dominates; Cloudflare
+~$0 with cache hits free; cap per-student spend via CF spend-limits). Payments: the $10 toll / $9.99 Journal
+carries a **~6% Stripe skim** (fixed 30¢ on small charges) — price the credit/toll above cost and don't
+bank on keeping all of a sub-$10 charge.
 
 ## INDEX LINE
 `knowledge/phase_roadmap.md | business-plan, build, marketing | PUBLIC | living | THE master build/launch sequence (ends the scatter): WHAT to build WHEN. Phases advance on TRIGGERS not dates — the big one: a paid campaign/self-serve FORCES Stripe live (no $9.99 charges by hand at 3am); ledger = source of truth for paid (Stripe auto, Mark manual for rare exceptions). P1 manual close (Mark IS the funnel+verification, flat fee manual, NO credits/campaign). P2 campaign/self-serve = the coupled milestone: Stripe unlocks toll+subscription+CREDITS together (credits can't precede it); AI funnel at volume. P3-4 scale: CRM (thin own→buy), coach role, maybe Shopify/merch. Gates: subscription can straddle; credits/campaign/toll→P2; CRM/merch→P3-4.`

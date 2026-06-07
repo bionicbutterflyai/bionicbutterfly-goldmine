@@ -1,5 +1,5 @@
 *TAGS: business-plan, marketing, build | AUDIENCE: founder + every future Claude (the MONETIZATION model — read with master_strategy_vision.md).*
-*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-06, Chat 5 | STATUS: captured*
+*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-07, Chat 6 (added THE COST STACK — verified Anthropic/Cloudflare/Stripe rates; per-session ≈1.5¢ Haiku / 4.5¢ Sonnet / 7.5¢ Opus; ~6% skim on sub-$10 charges; full report + adjustable model in reports/) | STATUS: captured*
 *SUPERSEDES: — | RELATED: master_strategy_vision.md (THE MONEY section), tech_architecture_skeleton.md (credit_ledger), coaching_philosophy.md, funnel_routing_and_closer.md*
 *PROVENANCE: originated by FINN (Creative Director / InVideo.ai). Surfaced in Chat 5 from Mark's memory — it had been LOST in the handoff. Exhibit A for why this living repo exists.*
 
@@ -94,6 +94,22 @@ credits), not a single counter. And the architecture *controls* the re-read cost
 **dossier (condensed context) + prompt caching** mean a student turn does NOT re-pay full freight to
 reprocess the whole history — so a student credit goes far further than Mark's raw-chat experience.
 **Suzy won't feel his pain partly by design, not only by disclosure.** (See tech_architecture_skeleton.md.)
+
+## THE COST STACK — verified June 2026 (US + Canada; full report in reports/)
+Three layers; the brain dominates, payments bite small charges, the gateway is ~free.
+- **Anthropic (the brain — the real variable):** Opus 4.8 $5/$25, Sonnet 4.6 $3/$15, Haiku 4.5 $1/$5 per
+  1M tokens. **Cache reads = 0.1× input; batch = 50% off.** Haiku is 5× cheaper than Sonnet, 25× than Opus.
+- **Cloudflare AI Gateway:** **~$0 variable** — tokens pass through at cost, **cache hits are free**,
+  optional ~$5/mo flat (Workers Paid), optional 5% only if billing Anthropic through CF. Also gives
+  dollar spend-limits per student (runaway insurance).
+- **Stripe (payments):** 2.9% + $0.30 (US) / + C$0.30 (CA); no monthly/PCI fees; chargebacks $15. The
+  **fixed 30¢ dominates small charges** → the $10 toll / $9.99 Journal is **~6% effective, not 2.9%**
+  ($50 ≈ 3.5%). Token-billing exists but is private-preview/gated.
+- **Per coaching session (worked example, adjustable in reports/bioniq_cost_model.xlsx):** assuming ~20k
+  cached context + 3k fresh + 2k output → **Haiku ≈ 1.5¢, Sonnet ≈ 4.5¢, Opus ≈ 7.5¢.**
+- **BOTTOM LINE:** variable cost per session is dominated by Anthropic, single-digit cents with the levers
+  on; **set the credit price comfortably above that**, and **respect the ~6% payment skim on sub-$10
+  charges** (don't price the toll/Journal as if you keep all of it).
 
 ## INDEX LINE
 `knowledge/credit_value_pricing_model.md | business-plan, marketing, build | PUBLIC | captured | The MONETIZATION model (Finn-originated). Method: prove round-trip COGS first, then price up with margin; every cost input folds into the credit COGS. Premise: sell VALUE not knowledge — traders begrudge a $500/mo flat guru sub but gladly pay spend that returns more than it costs. The inversion (sauce): usage credits make spending a success-signal, not a resented bill (Suzy spends $300, P&L +$3,000 → feels like investing). Honest dependency (refined): value ≠ profit (90% fail = unfiltered base rate; Mark's filtered/coached cohort projected ~50–80% win, unproven; can't manufacture traders) — value = an honest attempt + the truth about fit; integrity move = the GRACEFUL HONEST EXIT (never take money for failure). Self-aligns with the ICP filter. Partners (ElevenLabs etc.) = COGS inputs = buying zero-ops, passed through with margin.`

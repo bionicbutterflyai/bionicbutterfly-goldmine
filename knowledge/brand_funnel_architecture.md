@@ -1,12 +1,32 @@
 # GOLD — BRAND-FUNNEL ARCHITECTURE (the contrast IS the conversion)
 *TAGS: marketing, business-plan, coaching | AUDIENCE: founder + marketing-Claude.*
-*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-06-06, Chat 4 | STATUS: captured*
+*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-06-07, Chat 6 (NAME DECIDED: Bioniq Trader / bioniqtrader.ai + .com, "Be Bioniq", Butterfly retired — CHANGED FROM PRIOR; coaching-coaches end game; free-Journal hook; trademark screen + attorney/domain pending; decision-only, no rename yet) | STATUS: captured*
 *SUPERSEDES: — | RELATED: master_journey_flow.md, funnel_brainstorm_reasoning.md (the WHY)*
 
 ## ONE-LINE
 Loud hook-skin at the top, sober quant-serious spine underneath — and the **gap between them is the
 conversion event.** The guru-phobic skeptic clicks the loud hook braced for hype, hits the relief of
 NOT getting hype, and converts on the contrast.
+
+## THE NAME — BIONIQ TRADER (decided Chat 6; CHANGED FROM PRIOR: "Bionic Butterfly" retired)
+**Company / working name = Bioniq Trader** (coined "q" spelling). **Tagline = "Be Bioniq."** Domains:
+**bioniqtrader.ai** (~$300/yr, primary — brand-forward, fits the biz) **+ bioniqtrader.com** (~$18,
+defensive — buy both, point .com at .ai). **Butterfly is killed** — the metaphor needed an About-page
+explainer, and a brand that needs explaining is dead on arrival; *bionic* was always the load-bearing word
+(man + machine), butterfly was decoration. Positioning: a **coaching/accountability brand that happens to
+include a journal** — NOT a journal app. **End game = coaching the coaches** (TEDi shape: a platform where
+coaches teach their own students/clients; everyone identifies as "a Bioniq Trader"). **Funnel hook idea:**
+an almost-free **Journal** (just the journal, no coach) as top-of-funnel; the coach is the paid upgrade
+(see funnel_routing_and_closer.md). Layer names: **Bioniq Trader** (company) · **Journal** (daily home) ·
+**Bionic Lab** (coaching engine — bionic_lab_spec.md).
+**TRADEMARK (first-pass screen, NOT legal clearance):** plain "Bionic Trader" was rejected — **"BIONIC
+TRADER SYSTEMS" is a LIVE US wordmark** (Reg 4210654, Class 009, futures-trading software) and "BIONIC" is
+also registered in financial services + business/education. **"Bioniq" has NO mark in trading / fintech /
+education** (only agriculture Reg 6585398, cosmetics, dental) → clean in-lane on the screen. BUT "Bioniq"
+is **phonetically identical to "Bionic,"** so examiners weigh sound + relatedness — the coined spelling
+*improves the odds*, it does not *guarantee* clearance. **PENDING before brand spend (logo/LLC): attorney
+clearance (USPTO + CIPO) + registrar confirmation of the two domains.** Repo/files NOT renamed yet
+(clearance pending) — this is a decision-only bank.
 
 ## THE BRAND IS THE FOUNDER (bionic = part man, part machine)
 *Captured Chat 5 — was missing.* The name isn't decoration: **Mark literally embodies it — "part man,

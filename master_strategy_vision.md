@@ -494,5 +494,21 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   manual-able, CREDITS are NOT (they gate on P2 automation). Self-evolved the Propagation Law sync matrix
   (build/launch sequence → phase_roadmap.md) + KICKOFF presence list (→ 29 active).
 
+- 2026-06-07 (Chat 6, BRAND + LAB + ARCHITECTURE + COST + REPORTS): big bank. (1) BRAND: company =
+  **Bioniq Trader** / bioniqtrader.ai + .com, "Be Bioniq", **Butterfly retired** (CHANGED FROM PRIOR — the
+  metaphor needed explaining); coaching brand w/ a journal, not a journal app; coaching-coaches end game;
+  free-Journal hook. Trademark screen: plain "Bionic Trader" blocked by live mark BIONIC TRADER SYSTEMS;
+  "Bioniq" clear in-lane but phonetic to "Bionic" → attorney + domain check PENDING; decision-only, no
+  rename. → brand_funnel_architecture.md. (2) BIONIC LAB (new doc bionic_lab_spec.md): the coaching engine —
+  request-based menu (summary or date-range→pick trades), coach the PATTERN vs the stated plan not each
+  scalp, honest verdict; vanity win-rate ≠ edge; printable-export feature. (3) ARCHITECTURE: 7-tool stack
+  (Netlify/Supabase/Anthropic/GitHub + ElevenLabs/Cloudflare AI Gateway/Stripe) + invideo→FINN; Mermaid +
+  SVG RE-RENDERED to match (out-of-sync flag cleared). (4) COST STACK (verified): per session ≈1.5¢ Haiku /
+  4.5¢ Sonnet / 7.5¢ Opus; Cloudflare ~$0; ~6% Stripe skim on sub-$10 → credit_value_pricing_model +
+  phase_roadmap Phase-2 economics. (5) REPORTS/: cost xlsx + cost report docx (w/ Vision Board seed
+  paragraph) + trade-review template docx (PDFs delivered too). Propagation: +bionic_lab_spec (→30),
+  matrix self-evolved (Lab, reports), ARTIFACT_INDEX + KICKOFF + HANDOFF updated. Banked as ONE full-repo
+  zip (no-batch rule).
+
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`

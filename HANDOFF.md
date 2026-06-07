@@ -82,6 +82,18 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
+- **Chat 6 (Jun 7 2026) — BRAND + LAB + ARCHITECTURE + COST (big bank):** Company name decided =
+  **Bioniq Trader** (bioniqtrader.ai ~$300 primary + bioniqtrader.com ~$18 defensive), tagline **"Be
+  Bioniq"**, **Butterfly retired**; coaching brand w/ a journal; coaching-coaches end game; free-Journal
+  hook. **NEW `bionic_lab_spec.md`** (request-based, pattern-level coaching engine + printable export).
+  **Architecture** = 7-tool stack + FINN, **SVG re-rendered** (no longer out-of-sync). **Cost stack**
+  banked (≈1.5¢/4.5¢/7.5¢ per session; ~6% sub-$10 skim). **`/reports`** folder added (cost xlsx, cost
+  report docx w/ Vision Board paragraph, trade-review template docx). Count → 30 active .md.
+  **OPEN / NEXT-ACTIONS for Mark:** (a) **trademark attorney clearance** (USPTO + CIPO) on "Bioniq Trader"
+  before brand spend; (b) **register both domains** at the registrar (confirm availability — Claude could
+  not verify live); (c) Lab open items: where the trader sets the plan (lean: intake/dossier), coach's Lab
+  view (phase 3-4); (d) Vision Board scope still A/B/C; (e) Netlify swappable later. No repo rename until
+  clearance.
 - **Chat 6 (Jun 7 2026) — NEW MASTER DOC: `phase_roadmap.md` (the build/launch sequence):** ends the
   scatter — what to build WHEN. Trigger principle: a paid campaign FORCES Stripe live (no $9.99 by hand at
   3am), so campaign = Stripe-live; ledger = source of truth (Stripe auto, Mark manual for rare exceptions).

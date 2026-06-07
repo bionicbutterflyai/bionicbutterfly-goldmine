@@ -1,5 +1,5 @@
 *TAGS: business-plan, marketing, coaching | AUDIENCE: founder + every future Claude (the door + the sort + the close).*
-*CREATED: 2026-06-06, Chat 4 (parallel session) | UPDATED: 2026-06-07, Chat 6 (added THE FUNNEL FLOW living-map Mermaid — door→sort→close, with the sales-cycle CRM mapped as a phase-3-4 future node so it isn't forgotten). Chat 5: reconstructed into this repo from Chat-4's summary; $10-toll why folded in | STATUS: captured*
+*CREATED: 2026-06-06, Chat 4 (parallel session) | UPDATED: 2026-06-07, Chat 6 (added THE FREE-JOURNAL HOOK — almost-free journal as top-of-funnel, coach is the paid upgrade. Earlier Chat 6: THE FUNNEL FLOW living-map Mermaid + CRM as phase-3-4 node). Chat 5: reconstructed from Chat-4's summary; $10-toll why folded in | STATUS: captured*
 *SUPERSEDES: — | RELATED: master_journey_flow.md (the "Behavioral sort" + "Sales cycle" boxes), master_strategy_vision.md (the funnel section), funnel_brainstorm_reasoning.md, brand_funnel_architecture.md*
 *PROVENANCE NOTE: reconstructed by Chat 5 from Chat 4's pasted summary of the doc it built. The substance is faithful; if Chat 4's original file has more precise response wording, reconcile against it — this is the merged home for the logic.*
 
@@ -81,6 +81,13 @@ flowchart TD
     classDef gate fill:#FAEEDA,stroke:#854F0B,color:#412402;
     classDef future fill:#EEEDFE,stroke:#534AB7,color:#26215C,stroke-dasharray:5 3;
 ```
+
+## THE FREE-JOURNAL HOOK (Chat 6 — top-of-funnel idea)
+A new entry point above the $10 toll: an **almost-free Journal (just the journal, no coach)** as
+top-of-funnel. It gets verified humans logging daily (the food-diary habit), and the **coach is the paid
+upgrade** (the Bionic Lab — bionic_lab_spec.md). Sits alongside the existing toll/almost-free-course logic:
+cheap entry in, coaching is the conversion. (Naming: company = Bioniq Trader, the daily home = "Journal",
+coaching = "Lab" — see brand_funnel_architecture.md.)
 
 ## INDEX LINE
 `knowledge/funnel_routing_and_closer.md | business-plan, marketing, coaching | PUBLIC | captured | The door + the 3-bucket sort + the closer. $10 = verification toll (verified human on a real card), not revenue. Buckets: noob→course-as-destination/sim-6-months (deferred pipeline); half-knowledge→develop; ICP(ready)→Mark closes 1:1 (contact→call→Zoom→close), course offered IN PARALLEL at 90% off, never as a detour. Locks: Mark is the human closer NOW by design; the course must still be offered to the ICP (it was the hook). Reconstructed Chat-5 from Chat-4's summary.`
