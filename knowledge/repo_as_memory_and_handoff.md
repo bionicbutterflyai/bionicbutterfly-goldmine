@@ -2,7 +2,7 @@
 
 # GOLD ARTIFACT — REPO-AS-MEMORY & THE SKINNY HANDOFF
 *Captured June 5 2026, Chat 4. The biggest structural nugget of the project — it changes cost and cold-start permanently.*
-*UPDATED June 7 2026, Chat 6: added THE PROPAGATION LAW (sync matrix + grep-verify + self-evolve) so banks reach every dependent view at bank-time, not at next session's audit.*
+*UPDATED June 7 2026, Chat 6: added THE PROPAGATION LAW (sync matrix + grep-verify + self-evolve) so banks reach every dependent view at bank-time, not at next session's audit. Added DELIVERY INTEGRITY (edit-in-place > drag-and-drop; delete-old-then-drop; watch Windows `_1`/`_2` collisions; path+action tags) — the handoff half.*
 
 ## ONE-LINE
 Stop pasting fat handoffs that fill chats and cost a fortune to re-read. Keep the GOLD farm in a
@@ -75,10 +75,28 @@ MUST add it to this matrix **in the same commit.** The matrix is the franchise a
 it maintains itself, no founder required. Find a propagation gap? **Fix the matrix**, don't just patch
 the one doc — that is how the backend keeps evolving.
 
+## DELIVERY INTEGRITY (Chat 6 — the handoff half of the Propagation Law)
+Root cause of three botched pushes in one session: **Windows drag-and-drop never overwrites — on a
+name clash it silently appends `_1`/`_2`.** The file *looks* present, so no one notices; git commits a
+NEW file beside the stale one, every reference still points at the original name, and it only surfaces
+at the next audit. The fix lives on the DELIVERY side so it can't depend on the founder noticing.
+Rules (written for a **GitHub-web founder, not a terminal user**):
+1. **Prefer edit-in-place on GitHub web** — open the file → pencil → change content/filename → commit.
+   Nothing leaves GitHub, so nothing can collide. This is the default for single-file changes.
+2. **Replacing from a download? DELETE the old file first, THEN drop the new one** into the empty spot —
+   and **check for a `_1`/`_2` suffix before committing** (Windows adds it silently on a name clash).
+3. **Push lists carry full repo path + an action tag** — `REPLACE knowledge/foo.md`, `DELETE foo.md`,
+   `RENAME a→b` — never a bare filename (a bare name is how a file lands in the wrong folder).
+4. **The dated snapshot zip is the authoritative tree** — diff against it when unsure where a file goes.
+5. **The audit verifies filenames AND the active-file count every wake** — a `_N` collision shows up as
+   count-off + canonical-name-missing. (Already wired into KICKOFF_AUDIT under the Propagation Law.)
+**Claude's side:** deliver small edits **edit-in-place** ("open file → paste this at this anchor"),
+not as files to drag, whenever the change is small enough to do so.
+
 ## WHY IT'S MOAT
 Cheaper context, faster cold-starts, zero re-litigation, and a new-Claude experience that's "read the
 README, you're 90% caught up." Pairs with the verified/unverified data gate (Claudes read only the
 verified store). This is the infrastructure the coaching product's continuity rides on.
 
 ## INDEX ENTRY (paste into ARTIFACT_INDEX.md)
-`repo_as_memory_and_handoff.md | build, business-plan | Public repo = Claude-fetchable memory (raw URL, code-exec; verified June 5). Skinny handoff = minutes + URL, branched on capability. Standing rule: write back + keep Mark's offsite Vault mirror current. THE PROPAGATION LAW (Chat 6): a bank isn't done until every dependent view is synced + grep-verified the same session (sync matrix covers index/log/HANDOFF + Flow Chart Mermaid+SVG + Vision Board + cross-refs); self-evolving (new surface → add to matrix same commit). Access truth: public-vs-private, not GitHub-vs-not.`
+`repo_as_memory_and_handoff.md | build, business-plan | Public repo = Claude-fetchable memory (raw URL, code-exec; verified June 5). Skinny handoff = minutes + URL, branched on capability. Standing rule: write back + keep Mark's offsite Vault mirror current. THE PROPAGATION LAW (Chat 6): a bank isn't done until every dependent view is synced + grep-verified the same session (sync matrix covers index/log/HANDOFF + Flow Chart Mermaid+SVG + Vision Board + cross-refs); self-evolving (new surface → add to matrix same commit). DELIVERY INTEGRITY (Chat 6): edit-in-place on GitHub web beats drag-and-drop; delete-old-then-drop; watch Windows `_1`/`_2` silent collisions; push lists carry full path + action tag. Access truth: public-vs-private, not GitHub-vs-not.`
