@@ -58,3 +58,4 @@
 
 ## charts/ (additions)
 - `trade_lesson_june4_v7_cvd.html` | build | built | v6 + a third stacked CVD pane (Heikin-Ashi cumulative delta, LonesomeTheBlue port, 50 EMA blue-dashed; below=bearish). Brother's stacked layout, not shared dual-axis.
+- `KICKOFF_AUDIT.md` | build, business-plan | captured | The master checklist a waking Claude RUNS at kickoff (gates → read-in-order → presence audit → integrity audit → state readout → "100%-or-issues" report → STOP & wait for Mark). Claude never self-picks a task.

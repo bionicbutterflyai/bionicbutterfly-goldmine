@@ -35,6 +35,13 @@
 > write durable work back (file + ARTIFACT_INDEX line + a STATE note here + the living log in the primer),
 > cut a dated snapshot, give Mark a Vault-update checklist. **If a decision changes a prior one, label it
 > `CHANGED FROM PRIOR`** so it can't get lost. That one habit is what stops the handoff from leaking.
+>
+> **HOW THIS SESSION STARTS (do this, then WAIT):** after the gates and the reads, **run `KICKOFF_AUDIT.md`**
+> top to bottom, then give Mark **ONE report** — either "**100% — all good**" or a short **flagged-issues**
+> list (file + what's off). **Then STOP and wait for Mark.** He resolves any issue, or hands you the task.
+> **Do NOT pick a task yourself, do NOT charge ahead.** Orient → verify → report → halt. That's the whole
+> kickoff. (The standing open item is proving the Bookmap/GEX *read* — but that waits on Mark capturing
+> ~10 real trades; it is NOT a doc for you to generate. Report it as open; don't act on it.)
 
 ## WHY THE LAST HANDOFF LEAKED (don't repeat — the lessons, banked)
 1. **The minutes went stale mid-session** — STATE was written at an early wrap, so a whole evening of

@@ -376,6 +376,20 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   (1) the DOOR-CHECK (toolless-carpenter test: if a Claude can't curl the repo, it says so and Mark reboots
   a fresh Chat — no hand-feeding); (2) STOP MEANS STOP (full halt + wait; digest→confirm→audit→THEN act;
   the bolt-on-a-cue reflex is the #1 thing that alarms Mark). These are framed as orders, not tone.
+- 2026-06-06 (Chat 5, KICKOFF AUDIT — the close): created KICKOFF_AUDIT.md, the master checklist a waking
+  Claude runs (gates → read-in-order → presence audit of 25 md files → integrity audit [gates/thesis/
+  mantra/no-zombie-decisions/cross-refs/living-log/LOCKED] → state readout → produce a "100%-or-issues"
+  report → STOP and wait). Wired the kickoff to point at it. Resolves the recurring "oriented but stranded"
+  failure: the new Claude verifies, reports, and HALTS — Mark resolves issues or assigns the task; Claude
+  never self-picks one. (Mark's design: "read everything, audit off a master checklist, report 100%-or-
+  issue, then STOP — I'll deal with the issue or give the next task.")
+- 2026-06-06 (Chat 5, SUZY CHOOSES — voice opt-in): amended voice_tts_decision.md (CHANGED FROM PRIOR) —
+  we do NOT voice everything for everyone. Text is the floor (free, always-on, printable); VOICE is an
+  opt-in credit layer, captured at ONBOARDING (alongside SL tolerance + dossier) so the coach compiles
+  the right modality before prompted, and TOGGLED in settings anytime. Solves the ElevenLabs cost fear
+  (voice = pull not push; readers cost ~$0) and the quality stakes (afford a great voice for those who
+  pick it). Fails graceful (text floor). Live-Q&A is where the voice-credit meter bites. Onboarding does
+  double duty (filter + sets every downstream default). Cross-reffed in master_journey_flow.md.
 
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`

@@ -14,6 +14,7 @@ the coaching ever lands. So we stop using free-but-robotic as the brand voice.
 Default the **brand voice** to **PRE-RENDERED premium/neural audio** for all *fixed, authored* content;
 use a **cheap managed or self-hosted TTS for the *live* Q&A turns only**; keep **Web Speech API as a
 last-resort fallback** (with the Chat-4 technical handling). One consistent house voice across both.
+**Student chooses modality: TEXT (free, always present, printable) is the floor; VOICE is an opt-in credit layer set at onboarding + toggled in settings.** (See SUZY CHOOSES below.)
 
 ## THE SPLIT (this is the actual architecture)
 - **FIXED / AUTHORED content** — lessons, onboarding, the super-sauce level-narration scripts:
@@ -26,6 +27,30 @@ last-resort fallback** (with the Chat-4 technical handling). One consistent hous
 - **FALLBACK** — Web Speech API only if a managed voice is offline/unavailable. Keep the Chat-4 catches
   for THIS path only: chunk to ~200 chars + queue (the ~15s cutoff), wait for `voiceschanged`, recommend
   Chrome.
+
+## SUZY CHOOSES — voice is opt-in, text is the floor (`CHANGED FROM PRIOR`, Chat 5)
+The biggest shift: we DON'T voice everything for everyone. **The student picks her modality.**
+- **TEXT IS ALWAYS ON THE LEFT.** Every coaching turn and lesson is present as readable, **printable**
+  text — free, permanent, the student's to keep ("future data + printable lesson for Suzy"). Voice is a
+  *layer laid on top of text she already has*, never a replacement.
+- **VOICE IS THE OPT-IN PREMIUM LAYER** unlocked with credits. Readers cost us ~$0; only listeners spend
+  voice credits → the ElevenLabs/voice-cost fear evaporates (voice becomes pull, not push), AND we can
+  afford a genuinely good voice for the people who choose it *because* we're not spreading its cost across
+  every reader.
+- **CAPTURED AT ONBOARDING, TOGGLED IN SETTINGS.** Voice/no-voice is set during intake — right alongside
+  SL tolerance (e.g. 10 pts), risk prefs, the behavior-capture dossier — so the coach knows *before it's
+  prompted* whether to compile voice or text-only (no wasted render, no mid-session asking). It's a
+  **preference, not a locked mode:** Suzy can flip voice on/off anytime in settings (e.g. starts a
+  listener, decides reading is faster — Mark's own founding instinct that ~half of AI output is skimmable
+  — flips it off). Her call, anytime.
+- **WHY IT FAILS GRACEFULLY:** because text is always the floor, a voice glitch never loses the lesson —
+  the transcript is right there. Voice *can* fail soft.
+- **THE SEAM (design detail, not a blocker):** fixed/authored content is cheap to offer either way
+  (pre-rendered once); the voice-credit meter actually bites on **live Q&A** ("this answer, spoken, costs
+  X credits"). Get the live-turn metering right; fixed content is nearly free regardless.
+- **Onboarding does double duty:** it's not only the funnel filter — it sets every downstream default
+  (modality, SL tolerance, dossier). Keep this married to the intake/funnel-memory spec
+  (master_journey_flow.md / funnel_routing_and_closer.md).
 
 ## PRE-RENDER ≠ "A DATABASE OF EVERYTHING" (NOT a chatbot — answers Mark's worry directly)
 Pre-rendering covers ONLY authored fixed content (scripts that don't change). **Live coaching stays fully
@@ -53,4 +78,4 @@ spend on any of these; the only recurring TTS cost is live Q&A.
   burns student credits; only live-Q&A TTS does, and that's cheap. Folds into credit COGS cleanly.
 
 ## INDEX ENTRY
-`knowledge/voice_tts_decision.md | build, business-plan | PUBLIC | captured | UPDATED Chat 5: default FLIPPED to PRE-RENDER premium/neural voice for fixed content (lessons/onboarding/super-sauce narration) = $0/student after one-time render + exact timestamps for highlight-sync; cheap managed/self-host TTS (Fish ~$15/1M, or Kokoro/Chatterbox free) for LIVE Q&A only; Web Speech API demoted to fallback (robotic = credibility risk, per Mark). Pre-render ≠ database-of-everything (live coaching stays dynamic, NOT a chatbot). ElevenLabs: paid = own audio, one voice for both, but model is on-platform only → clone a Mark-controlled voice for run-anywhere.`
+`knowledge/voice_tts_decision.md | build, business-plan | PUBLIC | captured | UPDATED Chat 5: default FLIPPED to PRE-RENDER premium/neural voice for fixed content (lessons/onboarding/super-sauce narration) = $0/student after one-time render + exact timestamps for highlight-sync; cheap managed/self-host TTS (Fish ~$15/1M, or Kokoro/Chatterbox free) for LIVE Q&A only; Web Speech API demoted to fallback (robotic = credibility risk, per Mark). Pre-render ≠ database-of-everything (live coaching stays dynamic, NOT a chatbot). ElevenLabs: paid = own audio, one voice for both, but model is on-platform only → clone a Mark-controlled voice for run-anywhere. SUZY CHOOSES (Chat 5): text always-on/free/printable = the floor; voice = opt-in credit layer captured at onboarding (with SL tolerance/dossier) + toggled in settings; readers cost ~$0 so the voice-cost fear evaporates; live-Q&A is where the voice-credit meter bites.`

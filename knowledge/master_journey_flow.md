@@ -83,3 +83,5 @@ flowchart TD
 - the now→later automation overlay (Fork 1) — how Mark hands off to the system over time
 - **ARCHITECTURE flow (separate, next):** the technical/system architecture as its own diagram, not
   the journey — Mark explicitly wants to see this on its own.
+
+*Chat 5 cross-ref: ONBOARDING/intake sets every downstream default, not just the funnel filter — captures modality (voice/text), SL tolerance, and the behavior dossier. The coach reads these before its first turn. Voice = opt-in credit layer; text always-on/printable. See voice_tts_decision.md → SUZY CHOOSES.*
