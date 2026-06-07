@@ -8,7 +8,13 @@ the thing every prior handoff referenced but never carried. It MUST ride in ever
 ---
 
 ## THE MANTRA — the root of the whole strat (Mark's, captured Chat 5)
-**TIMING · LEVELS · BEHAVIOUR of PRICE.** That's it. Mark has mastered every platform and indicator in
+**TIMING · LEVELS · BEHAVIOUR of PRICE — & PROCESS.** That's it. *(Completed Chat 5: the first three
+are the READ — the bionic glance, the WHAT of a good trade. PROCESS is the HOW — the rules/accountability/
+discipline you run no matter what you feel; the bionic discipline, the machine half of "part man, part
+machine." The read was never the moat — PROCESS is. Turtles proved it (handed the rules, most still failed
+for lack of process); the brother proved it (same read, new process → green). Said to the student:
+**PROCESS BEFORE PROFIT** — run the rules, the money is the byproduct; you can't promise profit, you sell
+process. This also IS the business thesis + the honest verdict.)* Mark has mastered every platform and indicator in
 the industry ("I read the DOM faster than a McDonald's menu") and his conclusion is blunt: **it's all
 BS, it all doesn't work — *except* these three.** Everything else in this doc is just the detailed
 expression of the mantra:

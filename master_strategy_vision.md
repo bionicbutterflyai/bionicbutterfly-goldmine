@@ -390,6 +390,13 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   (voice = pull not push; readers cost ~$0) and the quality stakes (afford a great voice for those who
   pick it). Fails graceful (text floor). Live-Q&A is where the voice-credit meter bites. Onboarding does
   double duty (filter + sets every downstream default). Cross-reffed in master_journey_flow.md.
+- 2026-06-06 (Chat 5, THE MANTRA COMPLETED): Mark closed the loop years in the making —
+  **TIMING · LEVELS · BEHAVIOUR of PRICE & PROCESS.** The first three = the READ (bionic glance, the WHAT);
+  PROCESS = the HOW (rules/accountability/discipline run regardless of feeling; the machine half of "part
+  man, part machine"). The read was never the moat — process is (Turtles + the brother both prove it).
+  Student form = **PROCESS BEFORE PROFIT**. It is also the business thesis + the honest verdict in three
+  words. Meta-note: this very chat enacted the shift — Mark pivoted from optimizing PRODUCT to building
+  the handoff PROCESS, then named the principle he'd just lived. Banked at top of strat_zone_taxonomy.md.
 
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`
