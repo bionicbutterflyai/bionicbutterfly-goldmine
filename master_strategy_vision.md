@@ -475,5 +475,24 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   push lists carry full path + action tag; snapshot zip = the authoritative tree; the audit checks
   filenames + active count every wake. The fix proved itself: delete-old-then-add landed the doctrine clean.
 
+- 2026-06-07 (Chat 6, FUNNEL MAP + BUILD-COST + CRM): (1) banked THE FUNNEL FLOW as a living-map Mermaid
+  in funnel_routing_and_closer.md (hook→AI agent→$10 toll→intake/dossier→A/B/C sort→C course / B nurture /
+  A Mark-closes→Cockpit; "don't break the loop" at the agent). (2) build_vs_buy: WHAT THE LLM CHANGED —
+  the old 2002 50% (code + hand-scripted response trees) collapsed; build cost shifts from coding-hours to
+  iteration-toward-correctness; cheap to stand up ≠ cheap to perfect. (3) CRM decision: buy later /
+  PHASE 3-4 (thin own pipeline first since Mark's the sole closer; dossier is the moat; never a Salesforce
+  clone — "Agentic CRM" = AI agent + pipeline buzzword). Reason raised = to MAP it on the flow now (dashed
+  future node) so it isn't forgotten, not to build it.
+
+- 2026-06-07 (Chat 6, NEW MASTER DOC — PHASE ROADMAP): built phase_roadmap.md to end the scatter — the
+  one place that says WHAT to build WHEN (manual vs automated vs gated, per phase). Driven by Mark's
+  insight that a paid campaign FORCES Stripe live ("not calling them for $9.99 at 3am"), so campaign =
+  Stripe-live = same event; ledger is the source of truth for paid (Stripe auto, Mark manual for rare
+  exceptions). Sequence: P1 manual close (Mark IS funnel+verification, no credits/campaign); P2 = coupled
+  milestone (Stripe unlocks toll+subscription+CREDITS together — credits can't precede it; AI funnel at
+  volume); P3-4 scale (CRM thin-own→buy, coach role, maybe merch). Key correction: subscription is
+  manual-able, CREDITS are NOT (they gate on P2 automation). Self-evolved the Propagation Law sync matrix
+  (build/launch sequence → phase_roadmap.md) + KICKOFF presence list (→ 29 active).
+
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`

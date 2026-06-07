@@ -82,6 +82,18 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
+- **Chat 6 (Jun 7 2026) — NEW MASTER DOC: `phase_roadmap.md` (the build/launch sequence):** ends the
+  scatter — what to build WHEN. Trigger principle: a paid campaign FORCES Stripe live (no $9.99 by hand at
+  3am), so campaign = Stripe-live; ledger = source of truth (Stripe auto, Mark manual for rare exceptions).
+  P1 manual close (no credits/campaign) → P2 coupled milestone (Stripe unlocks toll+subscription+CREDITS
+  together; credits can't precede it; AI funnel at volume) → P3-4 scale (CRM thin-own→buy, coach, maybe
+  merch). Subscription is manual-able; CREDITS are not. Self-evolved the sync matrix + KICKOFF list (→29).
+- **Chat 6 (Jun 7 2026) — funnel living-map + build-cost + CRM:** funnel flow banked as a Mermaid
+  living-map in `funnel_routing_and_closer.md` (door→sort→close, "don't break the loop" at the agent).
+  `build_vs_buy`: the LLM ate the old 2002 50% (code + response-scripting) → build cost = iteration-toward-
+  correctness, cheap to stand up ≠ cheap to perfect. CRM decision: buy later / PHASE 3-4 (thin own pipeline
+  first, dossier is the moat, never a Salesforce clone) — **mapped on the funnel flow now as a dashed
+  future node so it isn't forgotten** (the reason it was raised = the map, not the build).
 - **Chat 6 (Jun 7 2026) — DELIVERY INTEGRITY banked (handoff half of the Propagation Law):** root cause of
   this session's three botched pushes = Windows drag-and-drop silently appends `_1`/`_2` on a name clash
   (stale file stays live, renamed twin commits beside it, refs break, only the audit catches it). Fix in

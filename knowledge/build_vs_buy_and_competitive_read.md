@@ -1,5 +1,5 @@
 *TAGS: business-plan, build, marketing | AUDIENCE: founder + every future Claude (what to build vs buy, and an honest read of the nearest comparable).*
-*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-06, Chat 5 | STATUS: captured*
+*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-07, Chat 6 (added WHAT THE LLM CHANGED — build cost shifts from coding-hours to iteration-toward-correctness, cheap to stand up ≠ cheap to perfect; and CRM — buy later/phase 3-4, map now, never a Salesforce clone) | STATUS: captured*
 *SUPERSEDES: — | RELATED: master_strategy_vision.md, master_journey_flow.md (Whiting in Fork 1), funnel_routing_and_closer.md, tech_architecture_skeleton.md, credit_value_pricing_model.md*
 
 # GOLD — BUILD vs BUY + THE COMPETITIVE READ (don't over-build what's commodity)
@@ -80,6 +80,35 @@ Design for **one pane of glass per person:**
   view, fed behind the scenes (like TEDi's *single* Looker dashboard, not 12 logins).
 Mark's own *trading* tools (NinjaTrader, Bookmap, TV, GEX) stay separate — that's trading, not the
 business. **Rule: if a person must manage a new login to use the product, it was integrated wrong.**
+
+## WHAT THE LLM CHANGED — build is cheap to STAND UP, not to PERFECT (Chat 6)
+In 2002 the work was ~50/50: hand-write the code AND hand-author every if-this-then-that plus every
+canned response for the software to pick from. The LLM ate most of that: **code is measured in
+seconds/days not weeks** (commodity scaffolding), and the **branching/response-scripting is gone** — you
+write the *intent* ("interview the trader, sort A/B/C on these signals") and the model generates replies
+live by reading the files we feed it. So building — *which was never the first answer for the front-end*
+— is the right and now-affordable answer for the data/moat. **The catch (so the cheap-to-build story
+doesn't overcorrect):** "seconds" is true for the commodity scaffolding, NOT the moat. The dossier
+schema, the verified-data gate, the coaching brain, the grader, the credit engine are cheap to *stand
+up* and expensive to get *right*. The cost didn't vanish — it **moved from coding-hours to
+iteration-toward-correctness** (this very session: the leak fixes, the propagation gaps, three botched
+pushes were the real spend, none of it "code time"). **Cheap to build ≠ cheap to perfect** — and that's
+the better place for the budget: paying for the moat, not the plumbing.
+
+## CRM — BUY LATER, MAP NOW (phase 3-4, not a Salesforce clone)
+TEDi isn't just an ad-spend dashboard — it's also a **sales-cycle CRM**. Salesforce now brands itself
+the "#1 Agentic CRM" — buzzword-wrap for *AI agent + a pipeline* (Agentforce + Customer/Data 360). The
+build-vs-buy call: **do NOT build a Salesforce clone** (the out-engineer-free trap). Split it like the
+agents:
+- **Sales-cycle pipeline** (lead → A/B/C → booked → call → demo → closed/lost) = **commodity**. Mark is
+  the sole closer with no clients yet — the first leads track in a phone. A **thin pipeline view in the
+  Mothership** (the Supabase already being stood up) covers it cheaply when needed, and keeps the data
+  ours. Buy/integrate a real CRM only if scale ever justifies it.
+- **The candidate_dossier** (what Claude reads) = the **moat, build/own** — the exact data a rented
+  Salesforce would silo away from the coaching brain (the data-capture lesson).
+- **DECISION (Chat 6):** CRM is a **phase 3-4** build, *not now* — but **mapped on the funnel flow now**
+  (funnel_routing_and_closer.md → THE FUNNEL FLOW, as a dashed future node) so it isn't forgotten like a
+  lost vision. Reason it's raised now is the map, not the build.
 
 ## INDEX LINE
 `knowledge/build_vs_buy_and_competitive_read.md | business-plan, build, marketing | PUBLIC | captured | TEDi/Whiting read: Google Sheets ("TEDi Brain") + free Looker Studio dashboards + AI sales-agent funnels; NO AI coaching; wins on DISTRIBUTION not tech. Lesson: tech is commodity, bottleneck is funnel/distribution, our moat is the coaching (above his ceiling) — "more tech = win" is the unicorn trap. Build-vs-buy: BUY commodity (payments, scheduling, dashboards via Looker, email drip, the sales agent); BUILD the moat (coaching brain, strat/grader, super-sauce, credit engine, dossier). Two AI agents differ: sales agent = commodity/buy/defer; coaching brain = moat/build/own.`

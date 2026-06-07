@@ -2,7 +2,7 @@
 
 # GOLD ARTIFACT — REPO-AS-MEMORY & THE SKINNY HANDOFF
 *Captured June 5 2026, Chat 4. The biggest structural nugget of the project — it changes cost and cold-start permanently.*
-*UPDATED June 7 2026, Chat 6: added THE PROPAGATION LAW (sync matrix + grep-verify + self-evolve) so banks reach every dependent view at bank-time, not at next session's audit. Added DELIVERY INTEGRITY (edit-in-place > drag-and-drop; delete-old-then-drop; watch Windows `_1`/`_2` collisions; path+action tags) — the handoff half.*
+*UPDATED June 7 2026, Chat 6: added THE PROPAGATION LAW (sync matrix + grep-verify + self-evolve) so banks reach every dependent view at bank-time, not at next session's audit. Added DELIVERY INTEGRITY (edit-in-place > drag-and-drop; delete-old-then-drop; watch Windows `_1`/`_2` collisions; path+action tags) — the handoff half. Matrix self-evolved: build/launch sequence → phase_roadmap.md.*
 
 ## ONE-LINE
 Stop pasting fat handoffs that fill chats and cost a fortune to re-read. Keep the GOLD farm in a
@@ -62,6 +62,7 @@ layer. This law makes propagation a **close-out step, not a future catch.**
 - the student journey / a touchpoint → **master_journey_flow.md** Mermaid + its rendered diagram
 - the project vision → the **Live Vision Board** (live_vision_board_spec.md; once built)
 - a NEW file → add it to **KICKOFF_AUDIT.md** presence list + bump its count note
+- the build/launch SEQUENCE or a phase decision (what ships when) → **phase_roadmap.md**
 - it contradicts/sharpens a RELATED doc → update that doc, label **CHANGED FROM PRIOR**
 
 ### THE VERIFY STEP (CONFIRM = AUDIT, applied to propagation)
@@ -92,6 +93,12 @@ Rules (written for a **GitHub-web founder, not a terminal user**):
    count-off + canonical-name-missing. (Already wired into KICKOFF_AUDIT under the Propagation Law.)
 **Claude's side:** deliver small edits **edit-in-place** ("open file → paste this at this anchor"),
 not as files to drag, whenever the change is small enough to do so.
+6. **NEVER hand Mark a batch of separate files** that each need open-in-Notepad → save → delete-old →
+   add. The Chat-6 8-file batch proved this fails for a Windows/GitHub-web founder (lost track, wrong
+   folders, `_N` collisions). For a **multi-file change, deliver ONE complete-repo zip + a single
+   "replace-all-and-push" instruction** — extract, copy all over a FRESH clone choosing **"Replace the
+   files in the destination"** (never "keep both" — that is what spawns `_1`/`_2`), then commit+push once.
+   One artifact, one action. Single-file changes still go edit-in-place per rule 1.
 
 ## WHY IT'S MOAT
 Cheaper context, faster cold-starts, zero re-litigation, and a new-Claude experience that's "read the

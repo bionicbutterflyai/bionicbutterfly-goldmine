@@ -1,5 +1,5 @@
 *TAGS: business-plan, marketing, coaching | AUDIENCE: founder + every future Claude (the door + the sort + the close).*
-*CREATED: 2026-06-06, Chat 4 (parallel session) | UPDATED: 2026-06-06, Chat 5 (reconstructed into this repo from Chat-4's summary; $10-toll why folded in) | STATUS: captured*
+*CREATED: 2026-06-06, Chat 4 (parallel session) | UPDATED: 2026-06-07, Chat 6 (added THE FUNNEL FLOW living-map Mermaid — door→sort→close, with the sales-cycle CRM mapped as a phase-3-4 future node so it isn't forgotten). Chat 5: reconstructed into this repo from Chat-4's summary; $10-toll why folded in | STATUS: captured*
 *SUPERSEDES: — | RELATED: master_journey_flow.md (the "Behavioral sort" + "Sales cycle" boxes), master_strategy_vision.md (the funnel section), funnel_brainstorm_reasoning.md, brand_funnel_architecture.md*
 *PROVENANCE NOTE: reconstructed by Chat 5 from Chat 4's pasted summary of the doc it built. The substance is faithful; if Chat 4's original file has more precise response wording, reconcile against it — this is the merged home for the logic.*
 
@@ -47,6 +47,40 @@ through the 90%-off course — that's a smack that cools the lead. Instead:
 The model clicked from watching how the best online sellers *filter FOR the clients they want* instead
 of chasing the ones they don't — the prospect binges the material and self-qualifies; rejection is a
 feature, not a failure. Our door + sort is that idea made concrete for traders.
+
+## THE FUNNEL FLOW — the living map (Chat 6; Mermaid, edit as it evolves)
+The door + 3-way sort + close, drawn. Teal = build/own (the moat). Green = the conversion path.
+Amber = the $10 filter. Dashed = future/commodity. The **sales-cycle CRM is mapped here as a phase-3-4
+node** so it isn't forgotten — *not* a now-build (the first leads track in a phone; see
+build_vs_buy_and_competitive_read.md → CRM). The AI agent's "don't break the loop" rule: if a prospect
+exits to external content, the agent follows up to pull them back.
+```mermaid
+flowchart TD
+    HOOK["Hook ad (social) · anti-guru, 5-sec intrigue"]
+    AGENT["AI agent engages · asks/branches/follows up · don't break the loop"]
+    TOLL["$10 toll · verified human, real card"]:::gate
+    INTAKE["Intake → dossier · BUILD/OWN, Claude reads it"]:::own
+    SORT{"Behavioral sort · A / B / C"}
+    C["C · raw noob · course + sim 6mo · ↻ deferred pipeline"]
+    B["B · developable · nurture, develop · ↻ re-enter when ready"]
+    A["A · ICP, ready · Mark closes 1:1"]:::win
+    CLOSE["Call → Zoom demo · Mark vets, closes"]:::win
+    ONB["Onboard → Cockpit · coaching, credits"]:::own
+    CRM["Sales-cycle CRM · PHASE 3-4 · thin/own then buy · tracks lead→close"]:::future
+
+    HOOK --> AGENT --> TOLL --> INTAKE --> SORT
+    SORT --> C
+    SORT --> B
+    SORT --> A --> CLOSE --> ONB
+    A -.-> CRM
+    B -.-> CRM
+    CLOSE -.-> CRM
+
+    classDef own fill:#E1F5EE,stroke:#0F6E56,color:#04342C;
+    classDef win fill:#EAF3DE,stroke:#3B6D11,color:#173404;
+    classDef gate fill:#FAEEDA,stroke:#854F0B,color:#412402;
+    classDef future fill:#EEEDFE,stroke:#534AB7,color:#26215C,stroke-dasharray:5 3;
+```
 
 ## INDEX LINE
 `knowledge/funnel_routing_and_closer.md | business-plan, marketing, coaching | PUBLIC | captured | The door + the 3-bucket sort + the closer. $10 = verification toll (verified human on a real card), not revenue. Buckets: noob→course-as-destination/sim-6-months (deferred pipeline); half-knowledge→develop; ICP(ready)→Mark closes 1:1 (contact→call→Zoom→close), course offered IN PARALLEL at 90% off, never as a detour. Locks: Mark is the human closer NOW by design; the course must still be offered to the ICP (it was the hook). Reconstructed Chat-5 from Chat-4's summary.`
