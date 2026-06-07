@@ -1,5 +1,5 @@
 *TAGS: coaching, business-plan, build | AUDIENCE: founder + every future Claude (the WHAT & WHY of the coach).*
-*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-06, Chat 5 | STATUS: captured*
+*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-07, Chat 6 (TTS default line corrected to match the voice_tts_decision.md flip — see CHANGED FROM PRIOR below) | STATUS: captured*
 *SUPERSEDES: — | RELATED: master_journey_flow.md, voice_tts_decision.md, brand_funnel_architecture.md, funnel_brainstorm_reasoning.md*
 
 # GOLD — THE COACHING PHILOSOPHY (voice-first · coach-not-consultant · accountability)
@@ -66,9 +66,12 @@ the credit model: don't make Suzy pay to read the coach think out loud).
   Morphosis caricature lives ONLY in the top-of-funnel hook, never here — see funnel_brainstorm_reasoning.md.)
 - **Avatar = KILLED, on cost.** A HeyGen/D-ID lip-sync avatar runs ~**10x the cost of the Claude
   coaching call itself** — not worth it. Removed from the architecture (it was the last open node).
-- **Voice = browser-native Web Speech API** (on-device, $0 per student). This is Mark's "Chrome
-  plugin / Google local TTS" instinct — already the locked default in voice_tts_decision.md. Paid
-  premium TTS stays optional/later, never a launch dependency.
+- **Voice = PRE-RENDERED premium/neural audio as the default** brand voice for fixed authored content
+  (one-time render, then $0/student + exact timestamps for the super-sauce sync); **Web Speech API is
+  the fallback only**, used if a managed voice is offline. `CHANGED FROM PRIOR`: Chat 4 had Web Speech as
+  the default; Chat 5's deep-dive flipped it — robotic-by-default is a credibility risk for a premium
+  coaching brand. Voice itself is an opt-in credit layer (text is the floor). Full rationale in
+  voice_tts_decision.md.
 - **Attribution = "powered by Claude."** Shown proudly as the engine credit (the standard phrasing
   Anthropic's partners use). NOT "Claude Coach" as a product name — the coach stays unnamed
   in-experience, and "Claude" is the credit, not the coach's identity. Confirm the exact approved
@@ -114,4 +117,4 @@ you're left with a chatbot or a quiz site — the two things that bore people an
 thing the ICP can't get anywhere else.
 
 ## INDEX LINE
-`knowledge/coaching_philosophy.md | coaching, business-plan, build | PUBLIC | captured | The WHAT/WHY of the coach: voice-first (not a text chatbot or 2002 quiz site), coach-not-consultant, the accountability engine (you explain off-strategy trades to a coach you don't want to disappoint → you don't take the trade). Coach form LOCKED: no name/image/avatar (avatar KILLED — lip-sync ~10x the coaching cost); Web Speech TTS default; "powered by Claude" attribution, not "Claude Coach."`
+`knowledge/coaching_philosophy.md | coaching, business-plan, build | PUBLIC | captured | The WHAT/WHY of the coach: voice-first (not a text chatbot or 2002 quiz site), coach-not-consultant, the accountability engine (you explain off-strategy trades to a coach you don't want to disappoint → you don't take the trade). Coach form LOCKED: no name/image/avatar (avatar KILLED — lip-sync ~10x the coaching cost); pre-render premium voice = default, Web Speech = fallback (CHANGED FROM PRIOR Chat 6); "powered by Claude" attribution, not "Claude Coach."`

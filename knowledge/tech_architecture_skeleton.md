@@ -1,5 +1,5 @@
 *TAGS: build, business-plan | AUDIENCE: founder + every future Claude (the SYSTEM coordinate system).*
-*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-06-06, Chat 5 (Mermaid re-synced to the 5-layer SVG; the pair now matches) | STATUS: captured (master resolved & confirmed Chat 5; child flows open as separate artifacts)*
+*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-06-07, Chat 6 (TTS default corrected to pre-render premium / Web Speech fallback — see CHANGED FROM PRIOR at decision #4 — matching voice_tts_decision.md; Chat 5: Mermaid re-synced to the 5-layer SVG) | STATUS: captured (master resolved & confirmed Chat 5; child flows open as separate artifacts)*
 *SUPERSEDES: — | RELATED: master_strategy_vision.md (THE primer), master_journey_flow.md (the JOURNEY; this is the SYSTEM), funnel_routing_and_closer.md, voice_tts_decision.md, repo_as_memory_and_handoff.md, brand_funnel_architecture.md, data_provenance_and_timestamp_pin.md*
 
 # GOLD — MASTER TECH ARCHITECTURE (the system coordinate system)
@@ -26,14 +26,14 @@ designed, not wired. The diagram now encodes that: **solid = live today, dashed 
 ## THE FIVE LAYERS (matches the rendered SVG)
 - **Users** (gray): Student (the trader) · Admin = Mark (founder/ops) · Coach (future, phase 3 — dashed).
 - **Frontend · Netlify** (teal, shell LIVE): Landing (auth/entry) · Student dash (the **Cockpit**) ·
-  Course player (Incubator/Accelerator) · Admin panel (the **Mothership**). Free **Web Speech TTS** runs
-  client-side here.
+  Course player (Incubator/Accelerator) · Admin panel (the **Mothership**). **Pre-rendered premium voice**
+  is the default for fixed content (served as audio); Web Speech runs client-side as fallback only.
 - **Backend · Supabase** (blue, credit_ledger LIVE): Auth + DB (Postgres/RLS) · Data store
   (**candidate_dossier + credits**) · **Edge functions = API proxy + the verified-data gate** ·
   Realtime (live room/media — designed).
 - **External services** (purple, designed/next): **AI coach** = the unnamed voice, **powered by Claude**
   (Anthropic) · Datafeed = **Massive.com** (v2 free → paid later) · Stripe (pay + credits) · Discord
-  (paid live room). ElevenLabs premium TTS is optional/later.
+  (paid live room). Premium neural TTS (e.g. a Mark-owned cloned voice) is the **default** brand voice; pick the managed/self-host provider at build (see voice_tts_decision.md).
 - **DevOps** (gray, LIVE): GitHub (2 repos: site `bionicbutterfly` private + `bionicbutterfly-goldmine`
   public) · CI/CD (auto build) · Netlify deploy (+ Redis rate-limit).
 - **Acquisition / the funnel is CROSS-CUTTING, not its own layer:** the hook + AI funnel agent
@@ -116,8 +116,12 @@ flowchart TD
    fixes any issue -> confirms pass (or "not a blocker now") -> gets Mark's GO** before proceeding.
    This is a **standing checkpoint discipline**, not only a /data rule — it exists so a Claude never
    runs far down a path that turns out wrong. *(Proposed for the maintenance law — see housekeeping.)*
-4. **TTS = free Web Speech default** (client-side, $0/student); ElevenLabs premium **later**, never a
-   launch dependency (per `voice_tts_decision.md`).
+4. **TTS = pre-render premium voice default; Web Speech = fallback.** `CHANGED FROM PRIOR` (Chat 6,
+   matching the Chat-5 flip in `voice_tts_decision.md`): Chat 4 had "free Web Speech default, premium
+   later." Now reversed — fixed authored content is pre-rendered once with a premium neural voice
+   ($0/student after the render + exact timestamps for super-sauce sync); Web Speech is the offline
+   fallback. Premium voice is no longer a "later" nice-to-have; it's the default brand voice (voice
+   itself is an opt-in credit layer, text is the floor).
 5. **Anthropic per-student cost = the core margin risk** (same lesson as TTS): only **verified** data
    reaches the brain; cache/precompute; don't call the brain per keystroke. The dollar tolerance is
    Mark's business call, not Claude's to set. **Two-tier wallet:** Mark holds the master supplier wallet;
@@ -137,7 +141,7 @@ never does. This mirrors README §5 and the gate checklist — the data discipli
 - **Acquisition:** ad hook -> AI funnel agent (the ambient drip/qualify "interview").
 - **Funnel-memory pipeline (Fork 2) — the priority build spec:** behavior event schema -> write to
   `candidate_dossier` (Supabase) -> brain read contract. What signals, what shape, what the brain sees.
-- **Platform internals:** foyer · Lab · journal · the Web Speech voice + the onboundary narration-sync.
+- **Platform internals:** foyer · Lab · journal · the pre-rendered premium voice (Web Speech fallback) + the onboundary/timestamp narration-sync.
 - **Infrastructure:** the two-repo split (site private / goldmine public), Netlify deploy path,
   Supabase schema (credit_ledger + candidate_dossier).
 - **Datafeed:** v1 manual export -> gate -> verified; v2 Massive.com pull (rate-limit-aware at 5/min)
@@ -150,4 +154,4 @@ never does. This mirrors README §5 and the gate checklist — the data discipli
 - (Carried, not architecture) the `two_strategy_split.md` scope question — but it feeds the brain's grader.
 
 ## INDEX LINE
-`knowledge/tech_architecture_skeleton.md | build, business-plan | PUBLIC | pending | MASTER system architecture (5 layers: Users/Frontend/Backend/External/DevOps; live-vs-designed honest split; Mermaid re-synced to the SVG). Chat-5 resolved: Fork-2 funnel-memory=BUILD (foyer->Supabase candidate_dossier->brain), datafeed v1 manual / v2 Massive.com free (ex-Polygon, 5/min, delayed, CME futures), human-in-the-loop gate, Web Speech default. Paired with tech_architecture_master.svg. Child flows next.`
+`knowledge/tech_architecture_skeleton.md | build, business-plan | PUBLIC | pending | MASTER system architecture (5 layers: Users/Frontend/Backend/External/DevOps; live-vs-designed honest split; Mermaid re-synced to the SVG). Chat-5 resolved: Fork-2 funnel-memory=BUILD (foyer->Supabase candidate_dossier->brain), datafeed v1 manual / v2 Massive.com free (ex-Polygon, 5/min, delayed, CME futures), human-in-the-loop gate, pre-render premium voice = default / Web Speech = fallback (CHANGED FROM PRIOR Chat 6). Paired with tech_architecture_master.svg. Child flows next.`

@@ -82,6 +82,15 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
+- **Chat 6 (Jun 7 2026) — TTS supersession propagated (housekeeping, no thesis change):** kickoff audit
+  caught the Chat-5 TTS flip (pre-render premium = default, Web Speech = fallback) banked in
+  `voice_tts_decision.md` but NOT propagated — the dead "Web Speech default" lived unlabeled in 5 spots.
+  Fixed all, each tagged `CHANGED FROM PRIOR`: 3 ARTIFACT_INDEX one-liners; `tech_architecture_skeleton.md`
+  (decision #4 + Frontend/External mentions + platform-internals + its index line); `coaching_philosophy.md`
+  (line ~69 + index line); `master_strategy_vision.md` (Part-C COACH'S FORM + the super-sauce sync mechanic
+  — now driven by pre-render timestamps, Web Speech `onboundary` demoted to the live-fallback path).
+  5 files changed. Verified by grep in a fresh clone; re-confirm by audit AFTER Mark pushes. The flip
+  itself (`voice_tts_decision.md`) was already correct and untouched.
 - **Chat 5 (cont.) — TONIGHT'S DEEP DIVE (Jun 6 2026, the thesis-level gold — read the primer's living
   log for full detail):**
   - **THE HONEST VERDICT (thesis correction — `coaching_philosophy.md`):** value ≠ becoming a profitable

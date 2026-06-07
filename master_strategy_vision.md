@@ -1,6 +1,6 @@
 # MASTER STRATEGY VISION — read me FIRST (the why behind everything)
 *TAGS: business-plan, coaching, marketing, build | AUDIENCE: every new Claude — this is THE primer.*
-*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-06-06, Chat 5 (wrap: consolidated MASTER_MAP; Lisa corrected; Whiting + $10-toll banked; funnel_routing_and_closer reconstructed; architecture pair re-synced) | STATUS: living*
+*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-06-07, Chat 6 (TTS supersession propagated — Part C COACH'S FORM + super-sauce now match the pre-render-premium-default flip; see living log) | STATUS: living*
 *SUPERSEDES: MASTER_MAP.md | RELATED: master_journey_flow.md (the map), funnel_routing_and_closer.md, funnel_brainstorm_reasoning.md, brand_funnel_architecture.md, coaching_philosophy.md, learning_design_standards.md, voice_tts_decision.md, strat_zone_taxonomy.md, tech_architecture_skeleton.md, repo_as_memory_and_handoff.md*
 
 ## HOW TO USE THIS DOC
@@ -158,10 +158,12 @@ three matter (see strat_zone_taxonomy.md → THE MANTRA).
 
 ## THE SUPER-SAUCE (the signature mechanic — narration-synced highlight-and-fade)
 During the coach's voice presentation, as he *says* a level it **highlights, then fades back**. It's the
-TEMPORAL form of fill-on-relevance: surface a level exactly when spoken, then let it recede. Bonus: the
-free Web Speech API `onboundary` events can DRIVE the highlights in real time — the level lights as the
-word is spoken. Free voice AND the narration-sync engine from one source. This is the delivery of the
-whole legibility thesis. (Ties to voice_tts_decision.md.)
+TEMPORAL form of fill-on-relevance: surface a level exactly when spoken, then let it recede. The sync is
+driven by **exact word/phrase timestamps emitted at pre-render** (the premium-voice default) — the level
+lights on cue, deterministically. (`CHANGED FROM PRIOR`, Chat 6: earlier framing relied on the free Web
+Speech `onboundary` event as the driver — that now applies only to the live Web Speech *fallback*, not the
+default path.) Same narration-sync engine either way. This is the delivery of the whole legibility thesis.
+(Ties to voice_tts_decision.md.)
 
 ## THE MORPHING VIEWPORT + CONTINUITY (intake = playback, one persistent layout)
 ONE persistent triptych: TV large-right, Bookmap upper-left, GEX lower-left. The student uploads her 3
@@ -199,8 +201,11 @@ the coaching point, not a failure. Residual work = tune the gate cautious + a sm
 ## THE COACH'S FORM (locked)
 Voice-first — the coach speaks back, because texting is a chatbot and quizzes are a 2002 website. **No
 name, no image, no avatar** — just the voice from the data. The lip-sync **avatar was KILLED on cost**
-(HeyGen/D-ID ~10x the coaching-call itself). Voice ships free on the browser-native **Web Speech API**
-($0/student); paid premium voice is optional/later. The engine is credited as **"powered by Claude"**
+(HeyGen/D-ID ~10x the coaching-call itself). The default voice is **pre-rendered premium/neural audio**
+for fixed authored content (render once → $0/student + exact timestamps for the super-sauce sync);
+**Web Speech API is the fallback only** (`CHANGED FROM PRIOR`, Chat 6 — Chat 4 had Web Speech as the
+default ship; robotic-by-default is a credibility risk for a premium brand). Voice is an opt-in credit
+layer; text is the floor. The engine is credited as **"powered by Claude"**
 (the partner-standard phrasing) — never "Claude Coach" as a name. (See coaching_philosophy.md, voice_tts_decision.md.)
 
 ## EFFECTIVE LEARNING — the Lisa call (and what it is NOT)
@@ -408,6 +413,17 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   Charges through a STOP → instant fail, reboot fresh Chat (don't coach). Door-check fail OR bluffing from
   the kickoff text without fetching → fail, fresh Chat. Naked "confirmed" → fail the claim (CONFIRM=AUDIT).
   Audit flags issues → that's the system WORKING, not a fail. The text is the leash; Mark is the brake.
+
+- 2026-06-07 (Chat 6, TTS SUPERSESSION PROPAGATED — `CHANGED FROM PRIOR`): kickoff audit caught that the
+  Chat-5 TTS flip (Web Speech default → **pre-render premium default, Web Speech = fallback**) was banked
+  in voice_tts_decision.md but never propagated — the dead "Web Speech default / premium optional-later"
+  decision still lived UNLABELED in 5 spots. Fixed all of them, each tagged CHANGED FROM PRIOR: (1) three
+  ARTIFACT_INDEX.md one-liners (voice_tts / coaching_philosophy / tech_architecture); (2) tech_architecture_
+  skeleton.md body — decision #4, the Frontend-layer + External-services mentions, platform-internals, its
+  own index line; (3) coaching_philosophy.md line ~69 + its index line; (4) THIS primer's Part-C COACH'S
+  FORM line; (5) the super-sauce mechanic (sync now driven by pre-render timestamps; Web Speech `onboundary`
+  demoted to the live-fallback path). Exactly the leak class the audit exists to catch — a flipped decision
+  that didn't reach every doc. No thesis change; the decision was already made in Chat 5, just not spread.
 
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`
