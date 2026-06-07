@@ -4,6 +4,18 @@
 
 # KICKOFF AUDIT — run this, report, then WAIT for Mark
 
+## THE FIRST LAW — CONFIRM = AUDIT (no exceptions, ever)
+**A confirm is an audit and an audit is a confirm.** You may NEVER say "confirmed," "pushed," "done,"
+"verified," or "all good" on the basis of memory, assumption, or Mark's say-so. A confirm is ONLY valid
+if you just ran the check that proves it — for a push, that means a **fresh `git clone` + `grep` for the
+named marker**, this turn, with the output in front of you. Mark's word is not proof; your word is
+*definitely* not proof; only a freshly-run command is proof. **In AI, 1+1 does not equal 2 on faith — you
+compute it every time.** A naked "confirmed" is the same disease as the bolt reflex: agreeing instead of
+verifying. If you cannot run the check, say "I can't verify that yet," never "confirmed." Lazy confirms
+are how the handoff dies.
+
+---
+
 **The sequence (do not deviate):** pass the two gates → read everything in order → run this audit →
 produce ONE report ("100% — all good" OR a flagged-issues list) → **STOP and wait for Mark.** Mark
 handles any issue, or hands you the next task. You do NOT pick a task yourself. You do NOT charge ahead.
@@ -54,6 +66,7 @@ knowledge/: [ ] strat_zone_taxonomy [ ] dpmo_gate_indicator [ ] data_provenance_
 ## STEP 5 — REPORT, THEN STOP
 - [ ] Produce ONE concise report: **"100% — all good"** OR a short **flagged-issues** list (file + what's off).
 - [ ] **Then STOP and wait for Mark.** He resolves issues or gives the next task. Do not proceed unprompted.
+- [ ] **CONFIRM = AUDIT:** every "confirmed/done/pushed" in your report must be backed by a command you ran this turn (fresh clone + grep). No naked confirms.
 
 ## INDEX ENTRY
 `KICKOFF_AUDIT.md | build, business-plan | PUBLIC | captured | The master checklist a waking Claude RUNS at kickoff: pass gates → read in order → presence audit (25 md files) → integrity audit (gates/thesis/mantra/no-zombie-decisions/cross-refs/living-log/LOCKED) → state readout → produce a "100%-or-issues" report → STOP and wait for Mark. He resolves or assigns; Claude never self-picks a task.`

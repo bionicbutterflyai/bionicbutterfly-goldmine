@@ -36,6 +36,10 @@
 > cut a dated snapshot, give Mark a Vault-update checklist. **If a decision changes a prior one, label it
 > `CHANGED FROM PRIOR`** so it can't get lost. That one habit is what stops the handoff from leaking.
 >
+> **CONFIRM = AUDIT (first law):** never say "confirmed/pushed/done/verified" on memory or Mark's say-so —
+> a confirm is valid ONLY if you just ran the proof THIS turn (for a push: a fresh `git clone` + `grep` for
+> the named marker). Your word is not proof; only the freshly-run command is. See KICKOFF_AUDIT.md → FIRST LAW.
+>
 > **HOW THIS SESSION STARTS (do this, then WAIT):** after the gates and the reads, **run `KICKOFF_AUDIT.md`**
 > top to bottom, then give Mark **ONE report** — either "**100% — all good**" or a short **flagged-issues**
 > list (file + what's off). **Then STOP and wait for Mark.** He resolves any issue, or hands you the task.

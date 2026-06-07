@@ -397,6 +397,12 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   Student form = **PROCESS BEFORE PROFIT**. It is also the business thesis + the honest verdict in three
   words. Meta-note: this very chat enacted the shift — Mark pivoted from optimizing PRODUCT to building
   the handoff PROCESS, then named the principle he'd just lived. Banked at top of strat_zone_taxonomy.md.
+- 2026-06-07 (Chat 5, THE FIRST LAW — CONFIRM = AUDIT): banked as the opening law of KICKOFF_AUDIT.md +
+  echoed in the HANDOFF kickoff. A confirm is ONLY valid if the proving command was run THIS turn (for a
+  push: fresh git clone + grep for the named marker). Neither Mark's word nor Claude's word is proof —
+  only a freshly-run command. "In AI, 1+1 ≠ 2 on faith — you compute it every time." Lazy confirms are the
+  same disease as the bolt reflex (agreeing instead of verifying). Born from tonight: a naked "confirmed"
+  was given without a re-clone and proved wrong.
 
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`
