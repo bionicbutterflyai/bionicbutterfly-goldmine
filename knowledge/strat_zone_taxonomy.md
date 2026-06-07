@@ -93,6 +93,9 @@ above 50 EMA = bullish, below = bearish.** Render in its **own stacked pane** be
 brother's call — separate panes over shared dual-axis; loses height but reads clean for the new eye).
 CAVEAT: shape-estimated delta matches Mark's TV exactly (same estimate) but is NOT order-flow truth —
 a real tick-delta feed could differ. Built: `trade_lesson_june4_v7_cvd.html`.
+**Presentation rule (Chat 6):** never label this estimated delta as "buys vs sells" to a student —
+total volume = fact, delta = estimate (say so), order-flow truth = Bookmap. See VOLUME HONESTY in
+coaching_philosophy.md.
 
 ### Extension 7 — APP-SHELL LAYOUT: reclaim vertical for stacked panes (June 5)
 Stacked indicator panes get tall. Fix is the GUI shell, not fewer panes: **nothing above the chart.**

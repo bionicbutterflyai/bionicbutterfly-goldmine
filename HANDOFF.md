@@ -82,6 +82,18 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
+- **Chat 6 (Jun 7 2026) — Massive.com analysis + 3 banks + flowchart wiring:** verified Massive (ex-Polygon)
+  current capabilities (real-time Benzinga news API, OHLCV aggregates, futures GA ES/GC/CL, IPO/treasury/
+  inflation/calendar endpoints, official MCP server; free=5/min delayed, Dev $79 real-time, Adv $199 +WS).
+  Banked: (1) **VOLUME HONESTY** rule in `coaching_philosophy.md` (total=fact / delta=estimate / Bookmap=
+  order-flow truth) + cross-link in `strat_zone_taxonomy.md`; (2) **`bionic_briefing_spec.md`** (NEW —
+  daily broadcast recap, GO); (3) **`live_vision_board_spec.md`** (NEW — repo-as-memory made human-
+  readable, GO, ONE open scope question A/B/C). Wired Briefing + Vision Board into the `tech_architecture_
+  skeleton.md` Mermaid.
+  - **OPEN ITEM (do not lose): `tech_architecture_master.svg` is OUT OF SYNC** with the Mermaid (it lacks
+    the Briefing + Vision Board nodes). Re-render the SVG to restore the locked matched-pair. Flagged
+    inline in the doc under the FLOW header.
+  - **OPEN: Vision Board scope** — internal (A) / student-facing (B) / both (C, leaning). Mark decides.
 - **Chat 6 (Jun 7 2026) — NUGGET: THE COACH OPENS BY ASKING (`coaching_philosophy.md`):** the coach's
   first move is diagnostic questions ("what's been killing your trades?"), not reciting the value-prop —
   asking is coaching, reciting the pitch is guru behavior. The pitch belongs to the funnel/hook; inside,

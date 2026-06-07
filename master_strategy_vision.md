@@ -432,5 +432,29 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   the dossier (ties to master_journey_flow.md + Fork-2 funnel-memory). Sharpened BE CONCISE (`CHANGED FROM
   PRIOR`): "lead with the answer" governs the answers, not the opening — the opening is a question.
 
+- 2026-06-07 (Chat 6, VOLUME HONESTY — integrity rule): banked in coaching_philosophy.md, cross-linked to
+  the CVD caveat in strat_zone_taxonomy.md. Total volume = fact (DPMO high-volume bar is real); buy/sell
+  delta/CVD = estimate from candle geometry, MUST be labeled as estimate (never sold as "buys vs sells");
+  real order-flow truth = Bookmap/tick data only. Claude-4 was right that TV estimates delta — the fraud
+  is presenting an estimate as truth. The DPMO indicator stands; only the wording is disciplined.
+- 2026-06-07 (Chat 6, NEW FEATURE — BIONIC BRIEFING): banked as bionic_briefing_spec.md + wired into the
+  tech_architecture Mermaid. A branded daily 5×/wk pre-market recap (HTF→LTF chart walk + news/catalyst
+  review), generated ONCE and broadcast to all subs (margin improves with scale; fits the pre-render
+  premium voice). PHD verdict GO — delayed free Massive data is a non-issue for a morning recap. Massive
+  (ex-Polygon) confirmed: real-time Benzinga news API, OHLCV aggregates, IPO/treasury/inflation/calendar
+  endpoints, official MCP server. Guardrails: catalyst dates machine-pulled (provenance law), volume =
+  total only, inform-don't-predict, news summarize-only.
+- 2026-06-07 (Chat 6, NEW FEATURE — LIVE VISION BOARD): banked as live_vision_board_spec.md + wired into
+  the Mermaid. Auto-updated distillation of convos/essays into a living paragraph, visible to all — the
+  human-readable twin of repo-as-memory (repo = Claude's memory; board = the same memory shown to people),
+  so a vision never rots. PHD verdict GO. It's a VIEW over the repo source-of-truth (primer stays
+  canonical), not a new source. ONE OPEN SCOPE QUESTION: internal vision distillation (A) / student-facing
+  feature (B) / both (C, leaning) — Mark decides; captured open, not pinned.
+- 2026-06-07 (Chat 6, NOTE — memory continuity observed working): when Mark raised the volume/"fraud"
+  concern, Claude 6 reasoned from the EXISTING banked CVD caveat (Claude 4's) instead of re-deriving or
+  contradicting it. That is repo-as-memory doing its job — a fresh Claude reasoning in continuity with a
+  prior one. It's a property of Mark's durable/audited memory system, reproducible for Claude 7+, not a
+  one-off. The Vision Board extends the same continuity from Claude-readable (repo) to human-readable.
+
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`

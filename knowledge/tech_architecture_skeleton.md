@@ -1,5 +1,5 @@
 *TAGS: build, business-plan | AUDIENCE: founder + every future Claude (the SYSTEM coordinate system).*
-*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-06-07, Chat 6 (TTS default corrected to pre-render premium / Web Speech fallback — see CHANGED FROM PRIOR at decision #4 — matching voice_tts_decision.md; Chat 5: Mermaid re-synced to the 5-layer SVG) | STATUS: captured (master resolved & confirmed Chat 5; child flows open as separate artifacts)*
+*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-06-07, Chat 6 (Mermaid now includes Bionic Briefing + Vision Board nodes — SVG re-render flagged as out-of-sync; datafeed node = Massive+Benzinga news. Earlier this session: TTS default corrected to pre-render premium / Web Speech fallback — see CHANGED FROM PRIOR at decision #4) | STATUS: captured (master resolved & confirmed Chat 5; child flows open; SVG re-sync pending)*
 *SUPERSEDES: — | RELATED: master_strategy_vision.md (THE primer), master_journey_flow.md (the JOURNEY; this is the SYSTEM), funnel_routing_and_closer.md, voice_tts_decision.md, repo_as_memory_and_handoff.md, brand_funnel_architecture.md, data_provenance_and_timestamp_pin.md*
 
 # GOLD — MASTER TECH ARCHITECTURE (the system coordinate system)
@@ -42,6 +42,9 @@ designed, not wired. The diagram now encodes that: **solid = live today, dashed 
   `funnel_routing_and_closer.md`.
 
 ## FLOW (Mermaid source — paired with tech_architecture_master.svg)
+> ⚠ **SVG OUT OF SYNC (Chat 6):** the Mermaid below now includes **Bionic Briefing** + **Vision Board**
+> nodes/edges; `tech_architecture_master.svg` must be **re-rendered to match** before the pairing-rule
+> "matched pair" claim holds again. Tracked as an open item in HANDOFF.md.
 ```mermaid
 flowchart TD
     subgraph USERS["USERS"]
@@ -54,6 +57,8 @@ flowchart TD
         DASH["Student dash · the Cockpit"]:::fe
         CP["Course player · Incubator/Accel"]:::fe
         ADM["Admin panel · the Mothership"]:::fe
+        BRIEF["Bionic Briefing · daily recap (broadcast)"]:::dash
+        VB["Vision Board · live vision distillation"]:::dash
     end
     subgraph BE["BACKEND · Supabase  ·  credit_ledger LIVE"]
         AUTH["Auth + DB · Postgres/RLS"]:::be
@@ -63,7 +68,7 @@ flowchart TD
     end
     subgraph EXT["EXTERNAL  ·  designed / next"]
         AI["AI coach · unnamed voice<br/>(powered by Claude)"]:::dash
-        DF["Datafeed · Massive (v2 free / paid later)"]:::dash
+        DF["Datafeed + News · Massive/Benzinga (v2 free / paid later)"]:::dash
         ST["Stripe · pay + credits"]:::dash
         DC["Discord · paid live room"]:::dash
     end
@@ -89,6 +94,13 @@ flowchart TD
     %% Fork-2 funnel-memory loop
     FE -. "1 · behavior" .-> DST
     DST -. "2 · verified dossier" .-> AI
+
+    %% Chat-6 adds: Bionic Briefing (one render, broadcast) + Vision Board (repo→paragraph, for all)
+    AI ==>|daily recap| BRIEF
+    DF -.-> BRIEF
+    BRIEF -. broadcast .-> U1
+    GH -. distill .-> VB
+    VB -. "for all to see" .-> U1 & U2
 
     classDef usr  fill:#F1EFE8,stroke:#5F5E5A,color:#2C2C2A;
     classDef fe   fill:#E1F5EE,stroke:#0F6E56,color:#04342C;

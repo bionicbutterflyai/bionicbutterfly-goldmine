@@ -1,5 +1,5 @@
 *TAGS: coaching, business-plan, build | AUDIENCE: founder + every future Claude (the WHAT & WHY of the coach).*
-*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-07, Chat 6 (banked THE COACH OPENS BY ASKING — coach's first move is diagnostic questions, not the pitch; tied to intake/onboarding; sharpened BE CONCISE. Earlier this session: TTS default line corrected — see CHANGED FROM PRIOR markers) | STATUS: captured*
+*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-07, Chat 6 (added VOLUME HONESTY — total=fact / delta=estimate / order-flow truth=Bookmap; never claim buys-vs-sells off bar data. Earlier this session: COACH OPENS BY ASKING; TTS default correction) | STATUS: captured*
 *SUPERSEDES: — | RELATED: master_journey_flow.md, voice_tts_decision.md, brand_funnel_architecture.md, funnel_brainstorm_reasoning.md*
 
 # GOLD — THE COACHING PHILOSOPHY (voice-first · coach-not-consultant · accountability)
@@ -91,6 +91,22 @@ THE COACH OPENS BY ASKING). Concision applies to the answers; the opening is a q
   Anthropic's partners use). NOT "Claude Coach" as a product name — the coach stays unnamed
   in-experience, and "Claude" is the credit, not the coach's identity. Confirm the exact approved
   form against Anthropic's current trademark/brand-usage policy before launch.
+
+## VOLUME HONESTY — never claim data you can't separate (Chat 6, Mark)
+A hard integrity line, because the whole brand is *not faking it*: you cannot tell a student "buys vs
+sells" off data that can't separate them. Three tiers, and the rule is to label each honestly:
+- **Total volume = FACT.** Contracts traded per bar — no aggressor-side claim. The DPMO's vibrant high-
+  volume bar (vol ≥ highest of prior 10) is real, and it's *why the indicator is legit*. This is the
+  volume you confirm a breakout with: did the move come on expanding volume, or is it thin.
+- **Buy/sell delta (CVD) = ESTIMATE — say so.** TV/NinjaTrader/Massive bars give OHLCV (total only);
+  any delta is *estimated from candle geometry* (NOT true tick bid/ask — see the CVD caveat in
+  strat_zone_taxonomy.md). It's a shape-derived pressure proxy. It becomes fraud the moment it's sold to
+  a student as "buy volume vs sell volume." Keep the indicator; fix only the wording.
+- **Real buy/sell separation = TICK DATA only.** Which trade hit the bid vs the ask requires tick/order-
+  flow data. **Bookmap** is the honest picture — it shows real volume at price and time. Everything else
+  is total-volume or an estimate.
+The rule: total volume stated as fact; estimated delta stated as estimate; order-flow truth = Bookmap.
+(Claude-4 was technically right that TV estimates delta; the fraud is presenting an estimate as truth.)
 
 ## THE HONEST VERDICT — value to BOTH outcomes (the thesis-saver; do not skip)
 **Two different populations — keep them straight:** ~90% of *all* traders fail — that's the **unfiltered
