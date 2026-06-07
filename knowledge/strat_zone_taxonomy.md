@@ -7,6 +7,20 @@ the thing every prior handoff referenced but never carried. It MUST ride in ever
 
 ---
 
+## THE MANTRA — the root of the whole strat (Mark's, captured Chat 5)
+**TIMING · LEVELS · BEHAVIOUR of PRICE.** That's it. Mark has mastered every platform and indicator in
+the industry ("I read the DOM faster than a McDonald's menu") and his conclusion is blunt: **it's all
+BS, it all doesn't work — *except* these three.** Everything else in this doc is just the detailed
+expression of the mantra:
+- **TIMING** = *when* (the 9:30 open / session windows; the DPMO gate; staying out of news/event chop —
+  the Trump-tweet-rips-your-stop danger).
+- **LEVELS** = *where* (the ~14–16 zones / VWAPs / reference levels below — real confluence vs no-trade chop).
+- **BEHAVIOUR of PRICE** = *how it acts* (the read at the level in the window — DOM, Bookmap liquidity,
+  the obvious-confluence gate).
+This is *why* the chart is clean and the 7 commodity indicators are stripped: they aren't Timing, Levels,
+or Behaviour, so they're noise. Earned authority — Mark stripped them because he used them all and watched
+them fail, not from the cheap seats. Every future Claude: the strat reduces to these three words.
+
 ## ONE-LINE
 The STRAT is ~14–16 session zones, VWAPs, and reference levels — most overlapping by design — that
 together frame whether a setup is at real confluence or in a no-trade chop pocket. The DPMO 3-green
@@ -193,6 +207,14 @@ The three uploaded images do NOT carry equal trust, because the *surfaces* diffe
 RULE: the moment a feature asks Claude to *analyze* the uploaded TV chart, stop — that's the trap.
 Analyze Bookmap/GEX; treat TV as a reference image. (Captured as a guardrail against a future design
 mistake that would fail invisibly on a subset of students.)
+
+THE OBVIOUS-CONFLUENCE GATE (Chat 5): Claude does NOT need a precise read from every (often messy)
+Bookmap/GEX. A confluence **only counts if it's OBVIOUS**; if it isn't clearly there, **don't factor it
+and say so** ("no clean Bookmap confluence here"). This turns hard extraction into an easy
+clear-vs-not-clear call (robust) and is *better coaching* — forcing a read on ambiguity teaches
+over-interpretation; discarding ambiguity is discipline. Tune the threshold to err **conservative**
+(skip a subtle real signal rather than hallucinate one). Downgrades the read-reliability risk from
+"prove it's possible" to "tune the gate cautious + a small validation set." See master_strategy_vision.md.
 
 ## RELATED FEATURE — TRADE-JOURNAL IMAGE BOX (today's original goal; sample for GEX/Bookmap ingestion)
 Student selects a trade in the journal → a large 3-pane upload modal opens: **right (large) =

@@ -120,7 +120,13 @@ flowchart TD
    launch dependency (per `voice_tts_decision.md`).
 5. **Anthropic per-student cost = the core margin risk** (same lesson as TTS): only **verified** data
    reaches the brain; cache/precompute; don't call the brain per keystroke. The dollar tolerance is
-   Mark's business call, not Claude's to set.
+   Mark's business call, not Claude's to set. **Two-tier wallet:** Mark holds the master supplier wallet;
+   the `credit_ledger` meters supplier COGS vs each student's credit balance/usage (two-sided, not one
+   counter). **Prompt caching + the dossier** cut re-read cost so a student turn doesn't re-pay to
+   reprocess full history. The Lab must surface a **live credit meter** (remaining / used-this-session /
+   last-interaction cost) — transparency is the precondition for the value-pricing psychology, and
+   graceful credit-exhaustion (warn early, smooth top-up, never freeze/lose work) is a hard requirement
+   (see credit_value_pricing_model.md).
 6. **Each layer -> its own child flow** (matched pair) — next task. See below.
 
 ## THE VERIFIED-ONLY RULE (wired into the architecture)

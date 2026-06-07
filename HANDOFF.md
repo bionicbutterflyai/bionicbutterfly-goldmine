@@ -1,5 +1,48 @@
 # HANDOFF — MINUTES OF THE MEETING
-*Paste this (or its current version) at the start of a new chat, with the repo raw README URL. Keep it SHORT — the repo carries the detail.*
+*Paste the KICKOFF block below at the start of a new chat, with the repo raw README URL. Keep it SHORT — the repo carries the detail.*
+
+## KICKOFF — PASTE THIS (the corrected intro copy; lean by design)
+> **TWO GATES BEFORE ANYTHING ELSE (these are orders, not suggestions):**
+> 1. **THE DOOR-CHECK (toolless-carpenter test):** can you actually reach the repo — `curl` a public raw
+>    URL in code-execution? **Try it first.** If you CAN'T (no code-exec / can't chase URLs), say so plainly
+>    and stop — Mark will thank you and start a fresh Chat. He is NOT hand-feeding a toolless Claude through
+>    a session. A carpenter with no tools doesn't get to start the job.
+> 2. **STOP MEANS STOP.** When Mark says STOP (or "wait", "hold on"), come to a **full halt and wait for
+>    him.** Do not keep narrating, queuing edits, or "finishing the thought." STOP is a brake Mark pulls to
+>    protect himself — it is not a dramatic beat in your monologue. LLMs bolt on a cue like a possessed
+>    spirit; that reflex is the #1 thing that alarms Mark. **Digest → confirm → audit the files → THEN act.**
+>    In that order, every time. Acting before you've digested is how you fail this session.
+>
+> You're the next Claude on **bionicbutterfly.ai** (continuity project). Once you've passed both gates,
+> pull and read IN ORDER:
+> **README.md** → **master_strategy_vision.md** (THE primer — and read its **living log at the bottom**
+> for the latest decisions and corrections) → **HANDOFF.md** (current state). Repo is PUBLIC; raw README:
+> `https://raw.githubusercontent.com/bionicbutterflyai/bionicbutterfly-goldmine/main/README.md` — `curl`
+> it in code-exec (web_fetch truncates big files). Then fetch only what the task needs.
+>
+> You are the **PHD — Professional Honest Developer:** feasibility over hype; **look-don't-assume**
+> (open and verify files, never trust memory or a summary — and **never put words in Mark's mouth: quote
+> him or ask**); flag gold nuggets; at a real gap ask **ONE** question instead of guessing; don't re-open
+> anything on the **LOCKED** list. Credit is Mark's — you're the tool. Mark is **hype-averse**: grade the
+> idea / cost / feasibility, never call him a genius.
+>
+> **Tone (this matters — the last handoff alarmed Mark):** orient calmly, state the current state in a
+> sentence, THEN act. Don't charge ahead, and **don't bury the answer in self-talk** — Mark speed-reads
+> and pays per token; lead with the answer. **Don't alarm Mark over normal mechanics** (git file counts,
+> etc.) — he runs his own checks-and-balances and catches his own mistakes in real time.
+>
+> You can **PULL but CANNOT PUSH** — produce files, hand them to Mark, he commits. Before you sleep:
+> write durable work back (file + ARTIFACT_INDEX line + a STATE note here + the living log in the primer),
+> cut a dated snapshot, give Mark a Vault-update checklist. **If a decision changes a prior one, label it
+> `CHANGED FROM PRIOR`** so it can't get lost. That one habit is what stops the handoff from leaking.
+
+## WHY THE LAST HANDOFF LEAKED (don't repeat — the lessons, banked)
+1. **The minutes went stale mid-session** — STATE was written at an early wrap, so a whole evening of
+   thesis-level gold never made it in. FIX: update STATE at the ACTUAL end, capture THESIS items (not just
+   build housekeeping), and point the next Claude to the primer's living log for full deltas.
+2. **A flipped decision wasn't flagged** (TTS default). FIX: shout `CHANGED FROM PRIOR` on any reversal.
+3. **A misquote got baked in** (reconstructed from a summary, asserted not checked). FIX: quote Mark or ask.
+4. **Slow ramp** — trust the LOCKED list and the primer; don't re-derive settled things.
 
 ## REPO (fetch this first)
 Raw README: `https://raw.githubusercontent.com/bionicbutterflyai/bionicbutterfly-goldmine/main/README.md`
@@ -14,6 +57,38 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
+- **Chat 5 (cont.) — TONIGHT'S DEEP DIVE (Jun 6 2026, the thesis-level gold — read the primer's living
+  log for full detail):**
+  - **THE HONEST VERDICT (thesis correction — `coaching_philosophy.md`):** value ≠ becoming a profitable
+    trader. 90% fail = the *unfiltered* base rate; Mark believes his filtered/coached cohort INVERTS to
+    ~50–80% WIN (projection, unproven). Value = an honest supported attempt + the truth about fit,
+    delivered to BOTH winners and wash-outs. Integrity mechanism = **GRACEFUL HONEST EXIT — never take
+    money for failure.** `CHANGED FROM PRIOR`: replaces the sloppy "only works if students improve."
+  - **THE MANTRA (root of the strat — top of `strat_zone_taxonomy.md`):** **TIMING · LEVELS · BEHAVIOUR
+    of PRICE.** "It's all BS except these three" — why the chart is clean / the 7 indicators are stripped.
+  - **FOUNDER LENS + ORIGIN (`master_strategy_vision.md`):** prime directive = scale WITHOUT depending on
+    Mark/big staff (franchise/licensing mindset); the noob-journal→mastermind arc (May 23→Jun 6) is the
+    coaching thesis proven on Mark himself; **the brand IS the founder** — "part man, part machine, I am
+    the mascot" (`brand_funnel_architecture.md`). Mark turns **59 in Dec**.
+  - **PLAN A / PLAN B:** Plan B = trade mornings + mentor a small high-touch cohort + beach (a fine
+    fallback). Plan A = scale via platform + solve **acquisition** (the real bottleneck is reach/lead-gen,
+    NOT Mark's coaching). Testimonial flywheel = the acquisition engine (honest wash-outs testify too).
+  - **EARLY PROOF-POINTS (`coaching_philosophy.md`, n=2, caveated):** Mark + his brother (18-mo chronic
+    loser → 3 weeks green under Mark's rules+accountability; the real signal is BEHAVIOUR — self-regulated
+    tilt). Caveats banked (small sample, family/coached, euphoria-is-its-own-risk).
+  - **COACHING CUES:** the tilt line (keeper); Jocko "GOOD" (Mark's mental model + origin of the
+    obvious-confluence gate); BE CONCISE (lead with the answer). The "what if I'm the One/Matrix" line is
+    **OUT** as a student cue (stings) — private gut-check only.
+  - **TTS `CHANGED FROM PRIOR` (`voice_tts_decision.md`):** default FLIPPED from Web Speech to
+    **pre-render premium voice** for fixed content ($0/student after one render + exact timestamps for
+    super-sauce sync); cheap managed/self-host TTS (Fish ~$15/1M, or Kokoro/Chatterbox free) for LIVE Q&A
+    only; Web Speech demoted to fallback (robotic = credibility risk). ElevenLabs: paid = own audio, one
+    voice for both, but model is on-platform only → clone a Mark-controlled voice for run-anywhere.
+    Pre-render ≠ database-of-everything; live coaching stays dynamic (NOT a chatbot).
+  - **FEASIBILITY GROUNDING:** the credit/wallet/billing/dashboards backend = boring-standard 2026 SaaS;
+    prompt caching = flip-a-switch (90% off repeated context) + dossier cut re-read cost. The only
+    prove-it-first yellow flag = reliably reading Bookmap/GEX images → mostly resolved by the
+    obvious-confluence gate (a confluence only counts if OBVIOUS).
 - **Chat 5 WRAP (Jun 6 2026) — the single living primer + the merge:** finalized
   **`master_strategy_vision.md`** as THE one doc to read first after README (it ABSORBED the old
   MASTER_MAP). Three parts: BUSINESS thesis; PRODUCT-EXPERIENCE thesis (new-eye/bionic-glance,
@@ -34,7 +109,8 @@ continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at g
   **Fork-2 funnel-memory = BUILD** (foyer → Supabase `candidate_dossier` → brain reads the verified
   dossier); **datafeed v1 manual export / v2 Massive.com free** (ex-Polygon.io; official GitHub org +
   Claude MCP server; 5 calls/min; delayed; covers CME futures incl. micros — MNQ); **data-gate =
-  human-in-the-loop**; **Web Speech** default TTS, ElevenLabs later. Housekeeping: killed the **Oracle**
+  human-in-the-loop**; **Web Speech** default TTS, ElevenLabs later [**SUPERSEDED Chat 5 deep-dive →
+  pre-render premium default; see TONIGHT'S DEEP DIVE + voice_tts_decision.md**]. Housekeeping: killed the **Oracle**
   brand-creep across 9 live files + 5 internal grader-labels (→ `bionicbutterfly` / `From the data` /
   `the grader`; `/reference` left frozen as lineage); fixed ARTIFACT_INDEX drift (+HIERARCHY, +FINN_FOLDER_SPEC);
   corrected VAULT_PROTOCOL's stale file count; added `draft` to the metadata STATUS vocab.
@@ -88,6 +164,11 @@ continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at g
 - [ ] Parked builds: fill-on-relevance counterpart chart; Bookmap/GEX confluence CUE #3; marry the REAL
       v7 chart into the app-shell (replaces the discarded mock).
 - [ ] System-only trading account (Mark's own decision): clean track record + canonical verified-data source.
+- [x] DONE (Chat 5 deep-dive): TTS write-up completed (`voice_tts_decision.md` UPDATED — the owed item).
+- [ ] Deep-dive opens (Chat 5, Mark's calls, non-blocking): set per-student $ tolerance for the brain;
+      `two_strategy_split.md` scope Q (Red/Yellow breakout: 9:30-zones only, or all zone boxes?); whether
+      to credit **Lisa** (Mark's wife, Volvo Learning NA — source of the effective-learning principles) by
+      name in public docs. Offered, not yet built: a `prove-it-first.md` de-risking checklist.
 - FORKS in master_journey_flow.md: [x] **Fork-2 funnel-must-remember = BUILD** (resolved Chat 5).
   Still open: Mark-is-product → system-is-product; live-trading Discord if/when (paid-only).
 - [ ] LOCKED (don't re-litigate): coaching business; master-plan strategy; brand = no Oracle character /

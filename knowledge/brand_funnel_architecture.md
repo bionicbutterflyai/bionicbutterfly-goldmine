@@ -8,6 +8,14 @@ Loud hook-skin at the top, sober quant-serious spine underneath — and the **ga
 conversion event.** The guru-phobic skeptic clicks the loud hook braced for hype, hits the relief of
 NOT getting hype, and converts on the contrast.
 
+## THE BRAND IS THE FOUNDER (bionic = part man, part machine)
+*Captured Chat 5 — was missing.* The name isn't decoration: **Mark literally embodies it — "part man,
+part machine. I am the mascot."** A human trader (instinct, behaviour, the bionic *glance*) fused with the
+machine (the platform, the strat engine, Claude). The bionic butterfly = that fusion made into a product:
+the human read + the machine's consistency. The founder *is* the living proof of the thing being sold —
+which is why his noob→mastermind arc and his own trading results are on-brand assets, not vanity. Useful
+anywhere brand story / origin / "why this name" comes up.
+
 ## THE MECHANISM
 - **Hook-skin (top-of-funnel ONLY):** the Matrix/character hype aesthetic on TikTok thumbnails &
   cold-opens. Job: win the half-second scroll. It's a *wink* (obviously a costume) — reads as

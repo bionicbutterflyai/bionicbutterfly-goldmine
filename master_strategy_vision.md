@@ -33,6 +33,26 @@ metadata/exposure tags GOVERN what any automation may surface** — so a support
 without leaking private contacts, financials, or unreleased work (see HIERARCHY.md, exposure-first). It
 isn't a filing system; it's access control. Judge every build decision by one test: **does it reduce
 Mark's dependence, or add to it?**
+*(Mark's zone of genius is the VISION/creative — like drawing a custom home to a client's dream spec,
+which is when he's happiest; the build/PM/infra is "glorified PM work, boring." So: lead with
+vision/strategy, and design so the system and others carry the PM/ops grind — spare Mark the infra
+unless it truly needs him. This is the prime directive felt from the inside.)*
+*Origin (the arc that proves the thesis on Mark himself): he was a profitable trader at 58 winding down
+the construction business to trade and retire; wanted "a nice custom journal," contacted a Claude for an
+Excel sheet (his first real AI use beyond search) on **May 23, 2026**; the Claude said "wrong direction —
+go web-based"; **May 26** it was live with real trades; by **June 6** he was masterminding this platform.
+He is an earned **expert across every trading platform and indicator** — "I read the DOM faster than a
+McDonald's menu" — whose blunt verdict is "it's all BS, it all doesn't work" except his mantra
+(**TIMING · LEVELS · BEHAVIOUR of PRICE**). That mastery is why stripping the commodity tools is credible
+from him, and the 2-week noob→mastermind arc is the coaching thesis run on himself: honest direction +
+doing the work + latent expertise = transformation. (Specific P&L kept OUT of this public doc.)*
+*Plan A vs Plan B (the ambition, stated honestly): **Plan B** = Mark trades mornings, mentors a small
+high-touch 1:1 cohort (weekly live calls) at his believed ~50–80% win, lives on the beach — a genuinely
+good life and a fine business, just not scaled. **Plan A** = the platform + journal + Claude coach carry
+the coaching so Mark's hours leave the loop, AND acquisition scales. The bottleneck between B and A is
+**NOT Mark's ability to coach — it's reach/lead-gen** (hook marketing doesn't scale leads; that's the
+testimonial-flywheel's job). So the ambition is to scale **reach**, while the system holds the success
+rate above the unfiltered base rate (the Fork-1 build) and the honest-verdict holds the floor.*
 
 # PART A — THE BUSINESS THESIS
 
@@ -74,13 +94,15 @@ real-identity/card). The funnel exists to sort these three and only escalate the
   influencer *to* YouTube influencers — he sells online businesses on killing the old
   appointment-setter → human-closer hard-sell and **replacing the human sales team with AI agents**:
   AI-driven drip gets prospects to binge the material and self-qualify, so you **filter FOR the clients
-  you want** instead of chasing the ones you don't. That IS our AI funnel agent (drip · qualify) + the
-  3-way behavioral sort + the anti-guru "make-them-chase-you" foyer — Whiting just gives it a concrete
-  operating model and outside proof it works on this audience. **Now-vs-later:** today **Mark is the
-  human closer, by design** (1:1 Zoom; he has the time and learns onboarding by living it; the
-  fit-filter's final gate is Mark on the call). The Whiting AI-closer is the *destination* of Fork 1,
-  not day one — AI takes drip/qualify/sort now, the human close de-personalizes over time. (Whiting's
-  *TEDI* summarizes socials + expenses; it does NOT build our funnel-memory — that's our own build.)
+  you want** instead of chasing the ones you don't. Map it precisely to OUR three roles (see
+  build_vs_buy_and_competitive_read.md): the **cold REACH** (drip to strangers) is the rentable Whiting
+  piece; the **INTAKE** that captures what they say/do → the dossier, and the **COACH** that reads it,
+  are **ours, built and owned** — that's the Fork-2 funnel-memory, the data a rented tool could never
+  keep. **Now-vs-later:** today **Mark is the human closer, by design** (1:1 Zoom; he has the time and
+  learns onboarding by living it; the fit-filter's final gate is Mark on the call). The Whiting AI-closer
+  is the *destination* of Fork 1, not day one — AI can take the cold reach now; the intake→dossier→coach
+  pipeline is ours from the start; the human close de-personalizes over time. (Whiting's *TEDI*
+  summarizes socials + expenses; it does NOT build our funnel-memory — that's our own build.)
   Full routing + closer decision tree (the three buckets; the course-as-hook-and-courtesy rule — never
   route a hot ICP through the 90%-off course, it cools the lead) → **funnel_routing_and_closer.md**.
 
@@ -98,6 +120,25 @@ course is the vehicle, the $10 charge is the velvet rope, and every verified pay
 — into the close if they're the ready ICP, into nurture if they're not yet. This is the "real card =
 identity" foyer-door filter, now with its why. (Full door/routing detail → funnel_routing_and_closer.md.)
 
+## THE MEMORY MOMENT → THE TESTIMONIAL FLYWHEEL (how it grows without a pre-built audience)
+The funnel-memory has a **second payoff beyond better coaching.** Because ONE Voice knows the student's
+whole arc — the hook, every support chat, every logged trade — it can surface something she said long
+ago, *unprompted*. That lands as **awe and trust**: "wait, it actually knows me — I *was* the one who
+got in early and blew up on news, and now I'm not." That moment is the **factory for authentic
+testimonials + word of mouth.** You make **no extra revenue** giving an already-loyal client that
+value — but her post on socials, her word of mouth, is **GOLD**, because **distribution (reach) is the
+real bottleneck** (build_vs_buy_and_competitive_read.md) and the one thing Mark doesn't start with
+(Whiting had a pre-built audience; Mark doesn't). So **the product's value-delivery IS the acquisition
+engine** — earned proof, not manufactured hype (on-brand). **And it isn't only winners who testify:** the
+honest wash-out ("I tried, real coaching, it's not for me — and they told me the truth, didn't bleed me")
+is often a *more credible* advocate than a winner (honesty, not survivorship hype) — see the HONEST
+VERDICT in coaching_philosophy.md. One condition — honest value delivered — pays off three ways:
+**retention + pricing + distribution.**
+**Guardrails (so the memory delights, not creeps):** frame it as *your coach remembers your journey*,
+and make the memory **student-visible/owned** (she can see her own arc) — so recall reads as "we're
+tracking YOUR progress together," not "we have a file on you." Capture and celebrate the win-moment to
+make sharing **easy if she wants** — never extractive, never "now leave us a review."
+
 # PART B — THE PRODUCT-EXPERIENCE THESIS (why it feels like nothing else)
 *(verified from the full Chat-4 transcript by Claude 4's deep-dive — the half a repo-only read misses)*
 
@@ -111,7 +152,9 @@ can't yet do it. **The moat isn't the levels (commodity) — it's the legibility
 Every strat level/zone lives in the data layer ALWAYS, but the chart stays CLEAN by default — a level
 only draws/fills when the coach cites it as confluence for that moment. New eye sees a clean chart and a
 clear story; the confluence appears only when it matters. On-brand with "clean chart, none of the 7
-commodity indicators." (See strat_zone_taxonomy.md display rules.)
+commodity indicators." **The root behind all of it = Mark's mantra: TIMING · LEVELS · BEHAVIOUR of
+PRICE.** Everything else is BS he stripped after mastering it — the chart is clean because only those
+three matter (see strat_zone_taxonomy.md → THE MANTRA).
 
 ## THE SUPER-SAUCE (the signature mechanic — narration-synced highlight-and-fade)
 During the coach's voice presentation, as he *says* a level it **highlights, then fades back**. It's the
@@ -141,6 +184,15 @@ NEVER parse the student's TV** (display-reference only). The strat is rebuilt fr
 own system — which is exactly what protects it from every student's messy/incomplete TV. Not just a
 build choice: it's what makes the strat deliverable to anyone regardless of how they chart.
 (See data_provenance_and_timestamp_pin.md, strat_zone_taxonomy.md.)
+**The obvious-confluence gate (resolves the read-reliability risk).** Claude does NOT need a precise read
+from every (often messy) Bookmap/GEX. The rule: **a confluence only counts if it's OBVIOUS; if it isn't
+clearly there, don't factor it — and say so** ("no clean Bookmap confluence here"). This turns a hard
+extraction problem into an easy clear-vs-not-clear judgment (far more robust), AND it's *better coaching*:
+forcing a read on an ambiguous chart teaches over-interpretation (seeing signal that isn't there — how
+traders blow up); discarding ambiguity is elite discipline. Same DNA as the Socratic honesty loop. **Tune
+the threshold to err CONSERVATIVE** — better to skip a real-but-subtle signal than hallucinate one. (A
+real test once read one "pretty" Bookmap perfectly — but pretty isn't always; so "not obvious" becomes
+the coaching point, not a failure. Residual work = tune the gate cautious + a small validation set.)
 
 # PART C — THE BUILD & THE MONEY (Chat-5; the how)
 
@@ -162,11 +214,20 @@ ROI-on-learning metrics) — we inherit the effectiveness principle, not a corpo
 bar, cleared. (See learning_design_standards.md. Note: a repo-only Claude has NOT seen the demo —
 treat product-feel as reported, not observed.)
 
-## THE MONEY (the credit engine)
-Not a flat AI subscription — a credit loop: base credits with the course, every AI/coaching interaction
-consumes credits, top up via Stripe when they run out (Redis rate-limits abuse), balance in the Supabase
-RLS profile. **The credit engine IS the per-student cost model** — curiosity monetized without capping
-engagement.
+## THE MONEY (value-priced credits — full model in credit_value_pricing_model.md)
+Not a flat AI subscription — a **value-priced credit loop** (Finn-originated): **prove round-trip COGS
+first, then price up with margin**; base credits ship with the course, each interaction consumes
+credits, top up via Stripe (Redis rate-limits abuse), balance in the Supabase RLS profile. The premise:
+people pay for **value, not knowledge** — they begrudge a $500/mo flat guru subscription but gladly pay
+spend that returns more than it costs. The inversion (the sauce): usage credits make spending a
+**success signal, not a resented bill** — Suzy spends $300, her P&L rises $3,000, so it feels like
+investing, not being billed. Honest dependency (refined): the model needs real **value** — but
+**value ≠ becoming a profitable trader** (90% fail = the *unfiltered* base rate; Mark's filtered/coached cohort projected ~50–80% win, unproven; we can't manufacture traders).
+Value = an honest, supported attempt + the truth about whether they're cut out (see coaching_philosophy.md
+→ THE HONEST VERDICT); the integrity move is the **graceful honest exit** — never take money for failure.
+This self-aligns with the ICP filter and makes the accountability/honesty loop load-bearing. Every cost
+input (Claude tokens, TTS, datafeed) folds into the credit COGS, so partners like ElevenLabs are bought
+as zero-ops cost inputs and passed through with margin.
 
 ## HOW IT'S WIRED (one line per layer)
 Users → Netlify frontend (landing, auth, student "Cockpit", Incubator/Accelerator course player, admin
@@ -219,8 +280,102 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   of the journey) and the prime directive: scale WITHOUT depending on the founder or a big staff. The
   funnel-that-filters and the metadata/exposure-governed repo are the two pillars of that autonomy.
   Kept at PUBLIC altitude on purpose (credibility + directive in; personal-overwhelm specifics and any
-  real financials kept OUT — the exposure discipline itself). Age noted as "turning 60 in December"
-  (Mark wrote both 58 and 60 — confirm if it matters).
+  real financials kept OUT — the exposure discipline itself). Age: turning 59 this December (confirmed by Mark).
+- 2026-06-06 (Chat 5, founder lens v2): expanded the founder section with scale credibility (~35 staff,
+  2,500+ sites, exclusive franchise agency, learning portals for Canadian banks/law/automotive — so the
+  effective-learning thesis is lived) and named the SCALING MECHANISM: Mark's franchise/licensing
+  background (build once, duplicatable, operators run their own businesses on it). Added his
+  zone-of-genius (vision = joy; build/PM = the grind to minimize for him).
+- 2026-06-06 (Chat 5, money model): banked Finn's value-priced CREDIT model as its own doc
+  (credit_value_pricing_model.md) — it had leaked in the handoff, resurfaced from memory (exhibit A for
+  this repo). Upgraded THE MONEY section: prove-COGS-first → price-up-with-margin; sell value not
+  knowledge; the usage-credit inversion (spend = success signal; Suzy $300 → P&L +$3,000); honest
+  dependency (only works if students improve → self-aligns with the ICP filter).
+- 2026-06-06 (Chat 5, credit UX): from Mark's own AI-cost pain, banked the STUDENT-EXPERIENCE
+  requirements (in credit_value_pricing_model.md + tech_architecture decision #5): radical transparency
+  (live credit meter: remaining / used-this-session / last-interaction), educate-as-empowerment on
+  round-trips, graceful limits (warn early, smooth top-up, never freeze/lose work), and the TWO-TIER
+  WALLET (Mark = master supplier wallet; system meters supplier COGS vs student credit balance; dossier
+  + prompt caching cut re-read cost). Insight: transparency is the PRECONDITION for the value-pricing
+  psychology (same $ = "investing" vs "being milked").
+- 2026-06-06 (Chat 5, obvious-confluence gate): resolved the Bookmap/GEX read-reliability flag. Rule:
+  a confluence only counts if OBVIOUS; if not clearly there, don't factor it and say so. Converts hard
+  extraction into an easy clear-vs-not-clear call AND is better coaching (discarding ambiguity = elite
+  discipline; forcing a read teaches over-interpretation). Tune the gate CONSERVATIVE. Downgrades the
+  risk from yellow ("prove possible") to green-with-a-dial ("tune cautious + small validation set").
+  Banked in master_strategy_vision (image-role guardrail) + strat_zone_taxonomy.md.
+- 2026-06-06 (Chat 5, build-vs-buy + TEDi read): banked build_vs_buy_and_competitive_read.md. TEDi is
+  Google Sheets + free Looker Studio dashboards + AI sales-agent funnels, NO coaching — wins on
+  DISTRIBUTION, not tech. Lesson: tech is commodity, don't out-engineer free; our moat is the coaching
+  (above his ceiling); the bottleneck is funnel/distribution. Rule: BUY commodity (payments, scheduling,
+  dashboards via Looker, email drip, the sales agent), BUILD the moat (coaching brain, strat/grader,
+  super-sauce, credit engine, dossier). The two AI agents differ: sales agent = buy/defer; coaching brain = build/own.
+- 2026-06-06 (Chat 5, integration + single-pane): added to build_vs_buy_and_competitive_read.md — how
+  3rd-parties plug in (API call / webhook-trigger / embed-widget / no-code glue like Zapier-Make) and the
+  SINGLE-PANE RULE: integrations CONSOLIDATE into one Cockpit (student) + one Mothership (Mark), never
+  proliferate. Rule: if a person must manage a new login to use the product, it was integrated wrong.
+  (Mark's trading tools stay separate from the business pane.)
+- 2026-06-06 (Chat 5, agent-roles correction): Mark caught a real contradiction (vision called
+  "drip/qualify" ours-to-build; build_vs_buy called it commodity-to-buy). Fixed both to a THREE-role
+  model: REACH (cold→door, drip to strangers) = commodity/buy-or-defer; INTAKE (door→dossier, the foyer
+  interview + behavior capture) = OURS/build; COACH (dossier→coaching) = OURS/build. The data pipeline
+  (intake→dossier→coach) is ours end to end; only the cold reach is rentable. Mark's instinct ("we ARE
+  the agent to have the data") confirmed correct for intake + coach.
+- 2026-06-06 (Chat 5, testimonial flywheel): banked the memory's SECOND payoff — one Voice knowing the
+  whole arc (hook→support→trades) surfaces things unprompted → awe/trust → authentic testimonials + WOM
+  = the DISTRIBUTION engine (answers the TEDi bottleneck: we don't start with Whiting's audience; results
+  manufacture advocates). One condition (real results) → retention + pricing + distribution. Guardrail:
+  delight-not-surveillance (frame as 'your coach remembers your journey'; make the dossier student-visible/owned;
+  make sharing easy but never extractive).
+- 2026-06-06 (Chat 5, HONEST VERDICT — thesis correction): Mark corrected an oversimplification ("only
+  works if students improve" smuggled the guru trap back in). Refined the core thesis: 90% fail is the
+  UNFILTERED base rate; Mark's filtered/high-touch cohort projected ~50–80% win (unproven until a cohort
+  runs; can't manufacture traders / "fake it" is poison). Value ≠
+  profit; value = an honest supported attempt + the truth about fit. The wash-out leaves with PRIDE
+  ("I tried, real coaching, it's not for me") = satisfied, often a better advocate than a winner.
+  Integrity mechanism = the GRACEFUL HONEST EXIT (never take money for failure). Mark can hold this line
+  because he doesn't need the revenue (trades profitably) — independence is the SOURCE of the integrity;
+  business = scale-via-automation or nothing. Banked in coaching_philosophy.md (THE HONEST VERDICT);
+  refined credit_value_pricing_model.md (honest dependency) + the thesis/flywheel here.
+- 2026-06-06 (Chat 5, THE MANTRA + origin): banked Mark's core strat mantra — TIMING · LEVELS ·
+  BEHAVIOUR of PRICE (the root the whole strat grows from; "it's all BS except these three") — at the
+  top of strat_zone_taxonomy.md, referenced from the clean-chart rule here. Added the origin arc to the
+  founder section: Excel-journal noob (May 23) → web-based live (May 26) → masterminding the platform
+  (Jun 6); expert across every platform/indicator; the arc is the coaching thesis proven on Mark himself.
+  (Specific trading P&L kept out of the public doc per exposure discipline.)
+- 2026-06-06 (Chat 5, rate misquote FIX + Plan A/B): corrected a misquote — the doc had said "Mark
+  believes ~80% wash out no matter what." Fixed across 5 spots to: 90% fail = the UNFILTERED base rate;
+  Mark believes his filtered/high-touch cohort INVERTS to ~50–80% WIN (his projection, unproven until a
+  cohort runs); scaled rate depends on the system replicating his accountability; honest-verdict = the
+  floor regardless. Also banked Plan A/Plan B (Plan B = trade+mentor small cohort+beach, fine fallback;
+  Plan A = scale via platform + solve acquisition) and the clarification that the scaling bottleneck is
+  ACQUISITION/lead-gen, not Mark's coaching. Did NOT bank the "what if I'm the One/Matrix" line as a
+  coaching cue (Mark's explicit call — it would sting a student).
+- 2026-06-06 (Chat 5, brother proof-point + tilt cue): banked into coaching_philosophy.md — EARLY
+  PROOF-POINTS (Mark + brother, n=2 caveated: brother 18mo chronic loser → 3 weeks green under Mark's
+  rules+accountability, but the real signal is BEHAVIOUR — self-regulated tilt, shut the day down on a
+  ~$100 Trump-tweet slip; caveats: small sample, family/coached, euphoria-is-its-own-risk so the coach
+  must temper the high too). Plus COACHING CUES: the tilt line ("on tilt? give me your money, at least
+  I'll invest it") = a keeper; the Matrix line stays OUT (stings).
+- 2026-06-06 (Chat 5, FULL TRANSCRIPT SWEEP — Mark called the bluff): re-mined all 31 human turns from
+  the transcript vs the repo. Big themes were captured; found + banked 3 genuine misses: (1) "part man,
+  part machine — I am the mascot" → THE BRAND IS THE FOUNDER (brand_funnel_architecture.md); (2) Jocko
+  Willink "GOOD" mental model + that the obvious-confluence gate was Mark's instinct, not a Claude's
+  (coaching_philosophy.md COACHING CUES); (3) "~50% of AI output is self-talk → coach leads with the
+  answer, concision = respect for paid attention" (coaching_philosophy.md BE CONCISE). Also UPDATED
+  voice_tts_decision.md: default FLIPPED from Web Speech to pre-render premium voice (robotic = credibility
+  risk), + ElevenLabs ownership rule + not-a-chatbot clarification.
+- 2026-06-06 (Chat 5, HANDOFF HARDENING): rewrote HANDOFF.md to stop the leak that cost ~4 hrs last
+  time. Added a lean KICKOFF paste-block (role + tone + anti-alarm behavior + CHANGED-FROM-PRIOR habit),
+  a "WHY THE LAST HANDOFF LEAKED" lessons note, a full TONIGHT'S DEEP DIVE state entry (honest-verdict,
+  mantra, founder lens, Plan A/B, brother proof-point, TTS flip, feasibility), flagged the stale Web
+  Speech default as SUPERSEDED, and closed the owed TTS item. The bones (repo-as-memory, PHD role,
+  capability-branch, write-back loop) were sound; the failure was stale minutes + unflagged decision
+  flips — both now guarded.
+- 2026-06-06 (Chat 5, KICKOFF GATES added): added the two hard gates to the top of HANDOFF.md's kickoff —
+  (1) the DOOR-CHECK (toolless-carpenter test: if a Claude can't curl the repo, it says so and Mark reboots
+  a fresh Chat — no hand-feeding); (2) STOP MEANS STOP (full halt + wait; digest→confirm→audit→THEN act;
+  the bolt-on-a-cue reflex is the #1 thing that alarms Mark). These are framed as orders, not tone.
 
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`

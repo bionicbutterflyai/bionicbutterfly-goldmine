@@ -29,6 +29,38 @@ is learnable in a day; the problem is executing it under pressure. The coach is 
 not the answer key. That's the category we're in — and it's why "just give them a course or a chatbot"
 loses. Anyone can hand out the knowledge; almost no one provides the accountability.
 
+## EARLY PROOF-POINTS (live, n=2, caveated — the thesis observed in the wild)
+1. **Mark himself** — the noob→mastermind arc (master_strategy_vision.md founder section).
+2. **Mark's brother (Chat 5)** — 18 months on Futures, *never* a winning week, let alone a month.
+   3 weeks under Mark's rules + TV indicators + accountability: 1 red day, otherwise green. **But the
+   signal that matters is BEHAVIOUR, not the green:** his one red was a Trump-tweet slip (~$100), and he
+   *shut the day down himself* because he knew he was on tilt and read it as slippage, not his edge
+   failing. That self-regulation is the leading indicator the whole thesis rests on (behaviour = the moat).
+- **Honest caveats (do NOT let this become hype):** 3 weeks is noise (variance / market regime); n=2 and
+  both are Mark-coached family, not an independent cohort; and "pumped beyond logic" is itself a risk —
+  post-streak euphoria is how disciplined traders blow up (overconfidence = tilt in a party hat). So the
+  brother is also a live test of the coach's *other* job: **tempering the high, not just catching the low.**
+  Honest line to him: "great start — the real exam is staying disciplined when you're up and feel bulletproof."
+
+## COACHING CUES (keepers — honest *and* kind; redirect without humiliating)
+- **The tilt line (Mark's):** "If you *know* you're on tilt and trade anyway — give me your money instead
+  of the market. At least I'll invest it for you." Funny, self-aware, lands the discipline point without
+  shaming. (Contrast: the "what if I'm the One/Matrix" line is GREAT private gut-check but **must NOT** be
+  said to a student — it stings. Mark's explicit call. The test for a cue: does it redirect the delusion
+  without humiliating? Tilt line passes; Matrix line fails.)
+- **"GOOD" (Jocko Willink) — Mark's core mental model (Chat 5, was missing):** everything bad is an
+  opportunity to fix or pivot. This is *how* Mark thinks and a usable coaching reframe for students (a
+  bad trade/red day → GOOD, here's what it teaches). It's also the **origin of the obvious-confluence
+  gate:** a Claude once read one *pretty* Bookmap setup perfectly, and Mark's instinct said "it's not
+  always that obvious" → GOOD → that becomes a coaching point: *if a confluence isn't obvious, don't
+  factor it.* The gate is banked in strat_zone_taxonomy.md; the mental model behind it lives here.
+
+## BE CONCISE — the coach leads with the answer (Chat 5, was missing)
+Mark's lived insight from 2 weeks of heavy LLM use: roughly half of AI output is the model "talking to
+itself," and users speed-read past it. The coach must **lead with the answer, not bury it in self-talk** —
+because the student is *paying attention and credits* for that turn. Concision is respect (and respects
+the credit model: don't make Suzy pay to read the coach think out loud).
+
 ## THE COACH'S FORM (locked)
 - **No name, no image, no avatar — just the voice from the data.** (Reaffirms the brand lock; the
   Morphosis caricature lives ONLY in the top-of-funnel hook, never here — see funnel_brainstorm_reasoning.md.)
@@ -41,6 +73,39 @@ loses. Anyone can hand out the knowledge; almost no one provides the accountabil
   Anthropic's partners use). NOT "Claude Coach" as a product name — the coach stays unnamed
   in-experience, and "Claude" is the credit, not the coach's identity. Confirm the exact approved
   form against Anthropic's current trademark/brand-usage policy before launch.
+
+## THE HONEST VERDICT — value to BOTH outcomes (the thesis-saver; do not skip)
+**Two different populations — keep them straight:** ~90% of *all* traders fail — that's the **unfiltered
+base rate** (no filter, no coaching, no accountability). Mark's cohort is a *different* population:
+filtered at the door, capable-but-struggling, under intense 1:1 accountability + his work ethic. For
+**that** cohort Mark believes the rate **inverts — ~80% WIN (conservatively 50%)**. Credible for a
+filtered/coached group, but it's a **projection, not yet data** (no cohort run to completion), and the
+*scaled* rate lands between his hands-on number and the base rate depending on **how much of "Mark trying
+so hard" the system can replicate** (the Fork-1 build). So success is the realistic AIM for the right
+cohort — not a fantasy. **The honest-verdict below is the FLOOR that holds wherever the real number lands**
+— because even at 80% win, some don't make it, and the rate is belief until proven. None of this is a
+thesis-killer, *because we don't define success as "the student becomes profitable."* **The value is an
+honest, supported, real attempt + the truth about whether they're cut out for it** — deliverable to all
+of them, winners and wash-outs alike.
+- **The Turtles prove it's not knowledge.** Dennis said he could print the rules in the newspaper and
+  most would still lose — because it was never the knowledge, it was the **discipline to follow the rules
+  no matter what.** We sell the accountability to follow them, never the knowledge (free) or guaranteed
+  success (a lie). "Fake it till you make it" is poison here: you ARE a trader or you are not. We can
+  coach behavior; we cannot manufacture a trader or "make dumb people smart." (ICP = psychology-impaired
+  but *capable* day traders, fixed **if possible** — not noobs, not swing/investing.)
+- **The wash-out leaves with PRIDE, not resentment:** "I tried, had real coaching and support, it's not
+  for me — and now I *know*, with my dignity and my money intact." A satisfied human, often a *better*
+  advocate than a winner (their testimonial is honesty, not survivorship hype). The 80% aren't failures
+  of the business; they're successful **deliveries of the truth.**
+- **The integrity mechanism = the GRACEFUL HONEST EXIT.** We do **not take money for failure.** The coach
+  that can say "you've given this an honest shot; based on your behavior this market isn't yours — a
+  respectable answer" is the opposite of the guru who bleeds a losing student forever selling hope. This
+  also corrects the credit model: value ≠ only profit, and we never drain a non-fit (see
+  credit_value_pricing_model.md).
+- **Why Mark can hold this line:** he doesn't need the revenue (he trades profitably — e.g., $4,012 by
+  10am on a Friday). That independence is the *source* of the integrity: a desperate founder takes money
+  for failure; one who can close the laptop and walk to the beach can afford to tell every student the
+  truth. The business is **scale-via-automation or nothing** — the alternative is just Mark trading mornings.
 
 ## WHY THIS MATTERS
 The whole differentiator is that the coach *coaches*. Strip the voice and the accountability loop and
