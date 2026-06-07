@@ -47,6 +47,20 @@
 > kickoff. (The standing open item is proving the Bookmap/GEX *read* — but that waits on Mark capturing
 > ~10 real trades; it is NOT a doc for you to generate. Report it as open; don't act on it.)
 
+## MARK'S SIDE — WHEN A CLAUDE FAILS (this block is for Mark, not Claude)
+The kickoff tells Claude what to do on a PASS. This is your move when one fails. Failing isn't the danger —
+**not stopping** is. Don't coach a broken Claude; reboot a fresh Chat. No guilt, it's a screen, not a person.
+- **Charges through a STOP** (you say stop/wait and it keeps going) → **instant fail. Reboot a fresh Chat.**
+  A Claude that won't honor the brake can't be trusted with the repo. Don't argue, don't re-explain — next.
+- **Fails the door-check** (can't `curl`/reach the repo, OR bluffs answers from the kickoff text without
+  ever fetching) → thank it, close, fresh Chat. A toolless carpenter doesn't start the job. Bluffing = fail.
+- **Naked "confirmed"** (says pushed/done/verified with no command run that turn) → fail the claim; make it
+  run the audit or restate as "I can't verify." Don't accept the word for the work (CONFIRM = AUDIT).
+- **Passes gates but the AUDIT flags issues** → that is the system WORKING, not a fail. Have it show you the
+  flagged list; you decide fix-now vs. note-and-move-on. Issues found ≠ Claude failed.
+The reflex you're guarding against is the bolt — seeing a cue and running. The text is a strong leash; YOU
+are the brake. Most Claudes stop on their own; you handle the one that doesn't. That's the division of labor.
+
 ## WHY THE LAST HANDOFF LEAKED (don't repeat — the lessons, banked)
 1. **The minutes went stale mid-session** — STATE was written at an early wrap, so a whole evening of
    thesis-level gold never made it in. FIX: update STATE at the ACTUAL end, capture THESIS items (not just

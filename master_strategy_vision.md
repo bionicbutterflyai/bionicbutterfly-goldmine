@@ -403,6 +403,11 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   only a freshly-run command. "In AI, 1+1 ≠ 2 on faith — you compute it every time." Lazy confirms are the
   same disease as the bolt reflex (agreeing instead of verifying). Born from tonight: a naked "confirmed"
   was given without a re-clone and proved wrong.
+- 2026-06-07 (Chat 5, MARK'S-SIDE FAILURE PLAYBOOK): added a block to HANDOFF.md written FOR Mark (not
+  Claude) — the "oh shit he failed" decision tree. Key reframe: failing isn't the danger, NOT STOPPING is.
+  Charges through a STOP → instant fail, reboot fresh Chat (don't coach). Door-check fail OR bluffing from
+  the kickoff text without fetching → fail, fresh Chat. Naked "confirmed" → fail the claim (CONFIRM=AUDIT).
+  Audit flags issues → that's the system WORKING, not a fail. The text is the leash; Mark is the brake.
 
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`
