@@ -467,5 +467,13 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   must run without the founder. CHANGED FROM PRIOR: the write loop now ends in propagate-and-verify, not
   just write-back.
 
+- 2026-06-07 (Chat 6, PROTOCOL — DELIVERY INTEGRITY, the handoff half of the Propagation Law): three
+  botched pushes this session traced to ONE root cause — Windows drag-and-drop never overwrites; on a
+  name clash it silently appends `_1`/`_2`, so a stale file stays live while a renamed twin commits beside
+  it and references break. Banked the fix in repo_as_memory_and_handoff.md (written for a GitHub-web
+  founder): prefer edit-in-place; if dropping a download, delete-old-then-drop and check for `_N` suffixes;
+  push lists carry full path + action tag; snapshot zip = the authoritative tree; the audit checks
+  filenames + active count every wake. The fix proved itself: delete-old-then-add landed the doctrine clean.
+
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`

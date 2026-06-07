@@ -82,6 +82,12 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
+- **Chat 6 (Jun 7 2026) — DELIVERY INTEGRITY banked (handoff half of the Propagation Law):** root cause of
+  this session's three botched pushes = Windows drag-and-drop silently appends `_1`/`_2` on a name clash
+  (stale file stays live, renamed twin commits beside it, refs break, only the audit catches it). Fix in
+  repo_as_memory_and_handoff.md: edit-in-place > drag; delete-old-then-drop + check for `_N`; push lists =
+  full path + action tag; audit checks filenames + count every wake. Proved by delete-old-then-add landing
+  the doctrine clean on commit 5f35a17.
 - **Chat 6 (Jun 7 2026) — PROTOCOL UPGRADE: THE PROPAGATION LAW (the backend now self-enforces):** Mark
   flagged that HE was the one remembering to push banks into the Flow Chart + Vision Board — the protocol
   didn't. Banked the fix in `repo_as_memory_and_handoff.md`: a SYNC MATRIX (every change → its required
@@ -256,4 +262,8 @@ your local machine. So the loop is three steps, and Claude must say so plainly, 
 1. **Claude** produces files in its sandbox + hands them to Mark (present_files / dated zip) + lists what changed.
 2. **Mark** drops those files into his local repo folder.
 3. **Mark** pushes to GitHub.
+**Delivery Integrity (Chat 6):** prefer **edit-in-place on GitHub web** (open → pencil → commit) over
+drag-and-drop; if you must drop a download, **delete the old file first**, then add it, and **check for a
+`_1`/`_2` suffix** before committing (Windows adds it silently on a name clash). Full rule in
+repo_as_memory_and_handoff.md → DELIVERY INTEGRITY.
 Result: next Claude pulls the updated repo. (Same reason backups are dated zips Mark stores in the Vault.)
