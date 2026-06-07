@@ -1,5 +1,5 @@
 *TAGS: coaching, business-plan, build | AUDIENCE: founder + every future Claude (the WHAT & WHY of the coach).*
-*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-07, Chat 6 (TTS default line corrected to match the voice_tts_decision.md flip — see CHANGED FROM PRIOR below) | STATUS: captured*
+*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-07, Chat 6 (banked THE COACH OPENS BY ASKING — coach's first move is diagnostic questions, not the pitch; tied to intake/onboarding; sharpened BE CONCISE. Earlier this session: TTS default line corrected — see CHANGED FROM PRIOR markers) | STATUS: captured*
 *SUPERSEDES: — | RELATED: master_journey_flow.md, voice_tts_decision.md, brand_funnel_architecture.md, funnel_brainstorm_reasoning.md*
 
 # GOLD — THE COACHING PHILOSOPHY (voice-first · coach-not-consultant · accountability)
@@ -19,6 +19,18 @@
   The anticipation of that conversation is what stops the off-strategy trade *before* you take it.
   The behavioral change IS the product. (Ties directly to the ICP in master_journey_flow.md:
   capable-but-struggling traders whose problem is psychology, not knowledge.)
+
+## THE COACH OPENS BY ASKING, NOT PITCHING (the first conversation)
+A real coach early in a relationship **asks before it tells** — *"what's been killing your trades?"* —
+not "here's our value proposition." **Reciting the pitch at a student is guru behavior; asking is
+coaching.** The value-prop belongs to the funnel/hook (top-of-funnel marketing, where the contrast does
+the converting — see funnel_brainstorm_reasoning.md); once a *verified* student is through the door, the
+coach's FIRST move is diagnostic questions, not a monologue. This does double duty: it's how a coach
+actually builds trust, AND it **is the intake/onboarding interview** — the opening conversation draws out
+what's been hurting them (the dossier seed: SL tolerance, what blows them up, their own read of their
+leaks) so every downstream interaction is already personalized (ties to onboarding in
+master_journey_flow.md + the Fork-2 funnel-memory/dossier). The pitch is what gets them in the door;
+asking is what coaches them once they're through it. *(Mark's nugget, Chat 6.)*
 
 ## THE PROOF: IT'S ACCOUNTABILITY, NOT KNOWLEDGE
 This is the real engine behind every transformation coach that actually works — Weight Watchers,
@@ -59,7 +71,10 @@ loses. Anyone can hand out the knowledge; almost no one provides the accountabil
 Mark's lived insight from 2 weeks of heavy LLM use: roughly half of AI output is the model "talking to
 itself," and users speed-read past it. The coach must **lead with the answer, not bury it in self-talk** —
 because the student is *paying attention and credits* for that turn. Concision is respect (and respects
-the credit model: don't make Suzy pay to read the coach think out loud).
+the credit model: don't make Suzy pay to read the coach think out loud). `CHANGED FROM PRIOR` (Chat 6,
+sharpened): "lead with the answer" governs once the coach **is answering** — it does NOT mean open the
+relationship by reciting the answer/value-prop. The coach's *first* move is to ask, not to deliver (see
+THE COACH OPENS BY ASKING). Concision applies to the answers; the opening is a question.
 
 ## THE COACH'S FORM (locked)
 - **No name, no image, no avatar — just the voice from the data.** (Reaffirms the brand lock; the
@@ -117,4 +132,4 @@ you're left with a chatbot or a quiz site — the two things that bore people an
 thing the ICP can't get anywhere else.
 
 ## INDEX LINE
-`knowledge/coaching_philosophy.md | coaching, business-plan, build | PUBLIC | captured | The WHAT/WHY of the coach: voice-first (not a text chatbot or 2002 quiz site), coach-not-consultant, the accountability engine (you explain off-strategy trades to a coach you don't want to disappoint → you don't take the trade). Coach form LOCKED: no name/image/avatar (avatar KILLED — lip-sync ~10x the coaching cost); pre-render premium voice = default, Web Speech = fallback (CHANGED FROM PRIOR Chat 6); "powered by Claude" attribution, not "Claude Coach."`
+`knowledge/coaching_philosophy.md | coaching, business-plan, build | PUBLIC | captured | The WHAT/WHY of the coach: voice-first (not a text chatbot or 2002 quiz site), coach-not-consultant, the accountability engine (you explain off-strategy trades to a coach you don't want to disappoint → you don't take the trade). The coach OPENS BY ASKING ("what's been killing your trades?"), not reciting the pitch — asking is coaching, reciting is guru behavior; it doubles as the intake/onboarding interview that seeds the dossier. Coach form LOCKED: no name/image/avatar (avatar KILLED — lip-sync ~10x the coaching cost); pre-render premium voice = default, Web Speech = fallback (CHANGED FROM PRIOR Chat 6); "powered by Claude" attribution, not "Claude Coach."`

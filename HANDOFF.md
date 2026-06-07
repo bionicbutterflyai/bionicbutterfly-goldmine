@@ -82,6 +82,13 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
+- **Chat 6 (Jun 7 2026) — NUGGET: THE COACH OPENS BY ASKING (`coaching_philosophy.md`):** the coach's
+  first move is diagnostic questions ("what's been killing your trades?"), not reciting the value-prop —
+  asking is coaching, reciting the pitch is guru behavior. The pitch belongs to the funnel/hook; inside,
+  the opening conversation IS the intake/onboarding interview that seeds the dossier. Sharpened BE CONCISE
+  (`CHANGED FROM PRIOR`): "lead with the answer" governs the answers, not the opening. Files touched:
+  `coaching_philosophy.md` (new section + BE CONCISE reconcile + index line + UPDATED), `ARTIFACT_INDEX.md`
+  (one-liner), `master_strategy_vision.md` (living-log entry), this HANDOFF.
 - **Chat 6 (Jun 7 2026) — TTS supersession propagated (housekeeping, no thesis change):** kickoff audit
   caught the Chat-5 TTS flip (pre-render premium = default, Web Speech = fallback) banked in
   `voice_tts_decision.md` but NOT propagated — the dead "Web Speech default" lived unlabeled in 5 spots.

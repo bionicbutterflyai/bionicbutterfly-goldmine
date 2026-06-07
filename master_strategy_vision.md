@@ -425,5 +425,12 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   demoted to the live-fallback path). Exactly the leak class the audit exists to catch — a flipped decision
   that didn't reach every doc. No thesis change; the decision was already made in Chat 5, just not spread.
 
+- 2026-06-07 (Chat 6, NUGGET — THE COACH OPENS BY ASKING): banked in coaching_philosophy.md. A real coach
+  asks before it tells ("what's been killing your trades?"); reciting the value-prop at a student is GURU
+  behavior, asking is coaching. The pitch belongs to the funnel/hook; once a verified student is inside, the
+  coach's FIRST move is diagnostic questions — which doubles as the intake/onboarding interview that seeds
+  the dossier (ties to master_journey_flow.md + Fork-2 funnel-memory). Sharpened BE CONCISE (`CHANGED FROM
+  PRIOR`): "lead with the answer" governs the answers, not the opening — the opening is a question.
+
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`
