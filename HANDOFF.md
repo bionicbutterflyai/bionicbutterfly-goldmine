@@ -82,6 +82,12 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
+- **Chat 6 (Jun 7 2026) — PROTOCOL UPGRADE: THE PROPAGATION LAW (the backend now self-enforces):** Mark
+  flagged that HE was the one remembering to push banks into the Flow Chart + Vision Board — the protocol
+  didn't. Banked the fix in `repo_as_memory_and_handoff.md`: a SYNC MATRIX (every change → its required
+  views) + a grep-VERIFY step + a SELF-EVOLVE rule (new surface → add to matrix same commit). Wired into
+  this BEFORE-YOU-SLEEP loop + a new `KICKOFF_AUDIT.md` "propagation intact" backstop check. A bank is now
+  "done" only after it propagates and is verified — not when the source doc is written.
 - **Chat 6 (Jun 7 2026) — Massive.com analysis + 3 banks + flowchart wiring:** verified Massive (ex-Polygon)
   current capabilities (real-time Benzinga news API, OHLCV aggregates, futures GA ES/GC/CL, IPO/treasury/
   inflation/calendar endpoints, official MCP server; free=5/min delayed, Dev $79 real-time, Adv $199 +WS).
@@ -232,6 +238,12 @@ continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at g
 ## BEFORE YOU SLEEP (every session)
 Write durable work back to the repo (file + ARTIFACT_INDEX line + commit note for Mark), update the
 IN-FLIGHT list above, and give Mark his **Vault-update checklist**.
+**Then run THE PROPAGATION LAW** (repo_as_memory_and_handoff.md): for every bank/change this session,
+sync ALL dependent views — UPDATED + index line, ARTIFACT_INDEX, primer living log, this STATE note,
+and conditionally the **Flow Chart (tech_architecture Mermaid + SVG)**, **master_journey_flow**, the
+**Vision Board**, KICKOFF presence list (new files), and any **CHANGED FROM PRIOR** cross-refs — then
+**grep-verify each required view THIS session.** A bank isn't done until it propagates and is verified.
+Added a NEW surface/view? Add it to the sync matrix in the same commit (self-evolve).
 
 ## METADATA (read METADATA_SCHEMA.md — every artifact carries the standard block)
 Every doc opens with: `TAGS | AUDIENCE` then `CREATED | UPDATED | STATUS` then `SUPERSEDES | RELATED`.

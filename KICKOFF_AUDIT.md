@@ -1,5 +1,5 @@
 *TAGS: build, business-plan | AUDIENCE: the waking Claude.*
-*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-06, Chat 5 | STATUS: captured*
+*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-07, Chat 6 (added PROPAGATION-INTACT integrity check; presence list +2 (bionic_briefing_spec, live_vision_board_spec) → 28 active) | STATUS: captured*
 *PURPOSE: the master checklist a new Claude RUNS at kickoff, then REPORTS, then STOPS. No improvising.*
 
 # KICKOFF AUDIT — run this, report, then WAIT for Mark
@@ -42,7 +42,8 @@ knowledge/: [ ] strat_zone_taxonomy [ ] dpmo_gate_indicator [ ] data_provenance_
 [ ] funnel_routing_and_closer [ ] funnel_brainstorm_reasoning [ ] brand_funnel_architecture
 [ ] master_journey_flow [ ] learning_design_standards [ ] voice_tts_decision [ ] two_strategy_split
 [ ] tech_architecture_skeleton [ ] repo_as_memory_and_handoff [ ] coaching_cue_library_additions
-*(26 .md files as of Chat 5, incl. this KICKOFF_AUDIT.md. If the count differs, reconcile against ARTIFACT_INDEX and flag.)*
+[ ] bionic_briefing_spec [ ] live_vision_board_spec
+*(28 active .md files as of Chat 6 (was 26 at Chat 5; +bionic_briefing_spec +live_vision_board_spec), incl. this KICKOFF_AUDIT.md, excl. the /reference lineage md. If the count differs, reconcile against ARTIFACT_INDEX and flag.)*
 
 ## STEP 3 — INTEGRITY AUDIT (the things that leaked before — verify, don't assume)
 - [ ] **Gates live:** HANDOFF.md kickoff contains the DOOR-CHECK and STOP-MEANS-STOP gates.
@@ -54,6 +55,10 @@ knowledge/: [ ] strat_zone_taxonomy [ ] dpmo_gate_indicator [ ] data_provenance_
 - [ ] **Cross-refs resolve:** spot-check that referenced files exist (e.g., docs pointing to
       master_journey_flow.md, credit_value_pricing_model.md, strat_zone_taxonomy.md actually find them).
 - [ ] **Living log current:** master_strategy_vision.md log reflects the most recent session's deltas.
+- [ ] **Propagation intact (Chat 6 PROPAGATION LAW):** take the last session's living-log entries and run
+      the sync matrix BACKWARD — did each banked change reach every dependent view (ARTIFACT_INDEX, the
+      doc's index line, HANDOFF, and conditionally the Flow Chart Mermaid+SVG, master_journey_flow, the
+      Vision Board)? Flag any change that didn't fully propagate, and any Mermaid/SVG pair left out-of-sync.
 - [ ] **LOCKED list respected:** do not re-open locked items (coaching business; brand = unnamed
       voice-from-the-data, no Oracle/caterpillar; product-side lock with the Matrix hook-bait carve-out).
 

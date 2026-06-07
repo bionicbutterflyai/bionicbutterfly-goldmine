@@ -456,5 +456,16 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   prior one. It's a property of Mark's durable/audited memory system, reproducible for Claude 7+, not a
   one-off. The Vision Board extends the same continuity from Claude-readable (repo) to human-readable.
 
+- 2026-06-07 (Chat 6, PROTOCOL UPGRADE — THE PROPAGATION LAW): Mark caught that he, not the protocol, was
+  enforcing "update the Flow Chart + Vision Board when you bank." Root cause: the write loop listed the
+  meta-views (index/log/HANDOFF/snapshot/Vault) but never the dependent CONTENT views (Flow Chart
+  Mermaid+SVG, Vision Board), and had no proactive verify — so the only net was next session's audit
+  (founder-as-enforcement). Fix banked in repo_as_memory_and_handoff.md: a SYNC MATRIX (what views each
+  change must reach) + a grep-VERIFY step (CONFIRM=AUDIT applied to propagation) + a SELF-EVOLVE rule (new
+  surface → add to the matrix same commit). Wired into HANDOFF "BEFORE YOU SLEEP" and a new KICKOFF_AUDIT
+  "propagation intact" backstop. Franchise logic: the backend (this protocol) is the duplicable asset — it
+  must run without the founder. CHANGED FROM PRIOR: the write loop now ends in propagate-and-verify, not
+  just write-back.
+
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`
