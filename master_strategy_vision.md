@@ -520,5 +520,15 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   a SECRETS-SCAN to KICKOFF (ran it this session — repo clean, 0 keys). Count → 31. Banked as one full-repo
   zip.
 
+- 2026-06-08 (Chat 6, Q-LOGIC + QUBED): banked bioniq_q_logic.md — the brand's operating logic + language.
+  Hero line "Don't trade like a human. Execute like a machine. be bioniq." Methodology renamed **Qubed
+  (Q³)** = Q-cubed = the 3 Q's (Question·Qualify·Quantify; "Get Qubed") — supersedes "3Q framework". Banked
+  the good-trade/bad-trade inversion (coach process not outcome) + the Q-vocabulary (Q's=cues, Q'd, thanQs,
+  Coach Q's reserved, etc., winks vs official noted). House style: lowercase name + capital-Q flourishes
+  (exact rule still OPEN). **Qubed font** plan: license-friendly base (OFL/mod-permitted, never a hacked
+  paid font), Q+q remapped to the Power-Q, one shape two sizes — designer engaged. Added the Q³ blueprint
+  PDF to /reports. Lab spec flagged: EV engine needs a structured journal schema; keep voice grade/flag NOT
+  block/route (regulated-territory risk). Count → 32. One full-repo zip.
+
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`

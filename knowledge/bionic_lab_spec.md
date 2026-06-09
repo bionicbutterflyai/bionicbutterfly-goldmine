@@ -1,5 +1,5 @@
 *TAGS: build, coaching, business-plan | AUDIENCE: founder + every future Claude (the COACHING engine — the "weigh-in" half of the thesis).*
-*CREATED: 2026-06-07, Chat 6 | UPDATED: 2026-06-07, Chat 6 | STATUS: captured (storyboard final; two OPEN items noted)*
+*CREATED: 2026-06-07, Chat 6 | UPDATED: 2026-06-08, Chat 6 (added QUBED GRADING — Q³ + good/bad-trade inversion + two flags: journal needs structured EV schema; voice = grade/flag NOT block/route to avoid regulated territory) | STATUS: captured (storyboard final; OPEN items noted)*
 *SUPERSEDES: — | RELATED: coaching_philosophy.md (honest verdict, value≠profit), master_journey_flow.md (the journey), credit_value_pricing_model.md (per-session cost), tech_architecture_skeleton.md (how it runs), reports/bioniq_trade_review_template.docx (the printable)*
 
 # GOLD — THE BIONIC LAB (the coaching engine)
@@ -36,6 +36,23 @@ Students like "Suzy" who get a strong review want a copy. Give them a **clean, b
 printable/exportable review** (PDF/doc) so they don't screen-cap a hacked-together version — we control how
 it looks and keep the **"Powered by Bioniq · Be Bioniq"** framing on it. We keep every review on file; this
 is their copy. Sample template: `reports/bioniq_trade_review_template.docx`.
+
+## QUBED GRADING (how the Lab judges — from the Q³ blueprint)
+The Lab grades each trade against **Qubed (Q³)** — Question · Qualify · Quantify (see bioniq_q_logic.md +
+reports/bioniq_execution_matrix.pdf). Core principle = the **good-trade / bad-trade inversion**: a
+disciplined loss that followed the rules is a structural WIN; a lucky win that broke the rules is a HAZARD.
+Coach the process, not the outcome (the Suzy "$300 C-grade gamble" debrief is the model). Reads like a
+flight-simulator debrief, not subjective praise.
+**Two build/voice flags (so marketing copy doesn't write us into a corner):**
+- **DATA SCHEMA REQUIREMENT:** computing per-setup Expected Value / Profit Factor (what the blueprint
+  promises) requires the journal to capture **structured** trade data (entry, stop, target, setup-tag,
+  outcome) from day one — you cannot compute per-variant EV from freeform notes. Design the journal schema
+  around Q³ up front.
+- **VOICE = GRADE/FLAG, NOT BLOCK/ROUTE:** the blueprint's draft copy says things like "the trade is
+  blocked" and "routes to the CME clearinghouse." Keep the public voice to **grade / flag / coach** —
+  bioniq is a coaching+journal brand (our moat), NOT an order-execution or blocking system. A tool that
+  *blocks/routes orders* or *guarantees* capital outcomes drifts toward regulated broker/advisor territory.
+  Coach that *grades* execution = safe and on-thesis.
 
 ## OPEN ITEMS
 - **The stated plan** the Lab measures against: working assumption is it lives in the **intake/dossier**

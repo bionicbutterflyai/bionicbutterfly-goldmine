@@ -1,6 +1,6 @@
 # GOLD — BRAND-FUNNEL ARCHITECTURE (the contrast IS the conversion)
 *TAGS: marketing, business-plan, coaching | AUDIENCE: founder + marketing-Claude.*
-*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-06-07, Chat 6 (NAME DECIDED: Bioniq Trader / bioniqtrader.ai + .com, "Be Bioniq", Butterfly retired — CHANGED FROM PRIOR; coaching-coaches end game; free-Journal hook; trademark screen + attorney/domain pending; decision-only, no rename yet) | STATUS: captured*
+*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-06-08, Chat 6 (added HERO LINE "Don't trade like a human. Execute like a machine. be bioniq" + QUBED/Q³ methodology name + the Qubed-font plan (license-friendly base, Q+q→Power-Q). See bioniq_q_logic.md. Earlier Chat 6: NAME DECIDED Bioniq Trader/bioniqtrader.ai+.com, Butterfly retired, trademark screen + attorney/domain pending) | STATUS: captured*
 *SUPERSEDES: — | RELATED: master_journey_flow.md, funnel_brainstorm_reasoning.md (the WHY)*
 
 ## ONE-LINE
@@ -27,6 +27,17 @@ is **phonetically identical to "Bionic,"** so examiners weigh sound + relatednes
 *improves the odds*, it does not *guarantee* clearance. **PENDING before brand spend (logo/LLC): attorney
 clearance (USPTO + CIPO) + registrar confirmation of the two domains.** Repo/files NOT renamed yet
 (clearance pending) — this is a decision-only bank.
+
+## THE HERO LINE + QUBED + THE FONT (Chat 6)
+**Hero copy (the spine, says the whole thesis in 7 words):**
+> Don't trade like a human. Execute like a machine. — **be bioniq**
+**Qubed (Q³)** = the methodology name (Q-cubed = the 3 Q's: Question · Qualify · Quantify; "Get Qubed").
+Full Q-vocabulary + voice rules live in **bioniq_q_logic.md**; the Q³ blueprint in
+`reports/bioniq_execution_matrix.pdf`.
+**The Qubed font:** a license-friendly base font (OFL, or a EULA that explicitly permits modification —
+**NEVER a hacked paid font**, that's a licensing landmine) with **Q and q remapped to the Power-Q** — one
+shape, two sizes (full cap-height for `Q`, scaled-down for lowercase `q`), size-matched. Then you type
+normally and the brand Q renders itself. Designer is engaged on the vectors + this font.
 
 ## THE BRAND IS THE FOUNDER (bionic = part man, part machine)
 *Captured Chat 5 — was missing.* The name isn't decoration: **Mark literally embodies it — "part man,

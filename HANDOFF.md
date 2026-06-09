@@ -82,6 +82,14 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
+- **Chat 6 (Jun 8 2026) — Q-LOGIC + QUBED banked:** new `bioniq_q_logic.md` (brand operating logic +
+  language). Hero line "Don't trade like a human. Execute like a machine. be bioniq." Methodology = **Qubed
+  (Q³)** (supersedes "3Q framework"). Good/bad-trade inversion + Q-vocabulary + house style banked. **Qubed
+  font** = license-friendly base, Q+q→Power-Q (one shape, two sizes); designer engaged on vectors+font.
+  Q³ blueprint PDF added to /reports (now 4 files). Lab flagged: structured EV journal schema needed; voice
+  = grade/flag NOT block/route. Count → 32. **OPEN:** confirm the exact capital-Q house-style rule;
+  "Coach Q's" reserved for later. (Plus still open: bioniq wordmark, brand-decision still decision-only/no
+  rename, Suzy chart, cost-model PDFs, security launch gates.)
 - **Chat 6 (Jun 8 2026) — SECURITY banked:** new `security_and_secrets.md` after the Tradeify breach
   (leaked 3rd-party API key → 100k+ customers phished). Rules: keys server-side only & NEVER in the public
   repo/client, repo = strategy not secrets/PII, Supabase RLS deny-by-default, Cloudflare WAF/rate-limit/
