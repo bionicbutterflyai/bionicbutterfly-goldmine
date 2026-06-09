@@ -1,5 +1,5 @@
 *TAGS: build, business-plan | AUDIENCE: the waking Claude.*
-*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-09, Chat 6 (presence +2 build_blueprint + qubed_indicator_spec → 34 active; /reports → 6; NEW /content shelf. Earlier: +bioniq_q_logic → 32; +security_and_secrets → 31 + SECRETS SCAN) | STATUS: captured*
+*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-09, Chat 6 (presence +1 operating_system → 35 active; NEW root AGENTS.md entry point. Earlier: +build_blueprint +qubed_indicator_spec → 34, /content shelf; +bioniq_q_logic → 32; +security_and_secrets → 31 + SECRETS SCAN) | STATUS: captured*
 *PURPOSE: the master checklist a new Claude RUNS at kickoff, then REPORTS, then STOPS. No improvising.*
 
 # KICKOFF AUDIT — run this, report, then WAIT for Mark
@@ -42,8 +42,8 @@ knowledge/: [ ] strat_zone_taxonomy [ ] dpmo_gate_indicator [ ] data_provenance_
 [ ] funnel_routing_and_closer [ ] funnel_brainstorm_reasoning [ ] brand_funnel_architecture
 [ ] master_journey_flow [ ] learning_design_standards [ ] voice_tts_decision [ ] two_strategy_split
 [ ] tech_architecture_skeleton [ ] repo_as_memory_and_handoff [ ] coaching_cue_library_additions
-[ ] bionic_briefing_spec [ ] live_vision_board_spec [ ] phase_roadmap [ ] bionic_lab_spec [ ] security_and_secrets [ ] bioniq_q_logic [ ] build_blueprint [ ] qubed_indicator_spec
-*(34 active .md files as of Chat 6 (was 26 at Chat 5; this session added bionic_briefing_spec, live_vision_board_spec, phase_roadmap, bionic_lab_spec, security_and_secrets, bioniq_q_logic, build_blueprint, qubed_indicator_spec), incl. this KICKOFF_AUDIT.md, excl. /reference lineage md and the /content shelf index. NEW non-md: /reports = 6 (cost xlsx, cost report docx, trade-review template docx, Qubed/Q³ blueprint pdf, build_blueprint xlsx, build_blueprint pdf); NEW /content folder = numbered raw-source shelf (CONTENT_INDEX.md). If the count differs, reconcile against ARTIFACT_INDEX and flag.)*
+[ ] bionic_briefing_spec [ ] live_vision_board_spec [ ] phase_roadmap [ ] bionic_lab_spec [ ] security_and_secrets [ ] bioniq_q_logic [ ] build_blueprint [ ] qubed_indicator_spec [ ] operating_system
+*(35 active .md files as of Chat 6, incl. this KICKOFF_AUDIT.md, excl. /reference lineage md and the /content shelf index. NEW root file: AGENTS.md = the standardized lean agent entry point (the cold-start script). NEW non-md: /reports = 6; /content folder = numbered raw-source shelf. If the count differs, reconcile against ARTIFACT_INDEX and flag.)*
 
 **SECRETS SCAN (every wake — the Tradeify lesson):** confirm no API keys / `.env` / tokens / PII ever entered this PUBLIC repo. Quick check: `grep -rniE "sk-[a-z0-9]{20}|api[_-]?key[\"' ]*[:=]|secret[\"' ]*[:=]" --include=*.js --include=*.py --include=*.json --include=*.env .` → expect none (prose in security_and_secrets.md is fine). If anything real shows, STOP and flag immediately. (See security_and_secrets.md.)
 

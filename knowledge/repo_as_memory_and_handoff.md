@@ -69,6 +69,7 @@ layer. This law makes propagation a **close-out step, not a future catch.**
 - a BRAND VOICE / language / vocabulary / tagline decision → **bioniq_q_logic.md** (the Q-logic)
 - a per-AREA build detail (a component, its status, the "meat") → that area's DEEP doc (e.g. area 8 → **qubed_indicator_spec.md**); keep **build_blueprint.md** as the terse index that points to it
 - a RAW source doc Mark made (recipe, essay, blueprint, screenshot-of-record) → the numbered **content/CONTENT_INDEX.md** shelf (recipe internals stay PRIVATE/LOCAL — index it, don't paste it)
+- a HOW-WE-WORK / process / method decision (man+machine operating rules) → **operating_system.md** + (if it's an entry rule) the root **AGENTS.md**
 - it contradicts/sharpens a RELATED doc → update that doc, label **CHANGED FROM PRIOR**
 
 ### THE VERIFY STEP (CONFIRM = AUDIT, applied to propagation)

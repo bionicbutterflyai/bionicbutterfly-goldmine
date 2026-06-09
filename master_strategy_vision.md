@@ -541,5 +541,18 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   the READ not the tool; build-recipe = private/local not public repo. Count → 34, /reports → 6. One zip.
   OPEN POURS owed by Mark: 8.4 quarterly lines, 8.1 indicator list, find/re-pour the 2-pager.
 
+- 2026-06-09 (Chat 6, THE OPERATING SYSTEM — flagship): banked operating_system.md + a root AGENTS.md.
+  Mark's level-up: stop optimizing the project, optimize the SYSTEM that builds it. Researched the field and
+  found we INDEPENDENTLY invented what Google/OpenAI/Letta/research converged on in 2025-26: git-as-memory
+  (=goldmine; cf Letta Context Repositories + Git Context Controller arXiv 2508.00031) + an agent-instruction
+  file (=cold-start/KICKOFF; the AGENTS.md open standard, Linux-Foundation, 20k+ GitHub repos). Validation,
+  not coincidence. Banked the METHOD (keep) + 5 REFINEMENTS the field knew that we didn't: (1) standardize
+  entry as root AGENTS.md (auto-loaded by any tool — DONE this bank); (2) LEANER instruction files not longer
+  (instruction-following drops as count rises — hold only what agent can't discover); (3) Pink-Elephant —
+  prefer making bad paths structurally impossible over forbidding them; (4) name memory tiers CORE vs
+  ARCHIVAL; (5) load lean / fetch by number (>50% cheaper, no quality loss — aligns with Mark paying per
+  token). Created AGENTS.md = lean entry (the proven cold-start, trimmed to rules+gates). Tagged
+  operating_system + AGENTS.md as CORE in the index. Count → 35. One full-repo zip.
+
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`

@@ -82,6 +82,17 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
+- **Chat 6 (Jun 9 2026) — THE OPERATING SYSTEM banked (flagship):** `operating_system.md` = how man+machine
+  work, VALIDATED against the field (we independently built git-as-memory + the AGENTS.md standard that
+  Google/OpenAI/Letta/research converged on). NEW root **`AGENTS.md`** = the standardized lean entry point /
+  COLD-START SCRIPT (the proven cold-start letter, trimmed to rules+gates — so any agentic tool auto-loads
+  it). Count → 35. **5 refinements rolling out (operating_system.md §4):** (1) AGENTS.md entry ✅ done;
+  (2) trim entry leaner; (3) convert "don't" rules → structural impossibility; (4) tag CORE vs ARCHIVAL in
+  the index; (5) "load lean / fetch by number" in KICKOFF start. **The cold-start script now LIVES in
+  AGENTS.md** (copy-paste from there to a new Claude, or it auto-loads).
+  *(Carry-overs still open: 8.4 quarterly lines + 8.1 indicator list + find/re-pour the 2-pager (Dropbox);
+  144 B&R strategy → its own deep doc on GO; capital-Q rule; wordmark + Qubed font (designer); trademark +
+  domains GATE; security launch gates GATE; Suzy chart; cost-model PDFs; PENDING-BANK ledger greenlight.)*
 - **Chat 6 (Jun 9 2026) — BUILD BLUEPRINT + AREA-8 + WORK-LOOP banked:** `build_blueprint.md` = the ranked,
   NUMBERED 11-area map (index); meat lives in per-area deep docs. First deep doc = `qubed_indicator_spec.md`
   (area 8, component-by-component + build-status). Editable working copy = `reports/bioniq_build_blueprint.xlsx`
