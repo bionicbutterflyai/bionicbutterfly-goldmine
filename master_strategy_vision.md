@@ -510,5 +510,15 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   matrix self-evolved (Lab, reports), ARTIFACT_INDEX + KICKOFF + HANDOFF updated. Banked as ONE full-repo
   zip (no-batch rule).
 
+- 2026-06-08 (Chat 6, SECURITY): banked security_and_secrets.md after the Tradeify breach (top-3 prop firm;
+  100k+ traders phished). Root cause = a leaked API key to a 3rd-party email-marketing tool exposed the
+  customer DB (names+emails); core systems were safe because they were separate. Our same-shape risk: vendor
+  keys (Anthropic/ElevenLabs/datafeed/Stripe/email) + a Supabase customer DB. Rules banked: API keys are
+  loaded weapons (server-side only, scoped, rotated, NEVER in the PUBLIC repo/client); repo = strategy not
+  secrets/PII; Supabase RLS deny-by-default; Cloudflare WAF/rate-limit/spend-caps; minimize PII to vendors;
+  SPF/DKIM/DMARC. Launch gates incl. an INDEPENDENT security pass (Claude guides, not sole sign-off). Added
+  a SECRETS-SCAN to KICKOFF (ran it this session — repo clean, 0 keys). Count → 31. Banked as one full-repo
+  zip.
+
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`

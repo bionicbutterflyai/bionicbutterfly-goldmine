@@ -1,5 +1,5 @@
 *TAGS: build, business-plan | AUDIENCE: the waking Claude.*
-*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-07, Chat 6 (presence list +1 bionic_lab_spec → 30 active; +/reports folder of 3 built deliverables. Earlier Chat 6: PROPAGATION-INTACT check; +bionic_briefing_spec +live_vision_board_spec +phase_roadmap) | STATUS: captured*
+*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-08, Chat 6 (presence list +1 security_and_secrets → 31 active; added SECRETS SCAN to every wake — the Tradeify lesson. Earlier: +bionic_lab_spec → 30, /reports folder; PROPAGATION-INTACT check) | STATUS: captured*
 *PURPOSE: the master checklist a new Claude RUNS at kickoff, then REPORTS, then STOPS. No improvising.*
 
 # KICKOFF AUDIT — run this, report, then WAIT for Mark
@@ -42,8 +42,10 @@ knowledge/: [ ] strat_zone_taxonomy [ ] dpmo_gate_indicator [ ] data_provenance_
 [ ] funnel_routing_and_closer [ ] funnel_brainstorm_reasoning [ ] brand_funnel_architecture
 [ ] master_journey_flow [ ] learning_design_standards [ ] voice_tts_decision [ ] two_strategy_split
 [ ] tech_architecture_skeleton [ ] repo_as_memory_and_handoff [ ] coaching_cue_library_additions
-[ ] bionic_briefing_spec [ ] live_vision_board_spec [ ] phase_roadmap [ ] bionic_lab_spec
-*(30 active .md files as of Chat 6 (was 26 at Chat 5; +bionic_briefing_spec +live_vision_board_spec +phase_roadmap +bionic_lab_spec), incl. this KICKOFF_AUDIT.md, excl. the /reference lineage md. NEW non-md: /reports folder holds 3 built deliverables (cost xlsx, cost report docx, trade-review template docx). If the count differs, reconcile against ARTIFACT_INDEX and flag.)*
+[ ] bionic_briefing_spec [ ] live_vision_board_spec [ ] phase_roadmap [ ] bionic_lab_spec [ ] security_and_secrets
+*(31 active .md files as of Chat 6 (was 26 at Chat 5; +bionic_briefing_spec +live_vision_board_spec +phase_roadmap +bionic_lab_spec +security_and_secrets), incl. this KICKOFF_AUDIT.md, excl. the /reference lineage md. NEW non-md: /reports folder holds 3 built deliverables (cost xlsx, cost report docx, trade-review template docx). If the count differs, reconcile against ARTIFACT_INDEX and flag.)*
+
+**SECRETS SCAN (every wake — the Tradeify lesson):** confirm no API keys / `.env` / tokens / PII ever entered this PUBLIC repo. Quick check: `grep -rniE "sk-[a-z0-9]{20}|api[_-]?key[\"' ]*[:=]|secret[\"' ]*[:=]" --include=*.js --include=*.py --include=*.json --include=*.env .` → expect none (prose in security_and_secrets.md is fine). If anything real shows, STOP and flag immediately. (See security_and_secrets.md.)
 
 ## STEP 3 — INTEGRITY AUDIT (the things that leaked before — verify, don't assume)
 - [ ] **Gates live:** HANDOFF.md kickoff contains the DOOR-CHECK and STOP-MEANS-STOP gates.

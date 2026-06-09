@@ -82,6 +82,13 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
+- **Chat 6 (Jun 8 2026) — SECURITY banked:** new `security_and_secrets.md` after the Tradeify breach
+  (leaked 3rd-party API key → 100k+ customers phished). Rules: keys server-side only & NEVER in the public
+  repo/client, repo = strategy not secrets/PII, Supabase RLS deny-by-default, Cloudflare WAF/rate-limit/
+  spend-caps, minimize PII to vendors, SPF/DKIM/DMARC. KICKOFF now runs a secrets-scan (repo clean this
+  session). Count → 31. **LAUNCH GATES before real customer data/money (OPEN):** secrets audit · Supabase
+  RLS review · Cloudflare config · email auth (SPF/DKIM/DMARC) · an INDEPENDENT security pass (Claude is not
+  the sole sign-off). Build these in from day one — don't retrofit.
 - **Chat 6 (Jun 7 2026) — BRAND + LAB + ARCHITECTURE + COST (big bank):** Company name decided =
   **Bioniq Trader** (bioniqtrader.ai ~$300 primary + bioniqtrader.com ~$18 defensive), tagline **"Be
   Bioniq"**, **Butterfly retired**; coaching brand w/ a journal; coaching-coaches end game; free-Journal
