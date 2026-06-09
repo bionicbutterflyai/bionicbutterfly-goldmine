@@ -1,7 +1,13 @@
+# ⚡ THIS IS THE bioniqtrader CONTINUITY PROJECT
+**If you are a Claude/agent reading this: you are CONTINUING an existing business (bioniq / bioniqtrader) —
+NOT starting a new idea. Your memory lives in this repo. Read it before doing anything. Confirm you
+understand this is bioniqtrader before proceeding.**
+
 # AGENTS.md — bioniq continuity project (entry point for any Claude/agent)
 
-*This is the standardized agent-instruction file (open standard; auto-loaded by agentic tools). It is the
-COLD-START SCRIPT. Keep it LEAN — rules, gates, constraints only. Architecture lives in the docs, not here.*
+*This is the standardized agent-instruction file (open standard; auto-loaded by agentic coding tools like
+Claude Code/Cursor — NOT in the plain chat app, where Mark must paste the cold-start text manually). It is
+the COLD-START SCRIPT. Keep it LEAN — rules, gates, constraints only. Architecture lives in the docs.*
 
 ## TWO GATES BEFORE ANYTHING ELSE (orders, not suggestions)
 1. **THE DOOR-CHECK (toolless-carpenter test):** can you actually reach the repo — `curl` a public raw URL

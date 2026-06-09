@@ -82,6 +82,11 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
+- **Chat 6 close (Jun 9 2026):** added an unmissable ⚡ identity banner to the top of `AGENTS.md` ("THIS IS
+  bioniqtrader, you are CONTINUING it, not a new idea"). Clarified: AGENTS.md auto-loads only in agentic
+  CODING tools (Claude Code/Cursor) — in the plain chat app Mark MUST paste the cold-start text to start each
+  new chat (it's the key in the lock; the repo + door-check then prove identity). Mark keeps the paste saved
+  one-tap. Next up: Chat 7.
 - **Chat 6 (Jun 9 2026) — THE OPERATING SYSTEM banked (flagship):** `operating_system.md` = how man+machine
   work, VALIDATED against the field (we independently built git-as-memory + the AGENTS.md standard that
   Google/OpenAI/Letta/research converged on). NEW root **`AGENTS.md`** = the standardized lean entry point /
