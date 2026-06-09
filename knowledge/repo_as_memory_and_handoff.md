@@ -67,6 +67,8 @@ layer. This law makes propagation a **close-out step, not a future catch.**
 - a BUILT deliverable (report / spreadsheet / printable template) → **reports/** + an ARTIFACT_INDEX entry; bank key numbers as TEXT in the relevant .md so a Claude needn't open a binary
 - a SECURITY / secrets decision or threat model → **security_and_secrets.md** (and keep the KICKOFF secrets-scan honest)
 - a BRAND VOICE / language / vocabulary / tagline decision → **bioniq_q_logic.md** (the Q-logic)
+- a per-AREA build detail (a component, its status, the "meat") → that area's DEEP doc (e.g. area 8 → **qubed_indicator_spec.md**); keep **build_blueprint.md** as the terse index that points to it
+- a RAW source doc Mark made (recipe, essay, blueprint, screenshot-of-record) → the numbered **content/CONTENT_INDEX.md** shelf (recipe internals stay PRIVATE/LOCAL — index it, don't paste it)
 - it contradicts/sharpens a RELATED doc → update that doc, label **CHANGED FROM PRIOR**
 
 ### THE VERIFY STEP (CONFIRM = AUDIT, applied to propagation)
@@ -103,6 +105,23 @@ not as files to drag, whenever the change is small enough to do so.
    "replace-all-and-push" instruction** — extract, copy all over a FRESH clone choosing **"Replace the
    files in the destination"** (never "keep both" — that is what spawns `_1`/`_2`), then commit+push once.
    One artifact, one action. Single-file changes still go edit-in-place per rule 1.
+
+## HOW MARK & CLAUDE WORK (the loop + numbered addressing — Chat 6)
+The repo is the ONE source (Claude banks in nano time). Mark reads his local clone in a nicer window (not
+always GitHub). To work efficiently:
+- **Numbered addressing.** build_blueprint.md numbers everything: areas 1-11, pieces like 8.1 / 8.4. Mark
+  says a number ("open 8.4") and Claude opens that node — no pasting, no re-explaining context.
+- **The loop:** discuss/debate → Claude updates the source → Mark reads later → flags edits by number →
+  repeat. Mark can also edit a .xlsx/.docx and send it back; Claude reads the FILE directly (no
+  screen-caps/retyping) and returns a clean image/PDF or banks it.
+- **Read vs act:** to READ a node, ask in text ("show me 8.2") — Claude prints it. Clickable rendered maps
+  are a cheap on-demand VIEW generated from the files (always current), but they are action-buttons, not
+  expanders. Design note that bit us twice → a real PRODUCT rule: **tap-to-expand ≠ tap-to-act** — never let
+  a "look closer" gesture fire an action or burn a credit.
+- **Per-area DEEP docs:** the blueprint is the index; heavy areas get a growing spec (e.g.
+  qubed_indicator_spec.md = area 8) with a build-status per component. Raw source docs Mark made live on the
+  numbered /content shelf (content/CONTENT_INDEX.md). Proprietary build-recipes (e.g. how the indicators are
+  made) stay PRIVATE/LOCAL — the public repo holds the READ (what it tells us per strat), never the recipe.
 
 ## WHY IT'S MOAT
 Cheaper context, faster cold-starts, zero re-litigation, and a new-Claude experience that's "read the

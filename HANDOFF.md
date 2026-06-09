@@ -82,6 +82,18 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
+- **Chat 6 (Jun 9 2026) — BUILD BLUEPRINT + AREA-8 + WORK-LOOP banked:** `build_blueprint.md` = the ranked,
+  NUMBERED 11-area map (index); meat lives in per-area deep docs. First deep doc = `qubed_indicator_spec.md`
+  (area 8, component-by-component + build-status). Editable working copy = `reports/bioniq_build_blueprint.xlsx`
+  (Mark expands → co-edit → rewrite master). NEW `/content` shelf = numbered home for raw source docs.
+  Numbered addressing live: Mark says "open 8.4", Claude opens it. Count → 34, /reports → 6.
+  **OPEN POURS owed by Mark (visible so they don't evaporate):** (1) **8.4 quarterly lines** — what/how-drawn/
+  why-to-strat; (2) **8.1 indicator list** — each indicator + what it plots, sorted Question/Qualify/Quantify;
+  (3) **find or re-pour the indicator 2-pager** (C2 — lost/unfiled; build-recipe stays PRIVATE/local).
+  **Other carry-overs:** confirm capital-Q rule (4.4); bioniq wordmark + Qubed font (designer, 4.2/4.3);
+  trademark clearance + domains (4.5, GATE); security launch gates (7.3/7.4, GATE); Suzy printable needs an
+  equity-curve/P&L chart; re-deliver cost-model PDFs; Vision Board A/B/C scope. PENDING-BANK ledger rule
+  (forward twin of the Propagation Law) — Mark's idea, greenlight pending.
 - **Chat 6 (Jun 8 2026) — Q-LOGIC + QUBED banked:** new `bioniq_q_logic.md` (brand operating logic +
   language). Hero line "Don't trade like a human. Execute like a machine. be bioniq." Methodology = **Qubed
   (Q³)** (supersedes "3Q framework"). Good/bad-trade inversion + Q-vocabulary + house style banked. **Qubed

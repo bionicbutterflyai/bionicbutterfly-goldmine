@@ -530,5 +530,16 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   PDF to /reports. Lab spec flagged: EV engine needs a structured journal schema; keep voice grade/flag NOT
   block/route (regulated-territory risk). Count → 32. One full-repo zip.
 
+- 2026-06-09 (Chat 6, BLUEPRINT + AREA-8 + WORK-LOOP): banked build_blueprint.md (11 areas ranked, numbered
+  1-11 / 8.1 etc — the INDEX) + reports/bioniq_build_blueprint.xlsx+pdf (Mark's editable working copy).
+  Started the per-area DEEP-doc pattern with qubed_indicator_spec.md (area 8, component-by-component +
+  build-status; 8.4 quarterly lines + 8.1 indicator list flagged SPEC-NEEDED = Mark to pour). Added the
+  HOW-WE-WORK loop + numbered addressing ("open 8.4") to repo_as_memory; sync matrix self-evolved (per-area
+  deep specs; raw-source shelf). NEW /content shelf (CONTENT_INDEX.md) = numbered home for Mark's raw docs so
+  nothing is hunted-for again (C2 = the lost indicator 2-pager, flagged find/re-pour; recipe stays PRIVATE).
+  Principles banked: tap-to-expand ≠ tap-to-act (product rule); indicator = wall, coaching loop = moat, teach
+  the READ not the tool; build-recipe = private/local not public repo. Count → 34, /reports → 6. One zip.
+  OPEN POURS owed by Mark: 8.4 quarterly lines, 8.1 indicator list, find/re-pour the 2-pager.
+
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`
