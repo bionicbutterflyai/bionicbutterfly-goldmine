@@ -1,5 +1,5 @@
 *TAGS: build, business-plan | AUDIENCE: founder + every future Claude (READ before writing back-end code, wiring any API, or handling customer data).*
-*CREATED: 2026-06-08, Chat 6 | UPDATED: 2026-06-08, Chat 6 | STATUS: captured (launch gates OPEN until done)*
+*CREATED: 2026-06-08, Chat 6 | UPDATED: 2026-06-10, Chat 7 (added the FABLE 5 RETENTION CONSTRAINT + a MODEL-DATA-RETENTION launch gate — Fable 5/Mythos 5 = Covered Models, mandatory 30-day retention, NO ZDR on the Claude API; verified Chat 7 vs official docs; Opus 4.8 stays ZDR-eligible. Companion to the model-tiering decision in tech_architecture_skeleton.md) | STATUS: captured (launch gates OPEN until done)*
 *SUPERSEDES: — | RELATED: tech_architecture_skeleton.md (the 7-tool stack), repo_as_memory_and_handoff.md (the repo is PUBLIC), credit_value_pricing_model.md (Stripe/keys)*
 
 # GOLD — SECURITY & SECRETS (the back end must be secure)
@@ -42,6 +42,28 @@ customer DB in Supabase (names, emails, dossier, ledger). This is our threat mod
 - [ ] Cloudflare WAF + rate-limits + AI-Gateway spend caps configured.
 - [ ] SPF/DKIM/DMARC set on the domain.
 - [ ] **Independent security pass** — secrets scan + RLS review + a pen-test or OWASP-Top-10 checklist.
+- [ ] **MODEL-DATA-RETENTION gate (Chat 7) — Fable 5 vs sensitive dossiers.** Mark **DECISION required**
+      before any real customer dossier (PII / full trade history) is routed through **Claude Fable 5**.
+      *Verification CLOSED, decision OPEN.*
+
+## FABLE 5 RETENTION CONSTRAINT (VERIFIED Chat 7 — the model-tiering security tension)
+The model-tiering decision lives in `tech_architecture_skeleton.md` (Opus 4.8 workhorse / Fable 5 metered
+premium). Its **security half** lands here. Mark flagged the retention terms as *reported, not yet verified*;
+the PHD ran the verification he named and it came back **CONFIRMED** against official Anthropic docs:
+- **Claude Fable 5 (and Mythos 5) are "Covered Models" requiring 30-day data retention.** **Zero Data
+  Retention is NOT available** for them on the Claude API — a ZDR-configured org gets a
+  `400 invalid_request_error`. Data is **not used for training** and is **deleted after 30 days** (except a
+  safety investigation or legal hold). On Bedrock / Vertex / Foundry, retention is set per platform (Bedrock
+  requires opting into provider data sharing).
+- **Opus 4.8 remains ZDR-eligible** — the ZDR-safe default for anything sensitive.
+- **THE TENSION:** routing our **most sensitive deep-dossier reviews** through Fable would put them on the
+  model with the **least favourable retention terms** — directly counter to "minimize PII to vendors."
+- **POSTURE until Mark decides:** **Fable is NOT cleared for sensitive customer data.** Premium Fable
+  deep-reviews run only on **de-identified / non-PII** inputs, OR the dossier is routed to **Opus**, OR Mark
+  accepts the 30-day window for specific data classes that tolerate it. Build the route so the **default is
+  Opus** and Fable requires an explicit, logged premium flag (structural, not a reminder).
+- **Sources (official):** platform.claude.com → Manage Claude → "API and data retention"; support.claude.com
+  → "Data retention practices for Mythos-class models" (art. 15425996).
 
 ## THE HONEST LIMIT
 Claude is a solid first-principles guide for threat model + architecture + the checklist — but security is
@@ -49,4 +71,4 @@ the ONE area where "pretty good from an AI" is not enough before holding real cu
 a proper independent review before launch. Claude helps build the checklist; Claude is NOT the sole sign-off.
 
 ## INDEX LINE
-`knowledge/security_and_secrets.md | build, business-plan | PUBLIC | captured | SECURITY & SECRETS — the back end must be secure. Tradeify lesson (June 2026): a leaked API key to a 3rd-party email tool exposed 100k+ customers (names+emails); core systems were safe because they were separate. Our same-shape risk: many vendor keys + a Supabase customer DB. RULES: API keys are loaded weapons (server-side only, scoped, rotated, NEVER in the PUBLIC repo or client); repo holds strategy not secrets/PII; Supabase RLS on every table (deny-by-default); use Cloudflare WAF/rate-limit/spend-caps; minimize PII handed to vendors; SPF/DKIM/DMARC for anti-phishing. LAUNCH GATES before real data/money: secrets audit, RLS review, CF config, email auth, INDEPENDENT security pass. Claude guides, is NOT the sole security sign-off.`
+`knowledge/security_and_secrets.md | build, business-plan | PUBLIC | captured | SECURITY & SECRETS — the back end must be secure. Tradeify lesson (June 2026): a leaked API key to a 3rd-party email tool exposed 100k+ customers (names+emails); core systems were safe because they were separate. Our same-shape risk: many vendor keys + a Supabase customer DB. RULES: API keys are loaded weapons (server-side only, scoped, rotated, NEVER in the PUBLIC repo or client); repo holds strategy not secrets/PII; Supabase RLS on every table (deny-by-default); use Cloudflare WAF/rate-limit/spend-caps; minimize PII handed to vendors; SPF/DKIM/DMARC for anti-phishing. LAUNCH GATES before real data/money: secrets audit, RLS review, CF config, email auth, INDEPENDENT security pass, + (Chat 7) MODEL-DATA-RETENTION gate — Fable 5/Mythos 5 are Covered Models w/ mandatory 30-day retention + NO ZDR on the Claude API (verified Chat 7); Opus 4.8 stays ZDR-eligible; Fable NOT cleared for sensitive customer dossiers until Mark decides (companion to model-tiering in tech_architecture_skeleton.md). Claude guides, is NOT the sole security sign-off.`

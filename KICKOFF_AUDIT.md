@@ -1,5 +1,5 @@
 *TAGS: build, business-plan | AUDIENCE: the waking Claude.*
-*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-10, Chat 7 (+trade_coaching_method CORE → 36 active .md docs + root AGENTS.md; count line disambiguated. Earlier Chat 6: +operating_system + NEW root AGENTS.md entry point; +build_blueprint +qubed_indicator_spec, /content shelf; +bioniq_q_logic; +security_and_secrets + SECRETS SCAN) | STATUS: captured*
+*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-10, Chat 7 (MODEL TIERING banked — edits to tech_architecture_skeleton + security_and_secrets, NO new file → count stays 36 active .md docs + root AGENTS.md. Earlier Chat 7: +trade_coaching_method CORE → 36; count line disambiguated. Chat 6: +operating_system + NEW root AGENTS.md entry point; +build_blueprint +qubed_indicator_spec, /content shelf; +bioniq_q_logic; +security_and_secrets + SECRETS SCAN) | STATUS: captured*
 *PURPOSE: the master checklist a new Claude RUNS at kickoff, then REPORTS, then STOPS. No improvising.*
 
 # KICKOFF AUDIT — run this, report, then WAIT for Mark

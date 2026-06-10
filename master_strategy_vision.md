@@ -571,6 +571,23 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   AGENTS.md" (clears the 35-vs-36 drift flagged at Chat-7 kickoff), HANDOFF STATE, this log, sync matrix
   self-evolved (new row: coach's reading method → trade_coaching_method.md, distinct from the Lab's delivery
   mechanics). One full-repo zip. OPEN (Mark's): narrate the ~100 worked examples — depth is the whole game.
+- 2026-06-10 (Chat 7, MODEL TIERING — architecture + security): tiered the Anthropic brain rather than route
+  everything to the frontier — same build-vs-buy doctrine (match the expensive resource to the high-value
+  moment). Opus 4.8 = production workhorse (~$5/$25 per MTok, VERIFIED Chat 7 vs Anthropic docs): journal
+  reviews, chart summaries, lesson gen, risk coaching, onboarding, most build/coding, high-volume coaching.
+  Fable 5 = metered premium brain (~$10/$50 = exactly 2× Opus, VERIFIED): premium deep reviews, multi-week
+  pattern analysis, advanced strategy critique. Package by plan (Starter mix · Pro=Opus · Elite=Opus+limited
+  Fable · Institutional=Fable+strict data controls); ties to the credit engine (area 6 — Fable costs more
+  credits because it costs more to run). Meter Fable; do NOT route every chat to it (make Opus the structural
+  default). Banked in tech_architecture_skeleton.md. SECURITY GATE (VERIFIED Chat 7, cross-flagged in
+  security_and_secrets.md): Mark flagged Fable's retention terms as reported/unverified; the PHD ran the
+  verification he named as the action item and it came back CONFIRMED against official Anthropic docs — Fable
+  5 / Mythos 5 are Covered Models requiring 30-day retention, ZDR NOT available on the Claude API (ZDR org →
+  400 error), data not used for training + deleted after 30 days (except safety/legal hold); Opus 4.8 stays
+  ZDR-eligible. CHANGED FROM Mark's paste: banked as VERIFIED, not "reported" — verification CLOSED, DECISION
+  open + Mark's. Posture until he decides: Fable NOT cleared for sensitive customer dossiers (PII); Opus
+  handles ZDR-sensitive work. No new file (edits only) → count stays 36 active .md docs + root AGENTS.md.
+  Sources: platform.claude.com API data-retention page; support.claude.com art. 15425996.
 
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`

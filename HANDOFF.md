@@ -82,6 +82,28 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
+- **Chat 7 (Jun 10 2026) — MODEL TIERING banked (architecture + security):** tiered the Anthropic brain
+  rather than route everything to the frontier (same build-vs-buy doctrine — match the expensive resource to
+  the high-value moment). **Opus 4.8 = production workhorse** (~$5/$25 per MTok, *verified Chat 7*): journal
+  reviews, chart summaries, lesson gen, risk coaching, onboarding, most build/coding, high-volume coaching.
+  **Fable 5 = metered premium brain** (~$10/$50 = **exactly 2× Opus**, *verified*): premium deep reviews,
+  multi-week pattern analysis, advanced strategy critique — hard cases where the user pays more. Package by
+  plan (Starter mix · Pro=Opus · Elite=Opus+limited Fable · Institutional=Fable+strict data controls);
+  **ties to the credit engine (area 6)** — Fable deep-reviews cost more credits because they cost more to
+  run. **Meter Fable; do NOT route every chat to it** (doubles cost — make Opus the structural default, Fable
+  an explicit flagged tier). Banked in `tech_architecture_skeleton.md`.
+  - **⚠️ SECURITY GATE — Fable 5 retention (VERIFIED Chat 7; cross-flagged in `security_and_secrets.md`):**
+    You flagged the retention terms as *reported, verify before load-bearing.* The PHD ran that verification
+    against **official Anthropic docs** — **CONFIRMED**: Fable 5 / Mythos 5 are **Covered Models requiring
+    30-day retention**; **Zero Data Retention is NOT available** on the Claude API (ZDR org → `400` error);
+    data isn't used for training and is deleted after 30 days (except safety/legal hold); **Opus 4.8 stays
+    ZDR-eligible.** `CHANGED FROM your paste:` banked as **VERIFIED**, not "reported" — the verification step
+    is **CLOSED**. The **DECISION is open and yours:** until you decide, **Fable is NOT cleared for sensitive
+    customer dossiers** (PII) — Opus handles anything ZDR-sensitive; Fable deep-reviews run on de-identified
+    inputs only, or you accept the 30-day window for tolerant data classes. *Sources: platform.claude.com API
+    data-retention page + support.claude.com art. 15425996.* (If you'd rather it be banked as still-unverified,
+    say so and I'll revert.)
+  - No new .md file (edits only) → **count stays 36 active .md docs + root AGENTS.md.**
 - **Chat 7 (Jun 10 2026) — TRADE COACHING METHOD banked (CORE):** new `knowledge/trade_coaching_method.md`
   = how the coach reads a trade. CORE RULE: coach against the **Qubed strat, never generic TA** (pattern-
   omniscience teaches a trader to distrust their own system). THREE LAYERS kept distinct — (1) **Qubed grade**

@@ -1,5 +1,5 @@
 *TAGS: build, business-plan | AUDIENCE: founder + every future Claude (the SYSTEM coordinate system).*
-*CREATED: 2026-06-04, Chat 4 | UPDATED: 2026-06-07, Chat 6 (added THE 7-TOOL STACK roster + Mermaid: Netlify/Supabase/Anthropic/GitHub + ElevenLabs/Cloudflare AI Gateway/Stripe + invideo→FINN; Stripe-vs-Cloudflare clarified; SVG RE-RENDERED to match — no longer out-of-sync. Briefing + Vision Board nodes; datafeed = Massive+Benzinga; TTS = pre-render premium / Web Speech fallback) | STATUS: captured (master resolved; SVG re-synced Chat 6)*
+*CREATED: 2026-06-04, Chat 4 | UPDATED: 2026-06-10, Chat 7 (added MODEL TIERING — Opus 4.8 workhorse $5/$25 / Fable 5 metered premium $10/$50 = 2x, verified Chat 7; tier-by-plan + ties to credit engine; meter Fable, don't route-all; ⚠️ Fable = Covered Model, 30-day retention, NO ZDR on API — verified, cross-flagged as a launch gate in security_and_secrets.md. Earlier Chat 6: 7-TOOL STACK roster + Mermaid; SVG re-rendered; TTS pre-render premium/Web Speech fallback) | STATUS: captured (master resolved; SVG re-synced Chat 6)*
 *SUPERSEDES: — | RELATED: master_strategy_vision.md (THE primer), master_journey_flow.md (the JOURNEY; this is the SYSTEM), funnel_routing_and_closer.md, voice_tts_decision.md, repo_as_memory_and_handoff.md, brand_funnel_architecture.md, data_provenance_and_timestamp_pin.md*
 
 # GOLD — MASTER TECH ARCHITECTURE (the system coordinate system)
@@ -201,5 +201,40 @@ flowchart TD
     FINN -.-> U
 ```
 
+## MODEL TIERING — Opus 4.8 workhorse / Fable 5 metered premium (Chat 7)
+Anthropic segments the lineup; we **tier the intelligence** rather than route everything to the frontier
+— same build-vs-buy doctrine: **match the expensive resource to the high-value moment.** This governs
+which model the **Anthropic brain** (above) calls, per task and per plan.
+
+- **Claude Opus 4.8 = the production workhorse.** ~**$5 / $25** per MTok (in/out) — *verified Chat 7
+  against Anthropic docs.* Default for: daily journal reviews, chart-narrative summaries, lesson
+  generation, risk coaching, onboarding, most build/coding, high-volume coaching.
+- **Claude Fable 5 = the metered premium brain.** ~**$10 / $50** per MTok — **exactly 2× Opus** (*verified
+  Chat 7*). Reserve for: premium "deep review" sessions, multi-week behavioural pattern analysis, advanced
+  strategy critique — the hard cases where the user pays more.
+- **Product packaging — tier the model by plan:** Starter (Sonnet/Opus mix) · Pro (Opus default) · Elite
+  (Opus + *limited* Fable deep reviews) · Institutional (Fable + strict data controls — see the security
+  gate below). **Ties to the credit engine (area 6):** a session's credit price can reflect *which model
+  graded it* — Fable deep-reviews cost more credits because they cost more to run.
+- **Do NOT route every chat to Fable** — that doubles model cost immediately. **Meter it.** (Structural
+  enforcement, not just a rule: the CF AI Gateway route + the credit engine should *default* every call to
+  Opus and require an explicit premium-tier flag to reach Fable, so "everything goes to Fable" can't happen
+  by omission.)
+
+⚠️ **DATA-RETENTION CONSTRAINT — Fable 5 is a Covered Model (see `security_and_secrets.md` launch gate).**
+**VERIFIED Chat 7** against official Anthropic docs (Mark flagged this as *reported*; the PHD ran the
+verification he named as the action item — it came back **CONFIRMED**): Fable 5 / Mythos 5 are **Covered
+Models requiring 30-day data retention**; **Zero Data Retention is NOT available** for them on the Claude
+API (a ZDR-configured org gets a `400 invalid_request_error`). Data is **not** used for training and is
+**deleted after 30 days** (except safety-investigation / legal hold). On Bedrock/Vertex/Foundry, retention
+is set per platform (Bedrock requires opting into provider data sharing). Opus 4.8 **remains ZDR-eligible.**
+→ This is a real tension with our own security doctrine: it would put the **most sensitive deep-dossier
+reviews on the model with the least favourable retention terms.** The **verification is now closed**; the
+**DECISION is open and Mark's** — recorded as a launch gate in `security_and_secrets.md`. Until Mark
+decides, **Fable is NOT cleared for sensitive customer data** (PII / full dossiers); Opus handles anything
+ZDR-sensitive.
+*Sources (official): platform.claude.com → Manage Claude → API and data retention; support.claude.com →
+"Data retention practices for Mythos-class models" (art. 15425996).*
+
 ## INDEX LINE
-`knowledge/tech_architecture_skeleton.md | build, business-plan | PUBLIC | pending | MASTER system architecture (5 layers: Users/Frontend/Backend/External/DevOps; live-vs-designed honest split; Mermaid re-synced to the SVG). Chat-5 resolved: Fork-2 funnel-memory=BUILD (foyer->Supabase candidate_dossier->brain), datafeed v1 manual / v2 Massive.com free (ex-Polygon, 5/min, delayed, CME futures), human-in-the-loop gate, pre-render premium voice = default / Web Speech = fallback (CHANGED FROM PRIOR Chat 6). Paired with tech_architecture_master.svg. Child flows next.`
+`knowledge/tech_architecture_skeleton.md | build, business-plan | PUBLIC | pending | MASTER system architecture (5 layers: Users/Frontend/Backend/External/DevOps; live-vs-designed honest split; Mermaid re-synced to the SVG). Chat-5 resolved: Fork-2 funnel-memory=BUILD (foyer->Supabase candidate_dossier->brain), datafeed v1 manual / v2 Massive.com free (ex-Polygon, 5/min, delayed, CME futures), human-in-the-loop gate, pre-render premium voice = default / Web Speech = fallback (CHANGED FROM PRIOR Chat 6). MODEL TIERING (Chat 7): Opus 4.8 workhorse ($5/$25) / Fable 5 metered premium ($10/$50 = 2x, verified) — tier by plan, tie to credit engine, meter Fable; Fable = Covered Model w/ 30-day retention + NO ZDR on API (verified Chat 7 → launch gate in security_and_secrets.md). Paired with tech_architecture_master.svg. Child flows next.`
