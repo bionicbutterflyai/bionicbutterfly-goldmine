@@ -64,6 +64,7 @@ layer. This law makes propagation a **close-out step, not a future catch.**
 - a NEW file → add it to **KICKOFF_AUDIT.md** presence list + bump its count note
 - the build/launch SEQUENCE or a phase decision (what ships when) → **phase_roadmap.md**
 - the COACHING engine / the Lab (how coaching is requested + delivered) → **bionic_lab_spec.md**
+- the COACH'S READING METHOD (how a trade is graded across the 3 layers / how worked examples are labeled + banked) → **trade_coaching_method.md** (CORE; distinct from the Lab's *delivery* mechanics)
 - a BUILT deliverable (report / spreadsheet / printable template) → **reports/** + an ARTIFACT_INDEX entry; bank key numbers as TEXT in the relevant .md so a Claude needn't open a binary
 - a SECURITY / secrets decision or threat model → **security_and_secrets.md** (and keep the KICKOFF secrets-scan honest)
 - a BRAND VOICE / language / vocabulary / tagline decision → **bioniq_q_logic.md** (the Q-logic)

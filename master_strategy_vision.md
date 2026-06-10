@@ -553,6 +553,24 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   ARCHIVAL; (5) load lean / fetch by number (>50% cheaper, no quality loss — aligns with Mark paying per
   token). Created AGENTS.md = lean entry (the proven cold-start, trimmed to rules+gates). Tagged
   operating_system + AGENTS.md as CORE in the index. Count → 35. One full-repo zip.
+- 2026-06-10 (Chat 7, TRADE COACHING METHOD — CORE): banked knowledge/trade_coaching_method.md — how the
+  coach actually reads a trade, treated as CORE-tier (as load-bearing as the operating system). CORE RULE:
+  coach against the Qubed strat, NEVER generic TA — pattern-omniscience ("you missed a 3-bar reversal / RSI
+  divergence") is noise that teaches a trader to distrust their own system. THREE LAYERS kept strictly
+  distinct (blurring them breaks the coach): (1) Qubed grade — pass Question/Qualify/Quantify per the rules,
+  process not outcome (criteria in bionic_lab_spec.md + reports/bioniq_execution_matrix.pdf, not invented
+  thresholds); (2) Mechanics read — why the move had fuel (e.g. an H&S also present → retail piled in), CONTEXT
+  not a reason-to-enter; (3) Intent read — algos trap-vs-gift (they fake retail out most of the time but let
+  a retail pattern run when its energy carries price to the next institutional level — read which). METHOD:
+  Mark narrates each trade across all 3 layers → Claude cleans it into the Qubed structure → bank as a worked
+  example; ~100 examples = the repo becomes the coach's LABELED MEMORY ("this looks like trade #47"); narration
+  depth = label quality, shallow narration = a parroting coach. CAPTURE HONESTY: historical price-action trades
+  tagged "order-flow not reconstructed", never fabricate GEX/Bookmap on old trades; live full-order-flow trades
+  = the gold-standard set. Tagged CORE in ARTIFACT_INDEX (alongside operating_system + AGENTS.md). Propagation:
+  +trade_coaching_method → KICKOFF presence list + count line disambiguated to "36 active .md docs + root
+  AGENTS.md" (clears the 35-vs-36 drift flagged at Chat-7 kickoff), HANDOFF STATE, this log, sync matrix
+  self-evolved (new row: coach's reading method → trade_coaching_method.md, distinct from the Lab's delivery
+  mechanics). One full-repo zip. OPEN (Mark's): narrate the ~100 worked examples — depth is the whole game.
 
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`

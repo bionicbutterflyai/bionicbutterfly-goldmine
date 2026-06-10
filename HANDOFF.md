@@ -82,6 +82,20 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
+- **Chat 7 (Jun 10 2026) — TRADE COACHING METHOD banked (CORE):** new `knowledge/trade_coaching_method.md`
+  = how the coach reads a trade. CORE RULE: coach against the **Qubed strat, never generic TA** (pattern-
+  omniscience teaches a trader to distrust their own system). THREE LAYERS kept distinct — (1) **Qubed grade**
+  (Question/Qualify/Quantify per the rules; process not outcome; criteria live in bionic_lab_spec +
+  reports/bioniq_execution_matrix.pdf, not invented thresholds); (2) **Mechanics read** (why the move had
+  fuel — context, NOT a reason-to-enter); (3) **Intent read** (algos' trap vs gift). METHOD: Mark narrates
+  all 3 layers → Claude cleans into Qubed structure → bank as a **worked example**; ~100 examples = the
+  coach's **labeled memory** ("looks like trade #47"); narration depth = label quality. CAPTURE HONESTY:
+  historical price-action trades tagged **"order-flow not reconstructed,"** never fabricate GEX/Bookmap on
+  old trades; live full-order-flow trades = the gold-standard set. Tagged **CORE** (like operating_system +
+  AGENTS.md). Propagated: ARTIFACT_INDEX, KICKOFF presence list + count (now reads **36 active .md docs +
+  root AGENTS.md**, disambiguating the prior 35-vs-36 drift), primer living log, sync matrix self-evolved
+  (new row: coach's reading method → trade_coaching_method.md). One full-repo zip. **The ~100 worked
+  examples are Mark's to narrate** — depth is the whole game; this doc is the structure they pour into.
 - **Chat 6 close (Jun 9 2026):** added an unmissable ⚡ identity banner to the top of `AGENTS.md` ("THIS IS
   bioniqtrader, you are CONTINUING it, not a new idea"). Clarified: AGENTS.md auto-loads only in agentic
   CODING tools (Claude Code/Cursor) — in the plain chat app Mark MUST paste the cold-start text to start each

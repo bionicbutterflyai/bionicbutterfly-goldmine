@@ -1,5 +1,5 @@
 *TAGS: build, business-plan | AUDIENCE: the waking Claude.*
-*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-09, Chat 6 (presence +1 operating_system → 35 active; NEW root AGENTS.md entry point. Earlier: +build_blueprint +qubed_indicator_spec → 34, /content shelf; +bioniq_q_logic → 32; +security_and_secrets → 31 + SECRETS SCAN) | STATUS: captured*
+*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-10, Chat 7 (+trade_coaching_method CORE → 36 active .md docs + root AGENTS.md; count line disambiguated. Earlier Chat 6: +operating_system + NEW root AGENTS.md entry point; +build_blueprint +qubed_indicator_spec, /content shelf; +bioniq_q_logic; +security_and_secrets + SECRETS SCAN) | STATUS: captured*
 *PURPOSE: the master checklist a new Claude RUNS at kickoff, then REPORTS, then STOPS. No improvising.*
 
 # KICKOFF AUDIT — run this, report, then WAIT for Mark
@@ -42,8 +42,8 @@ knowledge/: [ ] strat_zone_taxonomy [ ] dpmo_gate_indicator [ ] data_provenance_
 [ ] funnel_routing_and_closer [ ] funnel_brainstorm_reasoning [ ] brand_funnel_architecture
 [ ] master_journey_flow [ ] learning_design_standards [ ] voice_tts_decision [ ] two_strategy_split
 [ ] tech_architecture_skeleton [ ] repo_as_memory_and_handoff [ ] coaching_cue_library_additions
-[ ] bionic_briefing_spec [ ] live_vision_board_spec [ ] phase_roadmap [ ] bionic_lab_spec [ ] security_and_secrets [ ] bioniq_q_logic [ ] build_blueprint [ ] qubed_indicator_spec [ ] operating_system
-*(35 active .md files as of Chat 6, incl. this KICKOFF_AUDIT.md, excl. /reference lineage md and the /content shelf index. NEW root file: AGENTS.md = the standardized lean agent entry point (the cold-start script). NEW non-md: /reports = 6; /content folder = numbered raw-source shelf. If the count differs, reconcile against ARTIFACT_INDEX and flag.)*
+[ ] bionic_briefing_spec [ ] live_vision_board_spec [ ] phase_roadmap [ ] bionic_lab_spec [ ] security_and_secrets [ ] bioniq_q_logic [ ] build_blueprint [ ] qubed_indicator_spec [ ] operating_system [ ] trade_coaching_method
+*(**36 active .md docs** as of Chat 7 (incl. this KICKOFF_AUDIT.md) **+ root AGENTS.md** (the entry point, counted separately), **excl.** /reference lineage md and the /content shelf index. Chat-7 add: +trade_coaching_method (CORE) → 36. NEW non-md: /reports = 6; /content folder = numbered raw-source shelf. If the count differs, reconcile against ARTIFACT_INDEX and flag.)*
 
 **SECRETS SCAN (every wake — the Tradeify lesson):** confirm no API keys / `.env` / tokens / PII ever entered this PUBLIC repo. Quick check: `grep -rniE "sk-[a-z0-9]{20}|api[_-]?key[\"' ]*[:=]|secret[\"' ]*[:=]" --include=*.js --include=*.py --include=*.json --include=*.env .` → expect none (prose in security_and_secrets.md is fine). If anything real shows, STOP and flag immediately. (See security_and_secrets.md.)
 
@@ -76,4 +76,4 @@ knowledge/: [ ] strat_zone_taxonomy [ ] dpmo_gate_indicator [ ] data_provenance_
 - [ ] **CONFIRM = AUDIT:** every "confirmed/done/pushed" in your report must be backed by a command you ran this turn (fresh clone + grep). No naked confirms.
 
 ## INDEX ENTRY
-`KICKOFF_AUDIT.md | build, business-plan | PUBLIC | captured | The master checklist a waking Claude RUNS at kickoff: pass gates → read in order → presence audit (25 md files) → integrity audit (gates/thesis/mantra/no-zombie-decisions/cross-refs/living-log/LOCKED) → state readout → produce a "100%-or-issues" report → STOP and wait for Mark. He resolves or assigns; Claude never self-picks a task.`
+`KICKOFF_AUDIT.md | build, business-plan | PUBLIC | captured | The master checklist a waking Claude RUNS at kickoff: pass gates → read in order → presence audit (36 active .md docs + root AGENTS.md) → integrity audit (gates/thesis/mantra/no-zombie-decisions/cross-refs/living-log/LOCKED) → state readout → produce a "100%-or-issues" report → STOP and wait for Mark. He resolves or assigns; Claude never self-picks a task.`
