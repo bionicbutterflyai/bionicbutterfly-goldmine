@@ -82,6 +82,23 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
+- **Chat 7 (Jun 14 2026) — RECOVERED the original journal app + its reusable trade importer:** the source of
+  the proven NinjaTrader importer turned out to be **the ORIGINAL journal app** (single-file HTML, live on
+  Netlify, **NOT Git-linked** — only the live deploy + the Claude-1 chat held it; nothing on Mark's machine,
+  the "swap HTML online" workflow). **Source recovered Chat 7** (view-source), full HTML reviewed +
+  secrets-scanned **clean** (API key is user-entered to localStorage, never hardcoded). Two codebases, do not
+  confuse: the original journal (now a **PARTS DONOR, abandoned-by-choice**) vs. the CURRENT platform (= the
+  venture; Claude 1 said "start over with GitHub+Supabase," which became it). **Build plan UNCHANGED** —
+  port the useful logic, don't revive the app. REUSABLE: the **CSV parser** (proven, instrument-agnostic,
+  de-dupes) = the upload engine's machine-zone import adapter (NT-first); + reference designs (tag taxonomy
+  w/ behavioral negatives, screenshot model, notebook, an AI-Insights tab already calling Claude). **DECISION
+  — fill-grouping = manual merge-by-click, NOT the original's 10s auto-window:** "one trade" is TIME-defined
+  for a scalper but **INTENT-defined for a level-to-level trader** (half@TP1 + runner + add = legs minutes
+  apart, one idea; only the trader knows intent). Mark's 10s insight (avg trade ~9s) kept as scalper R&D, not
+  the product default (founder-method/taught-product boundary again). NOT reused: localStorage (→ Supabase);
+  the brother's fork (too manual-input = what-NOT-to-do). NEW PRINCIPLE banked: **append-never-overwrite the
+  trader's own journal/tags/trades** (coach adds/suggests/grades, never silently edits — surfaced from the
+  "STOP messing with me" story). Banked as `trade_importer_and_journal_origin.md` → count 37→**38**.
 - **Chat 7 (Jun 14 2026) — RESTORED the teachable/unteachable PRODUCT-BOUNDARY doc + founder method/trajectory
   + anonymized Student Zero:** past-chat search surfaced that a **GOLD doc dropped out of the vault** in an old
   reorg — `teachable_vs_unteachable_boundary.md` (scalp = founder's private/unteachable edge + R&D source;

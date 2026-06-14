@@ -643,6 +643,21 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   operating_system.md: confirm repo = goldmine (public, not the private app repo) → extract → commit → push →
   audit (after a Chat-7 wrong-repo near-miss, recovered by revert). Propagated: ARTIFACT_INDEX + KICKOFF
   (count→37) + HANDOFF + this log + sync matrix (product-boundary surface). One full-repo zip.
+- 2026-06-14 (Chat 7, recovered the original journal app + reusable trade importer): the proven NinjaTrader
+  importer lives in the ORIGINAL journal app (single-file HTML, live on Netlify, NOT Git-linked — recovered
+  Chat 7 via view-source; secrets-clean, API key user-entered to localStorage). TWO codebases: the original
+  journal = a PARTS DONOR, abandoned-by-choice (Mark stopped finishing it when he saw he couldn't build both);
+  the CURRENT platform = the venture (Claude 1 said "start over with GitHub+Supabase"). Build plan UNCHANGED —
+  port logic, don't revive. REUSABLE: the CSV parser (instrument-agnostic, de-dupes) = the upload engine's
+  machine-zone import adapter (NT-first; other platforms per-student-demand); reference designs = tag taxonomy
+  (behavioral negatives already present), screenshot model, notebook, an AI-Insights tab already calling
+  Claude. DECISION: fill-grouping = manual merge-by-click, NOT the original's 10s auto-window — "one trade" is
+  TIME-defined for scalpers but INTENT-defined for level-to-level traders (half@TP1 + runner + add = legs
+  minutes apart, one idea; only the trader knows intent). Mark's 10s insight (avg ~9s) kept as scalper R&D.
+  NOT reused: localStorage (→ Supabase); the brother's fork (too manual-input = what-NOT-to-do reference). NEW
+  PRINCIPLE: append-never-overwrite the trader's own journal/tags/trades (coach adds/suggests/grades, never
+  silently edits — from the "STOP messing with me" story). Banked as trade_importer_and_journal_origin.md →
+  count 37→38; sync matrix self-evolved (importer/upload-engine surface).
 
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`
