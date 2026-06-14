@@ -1,6 +1,6 @@
 # GOLD — BRAND-FUNNEL ARCHITECTURE (the contrast IS the conversion)
 *TAGS: marketing, business-plan, coaching | AUDIENCE: founder + marketing-Claude.*
-*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-06-08, Chat 6 (added HERO LINE "Don't trade like a human. Execute like a machine. be bioniq" + QUBED/Q³ methodology name + the Qubed-font plan (license-friendly base, Q+q→Power-Q). See bioniq_q_logic.md. Earlier Chat 6: NAME DECIDED Bioniq Trader/bioniqtrader.ai+.com, Butterfly retired, trademark screen + attorney/domain pending) | STATUS: captured*
+*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-06-10, Chat 7 (added MARKET THE STRATEGY, NOT "COACHING" — the 5s social hook may lead loud with a STRATEGY number (edge, not lifestyle); sober corporate drip everywhere after; HARD CONSTRAINT: a win-rate/PnL hook is only usable once PROVEN by the 10→100 worked-example set — proof and hook are the same project. NOT a reversal — a sharpening of loud-hook/sober-spine. Earlier Chat 6: HERO LINE + QUBED/Q³ + font; NAME Bioniq Trader, Butterfly retired) | STATUS: captured*
 *SUPERSEDES: — | RELATED: master_journey_flow.md, funnel_brainstorm_reasoning.md (the WHY)*
 
 ## ONE-LINE
@@ -69,6 +69,24 @@ are in tension — the funnel turns the tension into the conversion.
    story at different volumes — not two stories.
 3. **No hype tells post-click.** Chart, copy, voice, pricing all sober. One tell and the skeptic
    re-categorizes you as the thing they fled.
+
+## MARKET THE STRATEGY, NOT "COACHING" — and where the loud number is allowed (Chat 7)
+*NOT a reversal of the loud-hook/sober-spine doctrine — a sharpening of it.* Mark's steer: the **5-second
+social hook** (TikTok/Reels) is where a **strategy number can be loud** — a win-rate or PnL line is
+legitimate scroll-stopping bait, because the substance of the hook is **the STRATEGY's edge, not a
+lifestyle flex.** Everything **past the click** is **corporate-grade, professional, drip** — marketing the
+*strategy as substance*, never continued guru-hype sales tactics. So: lead with the strategy (loud at 5s),
+prove it sober everywhere after. This is *consistent with* Guardrail #2 — the loud hook still can't lie;
+it's just specified *which* true thing leads (the edge, not the dream).
+- **HARD CONSTRAINT (legal + brand): a win-rate / PnL hook is only usable once the number is REAL and
+  substantiated.** Until the 10→100 worked-example set (trade_coaching_method.md) proves the edge, the hook
+  number is a promise we can't back — and an unbacked number IS a guru tell, the exact thing the funnel
+  exists to avoid. **The proof set and the hook are the same project: the examples are what make the hook
+  legal and true.** (Incumbents carry a compliance line on every testimonial for this reason.)
+- **Why this beats the incumbents' framing:** they coach you to execute a *50/50 public system* more
+  disciplinedly and survive on R:R; we hook on a system *built to be selective* (real edge per trade) and
+  coach the discipline to keep it. See the DIFFERENTIATION THESIS in coaching_philosophy.md and COMPETITIVE
+  READ #2 (Zella) in build_vs_buy_and_competitive_read.md.
 
 ## VALIDATE
 A/B Matrix-hook thumbnails vs clean ones on the same content. Measure CTR **and** post-click retention

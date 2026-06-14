@@ -82,6 +82,27 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
+- **Chat 7 (Jun 10 2026) — DIFFERENTIATION THESIS + Zella competitive read banked (the "why we win" spine):**
+  prompted by TradeZella launching **Zella AI** (verified Chat 7: AI-first journal, persistent memory,
+  autonomous agents, chart-replay, behavioral auto-tagging, mentor "Spaces"). Honest read: **we do NOT win
+  on journal breadth/memory/features — those now ship in Zella** (same lesson as TEDi: don't out-build the
+  incumbent's commodity layer). `CHANGED FROM PRIOR:` Mark demoted his own original "best journal AND best
+  coach" → **"the best journal *required to serve* the best coaching of ONE system."** Our single wedge:
+  **an AI coach that has mastered one proprietary system with a real LIVE edge**, vs. incumbents grading
+  generic public strats (ICT/SMC/break-retest) that look great in hindsight, no live edge. **THE THESIS
+  (two compounding flaws):** (1) STRUCTURAL — public systems are ~50/50 because they demand taking *every*
+  setup → survive only on R:R → "execute-and-hope, and hope is never a strategy"; the 10% are
+  **selective-via-confluence = exactly what Qubed is** (a selectivity engine that rejects most setups). (2)
+  PSYCHOLOGICAL — even good traders don't run winners / don't honour SL → need 3:1, average 1:1 → **1 red
+  FOMC-Friday + revenge wipes 10 green days / blows the account**; Mark's keeper: *"they act like a machine
+  with setups, but with discipline they are 100% human."* The **coach = accountability at the ego moment**
+  (the cure the hero line names). **Honest scope:** mechanism, not yet data — the **10→100 worked-example
+  set PROVES the edge and makes any win-rate hook legal.** Hook framing (NOT a reversal — a sharpening):
+  the **5s social hook may lead loud with a STRATEGY number**; sober corporate drip everywhere after; the
+  number is only usable once proven. Banked into `coaching_philosophy.md` (the thesis) +
+  `build_vs_buy_and_competitive_read.md` (Zella read) + `brand_funnel_architecture.md` (the hook). No new
+  file → **count stays 36**. (Lineage: consolidates the prior 40→17→6 selectivity read + the
+  planned-SL-vs-actual-exit footprint from earlier sessions — found via past-chat search.)
 - **Chat 7 (Jun 10 2026) — MODEL TIERING banked (architecture + security):** tiered the Anthropic brain
   rather than route everything to the frontier (same build-vs-buy doctrine — match the expensive resource to
   the high-value moment). **Opus 4.8 = production workhorse** (~$5/$25 per MTok, *verified Chat 7*): journal

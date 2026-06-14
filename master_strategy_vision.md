@@ -588,6 +588,30 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   open + Mark's. Posture until he decides: Fable NOT cleared for sensitive customer dossiers (PII); Opus
   handles ZDR-sensitive work. No new file (edits only) → count stays 36 active .md docs + root AGENTS.md.
   Sources: platform.claude.com API data-retention page; support.claude.com art. 15425996.
+- 2026-06-10 (Chat 7, DIFFERENTIATION THESIS + Zella competitive read — the "why we win" spine): TradeZella
+  launched Zella AI (verified Chat 7: AI-first journal, persistent memory, autonomous agents, chart-replay,
+  behavioral auto-tagging, mentor "Spaces"). Honest read — we do NOT win on journal breadth/memory/features
+  (now shipping in Zella; don't out-build the incumbent's commodity layer, same as the TEDi lesson). CHANGED
+  FROM PRIOR: Mark demoted his own "best journal AND best coach" → "the best journal REQUIRED TO SERVE the
+  best coaching of ONE system." Our single wedge = an AI coach that has mastered one proprietary system with
+  a real LIVE edge, vs incumbents grading generic public strats (ICT/SMC/break-retest/3-bar) that look great
+  in hindsight, no live edge. THE THESIS, two compounding flaws: (1) STRUCTURAL — public systems are ~50/50
+  because they demand taking every setup → survive only on R:R → execute-and-hope ("hope is never a
+  strategy"); the 10% are selective-via-confluence, which is exactly what Qubed IS (a selectivity engine
+  that rejects most setups, fires only when the stack screams — uncopyable by systems that require taking
+  everything). (2) PSYCHOLOGICAL — even good traders don't run winners / don't honour SL → need 3:1, average
+  1:1 → one red FOMC-Friday + revenge wipes ten green days or blows the account; Mark's keeper line: "they
+  act like a machine with the setups, but with discipline they are 100% human" (= the disease the hero line
+  cures). The AI coach = accountability at the precise ego moment. Honest scope: mechanism, not yet data —
+  the 10→100 worked-example set (trade_coaching_method.md) PROVES the edge and is what makes any win-rate
+  hook legal+true. Hook framing (NOT a reversal — a sharpening of loud-hook/sober-spine): the 5s social hook
+  may lead loud with a STRATEGY number (edge, not lifestyle); sober corporate drip everywhere after; number
+  only usable once proven. Market line "the market takes from the many, gives to the few" = true mechanism,
+  internal only — sober external translation: "the market profits from predictable behaviour; we coach you
+  out of being predictable." Banked into coaching_philosophy.md + build_vs_buy_and_competitive_read.md +
+  brand_funnel_architecture.md; ARTIFACT_INDEX + KICKOFF + HANDOFF + this log propagated; no new file →
+  count stays 36 active .md docs + root AGENTS.md. Lineage: consolidates the prior 40→17→6 selectivity read
+  + the planned-SL-vs-actual-exit behavioral footprint from earlier sessions (found via past-chat search).
 
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`
