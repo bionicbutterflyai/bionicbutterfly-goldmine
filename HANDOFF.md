@@ -96,7 +96,7 @@ continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at g
   for a scalper but **INTENT-defined for a level-to-level trader** (half@TP1 + runner + add = legs minutes
   apart, one idea; only the trader knows intent). Mark's 10s insight (avg trade ~9s) kept as scalper R&D, not
   the product default (founder-method/taught-product boundary again). NOT reused: localStorage (→ Supabase);
-  the brother's fork (too manual-input = what-NOT-to-do). NEW PRINCIPLE banked: **append-never-overwrite the
+  Student Zero's fork (too manual-input = what-NOT-to-do). NEW PRINCIPLE banked: **append-never-overwrite the
   trader's own journal/tags/trades** (coach adds/suggests/grades, never silently edits — surfaced from the
   "STOP messing with me" story). Banked as `trade_importer_and_journal_origin.md` → count 37→**38**.
 - **Chat 7 (Jun 14 2026) — RESTORED the teachable/unteachable PRODUCT-BOUNDARY doc + founder method/trajectory

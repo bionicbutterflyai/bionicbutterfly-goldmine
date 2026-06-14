@@ -654,7 +654,7 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   Claude. DECISION: fill-grouping = manual merge-by-click, NOT the original's 10s auto-window — "one trade" is
   TIME-defined for scalpers but INTENT-defined for level-to-level traders (half@TP1 + runner + add = legs
   minutes apart, one idea; only the trader knows intent). Mark's 10s insight (avg ~9s) kept as scalper R&D.
-  NOT reused: localStorage (→ Supabase); the brother's fork (too manual-input = what-NOT-to-do reference). NEW
+  NOT reused: localStorage (→ Supabase); Student Zero's fork (too manual-input = what-NOT-to-do reference). NEW
   PRINCIPLE: append-never-overwrite the trader's own journal/tags/trades (coach adds/suggests/grades, never
   silently edits — from the "STOP messing with me" story). Banked as trade_importer_and_journal_origin.md →
   count 37→38; sync matrix self-evolved (importer/upload-engine surface).

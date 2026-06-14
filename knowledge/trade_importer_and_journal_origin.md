@@ -49,13 +49,13 @@ his): his average trade is ~9s, so a 10s window auto-merges his scale-in/scale-o
 - **localStorage** — the original app stores everything in one browser (single-user, no backend). This is
   the ONE layer the Supabase rebuild correctly replaces. The parser doesn't care where data lands; it just
   returns trade objects, so it ports cleanly onto Supabase.
-- **The brother's fork** — he extended the original with his own Claude (more "bells and whistles"), but his
+- **Student Zero's fork** — the first student extended the original with his own Claude (more "bells and whistles"), but his
   AI section is **very trader-manual-input** to get a response back. Banked as a **what-NOT-to-do reference**:
   it's the clunky "type everything in" coach the platform's voice-engaged, journal-reading coach is designed
   to remove. (Inferior fork; not a source.)
 
 ## APPEND-NEVER-OVERWRITE (a product principle surfaced this session)
-When Mark sent journal copies to his brother, the brother kept *editing Mark's own entries/tags* until Mark
+When Mark sent journal copies to the first student, that student kept *editing Mark's own entries/tags* until Mark
 said "STOP messing with me." That annoyance is a **real product requirement:** the system must **never
 silently alter a trader's own journal entries, tags, or trades** — the coach may *add* (auto-tags, like the
 FOMO tagger), *suggest*, and *grade*, but must **append, never overwrite** the trader's record. The moment a
@@ -63,4 +63,4 @@ student feels the system is "messing with" their journal, the trust the accounta
 gone.
 
 ## INDEX LINE
-`knowledge/trade_importer_and_journal_origin.md | build, support, business-plan | PUBLIC | captured | TWO codebases: (1) the ORIGINAL journal app (single-file HTML, live on Netlify, NOT Git-linked, ~39 real trades) — source RECOVERED Chat 7, secrets-clean; (2) the CURRENT platform (the venture). DECISION: original = abandoned-by-choice PARTS DONOR, not revived; build plan unchanged. REUSABLE: the NinjaTrader CSV parser (parseCSV — proven, instrument-agnostic, de-dupes) = the upload engine's machine-zone import adapter, NT-first; + reference designs (tag taxonomy incl. behavioral negatives, screenshot model, notebook, an AI-Insights tab that already calls Claude). FILL-GROUPING DECISION: manual merge-by-click, NOT the 10s auto-window — "one trade" is TIME-defined for scalpers but INTENT-defined for level-to-level (half at TP1 + runner + add = legs minutes apart, one idea; only the trader knows intent). Mark's 10s insight (avg trade ~9s) kept as scalper R&D, not the product default. NOT reused: localStorage (→ Supabase). Brother's fork = what-NOT-to-do (too manual-input). PRINCIPLE: append-never-overwrite the trader's own journal/tags/trades (coach adds/suggests/grades, never silently edits — or trust dies).`
+`knowledge/trade_importer_and_journal_origin.md | build, support, business-plan | PUBLIC | captured | TWO codebases: (1) the ORIGINAL journal app (single-file HTML, live on Netlify, NOT Git-linked, ~39 real trades) — source RECOVERED Chat 7, secrets-clean; (2) the CURRENT platform (the venture). DECISION: original = abandoned-by-choice PARTS DONOR, not revived; build plan unchanged. REUSABLE: the NinjaTrader CSV parser (parseCSV — proven, instrument-agnostic, de-dupes) = the upload engine's machine-zone import adapter, NT-first; + reference designs (tag taxonomy incl. behavioral negatives, screenshot model, notebook, an AI-Insights tab that already calls Claude). FILL-GROUPING DECISION: manual merge-by-click, NOT the 10s auto-window — "one trade" is TIME-defined for scalpers but INTENT-defined for level-to-level (half at TP1 + runner + add = legs minutes apart, one idea; only the trader knows intent). Mark's 10s insight (avg trade ~9s) kept as scalper R&D, not the product default. NOT reused: localStorage (→ Supabase). Student Zero's fork = what-NOT-to-do (too manual-input). PRINCIPLE: append-never-overwrite the trader's own journal/tags/trades (coach adds/suggests/grades, never silently edits — or trust dies).`
