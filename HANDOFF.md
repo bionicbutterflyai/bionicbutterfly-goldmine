@@ -82,6 +82,26 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
+- **Chat 7 (Jun 14 2026) — RESTORED the teachable/unteachable PRODUCT-BOUNDARY doc + founder method/trajectory
+  + anonymized Student Zero:** past-chat search surfaced that a **GOLD doc dropped out of the vault** in an old
+  reorg — `teachable_vs_unteachable_boundary.md` (scalp = founder's private/unteachable edge + R&D source;
+  the platform teaches ONLY the slowed-down rule-based level-to-level Cubed system; NEVER claim to teach
+  scalping — proven by Student Zero failing on scalp, winning on rules). **RESTORED it** (count 36→**37**) and
+  banked the founder's **scalp method plainly** (classic technique: add to winners never losers, probe + B/E
+  fast, scratch $25-75, never hold-hope; load ~30 micros on hotkey when it goes, ride trail, avg $800-2,700;
+  "business expenses not losses" w/ the tripwire; the **adding-moves-avg-closer = more B/E protection**
+  mechanic; level holds 9/10 but bots sweep deep first → scratch-and-survive; regime-tagged). **BRIDGE
+  insight:** scalp-discipline and rule-based discipline are **two cures for the same ego-sizing disease** —
+  founder-method and taught-product are the same discipline on a spectrum (scalp→level-to-level→swing). Added
+  the **founder trajectory** (Mark intends to evolve off scalping → level-to-level → swing = become his own
+  best student) to the primer. **PRIVACY: anonymized the first tester (identifying relationship removed) → "Student Zero" across the
+  whole public repo**, corrected his profile (holds ~10-15 min for ~$100 partials, **won't add yet**, past
+  color-green — *"green $55 is lunch at McDonald's"* — next lesson hold-longer-or-size-bigger; recently
+  approaching a livable daily average), and **kept the precise daily $ OUT of the public vault.** Coaching
+  stance banked: *"more trades → more confidence → more size; one trade at a time."* Also folded the **new bank
+  rule into operating_system.md: confirm repo = goldmine → extract → commit → push → audit** (after the Chat-7
+  wrong-repo near-miss). Did NOT re-bank what already existed (the proof-point, the scalper-insight in
+  bionic_lab_spec). One full-repo zip; sync matrix self-evolved (product-boundary surface).
 - **Chat 7 (Jun 10 2026) — DIFFERENTIATION THESIS + Zella competitive read banked (the "why we win" spine):**
   prompted by TradeZella launching **Zella AI** (verified Chat 7: AI-first journal, persistent memory,
   autonomous agents, chart-replay, behavioral auto-tagging, mentor "Spaces"). Honest read: **we do NOT win
@@ -262,7 +282,7 @@ continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at g
   - **PLAN A / PLAN B:** Plan B = trade mornings + mentor a small high-touch cohort + beach (a fine
     fallback). Plan A = scale via platform + solve **acquisition** (the real bottleneck is reach/lead-gen,
     NOT Mark's coaching). Testimonial flywheel = the acquisition engine (honest wash-outs testify too).
-  - **EARLY PROOF-POINTS (`coaching_philosophy.md`, n=2, caveated):** Mark + his brother (18-mo chronic
+  - **EARLY PROOF-POINTS (`coaching_philosophy.md`, n=2, caveated):** Mark + Student Zero, the first tester (18-mo chronic
     loser → 3 weeks green under Mark's rules+accountability; the real signal is BEHAVIOUR — self-regulated
     tilt). Caveats banked (small sample, family/coached, euphoria-is-its-own-risk).
   - **COACHING CUES:** the tilt line (keeper); Jocko "GOOD" (Mark's mental model + origin of the

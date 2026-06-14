@@ -1,5 +1,5 @@
 *TAGS: build, business-plan | AUDIENCE: the waking Claude.*
-*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-10, Chat 7 (DIFFERENTIATION THESIS + Zella competitive read banked — edits to coaching_philosophy + build_vs_buy + brand_funnel_architecture, NO new file → count stays 36 active .md docs + root AGENTS.md. Earlier Chat 7: MODEL TIERING; +trade_coaching_method CORE → 36; count line disambiguated. Chat 6: +operating_system + NEW root AGENTS.md entry point; +build_blueprint +qubed_indicator_spec, /content shelf; +bioniq_q_logic; +security_and_secrets + SECRETS SCAN) | STATUS: captured*
+*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-14, Chat 7 (RESTORED teachable_vs_unteachable_boundary.md (dropped GOLD doc, recovered via past-chat search) → 37 active .md docs; +scalp method/bridge; founder trajectory; Student Zero proof anonymized (identifying relationship removed across repo) + $ softened; confirm-goldmine bank rule added to operating_system. Earlier Chat 7: DIFFERENTIATION THESIS + Zella read; MODEL TIERING; +trade_coaching_method CORE → 36. Chat 6: +operating_system + NEW root AGENTS.md; +build_blueprint +qubed_indicator_spec, /content; +bioniq_q_logic; +security_and_secrets + SECRETS SCAN) | STATUS: captured*
 *PURPOSE: the master checklist a new Claude RUNS at kickoff, then REPORTS, then STOPS. No improvising.*
 
 # KICKOFF AUDIT — run this, report, then WAIT for Mark
@@ -42,8 +42,8 @@ knowledge/: [ ] strat_zone_taxonomy [ ] dpmo_gate_indicator [ ] data_provenance_
 [ ] funnel_routing_and_closer [ ] funnel_brainstorm_reasoning [ ] brand_funnel_architecture
 [ ] master_journey_flow [ ] learning_design_standards [ ] voice_tts_decision [ ] two_strategy_split
 [ ] tech_architecture_skeleton [ ] repo_as_memory_and_handoff [ ] coaching_cue_library_additions
-[ ] bionic_briefing_spec [ ] live_vision_board_spec [ ] phase_roadmap [ ] bionic_lab_spec [ ] security_and_secrets [ ] bioniq_q_logic [ ] build_blueprint [ ] qubed_indicator_spec [ ] operating_system [ ] trade_coaching_method
-*(**36 active .md docs** as of Chat 7 (incl. this KICKOFF_AUDIT.md) **+ root AGENTS.md** (the entry point, counted separately), **excl.** /reference lineage md and the /content shelf index. Chat-7 add: +trade_coaching_method (CORE) → 36. NEW non-md: /reports = 6; /content folder = numbered raw-source shelf. If the count differs, reconcile against ARTIFACT_INDEX and flag.)*
+[ ] bionic_briefing_spec [ ] live_vision_board_spec [ ] phase_roadmap [ ] bionic_lab_spec [ ] security_and_secrets [ ] bioniq_q_logic [ ] build_blueprint [ ] qubed_indicator_spec [ ] operating_system [ ] trade_coaching_method [ ] teachable_vs_unteachable_boundary
+*(**37 active .md docs** as of Chat 7 (incl. this KICKOFF_AUDIT.md) **+ root AGENTS.md** (the entry point, counted separately), **excl.** /reference lineage md and the /content shelf index. Chat-7 adds: +trade_coaching_method (CORE) → 36, then +teachable_vs_unteachable_boundary (RESTORED) → 37. NEW non-md: /reports = 6; /content folder = numbered raw-source shelf. If the count differs, reconcile against ARTIFACT_INDEX and flag.)*
 
 **SECRETS SCAN (every wake — the Tradeify lesson):** confirm no API keys / `.env` / tokens / PII ever entered this PUBLIC repo. Quick check: `grep -rniE "sk-[a-z0-9]{20}|api[_-]?key[\"' ]*[:=]|secret[\"' ]*[:=]" --include=*.js --include=*.py --include=*.json --include=*.env .` → expect none (prose in security_and_secrets.md is fine). If anything real shows, STOP and flag immediately. (See security_and_secrets.md.)
 

@@ -12,7 +12,7 @@ the thing every prior handoff referenced but never carried. It MUST ride in ever
 are the READ — the bionic glance, the WHAT of a good trade. PROCESS is the HOW — the rules/accountability/
 discipline you run no matter what you feel; the bionic discipline, the machine half of "part man, part
 machine." The read was never the moat — PROCESS is. Turtles proved it (handed the rules, most still failed
-for lack of process); the brother proved it (same read, new process → green). Said to the student:
+for lack of process); Student Zero proved it (same read, new process → green). Said to the student:
 **PROCESS BEFORE PROFIT** — run the rules, the money is the byproduct; you can't promise profit, you sell
 process. This also IS the business thesis + the honest verdict.)* Mark has mastered every platform and indicator in
 the industry ("I read the DOM faster than a McDonald's menu") and his conclusion is blunt: **it's all
@@ -90,7 +90,7 @@ Second confirmation indicator beside the DPMO. Port of LonesomeTheBlue's CDV: pe
 range — NOT true tick bid/ask), `cumdelta` summed, rendered as **Heikin-Ashi candles** (green up / red
 down). A **50 EMA on the HA close**, styled like the 144 (**blue dashed, medium 2.4**); **price/CVD
 above 50 EMA = bullish, below = bearish.** Render in its **own stacked pane** below the DPMO (Mark's
-brother's call — separate panes over shared dual-axis; loses height but reads clean for the new eye).
+Student Zero's preference — separate panes over shared dual-axis; loses height but reads clean for the new eye).
 CAVEAT: shape-estimated delta matches Mark's TV exactly (same estimate) but is NOT order-flow truth —
 a real tick-delta feed could differ. Built: `trade_lesson_june4_v7_cvd.html`.
 **Presentation rule (Chat 6):** never label this estimated delta as "buys vs sells" to a student —

@@ -53,6 +53,13 @@ the coaching so Mark's hours leave the loop, AND acquisition scales. The bottlen
 **NOT Mark's ability to coach — it's reach/lead-gen** (hook marketing doesn't scale leads; that's the
 testimonial-flywheel's job). So the ambition is to scale **reach**, while the system holds the success
 rate above the unfiltered base rate (the Fork-1 build) and the honest-verdict holds the floor.*
+*The founder's own trajectory (Chat 7 — he intends to walk the path the product sells): Mark trades **scalp**
+today — high-intensity, hyper-focused, **short shelf-life** ("scalping does not have a long shelf life") — and
+**invites the day he stops.** The stated arc is **scalp → level-to-level (the taught Cubed system) → swing.**
+i.e. he plans to become **his own best student**, evolving off his unteachable reflex-edge onto the rule-based
+system the platform teaches. Why it's on-brand, not a tangent: it makes the founder the living proof of the
+exact transformation the product promises, and it cleanly separates founder-method (scalp = private + R&D) from
+taught-product (rule-based level-to-level). See teachable_vs_unteachable_boundary.md.*
 
 # PART A — THE BUSINESS THESIS
 
@@ -356,8 +363,8 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   Plan A = scale via platform + solve acquisition) and the clarification that the scaling bottleneck is
   ACQUISITION/lead-gen, not Mark's coaching. Did NOT bank the "what if I'm the One/Matrix" line as a
   coaching cue (Mark's explicit call — it would sting a student).
-- 2026-06-06 (Chat 5, brother proof-point + tilt cue): banked into coaching_philosophy.md — EARLY
-  PROOF-POINTS (Mark + brother, n=2 caveated: brother 18mo chronic loser → 3 weeks green under Mark's
+- 2026-06-06 (Chat 5, Student Zero proof-point + tilt cue): banked into coaching_philosophy.md — EARLY
+  PROOF-POINTS (Mark + Student Zero, n=2 caveated: Student Zero 18mo chronic loser → 3 weeks green under Mark's
   rules+accountability, but the real signal is BEHAVIOUR — self-regulated tilt, shut the day down on a
   ~$100 Trump-tweet slip; caveats: small sample, family/coached, euphoria-is-its-own-risk so the coach
   must temper the high too). Plus COACHING CUES: the tilt line ("on tilt? give me your money, at least
@@ -373,7 +380,7 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
 - 2026-06-06 (Chat 5, HANDOFF HARDENING): rewrote HANDOFF.md to stop the leak that cost ~4 hrs last
   time. Added a lean KICKOFF paste-block (role + tone + anti-alarm behavior + CHANGED-FROM-PRIOR habit),
   a "WHY THE LAST HANDOFF LEAKED" lessons note, a full TONIGHT'S DEEP DIVE state entry (honest-verdict,
-  mantra, founder lens, Plan A/B, brother proof-point, TTS flip, feasibility), flagged the stale Web
+  mantra, founder lens, Plan A/B, Student Zero proof-point, TTS flip, feasibility), flagged the stale Web
   Speech default as SUPERSEDED, and closed the owed TTS item. The bones (repo-as-memory, PHD role,
   capability-branch, write-back loop) were sound; the failure was stale minutes + unflagged decision
   flips — both now guarded.
@@ -398,7 +405,7 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
 - 2026-06-06 (Chat 5, THE MANTRA COMPLETED): Mark closed the loop years in the making —
   **TIMING · LEVELS · BEHAVIOUR of PRICE & PROCESS.** The first three = the READ (bionic glance, the WHAT);
   PROCESS = the HOW (rules/accountability/discipline run regardless of feeling; the machine half of "part
-  man, part machine"). The read was never the moat — process is (Turtles + the brother both prove it).
+  man, part machine"). The read was never the moat — process is (Turtles + Student Zero both prove it).
   Student form = **PROCESS BEFORE PROFIT**. It is also the business thesis + the honest verdict in three
   words. Meta-note: this very chat enacted the shift — Mark pivoted from optimizing PRODUCT to building
   the handoff PROCESS, then named the principle he'd just lived. Banked at top of strat_zone_taxonomy.md.
@@ -612,6 +619,30 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   brand_funnel_architecture.md; ARTIFACT_INDEX + KICKOFF + HANDOFF + this log propagated; no new file →
   count stays 36 active .md docs + root AGENTS.md. Lineage: consolidates the prior 40→17→6 selectivity read
   + the planned-SL-vs-actual-exit behavioral footprint from earlier sessions (found via past-chat search).
+- 2026-06-14 (Chat 7, RESTORED product-boundary doc + founder method/trajectory + anonymized Student Zero):
+  past-chat search found that a GOLD doc had DROPPED out of the vault in an old reorg — restored it as
+  knowledge/teachable_vs_unteachable_boundary.md (count 36→37). THE BOUNDARY: Cubed rules = the slowed-down,
+  rule-based version of Mark's unteachable scalping gut; the platform teaches Levels·Timing·Behavior /
+  level-to-level / discipline, and NEVER claims to teach scalping/gut-feel (it failed Student Zero, invites
+  the "even their AI can't follow it" attack, and is a risk hazard); scalp = founder's PRIVATE method + R&D
+  source, the RULE-SYSTEM = the product. Banked the founder's scalp method plainly (classic technique: add to
+  winners never losers, probe + B/E fast, scratch $25-75, never hold-hope; load ~30 micros on hotkey when it
+  goes, ride trail, avg $800-2,700; "business expenses not losses" + the tripwire that it's healthy only while
+  scratches stay capped; the ADDING-moves-average-closer = more B/E protection mechanic; the level-holds-9/10-
+  but-bots-sweep-deep-first → scratch-and-survive rationale; regime-tagged to the bot-and-tweet tape). BRIDGE:
+  scalp-discipline and rule-based discipline are two cures for the SAME ego-sizing disease ("I'm wrong/I'm due/
+  just a pullback") — founder-method and taught-product are the same discipline on a spectrum
+  (scalp→level-to-level→swing). FOUNDER TRAJECTORY added to the founder section: Mark intends to evolve off
+  scalping → level-to-level → swing = become his own best student (the living proof of the transformation the
+  product sells). PRIVACY: anonymized the first tester (identifying relationship removed) → "Student Zero" across the entire public
+  repo; corrected the profile (holds ~10-15 min for ~$100 partials, won't add to winners yet, past the
+  color-green stage — "green $55 is lunch at McDonald's, not income" — next lesson hold-longer-or-size-bigger;
+  recently approaching a livable daily average) and kept the precise daily $ OUT of the public vault; coaching
+  stance "more trades → more confidence → more size, one trade at a time." Did NOT re-bank the proof-point or
+  the scalper-insight (already in coaching_philosophy + bionic_lab_spec). New bank rule folded into
+  operating_system.md: confirm repo = goldmine (public, not the private app repo) → extract → commit → push →
+  audit (after a Chat-7 wrong-repo near-miss, recovered by revert). Propagated: ARTIFACT_INDEX + KICKOFF
+  (count→37) + HANDOFF + this log + sync matrix (product-boundary surface). One full-repo zip.
 
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`

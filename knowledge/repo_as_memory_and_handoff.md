@@ -65,6 +65,7 @@ layer. This law makes propagation a **close-out step, not a future catch.**
 - the build/launch SEQUENCE or a phase decision (what ships when) → **phase_roadmap.md**
 - the COACHING engine / the Lab (how coaching is requested + delivered) → **bionic_lab_spec.md**
 - the COACH'S READING METHOD (how a trade is graded across the 3 layers / how worked examples are labeled + banked) → **trade_coaching_method.md** (CORE; distinct from the Lab's *delivery* mechanics)
+- a WHAT-IS-TEACHABLE / product-boundary decision (scalp vs rule-based, founder-method vs taught-product, what we may/may-not claim to teach) → **teachable_vs_unteachable_boundary.md** (the marketing+legal firewall)
 - a BUILT deliverable (report / spreadsheet / printable template) → **reports/** + an ARTIFACT_INDEX entry; bank key numbers as TEXT in the relevant .md so a Claude needn't open a binary
 - a SECURITY / secrets decision or threat model → **security_and_secrets.md** (and keep the KICKOFF secrets-scan honest)
 - a MODEL-SELECTION / model-cost / model-data-retention decision (which Claude model handles what, pricing tiers, ZDR/retention posture) → **tech_architecture_skeleton.md** (the tiering decision) **AND** **security_and_secrets.md** (the retention/ZDR gate) — these two move together; never bank one without the other

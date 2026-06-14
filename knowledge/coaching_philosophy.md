@@ -43,16 +43,25 @@ loses. Anyone can hand out the knowledge; almost no one provides the accountabil
 
 ## EARLY PROOF-POINTS (live, n=2, caveated — the thesis observed in the wild)
 1. **Mark himself** — the noob→mastermind arc (master_strategy_vision.md founder section).
-2. **Mark's brother (Chat 5)** — 18 months on Futures, *never* a winning week, let alone a month.
-   3 weeks under Mark's rules + TV indicators + accountability: 1 red day, otherwise green. **But the
-   signal that matters is BEHAVIOUR, not the green:** his one red was a Trump-tweet slip (~$100), and he
-   *shut the day down himself* because he knew he was on tilt and read it as slippage, not his edge
-   failing. That self-regulation is the leading indicator the whole thesis rests on (behaviour = the moat).
-- **Honest caveats (do NOT let this become hype):** 3 weeks is noise (variance / market regime); n=2 and
-  both are Mark-coached family, not an independent cohort; and "pumped beyond logic" is itself a risk —
-  post-streak euphoria is how disciplined traders blow up (overconfidence = tilt in a party hat). So the
-  brother is also a live test of the coach's *other* job: **tempering the high, not just catching the low.**
-  Honest line to him: "great start — the real exam is staying disciplined when you're up and feel bulletproof."
+2. **Student Zero (the first tester, Chat 5)** — 18 months on Futures, *never* a winning week, let alone a
+   month. Then, on Mark's **rule-based** system + indicators + accountability: consistently green. **But the
+   signal that matters is BEHAVIOUR, not the green:** an early red day was a headline-tweet slip (~$100), and
+   they *shut the day down themselves* because they knew they were on tilt and read it as slippage, not the
+   edge failing. That self-regulation is the leading indicator the whole thesis rests on (behaviour = the moat).
+   - **The accurate profile (corrected Chat 7 — earlier framing "great at holding" was imprecise):** Student
+     Zero **holds ~10-15 min for partial moves (~$100), and won't add to winners yet** — so the upside is
+     capped. They're **past the color-green stage** (Mark's line: *"green $55 is lunch at McDonald's, not
+     income"*); the next lesson is **hold longer OR size bigger** to make it a viable income. Recently
+     **approaching a livable daily average** (real, but a small/early sample). The reluctance to add is itself
+     the cap — see the adding mechanic in teachable_vs_unteachable_boundary.md. Coaching stance (Mark's,
+     keeper): **"more trades → more confidence → more size; one trade at a time for now"** — explicitly NOT
+     pushing size before the reps justify it. *(Privacy: anonymized to "Student Zero" — the public repo names
+     no individual; the precise daily figure stays out of the public vault.)*
+- **Honest caveats (do NOT let this become hype):** the streak is still a small sample (variance / market
+  regime); n=2 and both are Mark-coached, not an independent cohort; and "pumped beyond logic" is itself a
+  risk — post-streak euphoria is how disciplined traders blow up (overconfidence = tilt in a party hat). So
+  Student Zero is also a live test of the coach's *other* job: **tempering the high, not just catching the low.**
+  Honest line: "great start — the real exam is staying disciplined when you're up and feel bulletproof."
 
 ## THE DIFFERENTIATION THESIS — why the category fails, and why selectivity+discipline is the cure (Chat 7)
 *The sharpest single statement of why we win. Consolidates scattered prior insights (the 40→17→6
@@ -88,7 +97,7 @@ The 90% fail for **two compounding reasons, not one** — and you need both halv
 honour the SL and let winners run. It's **accountability at the precise moment ego takes over** (the
 revenge trade after the FOMC hit IS the moment the coach exists for). Selectivity gives the edge; discipline
 is what lets you keep it; the coach is the accountability that holds both **at the failure point.** This is
-the brother proof-point in reverse: his one red day, he shut it down himself — the human choosing the machine
+the Student-Zero proof-point in reverse: the one red day, they shut it down themselves — the human choosing the machine
 over the ego, which is the behaviour the whole system manufactures.
 - **Honest scope:** this is a compelling *mechanism*, not yet demonstrated data — "their systems are 50/50,
   ours has edge" is exactly what the 10→100 worked-example set (trade_coaching_method.md) exists to PROVE.
