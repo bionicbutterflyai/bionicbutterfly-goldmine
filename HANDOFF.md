@@ -82,6 +82,18 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
+- **⚠️ NEXT-SESSION OPEN ITEM (Mark flagged Chat 7) — the MAPS/FLOWCHARTS have drifted behind the prose.**
+  We've banked many nuggets + new docs (Chat 7 alone added trade_coaching_method, teachable_vs_unteachable_
+  boundary, trade_importer_and_journal_origin, trader_as_athlete_physiology_layer + the differentiation thesis)
+  and propagated them to all the TEXT views — but the **visual artifacts were NOT updated.** The diagrams that
+  carry Mermaid/maps and now lag reality: **knowledge/phase_roadmap.md, knowledge/tech_architecture_skeleton.md,
+  knowledge/funnel_routing_and_closer.md, knowledge/master_journey_flow.md, knowledge/bionic_lab_spec.md,
+  HANDOFF.md**, plus the standalone **tech_architecture_master.svg** (already flagged out-of-sync below).
+  **TASK next session:** walk these diagrams and reconcile them with the current prose — e.g. the two-part
+  journal + importer machine-zone (trade_importer doc), the product boundary (teachable/unteachable), and the
+  Phase 2-3 physiology layer belong on the architecture/journey/roadmap maps. Treat "update the maps" as part
+  of the Propagation Law going forward, not a separate afterthought. (Consider adding to operating_system.md's
+  Propagation Law: "propagate to VISUAL views — Mermaid + SVG maps — not just prose," on the next bank.)
 - **Chat 7 (Jun 14 2026) — PARKED a Phase 2-3 idea: the TRADER-AS-ATHLETE physiology layer:** captured (not
   built) Mark's ruck-walk thesis — **traders are pro athletes; psychology (the leading failure cause) doesn't
   float free of physiology** (sleep/HRV/stress/alcohol/food impair cognition + reaction). The wedge:
