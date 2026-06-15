@@ -658,6 +658,20 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   PRINCIPLE: append-never-overwrite the trader's own journal/tags/trades (coach adds/suggests/grades, never
   silently edits — from the "STOP messing with me" story). Banked as trade_importer_and_journal_origin.md →
   count 37→38; sync matrix self-evolved (importer/upload-engine surface).
+- 2026-06-14 (Chat 7, parked a Phase 2-3 idea — the trader-as-athlete physiology layer): captured (NOT built)
+  Mark's ruck-walk thesis that traders are pro athletes — psychology (the leading failure cause) doesn't float
+  free of physiology (sleep/HRV/stress/alcohol/food impair cognition + reaction). The wedge: competitors
+  journal the TRADE, none journal the TRADER'S BODY — body data makes psychology objective. Founder is the
+  case study again (Oura morning stress spikes → breathing + the "a trade is 1 of 1000s, never too happy/sad"
+  mantra → "accused of napping," objectively measured). Two-part journal: trade journal + trader journal
+  (physiology auto-fill + typed psychology, coach correlates both). Oura API v2.0 confirmed from Mark's
+  uploaded OpenAPI spec (OAuth2; sleep/stress/readiness/resilience/HRV/activity/tags/webhooks + sandbox);
+  Apple Watch/Garmin = equivalent adapters. Phasing to avoid the rabbit hole: manual physiology input is the
+  MVP (validates with zero API), Oura adapter second (for Mark), other devices on demand. Flags: Phase 2-3
+  only (build core trade loop first); correlation-not-proof; health data sensitive (consent/own-account/never
+  public repo); no medical claims. DO NOT build until Phase-1 is in beta. Banked as
+  trader_as_athlete_physiology_layer.md → count 38→39; cross-reffed from phase_roadmap; sync matrix
+  self-evolved (physiology/wearable surface).
 
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`

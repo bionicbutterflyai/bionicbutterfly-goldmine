@@ -39,6 +39,10 @@ ship a later-phase thing early or assume an earlier-phase shortcut still applies
   Salesforce clone (build_vs_buy_and_competitive_read.md → CRM).
 - **Scale automation**, and the **coach role** (phase 3, per coaching_philosophy.md / master_journey_flow.md).
 - **Possibly Shopify / merch** — a parked brand play, not a revenue pillar.
+- **Parked feature idea — the TRADER-AS-ATHLETE physiology layer** (wearable import: Oura/Apple Watch/Garmin +
+  manual physiology journal; coach correlates body data with trade discipline) → **trader_as_athlete_physiology_layer.md**.
+  Idea-parked Chat 7; **do NOT build until Phase-1 platform is in beta.** Within the feature: manual physiology
+  input is the MVP (validates with zero API), Oura adapter second (for Mark), other devices on demand.
 
 ## WHAT GATES ON WHAT (the quick check)
 - **Subscription** can straddle — manual flat-fee in Phase 1, auto in Phase 2.

@@ -82,6 +82,22 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
+- **Chat 7 (Jun 14 2026) — PARKED a Phase 2-3 idea: the TRADER-AS-ATHLETE physiology layer:** captured (not
+  built) Mark's ruck-walk thesis — **traders are pro athletes; psychology (the leading failure cause) doesn't
+  float free of physiology** (sleep/HRV/stress/alcohol/food impair cognition + reaction). The wedge:
+  competitors journal the TRADE; none journal the TRADER'S BODY — body data makes psychology **objective**
+  ("revenge-traded on 4hrs sleep, readiness 31, late-meal tagged" = actionable). Founder is the case study
+  again (Oura morning stress spikes → breathing + the "a trade is 1 of 1000s, never too happy/sad" mantra →
+  "accused of napping," measured). TWO-PART JOURNAL: trade journal + trader journal (physiology auto-fill +
+  typed psychology, coach correlates both). **Oura API v2.0 confirmed from Mark's uploaded OpenAPI spec**
+  (OAuth2; endpoints: sleep/daily_sleep, daily_stress, daily_readiness, daily_resilience, heartrate/HRV,
+  daily_activity, workout, spo2, vO2_max, cardiovascular_age, tag/enhanced_tag = alcohol/late-meal self-tags,
+  webhook push, + /sandbox twin). Apple Watch/Garmin = equivalent adapters, same schema. **PHASING (avoid the
+  rabbit hole Mark named):** MVP = MANUAL physiology input (validates with zero API) + Oura adapter for Mark;
+  other-device adapters deferred to demand. FLAGS: Phase 2-3 only (build core trade loop first);
+  correlation-not-proof; health data is sensitive (consent, own-account, never public repo); NO medical
+  claims. **DO NOT build until Phase-1 platform is in beta** ("hot sauce" = Mark + maybe Student Zero using it
+  daily). Banked as `trader_as_athlete_physiology_layer.md` → count 38→**39**; cross-reffed from phase_roadmap.
 - **Chat 7 (Jun 14 2026) — RECOVERED the original journal app + its reusable trade importer:** the source of
   the proven NinjaTrader importer turned out to be **the ORIGINAL journal app** (single-file HTML, live on
   Netlify, **NOT Git-linked** — only the live deploy + the Claude-1 chat held it; nothing on Mark's machine,
