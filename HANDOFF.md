@@ -94,6 +94,29 @@ continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at g
   Phase 2-3 physiology layer belong on the architecture/journey/roadmap maps. Treat "update the maps" as part
   of the Propagation Law going forward, not a separate afterthought. (Consider adding to operating_system.md's
   Propagation Law: "propagate to VISUAL views — Mermaid + SVG maps — not just prose," on the next bank.)
+- **⭐ Chat 7 (Jun 15 2026) — STRATEGIC REPRIORITIZATION banked (`CHANGED FROM PRIOR` — read
+  strategy_become_bioniq_first.md early):** the project's **center of gravity moved** from "build the coaching
+  platform" to **"the founder becomes the proven trader the platform would be built on; business scale is
+  downstream and optional."** THE NORTH STAR (the lens above all): Mark wants a **happy man's life — mornings
+  in the markets he loves, afternoons/evenings with his wife seeing the world, lowest stress a trader can
+  hope for, great retirement** (had the cars/watches — weren't it; loves markets like he loved golf 20yrs
+  ago; politely declines the golf-course retirement). PRIORITY = **become bioniQ first** (founder as
+  user-zero: trade only the system, with AI) — feeds BOTH futures (trader-only OR coach), so he can't lose
+  doing it; **trader-vs-coach decided ~6mo on RESULTS**, trader-only is a non-failure (arguably better)
+  outcome. Branding/funnel/UX **deferred-not-abandoned**. TRADING IDENTITY resolved: **A+ selectivity across
+  BOTH tools** (only "ah-ha" trades, scalp or level — the unifier); **regime-awareness** = teachable
+  meta-skill above both; **Oura-calm already decoupled scalping from stress** (nap-level at open →
+  elite-calm-scalper is winning, not settling); the real **EDGE FRONTIER = the continuation/hold-or-bank read**
+  (the leak is unrealized upside, NOT losses — downside is already elite). AI-ANALYSIS done right: point at the
+  continuation read (not entry-filters); rolling regime read (fit regime fast, rules slow); hunt **smart-money
+  footprints** (durable) not recent patterns (overfittable); GUARDRAILS = overfitting #1 risk / demand a
+  mechanism / test forward / extend winners but NEVER rescue losers (downside sacred); filters AI finds = A+
+  criteria = future coaching rules. ARCHITECTURE: **no platform exists yet**; **don't fear the rewrite**
+  (AI+goldmine+vetted-app = fast translation); **protect DATA not code** (export JSON weekly); near-term build
+  = ~nothing except a **DeepCharts CSV adapter** (Mark left NinjaTrader — froze). **NEXT STEPS:** (1) test the
+  working **MCP** — does it read his GEX indicator lines + order flow, or just price? (2) the **DeepCharts CSV
+  converter**. (Token note: Gemini for generic, Claude for anything touching system/goldmine.) → count
+  39→**40**.
 - **Chat 7 (Jun 14 2026) — PARKED a Phase 2-3 idea: the TRADER-AS-ATHLETE physiology layer:** captured (not
   built) Mark's ruck-walk thesis — **traders are pro athletes; psychology (the leading failure cause) doesn't
   float free of physiology** (sleep/HRV/stress/alcohol/food impair cognition + reaction). The wedge:

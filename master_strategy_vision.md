@@ -60,6 +60,19 @@ i.e. he plans to become **his own best student**, evolving off his unteachable r
 system the platform teaches. Why it's on-brand, not a tangent: it makes the founder the living proof of the
 exact transformation the product promises, and it cleanly separates founder-method (scalp = private + R&D) from
 taught-product (rule-based level-to-level). See teachable_vs_unteachable_boundary.md.*
+*NORTH STAR + REPRIORITIZATION (Chat 7 — `CHANGED FROM PRIOR`, see strategy_become_bioniq_first.md): the
+project's center of gravity moved from "build the coaching platform" to **"the founder becomes the proven
+trader the platform would be built on; business scale is downstream and optional."** THE NORTH STAR (the lens
+above all lenses): Mark wants **a happy man's life — mornings in the markets he loves, afternoons/evenings
+with his wife seeing the world (her passion), lowest stress a trader can hope for, great retirement.** He's
+had the cars and watches (weren't it); loves the markets like he loved golf 20 years ago (and politely
+declines the golf-course retirement — he doesn't like golf). PRIORITY = **become bioniQ first** (founder as
+user-zero: trade only the system, with AI). It feeds BOTH futures (trader-only OR coach), so he can't lose by
+doing it and can't build the business without it; trader-vs-coach is decided ~6 months out on RESULTS, and
+trader-only is a non-failure (arguably better) outcome. Branding/funnel/UX are deferred-not-abandoned (safe
+in the vault). Trading identity resolved: A+ selectivity across BOTH tools (scalp + level), regime-awareness
+as the teachable meta-skill, Oura-measured calm already decoupled scalping from stress, and the real edge
+frontier = the continuation/hold-or-bank read (the leak is unrealized upside, not losses).*
 
 # PART A — THE BUSINESS THESIS
 
@@ -672,6 +685,24 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   public repo); no medical claims. DO NOT build until Phase-1 is in beta. Banked as
   trader_as_athlete_physiology_layer.md → count 38→39; cross-reffed from phase_roadmap; sync matrix
   self-evolved (physiology/wearable surface).
+- 2026-06-15 (Chat 7, STRATEGIC REPRIORITIZATION — the center-of-gravity shift): banked
+  strategy_become_bioniq_first.md (count 39→40) — CHANGED FROM PRIOR: the project's priority moved from "build
+  the coaching platform" to "the founder becomes the proven trader first; business is downstream and
+  optional." NORTH STAR (the lens above all): a happy man — mornings in the markets he loves,
+  afternoons/evenings with his wife seeing the world, low stress, great retirement (had the cars/watches,
+  weren't it; loves markets like he loved golf 20yrs ago, declines the golf-course retirement). PRIORITY =
+  become bioniQ first (founder as user-zero, trade only the system with AI); feeds both futures; trader-vs-
+  coach decided ~6mo on results; trader-only = non-failure; branding/funnel/UX deferred-not-abandoned;
+  Track-A-feeds-Track-B; tripwire = tools serve the trading. Trading identity resolved: A+ selectivity across
+  BOTH tools (the unifier), regime-awareness = teachable meta-skill above both, Oura-calm already decoupled
+  scalping from stress (elite-calm-scalper = winning not settling), real edge frontier = the continuation/
+  hold-or-bank read (leak = unrealized upside not losses). AI-analysis: point at the continuation read not
+  entry-filters; rolling regime read (fit fast, rules slow); hunt smart-money footprints not patterns;
+  guardrails = overfitting #1 risk / demand a mechanism / test forward / extend winners never rescue losers.
+  Architecture: no platform yet; don't fear the rewrite (AI+goldmine+vetted-app = fast translation); protect
+  DATA not code (export JSON weekly); near-term build = ~nothing except a DeepCharts CSV adapter. Next steps:
+  (1) test MCP (reads GEX lines/order flow?), (2) DeepCharts converter. Propagated to all views; count → 40;
+  sync matrix self-evolved (strategic-priority surface).
 
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`
