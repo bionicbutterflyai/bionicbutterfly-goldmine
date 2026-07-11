@@ -61,10 +61,10 @@ it's enforced the moment a second broker's data appears.
 ## STATUS
 - The June 4 lesson chart is pinned and correct as of v6 (`trade_lesson_june4_dpmo_v6.html`).
 - Open follow-up (separate, lower priority): the verbatim DPMO Pinescript is still needed to
-  reconcile the cross *math* exactly (not just the label); per `GOLD_dpmo_gate_indicator.md` it lives
+  reconcile the cross *math* exactly (not just the label); per `dpmo_gate_indicator.md` it lives
   in the Chat-3 transcript zip, not in the working file set.
 
 ---
 
 ## INDEX ENTRY (paste into GOLD_ARTIFACT_INDEX.md — I couldn't append; the index isn't in this chat)
-`GOLD_data_provenance_and_timestamp_pin.md | build, support | NinjaTrader is close-stamped & UTC; TV is open-stamped & ET → TV = export −4h −1min. Pin every new broker's export via one anchor candle before building; relabel, never shift candles.`
+`data_provenance_and_timestamp_pin.md | build, support | NinjaTrader is close-stamped & UTC; TV is open-stamped & ET → TV = export −4h −1min. Pin every new broker's export via one anchor candle before building; relabel, never shift candles.`

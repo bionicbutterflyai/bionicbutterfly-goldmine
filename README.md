@@ -37,7 +37,7 @@ Partition by what's safe to expose, not just by subject. (Names are Mark's to re
 │   ├── data_provenance_and_timestamp_pin.md
 │   ├── voice_tts_decision.md
 │   ├── repo_as_memory_and_handoff.md   ← (this architecture, banked)
-│   ├── coaching_cue_library.md (+ additions)
+│   ├── coaching_cue_library_additions.md (base coaching_cue_library.md still in Mark's Vault zip; import it)
 │   └── tagging_strategy.md     ← (still in Mark's Chat-3 zip; import it)
 ├── /data                      ← bar exports (PUBLIC-SAFE: market data isn't secret)
 │   ├── /unverified            ← raw drop zone. New uploads land here. NOT trusted.

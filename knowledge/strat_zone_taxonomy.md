@@ -3,7 +3,7 @@
 # GOLD ARTIFACT — THE STRAT: ZONE & LEVEL TAXONOMY
 *Captured June 4 2026, Chat 4 (Claude-4), from Mark's written spec. This is the core strategy IP —
 the thing every prior handoff referenced but never carried. It MUST ride in every future handoff.*
-*Companion to GOLD_dpmo_gate_indicator.md (the entry trigger) — this doc is the CONTEXT the gate fires inside.*
+*Companion to dpmo_gate_indicator.md (the entry trigger) — this doc is the CONTEXT the gate fires inside.*
 
 ---
 
@@ -109,7 +109,7 @@ artifact referenced — the throwaway skeleton is intentionally not kept).
 
 
 ## TIME-CONVENTION REMINDER
-All windows below are **NY ET**, and per GOLD_data_provenance_and_timestamp_pin.md the NinjaTrader
+All windows below are **NY ET**, and per data_provenance_and_timestamp_pin.md the NinjaTrader
 export is close-stamped (TV = export − 1 min). Session-bounded zones MUST be cut on TV/open-time, or
 every box edge lands a minute wrong. ETH session = 6:00pm → 5:00pm next day; RTH open = 9:30am.
 
@@ -241,4 +241,4 @@ This is how GEX (and Bookmap) enter the coaching context — as archived images,
   Quarterly last (Quarterly is 3rd-party code → provenance/IP check, like the DPMO).
 
 ## INDEX ENTRY (paste into GOLD_ARTIFACT_INDEX.md)
-`GOLD_strat_zone_taxonomy.md | coaching, build | The full STRAT: ~14–16 session boxes (Red/Yellow/London/Pre-Market), VWAPs, Quarterly 90-min line, IB, Overnight & PD H/L, ATH, Weekly IB, 144 + 20/50 cloud. Render fill-on-relevance. Live in TV, not yet in engine. Open confirms listed.`
+`strat_zone_taxonomy.md | coaching, build | The full STRAT: ~14–16 session boxes (Red/Yellow/London/Pre-Market), VWAPs, Quarterly 90-min line, IB, Overnight & PD H/L, ATH, Weekly IB, 144 + 20/50 cloud. Render fill-on-relevance. Live in TV, not yet in engine. Open confirms listed.`

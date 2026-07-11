@@ -1,13 +1,13 @@
 # GOLD — COACHING CUE LIBRARY · ADDITIONS (Chat 3, June 4 2026)
 *TAGS: coaching, build, business-plan | AUDIENCE: founder + the grader.*
-*Companion to GOLD_coaching_cue_library.md (the original is read-only; these are appended here).*
+*Companion to coaching_cue_library.md (the original is read-only; these are appended here).*
 *Two items: (A) an AMENDMENT to CUE #1's mechanism; (B) a NEW cue, CUE #2.*
 
 ---
 
 ## (A) AMENDMENT TO CUE #1 — candle-colour mechanism corrected
 CUE #1 ("green-candle confirmation") had the right instinct but the wrong mechanism. As verified
-against Mark's DPMO Pinescript + live settings (see GOLD_dpmo_gate_indicator.md), the correction is:
+against Mark's DPMO Pinescript + live settings (see dpmo_gate_indicator.md), the correction is:
 
 - **"Green candle" = the DPMO bar-colour state, NOT raw close direction.** A bar's colour is driven
   by `d = pmo − signal` (the DPMO momentum spread), with a high-volume brighten layered on top.
