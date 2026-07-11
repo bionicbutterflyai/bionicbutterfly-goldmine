@@ -1,5 +1,5 @@
 *TAGS: build, business-plan | AUDIENCE: founder + every future Claude (the SYSTEM coordinate system).*
-*CREATED: 2026-06-04, Chat 4 | UPDATED: 2026-06-10, Chat 7 (added MODEL TIERING — Opus 4.8 workhorse $5/$25 / Fable 5 metered premium $10/$50 = 2x, verified Chat 7; tier-by-plan + ties to credit engine; meter Fable, don't route-all; ⚠️ Fable = Covered Model, 30-day retention, NO ZDR on API — verified, cross-flagged as a launch gate in security_and_secrets.md. Earlier Chat 6: 7-TOOL STACK roster + Mermaid; SVG re-rendered; TTS pre-render premium/Web Speech fallback) | STATUS: captured (master resolved; SVG re-synced Chat 6)*
+*CREATED: 2026-06-04, Chat 4 | UPDATED: 2026-07-11, Chat 8 (`CHANGED FROM PRIOR` honest-state banner: platform = DEFERRED, current system = FOUNDER R&D (MCP working — reads GEX lines visually, not data; DeepCharts adapter = next build); Mermaid gains Founder-R&D cluster + import adapter (DeepCharts-first, manual merge, append-never-overwrite) + two-part trader journal (P2-3, parked); SVG RE-SYNCED — master re-rendered as the 5-layer flow, prior tool-stack art preserved as tech_tool_stack.svg. Earlier Chat 7: added MODEL TIERING — Opus 4.8 workhorse $5/$25 / Fable 5 metered premium $10/$50 = 2x, verified Chat 7; tier-by-plan + ties to credit engine; meter Fable, don't route-all; ⚠️ Fable = Covered Model, 30-day retention, NO ZDR on API — verified, cross-flagged as a launch gate in security_and_secrets.md. Earlier Chat 6: 7-TOOL STACK roster + Mermaid; SVG re-rendered; TTS pre-render premium/Web Speech fallback) | STATUS: captured (master resolved; SVG re-synced Chat 6)*
 *SUPERSEDES: — | RELATED: master_strategy_vision.md (THE primer), master_journey_flow.md (the JOURNEY; this is the SYSTEM), funnel_routing_and_closer.md, voice_tts_decision.md, repo_as_memory_and_handoff.md, brand_funnel_architecture.md, data_provenance_and_timestamp_pin.md*
 
 # GOLD — MASTER TECH ARCHITECTURE (the system coordinate system)
@@ -11,6 +11,12 @@ Mark in Chat 5 (see RESOLVED DECISIONS). The per-layer child flows are still to 
 matched pair: this Mermaid source + `tech_architecture_master.svg` (the rendered half), same commit.
 
 ## THE HONEST STATE LINE — read this before you trust the boxes
+**`CHANGED FROM PRIOR` (Chat 7/8 — strategy_become_bioniq_first.md): the PLATFORM below is DEFERRED,
+not the current build.** The system actually running today is **FOUNDER R&D (bioniQ-first)**: the
+goldmine (repo-as-memory) + **Claude via MCP on the live chart — working, confirmed Chat 8; it reads the
+GEX indicator's plotted lines VISUALLY (screen/render), not as data** + the old journal app + the
+**DeepCharts CSV adapter** as the one near-term build. Everything below remains the valid architecture
+for the coach path (~6-month results decision) — deferred-not-abandoned.
 The skeleton drew all five layers as if co-equal and running. They are not. Most of the system is
 designed, not wired. The diagram now encodes that: **solid = live today, dashed = designed / next.**
 - **LIVE today:** Netlify (deploy) · GitHub two repos · Supabase (credit_ledger live) · the deployed
@@ -42,11 +48,17 @@ designed, not wired. The diagram now encodes that: **solid = live today, dashed 
   `funnel_routing_and_closer.md`.
 
 ## FLOW (Mermaid source — paired with tech_architecture_master.svg)
-> ⚠ **SVG OUT OF SYNC (Chat 6):** the Mermaid below now includes **Bionic Briefing** + **Vision Board**
-> nodes/edges; `tech_architecture_master.svg` must be **re-rendered to match** before the pairing-rule
-> "matched pair" claim holds again. Tracked as an open item in HANDOFF.md.
+> ✅ **SVG RE-SYNCED (Chat 8):** `tech_architecture_master.svg` was re-rendered as the 5-layer flow to
+> match the Mermaid below (incl. Bionic Briefing, Vision Board, Founder R&D, import adapter, trader
+> journal). The prior SVG was actually a render of the **7-tool stack** Mermaid further down — that art
+> is preserved as its own pair: `tech_tool_stack.svg`. Pairing-rule claim holds again for both.
 ```mermaid
 flowchart TD
+    subgraph RND["FOUNDER R&amp;D · bioniQ-first · LIVE NOW (the platform below = deferred)"]
+        MCP["Claude via MCP · live chart<br/>reads GEX plotted lines VISUALLY (not data) ✓"]:::now
+        DCA["DeepCharts CSV adapter · next build<br/>(ports the proven NT donor parser)"]:::dash
+        GM["Goldmine repo · memory + specs<br/>(Track A learnings → Track B specs)"]:::now
+    end
     subgraph USERS["USERS"]
         U1["Student · the trader"]:::usr
         U2["Admin (Mark) · founder/ops"]:::usr
@@ -65,6 +77,8 @@ flowchart TD
         DST["Data store · dossier + credits"]:::be
         EF["Edge fns · API proxy + verified-data gate"]:::be
         RT["Realtime · live room/media"]:::dash
+        IMP["Upload engine · CSV import adapter<br/>DeepCharts-first (NT donor parser) · manual merge-by-click<br/>append-never-overwrite"]:::dash
+        TJ["Trader journal · physiology (two-part journal)<br/>manual MVP → Oura adapter · PHASE 2-3, parked"]:::dash
     end
     subgraph EXT["EXTERNAL  ·  designed / next"]
         AI["AI coach · unnamed voice<br/>(powered by Claude)"]:::dash
@@ -102,11 +116,19 @@ flowchart TD
     GH -. distill .-> VB
     VB -. "for all to see" .-> U1 & U2
 
+    %% Chat-7/8 adds: importer machine-zone + two-part journal + Founder R&D (bioniQ-first)
+    IMP -.->|trades in| DST
+    TJ -.->|body data| DST
+    U2 --> MCP
+    DCA -.->|journal CSVs| IMP
+    GM -. "specs feed the build" .-> AI
+
     classDef usr  fill:#F1EFE8,stroke:#5F5E5A,color:#2C2C2A;
     classDef fe   fill:#E1F5EE,stroke:#0F6E56,color:#04342C;
     classDef be   fill:#EAF3FF,stroke:#1B5FB0,color:#0A2E57;
     classDef ops  fill:#F1EFE8,stroke:#5F5E5A,color:#2C2C2A;
     classDef dash fill:#EEEDFE,stroke:#534AB7,color:#26215C,stroke-dasharray:5 3;
+    classDef now  fill:#EAF3DE,stroke:#3B6D11,color:#173404;
 ```
 
 ## RESOLVED DECISIONS (Chat 5, with Mark)
@@ -237,4 +259,4 @@ ZDR-sensitive.
 "Data retention practices for Mythos-class models" (art. 15425996).*
 
 ## INDEX LINE
-`knowledge/tech_architecture_skeleton.md | build, business-plan | PUBLIC | pending | MASTER system architecture (5 layers: Users/Frontend/Backend/External/DevOps; live-vs-designed honest split; Mermaid re-synced to the SVG). Chat-5 resolved: Fork-2 funnel-memory=BUILD (foyer->Supabase candidate_dossier->brain), datafeed v1 manual / v2 Massive.com free (ex-Polygon, 5/min, delayed, CME futures), human-in-the-loop gate, pre-render premium voice = default / Web Speech = fallback (CHANGED FROM PRIOR Chat 6). MODEL TIERING (Chat 7): Opus 4.8 workhorse ($5/$25) / Fable 5 metered premium ($10/$50 = 2x, verified) — tier by plan, tie to credit engine, meter Fable; Fable = Covered Model w/ 30-day retention + NO ZDR on API (verified Chat 7 → launch gate in security_and_secrets.md). Paired with tech_architecture_master.svg. Child flows next.`
+`knowledge/tech_architecture_skeleton.md | build, business-plan | PUBLIC | pending | MASTER system architecture — CHANGED FROM PRIOR (Chat 7/8): the platform is DEFERRED; current LIVE system = FOUNDER R&D (Claude via MCP — reads GEX lines VISUALLY not data, confirmed Chat 8; goldmine; DeepCharts CSV adapter = next build). Mermaid now carries Founder-R&D + import adapter + two-part trader journal (P2-3); SVG re-synced Chat 8 (5-layer master; tool-stack art → tech_tool_stack.svg). (5 layers: Users/Frontend/Backend/External/DevOps; live-vs-designed honest split; Mermaid re-synced to the SVG). Chat-5 resolved: Fork-2 funnel-memory=BUILD (foyer->Supabase candidate_dossier->brain), datafeed v1 manual / v2 Massive.com free (ex-Polygon, 5/min, delayed, CME futures), human-in-the-loop gate, pre-render premium voice = default / Web Speech = fallback (CHANGED FROM PRIOR Chat 6). MODEL TIERING (Chat 7): Opus 4.8 workhorse ($5/$25) / Fable 5 metered premium ($10/$50 = 2x, verified) — tier by plan, tie to credit engine, meter Fable; Fable = Covered Model w/ 30-day retention + NO ZDR on API (verified Chat 7 → launch gate in security_and_secrets.md). Paired with tech_architecture_master.svg. Child flows next.`

@@ -55,6 +55,12 @@ layer. This law makes propagation a **close-out step, not a future catch.**
 - **master_strategy_vision.md** living log (one entry)
 - **HANDOFF.md** STATE note + IN-FLIGHT/OPEN
 
+**Always, every change (Chat 8 addition — the maps-drift lesson): propagate to VISUAL views, not just
+prose.** If the change touches anything a Mermaid map or SVG depicts (a phase, a component, a journey
+box, the Lab loop, a status like deferred/live), update that diagram in the SAME session — a map that
+lags the prose is a zombie with a picture. If a required SVG can't be re-rendered this session, FLAG the
+pair out-of-sync as an open item; never leave it silently mismatched.
+
 **Conditionally, by what the change TOUCHES:**
 - architecture / components / data sources / a feature → **tech_architecture_skeleton.md Mermaid +
   tech_architecture_master.svg** (the Flow Chart pair). If you edit the Mermaid but can't re-render the

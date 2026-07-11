@@ -1,6 +1,6 @@
 # GOLD — MASTER JOURNEY FLOW (the coordinate system)
 *TAGS: business-plan, build, coaching | AUDIENCE: founder + every future Claude (orient here first).*
-*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-06-06, Chat 5 | STATUS: captured*
+*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-07-11, Chat 8 (`CHANGED FROM PRIOR`: journey marked DEFERRED-not-abandoned per strategy_become_bioniq_first.md — only the founder-as-user-zero journey runs now; PRODUCT BOUNDARY added to the locks — teaches rule-based Cubed level-to-level ONLY, never scalp; regime-awareness = the teachable meta-skill; map banner added) | STATUS: captured (journey deferred)*
 *SUPERSEDES: — | RELATED: master_strategy_vision.md (THE primer), funnel_routing_and_closer.md (the door + sort + close detail), strat_zone_taxonomy.md, brand_funnel_architecture.md, repo_as_memory_and_handoff.md*
 
 ---
@@ -9,6 +9,11 @@
 The one-page master plan: how a stranger becomes a paying, coached student. This is the **coordinate
 system** — every future Claude orients here, then gets assigned a box (a section) to detail. The
 handoff becomes: minutes + repo + "your task is box X on the master flow."
+
+**`CHANGED FROM PRIOR` (Chat 7 — strategy_become_bioniq_first.md): this whole journey is DEFERRED-not-
+abandoned.** It runs only if the ~6-month RESULTS decision picks the coach path. The only journey running
+today is **founder-as-user-zero** (Mark becoming bioniQ). Nothing here is deleted — the logic stays locked
+for when/if it ships.
 
 ## THE PAIRING RULE (locked this session)
 Every flow — master and children — ships as a **matched pair**: the rendered diagram AND this Mermaid
@@ -25,6 +30,10 @@ the source, neither drifts from the other. "Less dropped visions."
 - **The course plays two roles, same asset:** the *hook* that gets them in the door AND the graceful
   "not yet" for the not-ready (90% off, 48h). To a noob it's the destination (nurture); to the hot ICP
   it's a while-you-wait courtesy offered IN PARALLEL — never a required detour that cools the lead.
+- **THE PRODUCT BOUNDARY (Chat 7 — teachable_vs_unteachable_boundary.md):** the platform teaches ONLY
+  the slowed-down, rule-based **Cubed level-to-level system** — it NEVER claims to teach scalping/gut-feel
+  (founder's private method + R&D source). **Regime-awareness** (which tool today — A+ scalp, held level,
+  or NO trade) IS teachable and sits above both.
 - **ICP = struggling-but-CAPABLE traders whose problem is psychology, not knowledge.** Enters too
   early/late, moves stops, takes profit early, over-leverages. "Can learn a strat in a day, can't
   trade it — that's the coaching." NOT raw noobs (routed to nurture), NOT trolls (filtered at the door).
@@ -50,6 +59,7 @@ the source, neither drifts from the other. "Less dropped visions."
 ## THE FLOW (Mermaid source — paired with the rendered diagram)
 ```mermaid
 flowchart TD
+    DEF["STATUS (Chat 7): JOURNEY DEFERRED — runs only if the ~6-mo results decision picks COACH<br/>running today: founder-as-user-zero (become bioniQ)"]:::defer
     H[Hook<br/>wide-net ad + course bait]:::funnel
     D[Foyer door<br/>$10 toll on a real card<br/>= verified human · troll filter]:::funnel
     F[The foyer · almost-free<br/>qualify · demo · seduce]:::funnel
@@ -57,10 +67,11 @@ flowchart TD
     N[Nurture loop<br/>'not yet' + 90% off course<br/>↻ deferred pipeline]:::defer
     C[Sales cycle · ICP<br/>contact → call → Zoom → close]:::prog
     P[Preset platform<br/>auto-built from profile]:::prog
-    L[The Lab<br/>journal daily · test · adjust]:::prog
-    W[Weekly coaching<br/>Mark live now → AI later]:::prog
+    L["The Lab<br/>journal daily · test · adjust<br/>(+ trader journal / physiology · P2-3, parked)"]:::prog
+    W["Weekly coaching<br/>Mark live now → AI later<br/>(rule-based Cubed ONLY — never scalp)"]:::prog
     R[Forward plan]:::prog
 
+    DEF -.-> H
     H --> D --> F --> S
     S -->|not ready| N
     S -->|ICP| C

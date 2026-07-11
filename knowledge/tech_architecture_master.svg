@@ -1,32 +1,74 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="380" viewBox="0 0 720 380" font-family="Arial, Helvetica, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="810" viewBox="0 0 960 810" font-family="Arial, Helvetica, sans-serif">
   <style>
-    .t{font-weight:bold;font-size:12px}.s{font-size:10px}
-    .b{rx:8;stroke-width:1}
+    .t{font-weight:bold;font-size:12px}.s{font-size:10px}.h{font-weight:bold;font-size:11px}
+    .b{rx:8;stroke-width:1.2}
     text{dominant-baseline:central;text-anchor:middle}
   </style>
   <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#888" stroke-width="1.5" stroke-linecap="round"/></marker></defs>
-  <rect width="720" height="380" fill="#ffffff"/>
-  <text x="20" y="20" text-anchor="start" class="t" font-size="14" fill="#1B3A5B">Bioniq Trader — tool architecture</text>
+  <rect width="960" height="810" fill="#ffffff"/>
+  <text x="20" y="20" text-anchor="start" class="t" font-size="14" fill="#1B3A5B">Bioniq — MASTER TECH ARCHITECTURE (5 layers · paired with tech_architecture_skeleton.md Mermaid · Chat 8)</text>
+  <text x="940" y="20" text-anchor="end" class="s" fill="#555">solid = live today · dashed = designed / deferred</text>
 
-  <!-- users -->
-  <rect class="b" x="225" y="40" width="120" height="40" fill="#EEF1F4" stroke="#6B7785"/><text x="285" y="60" class="t" fill="#2A2F36">Trader</text>
-  <rect class="b" x="375" y="40" width="120" height="40" fill="#EEF1F4" stroke="#6B7785"/><text x="435" y="60" class="t" fill="#2A2F36">Coach</text>
-  <line x1="360" y1="80" x2="360" y2="100" stroke="#888" stroke-width="1.5" marker-end="url(#a)"/>
+  <!-- FOUNDER R&D panel (LIVE NOW) -->
+  <rect class="b" x="20" y="36" width="920" height="104" fill="#F6FBF1" stroke="#3B6D11"/>
+  <text x="30" y="50" text-anchor="start" class="h" fill="#173404">FOUNDER R&amp;D · bioniQ-first · LIVE NOW  —  the platform below is DEFERRED (~6-mo trader-vs-coach results gate)</text>
+  <rect class="b" x="36" y="62" width="284" height="64" fill="#EAF3DE" stroke="#3B6D11"/><text x="178" y="82" class="t" fill="#173404">Claude via MCP · live chart ✓</text><text x="178" y="99" class="s" fill="#173404">reads GEX plotted lines VISUALLY (not data)</text><text x="178" y="113" class="s" fill="#173404">confirmed Chat 8</text>
+  <rect class="b" x="340" y="62" width="284" height="64" fill="#EEEDFE" stroke="#534AB7" stroke-dasharray="5 3"/><text x="482" y="82" class="t" fill="#26215C">DeepCharts CSV adapter · next build</text><text x="482" y="99" class="s" fill="#26215C">ports the proven NT donor parser</text><text x="482" y="113" class="s" fill="#26215C">→ feeds the Import adapter (Backend)</text>
+  <rect class="b" x="644" y="62" width="280" height="64" fill="#EAF3DE" stroke="#3B6D11"/><text x="784" y="82" class="t" fill="#173404">Goldmine repo · memory + specs</text><text x="784" y="99" class="s" fill="#173404">Track A learnings → Track B specs</text><text x="784" y="113" class="s" fill="#173404">→ specs feed the AI coach (External)</text>
 
-  <!-- edge -->
-  <rect class="b" x="130" y="102" width="200" height="46" fill="#EEF1F4" stroke="#6B7785"/><text x="230" y="119" class="t" fill="#2A2F36">Netlify</text><text x="230" y="135" class="s" fill="#2A2F36">host + deploy</text>
-  <rect class="b" x="372" y="102" width="226" height="46" fill="#EEF1F4" stroke="#6B7785"/><text x="485" y="119" class="t" fill="#2A2F36">Cloudflare · CDN / security / .ai</text><text x="485" y="135" class="s" fill="#2A2F36">+ AI Gateway (cache / meter)</text>
-  <line x1="360" y1="148" x2="360" y2="172" stroke="#888" stroke-width="1.5" marker-end="url(#a)"/>
-  <text x="360" y="162" class="s" fill="#555">THE PLATFORM — services</text>
+  <!-- USERS -->
+  <rect class="b" x="20" y="156" width="920" height="72" fill="#FBFBFA" stroke="#C8C6C0"/>
+  <text x="30" y="170" text-anchor="start" class="h" fill="#5F5E5A">USERS</text>
+  <rect class="b" x="70" y="180" width="220" height="40" fill="#F1EFE8" stroke="#5F5E5A"/><text x="180" y="200" class="t" fill="#2C2C2A">Student · the trader</text>
+  <rect class="b" x="370" y="180" width="220" height="40" fill="#F1EFE8" stroke="#5F5E5A"/><text x="480" y="200" class="t" fill="#2C2C2A">Admin (Mark) · founder / ops</text>
+  <rect class="b" x="670" y="180" width="220" height="40" fill="#EEEDFE" stroke="#534AB7" stroke-dasharray="5 3"/><text x="780" y="200" class="t" fill="#26215C">Coach · future / phase 3</text>
+  <line x1="480" y1="180" x2="480" y2="140" stroke="#3B6D11" stroke-width="1.4" marker-end="url(#a)"/>
+  <text x="516" y="150" class="s" fill="#3B6D11">Mark → MCP</text>
 
-  <!-- services -->
-  <rect class="b" x="20" y="174" width="158" height="70" fill="#E1F5EE" stroke="#0F6E56"/><text x="99" y="194" class="t" fill="#04342C">Supabase</text><text x="99" y="212" class="s" fill="#04342C">auth · dossier</text><text x="99" y="228" class="s" fill="#04342C">credit_ledger</text>
-  <rect class="b" x="190" y="174" width="170" height="70" fill="#ECE9FB" stroke="#534AB7"/><text x="275" y="194" class="t" fill="#26215C">Anthropic · Claude</text><text x="275" y="212" class="s" fill="#26215C">the coaching brain</text><text x="275" y="228" class="s" fill="#26215C">via CF AI Gateway</text>
-  <rect class="b" x="372" y="174" width="156" height="70" fill="#FAEEDA" stroke="#854F0B"/><text x="450" y="194" class="t" fill="#412402">ElevenLabs</text><text x="450" y="212" class="s" fill="#412402">pre-render premium</text><text x="450" y="228" class="s" fill="#412402">voice = default</text>
-  <rect class="b" x="540" y="174" width="158" height="70" fill="#EAF3DE" stroke="#3B6D11" stroke-dasharray="5 3"/><text x="619" y="194" class="t" fill="#173404">Stripe · Phase 2</text><text x="619" y="212" class="s" fill="#173404">toll · subs · credits</text><text x="619" y="228" class="s" fill="#173404">+ token billing</text>
+  <!-- FRONTEND -->
+  <rect class="b" x="20" y="252" width="920" height="128" fill="#F4FBF8" stroke="#0F6E56"/>
+  <text x="30" y="266" text-anchor="start" class="h" fill="#04342C">FRONTEND · Netlify · shell LIVE</text>
+  <rect class="b" x="36" y="278" width="284" height="42" fill="#E1F5EE" stroke="#0F6E56"/><text x="178" y="292" class="t" fill="#04342C">Landing · auth / entry</text><text x="178" y="308" class="s" fill="#04342C">pre-rendered premium voice default</text>
+  <rect class="b" x="340" y="278" width="284" height="42" fill="#E1F5EE" stroke="#0F6E56"/><text x="482" y="292" class="t" fill="#04342C">Student dash · the Cockpit</text><text x="482" y="308" class="s" fill="#04342C">Course player · Incubator / Accel</text>
+  <rect class="b" x="644" y="278" width="280" height="42" fill="#E1F5EE" stroke="#0F6E56"/><text x="784" y="299" class="t" fill="#04342C">Admin panel · the Mothership</text>
+  <rect class="b" x="36" y="328" width="284" height="42" fill="#EEEDFE" stroke="#534AB7" stroke-dasharray="5 3"/><text x="178" y="342" class="t" fill="#26215C">Bionic Briefing · daily recap</text><text x="178" y="358" class="s" fill="#26215C">one render, broadcast to all students</text>
+  <rect class="b" x="340" y="328" width="284" height="42" fill="#EEEDFE" stroke="#534AB7" stroke-dasharray="5 3"/><text x="482" y="342" class="t" fill="#26215C">Vision Board · live vision distillation</text><text x="482" y="358" class="s" fill="#26215C">repo → paragraph, for all to see</text>
+  <text x="784" y="349" class="s" fill="#04342C">(Web Speech = fallback voice only)</text>
+  <line x1="480" y1="228" x2="480" y2="252" stroke="#888" stroke-width="1.5" marker-end="url(#a)"/>
 
-  <!-- source + marketing -->
-  <rect class="b" x="20" y="282" width="330" height="56" fill="#EEF1F4" stroke="#6B7785"/><text x="185" y="302" class="t" fill="#2A2F36">GitHub · repo = MEMORY + deploy source</text><text x="185" y="320" class="s" fill="#2A2F36">feeds Netlify deploy + Claude's context</text>
-  <line x1="120" y1="282" x2="120" y2="246" stroke="#888" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#a)"/>
-  <rect class="b" x="372" y="282" width="326" height="56" fill="#FBE7E3" stroke="#B5462F" stroke-dasharray="5 3"/><text x="535" y="302" class="t" fill="#5A1B0F">invideo.io → FINN · marketing video</text><text x="535" y="320" class="s" fill="#5A1B0F">top-of-funnel content (separate from platform)</text>
+  <!-- BACKEND -->
+  <rect class="b" x="20" y="404" width="920" height="128" fill="#F3F8FE" stroke="#1B5FB0"/>
+  <text x="30" y="418" text-anchor="start" class="h" fill="#0A2E57">BACKEND · Supabase · credit_ledger LIVE</text>
+  <rect class="b" x="36" y="430" width="284" height="42" fill="#EAF3FF" stroke="#1B5FB0"/><text x="178" y="444" class="t" fill="#0A2E57">Auth + DB · Postgres / RLS</text><text x="178" y="460" class="s" fill="#0A2E57">Data store · dossier + credits</text>
+  <rect class="b" x="340" y="430" width="284" height="42" fill="#EAF3FF" stroke="#1B5FB0"/><text x="482" y="444" class="t" fill="#0A2E57">Edge fns · API proxy</text><text x="482" y="460" class="s" fill="#0A2E57">+ the verified-data gate</text>
+  <rect class="b" x="644" y="430" width="280" height="42" fill="#EEEDFE" stroke="#534AB7" stroke-dasharray="5 3"/><text x="784" y="444" class="t" fill="#26215C">Realtime · live room / media</text><text x="784" y="460" class="s" fill="#26215C">designed</text>
+  <rect class="b" x="36" y="480" width="284" height="42" fill="#EEEDFE" stroke="#534AB7" stroke-dasharray="5 3"/><text x="178" y="494" class="t" fill="#26215C">Upload engine · CSV import adapter</text><text x="178" y="510" class="s" fill="#26215C">DeepCharts-first · manual merge · append-never-overwrite</text>
+  <rect class="b" x="340" y="480" width="284" height="42" fill="#EEEDFE" stroke="#534AB7" stroke-dasharray="5 3"/><text x="482" y="494" class="t" fill="#26215C">Trader journal · physiology (two-part)</text><text x="482" y="510" class="s" fill="#26215C">manual MVP → Oura adapter · PHASE 2-3, parked</text>
+  <line x1="480" y1="380" x2="480" y2="404" stroke="#888" stroke-width="1.5" marker-end="url(#a)"/>
+  <path d="M940 300 C 958 380, 958 400, 928 448" fill="none" stroke="#854F0B" stroke-width="1.3" stroke-dasharray="5 3" marker-end="url(#a)"/>
+  <text x="912" y="376" class="s" fill="#854F0B" transform="rotate(78 912 376)">1 · behavior</text>
+
+  <!-- EXTERNAL -->
+  <rect class="b" x="20" y="556" width="920" height="80" fill="#F8F7FE" stroke="#534AB7" stroke-dasharray="6 3"/>
+  <text x="30" y="570" text-anchor="start" class="h" fill="#26215C">EXTERNAL · designed / deferred</text>
+  <rect class="b" x="36" y="582" width="216" height="44" fill="#EEEDFE" stroke="#534AB7" stroke-dasharray="5 3"/><text x="144" y="596" class="t" fill="#26215C">AI coach · unnamed voice</text><text x="144" y="612" class="s" fill="#26215C">powered by Claude (Opus wk / Fable metered)</text>
+  <rect class="b" x="268" y="582" width="216" height="44" fill="#EEEDFE" stroke="#534AB7" stroke-dasharray="5 3"/><text x="376" y="596" class="t" fill="#26215C">Datafeed + News</text><text x="376" y="612" class="s" fill="#26215C">Massive / Benzinga · v2 free → paid</text>
+  <rect class="b" x="500" y="582" width="216" height="44" fill="#EEEDFE" stroke="#534AB7" stroke-dasharray="5 3"/><text x="608" y="596" class="t" fill="#26215C">Stripe · pay + credits</text><text x="608" y="612" class="s" fill="#26215C">Phase 2 · toll / subs / metered</text>
+  <rect class="b" x="732" y="582" width="192" height="44" fill="#EEEDFE" stroke="#534AB7" stroke-dasharray="5 3"/><text x="828" y="596" class="t" fill="#26215C">Discord · paid live room</text><text x="828" y="612" class="s" fill="#26215C">if/when · paid-only</text>
+  <line x1="480" y1="532" x2="480" y2="556" stroke="#888" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="520" y="544" class="s" fill="#555">coaching · pay · feed</text>
+  <path d="M928 520 C 950 560, 930 590, 830 604 L 730 604" fill="none" stroke="#854F0B" stroke-width="1.3" stroke-dasharray="5 3" marker-end="url(#a)"/>
+  <text x="888" y="556" class="s" fill="#854F0B">2 · verified dossier → AI</text>
+
+  <!-- DEVOPS -->
+  <rect class="b" x="20" y="660" width="920" height="80" fill="#FBFBFA" stroke="#C8C6C0"/>
+  <text x="30" y="674" text-anchor="start" class="h" fill="#5F5E5A">DEVOPS · LIVE</text>
+  <rect class="b" x="36" y="686" width="284" height="44" fill="#F1EFE8" stroke="#5F5E5A"/><text x="178" y="700" class="t" fill="#2C2C2A">GitHub · 2 repos</text><text x="178" y="716" class="s" fill="#2C2C2A">site private / goldmine public · repo = MEMORY</text>
+  <rect class="b" x="340" y="686" width="284" height="44" fill="#F1EFE8" stroke="#5F5E5A"/><text x="482" y="700" class="t" fill="#2C2C2A">CI/CD · auto build</text><text x="482" y="716" class="s" fill="#2C2C2A">on push</text>
+  <rect class="b" x="644" y="686" width="280" height="44" fill="#F1EFE8" stroke="#5F5E5A"/><text x="784" y="700" class="t" fill="#2C2C2A">Netlify deploy</text><text x="784" y="716" class="s" fill="#2C2C2A">+ Redis rate-limit</text>
+  <path d="M28 686 C 6 560, 6 340, 28 300" fill="none" stroke="#888" stroke-width="1.4" marker-end="url(#a)"/>
+  <text x="14" y="490" class="s" fill="#555" transform="rotate(-90 14 490)">GitHub → CI → Netlify → Frontend</text>
+
+  <text x="480" y="770" class="s" fill="#555">Amber dashed loop = Fork-2 funnel-memory: frontend behavior → dossier (Data store) → the AI coach reads it ("we already know you").</text>
+  <text x="480" y="790" class="s" fill="#555">Acquisition/funnel is cross-cutting (Landing + Edge fns + the Claude agent) — the journey view owns it (master_journey_flow.md · DEFERRED, Chat 7).</text>
 </svg>

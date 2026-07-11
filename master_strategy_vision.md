@@ -1,6 +1,6 @@
 # MASTER STRATEGY VISION — read me FIRST (the why behind everything)
 *TAGS: business-plan, coaching, marketing, build | AUDIENCE: every new Claude — this is THE primer.*
-*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-06-07, Chat 6 (TTS supersession propagated — Part C COACH'S FORM + super-sauce now match the pre-render-premium-default flip; see living log) | STATUS: living*
+*CREATED: 2026-06-06, Chat 4 | UPDATED: 2026-07-11, Chat 8 (living log: maps reconciled + yellow flag retired + VISUAL propagation law — see log tail). Earlier Chat 6: (TTS supersession propagated — Part C COACH'S FORM + super-sauce now match the pre-render-premium-default flip; see living log) | STATUS: living*
 *SUPERSEDES: MASTER_MAP.md | RELATED: master_journey_flow.md (the map), funnel_routing_and_closer.md, funnel_brainstorm_reasoning.md, brand_funnel_architecture.md, coaching_philosophy.md, learning_design_standards.md, voice_tts_decision.md, strat_zone_taxonomy.md, tech_architecture_skeleton.md, repo_as_memory_and_handoff.md*
 
 ## HOW TO USE THIS DOC
@@ -703,6 +703,27 @@ is the product; knowledge is free bait. Clean chart by default; levels fill on r
   DATA not code (export JSON weekly); near-term build = ~nothing except a DeepCharts CSV adapter. Next steps:
   (1) test MCP (reads GEX lines/order flow?), (2) DeepCharts converter. Propagated to all views; count → 40;
   sync matrix self-evolved (strategic-priority surface).
+
+- 2026-07-11 (Chat 8, MAPS RECONCILED + yellow flag retired + VISUAL propagation law): closed the Chat-7
+  open item — reconciled all drifted diagrams with the prose: phase_roadmap (new PHASE 0 = BECOME bioniQ
+  NOW + the ~6-mo trader-vs-coach RESULTS gate; P1-4 relabelled DEFERRED coach-path track; map redrawn),
+  tech_architecture_skeleton (CHANGED FROM PRIOR honest-state banner — platform DEFERRED, current system =
+  FOUNDER R&D: goldmine + Claude-via-MCP + old journal + DeepCharts adapter; Mermaid gains Founder-R&D
+  cluster + upload-engine import adapter + two-part trader journal P2-3), master_journey_flow (DEFERRED
+  banner + PRODUCT-BOUNDARY lock: rule-based Cubed only / never scalp / regime-awareness = teachable
+  meta-skill), funnel_routing_and_closer (DEFERRED banner), bionic_lab_spec (FOUNDER MODE — the Lab loop
+  runs manually now: Mark narrates → Claude-via-MCP grades vs Qubed → worked examples). SVG pairing FIXED:
+  the old tech_architecture_master.svg was actually the 7-tool-stack render — re-rendered the master as
+  the true 5-layer flow (visually verified) and preserved the tool-stack art as NEW
+  knowledge/tech_tool_stack.svg (both pairs hold). CHANGED FROM PRIOR: the standing yellow flag
+  (Bookmap/GEX read via ~10 captured trades) RETIRED as MOOT — MCP working (confirmed by a Claude session
+  earlier 2026-07-11, per Mark) and GEX confirmed readable VISUALLY, not by data; open sub-question:
+  order-flow readability (unstated — Mark to test). Propagation Law extended per Chat-7's own suggestion:
+  "propagate to VISUAL views (Mermaid + SVG), not just prose" is now an ALWAYS rule
+  (repo_as_memory_and_handoff sync matrix + operating_system §2). Housekeeping: Mark's README
+  cue-library fix verified by fresh clone (HEAD 466a4de); 2 residual GOLD_ARTIFACT_INDEX refs fixed.
+  Count stays 40 active .md (new non-md: tech_tool_stack.svg). NEXT: the DeepCharts CSV converter
+  (needs Mark's sample export, secrets X'd).
 
 ## INDEX LINE
 `master_strategy_vision.md | business-plan, coaching, marketing, build | PUBLIC | living | THE primer (read first after README). Three parts: BUSINESS thesis (accountability>knowledge / Weight Watchers / ICP / coach→coaches arc / anti-guru funnel), PRODUCT-EXPERIENCE thesis (new-eye-vs-bionic-glance, fill-on-relevance, the super-sauce narration-synced highlight-fade, morphing-viewport continuity, Bookmap/GEX Socratic honesty, image-role guardrail), and BUILD & MONEY (voice-first coach / avatar killed / powered-by-Claude, effective-learning principles + demo validation, credit engine, architecture, Massive datafeed, repo-as-memory). Absorbed MASTER_MAP.md. Open: John Whiting model; Lisa name-in-public (Mark's call).`

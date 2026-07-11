@@ -66,5 +66,5 @@ it's enforced the moment a second broker's data appears.
 
 ---
 
-## INDEX ENTRY (paste into GOLD_ARTIFACT_INDEX.md — I couldn't append; the index isn't in this chat)
+## INDEX ENTRY (lives in ARTIFACT_INDEX.md)
 `data_provenance_and_timestamp_pin.md | build, support | NinjaTrader is close-stamped & UTC; TV is open-stamped & ET → TV = export −4h −1min. Pin every new broker's export via one anchor candle before building; relabel, never shift candles.`

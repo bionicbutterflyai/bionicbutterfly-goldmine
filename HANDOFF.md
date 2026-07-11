@@ -44,8 +44,10 @@
 > top to bottom, then give Mark **ONE report** — either "**100% — all good**" or a short **flagged-issues**
 > list (file + what's off). **Then STOP and wait for Mark.** He resolves any issue, or hands you the task.
 > **Do NOT pick a task yourself, do NOT charge ahead.** Orient → verify → report → halt. That's the whole
-> kickoff. (The standing open item is proving the Bookmap/GEX *read* — but that waits on Mark capturing
-> ~10 real trades; it is NOT a doc for you to generate. Report it as open; don't act on it.)
+> kickoff. (`CHANGED FROM PRIOR`, Chat 8: the old standing yellow flag — proving the Bookmap/GEX *read*
+> via ~10 captured trades — is **RETIRED as moot**: the MCP connection is working (confirmed by a Claude
+> session earlier on 2026-07-11, per Mark) and **GEX was confirmed readable VISUALLY — not by data.**
+> Still unstated: whether MCP reads ORDER FLOW — an open sub-question, Mark's to test or answer.)
 
 ## MARK'S SIDE — WHEN A CLAUDE FAILS (this block is for Mark, not Claude)
 The kickoff tells Claude what to do on a PASS. This is your move when one fails. Failing isn't the danger —
@@ -82,7 +84,35 @@ bionicbutterfly.ai — Claude-powered trading-accountability/coaching platform. 
 continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at gaps). Credit is Mark's.
 
 ## STATE AS OF LAST SESSION (edit each time)
-- **⚠️ NEXT-SESSION OPEN ITEM (Mark flagged Chat 7) — the MAPS/FLOWCHARTS have drifted behind the prose.**
+- **Chat 8 (Jul 11 2026) — MAPS/FLOWCHARTS RECONCILED (the Chat-7 open item, closed) + yellow flag RETIRED
+  + Propagation Law now covers VISUAL views:**
+  - **Maps reconciled to the prose** (all grep-verified this session): `phase_roadmap.md` (new PHASE 0 —
+    BECOME bioniQ NOW + the ~6-mo trader-vs-coach RESULTS gate; P1-4 = deferred coach-path track; map
+    redrawn), `tech_architecture_skeleton.md` (`CHANGED FROM PRIOR` honest-state banner: platform DEFERRED,
+    current system = FOUNDER R&D; Mermaid gains Founder-R&D cluster + upload-engine import adapter
+    (DeepCharts-first, manual merge, append-never-overwrite) + two-part trader journal P2-3),
+    `master_journey_flow.md` (journey DEFERRED banner + the PRODUCT-BOUNDARY lock: rule-based Cubed only,
+    never scalp; regime-awareness = teachable meta-skill), `funnel_routing_and_closer.md` (funnel DEFERRED
+    banner, prose + map), `bionic_lab_spec.md` (FOUNDER MODE: the Lab loop runs manually now — Mark
+    narrates, Claude-via-MCP grades vs Qubed → worked examples; physiology extends inputs P2-3).
+  - **SVG pairing fixed:** the old `tech_architecture_master.svg` was actually a render of the 7-TOOL-STACK
+    Mermaid, not the 5-layer master. Chat 8 re-rendered the master as the true 5-layer flow (incl. all
+    Chat-6/7/8 nodes) and preserved the tool-stack art as its own pair → NEW file
+    `knowledge/tech_tool_stack.svg`. Both pairs now hold.
+  - **`CHANGED FROM PRIOR` — the standing yellow flag (Bookmap/GEX read, ~10 captured trades) is RETIRED
+    as MOOT:** MCP is working (confirmed by a Claude session earlier 2026-07-11, per Mark) and **GEX was
+    confirmed readable VISUALLY, not by data.** OPEN sub-question (unstated, don't assume): does MCP read
+    ORDER FLOW? Mark to test/answer.
+  - **Propagation Law extended (the maps-drift lesson, per Chat-7's own suggestion):** "propagate to
+    VISUAL views — Mermaid + SVG maps — not just prose" is now an ALWAYS rule in
+    `repo_as_memory_and_handoff.md` (sync matrix) + `operating_system.md` §2.
+  - Housekeeping: Mark fixed the README cue-library line (verified by fresh clone, HEAD `466a4de`); Chat 8
+    fixed the 2 residual stale `GOLD_ARTIFACT_INDEX.md` refs (data_provenance + strat_zone_taxonomy).
+  - **Count: 40 active .md docs unchanged** (no new .md; one NEW non-md: `knowledge/tech_tool_stack.svg`).
+  - **NEXT MAIN TASK: the DeepCharts CSV converter** — Mark to drop a sample DeepCharts export (secrets
+    X'd); build the adapter off the recovered NT donor parser (see trade_importer_and_journal_origin.md:
+    manual merge-by-click, append-never-overwrite).
+- **✅ RESOLVED Chat 8 (was: ⚠️ Chat-7 open item) — the MAPS/FLOWCHARTS had drifted behind the prose.**
   We've banked many nuggets + new docs (Chat 7 alone added trade_coaching_method, teachable_vs_unteachable_
   boundary, trade_importer_and_journal_origin, trader_as_athlete_physiology_layer + the differentiation thesis)
   and propagated them to all the TEXT views — but the **visual artifacts were NOT updated.** The diagrams that
@@ -420,6 +450,13 @@ continuity. You = the PHD (honest dev, look-don't-assume, flag nuggets, ask at g
 - Stack (cannot touch from chat): GitHub + Netlify + Supabase; credit_ledger live.
 
 ## IN FLIGHT / OPEN (edit each time)
+- [x] DONE (Chat 8): maps/flowcharts reconciled with the prose (5 docs + master SVG re-rendered as the
+      5-layer flow; tool-stack art preserved as tech_tool_stack.svg); Propagation Law extended to VISUAL views.
+- [x] DONE (Chat 8, `CHANGED FROM PRIOR`): MCP test — connection working (confirmed by a Claude session
+      earlier 2026-07-11, per Mark); GEX confirmed readable VISUALLY, not by data. The old Bookmap/GEX
+      10-trade yellow flag is RETIRED as moot. OPEN sub-question: does MCP read ORDER FLOW? (Mark to test/answer.)
+- [ ] **NEXT MAIN TASK: DeepCharts CSV converter** — needs a sample DeepCharts export from Mark (secrets
+      X'd); port the recovered NT donor parser (manual merge-by-click · append-never-overwrite).
 - [x] DONE (Chat 5): **MASTER TECH-ARCHITECTURE** drawn (matched pair) + all 6 open Qs resolved.
       **NEXT MAIN TASK:** the per-layer **child flows**, each its own matched pair — priority is the
       **funnel-memory pipeline (Fork 2)** build spec: behavior-event schema → write `candidate_dossier`

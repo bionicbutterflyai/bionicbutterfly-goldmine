@@ -1,5 +1,5 @@
 *TAGS: build, coaching, business-plan | AUDIENCE: founder + every future Claude (the COACHING engine — the "weigh-in" half of the thesis).*
-*CREATED: 2026-06-07, Chat 6 | UPDATED: 2026-06-08, Chat 6 (added QUBED GRADING — Q³ + good/bad-trade inversion + two flags: journal needs structured EV schema; voice = grade/flag NOT block/route to avoid regulated territory) | STATUS: captured (storyboard final; OPEN items noted)*
+*CREATED: 2026-06-07, Chat 6 | UPDATED: 2026-06-08, Chat 6 (added QUBED GRADING — Q³ + good/bad-trade inversion + two flags: journal needs structured EV schema; voice = grade/flag NOT block/route to avoid regulated territory) | STATUS: captured (storyboard final; OPEN items noted; product deferred — FOUNDER MODE runs now, Chat 8)*
 *SUPERSEDES: — | RELATED: coaching_philosophy.md (honest verdict, value≠profit), master_journey_flow.md (the journey), credit_value_pricing_model.md (per-session cost), tech_architecture_skeleton.md (how it runs), reports/bioniq_trade_review_template.docx (the printable)*
 
 # GOLD — THE BIONIC LAB (the coaching engine)
@@ -8,6 +8,14 @@
 The Lab is where a trader **requests** honest, pattern-level coaching against their own stated plan. In
 the Weight-Watchers thesis it's the **weigh-in** — the journal is the food diary (daily logging), the Lab
 is the accountability session. This is the moat, not the journal.
+
+## FOUNDER MODE (Chat 7/8 — how the Lab's loop runs TODAY, before any platform)
+The Lab-as-product is **deferred** (bioniQ-first). Its coaching loop runs **manually now**: Mark narrates
+a trade's 3 layers → **Claude (via MCP on the live chart — working, confirmed Chat 8; reads the GEX
+indicator's plotted lines VISUALLY, not by data) grades it vs Qubed** per trade_coaching_method.md → banked
+as a worked example (the coach's future labeled memory). Boundary applies here too: grades the **rule-based
+Cubed system only — scalp is never taught** (teachable_vs_unteachable_boundary.md). The two-part journal
+(trader physiology — trader_as_athlete_physiology_layer.md) extends the Lab's INPUTS later (Phase 2-3, parked).
 
 ## THE MODEL
 - **Request-based, not auto-every-trade.** The trader opens the Lab and picks scope from a MENU — coaching
@@ -63,6 +71,8 @@ flight-simulator debrief, not subjective praise.
 ## THE MAP (storyboard)
 ```mermaid
 flowchart TD
+    FM["FOUNDER MODE (now) · Mark narrates → Claude via MCP grades vs Qubed<br/>→ worked-example bank (the future labeled memory)"]
+    TJX["+ trader journal (physiology) · P2-3, parked"]
     ENTER["Trader opens the Lab (inside the Journal)"]
     MENU["Coaching-request MENU — pick scope<br/>(request-based, not auto every trade)"]
     SUM["Summary · day / week / month"]
@@ -70,6 +80,8 @@ flowchart TD
     PULL["Claude pulls dossier + journal + selection"]
     COACH["Coach the PATTERN vs the plan — not every scalp<br/>e.g. 'Bionic-only' but 50 trades by 10am · losers &gt; risk rule · winners shrinking · 72% masks tilt/drawdown"]
     VERDICT["Honest verdict + accountability"]
+    FM -.->|manual loop today| COACH
+    TJX -.-> PULL
     ENTER --> MENU
     MENU --> SUM --> PULL
     MENU --> RANGE --> PULL
@@ -77,4 +89,4 @@ flowchart TD
 ```
 
 ## INDEX LINE
-`knowledge/bionic_lab_spec.md | build, coaching, business-plan | PUBLIC | captured | THE BIONIC LAB = the coaching engine (the "weigh-in" half of the thesis; the moat, not the journal). Request-based (menu), not auto-every-trade: trader picks Summary (day/week/month) OR date-range→pick individual trades; Claude pulls dossier+journal+selection and coaches the PATTERN vs the stated plan, not each scalp → honest verdict + accountability. Scalper insight: per-scalp coaching is pointless/costly/slow; serves 3-trade and 50-trade traders alike; vanity win-rate ≠ edge (a 72% green day can hide risk-rule breaks + shrinking winners + tilt). Cost fit: one summary read not 50 reviews → single-digit cents/session. PRINTABLE EXPORT feature: branded review copy (Powered by Bioniq) so students don't screen-cap; template in reports/. OPEN: where the plan is set (lean: intake/dossier); coach's Lab view (phase 3-4).`
+`knowledge/bionic_lab_spec.md | build, coaching, business-plan | PUBLIC | captured | THE BIONIC LAB = the coaching engine (the "weigh-in" half of the thesis; the moat, not the journal). Request-based (menu), not auto-every-trade: trader picks Summary (day/week/month) OR date-range→pick individual trades; Claude pulls dossier+journal+selection and coaches the PATTERN vs the stated plan, not each scalp → honest verdict + accountability. Scalper insight: per-scalp coaching is pointless/costly/slow; serves 3-trade and 50-trade traders alike; vanity win-rate ≠ edge (a 72% green day can hide risk-rule breaks + shrinking winners + tilt). Cost fit: one summary read not 50 reviews → single-digit cents/session. PRINTABLE EXPORT feature: branded review copy (Powered by Bioniq) so students don't screen-cap; template in reports/. OPEN: where the plan is set (lean: intake/dossier); coach's Lab view (phase 3-4). FOUNDER MODE (Chat 8): Lab-as-product deferred; loop runs manually now — Mark narrates, Claude-via-MCP (reads GEX lines visually) grades vs Qubed → worked examples; grades rule-based Cubed only, never scalp; physiology journal extends inputs P2-3.`

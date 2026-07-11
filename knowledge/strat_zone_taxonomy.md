@@ -240,5 +240,5 @@ This is how GEX (and Bookmap) enter the coaching context — as archived images,
   rule). Likely sequence — reference levels (cheap, deterministic) first, session boxes next, VWAPs +
   Quarterly last (Quarterly is 3rd-party code → provenance/IP check, like the DPMO).
 
-## INDEX ENTRY (paste into GOLD_ARTIFACT_INDEX.md)
+## INDEX ENTRY (lives in ARTIFACT_INDEX.md)
 `strat_zone_taxonomy.md | coaching, build | The full STRAT: ~14–16 session boxes (Red/Yellow/London/Pre-Market), VWAPs, Quarterly 90-min line, IB, Overnight & PD H/L, ATH, Weekly IB, 144 + 20/50 cloud. Render fill-on-relevance. Live in TV, not yet in engine. Open confirms listed.`

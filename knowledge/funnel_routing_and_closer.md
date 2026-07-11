@@ -1,5 +1,6 @@
 *TAGS: business-plan, marketing, coaching | AUDIENCE: founder + every future Claude (the door + the sort + the close).*
-*CREATED: 2026-06-06, Chat 4 (parallel session) | UPDATED: 2026-06-07, Chat 6 (added THE FREE-JOURNAL HOOK — almost-free journal as top-of-funnel, coach is the paid upgrade. Earlier Chat 6: THE FUNNEL FLOW living-map Mermaid + CRM as phase-3-4 node). Chat 5: reconstructed from Chat-4's summary; $10-toll why folded in | STATUS: captured*
+*CREATED: 2026-06-06, Chat 4 (parallel session) | UPDATED: 2026-06-07, Chat 6 (added THE FREE-JOURNAL HOOK — almost-free journal as top-of-funnel, coach is the paid upgrade. Earlier Chat 6: THE FUNNEL FLOW living-map Mermaid + CRM as phase-3-4 node). Chat 5: reconstructed from Chat-4's summary; $10-toll why folded in | STATUS: captured (funnel deferred — Chat 7)*
+*STATUS NOTE (`CHANGED FROM PRIOR`, Chat 7 — strategy_become_bioniq_first.md): the ENTIRE funnel is DEFERRED-not-abandoned (Phase 1+ of the coach path; runs only if the ~6-month results decision picks coach). The logic below stays locked and valid for that day.*
 *SUPERSEDES: — | RELATED: master_journey_flow.md (the "Behavioral sort" + "Sales cycle" boxes), master_strategy_vision.md (the funnel section), funnel_brainstorm_reasoning.md, brand_funnel_architecture.md*
 *PROVENANCE NOTE: reconstructed by Chat 5 from Chat 4's pasted summary of the doc it built. The substance is faithful; if Chat 4's original file has more precise response wording, reconcile against it — this is the merged home for the logic.*
 
@@ -56,6 +57,7 @@ build_vs_buy_and_competitive_read.md → CRM). The AI agent's "don't break the l
 exits to external content, the agent follows up to pull them back.
 ```mermaid
 flowchart TD
+    DEF["STATUS (Chat 7): FUNNEL DEFERRED · coach path only (~6-mo results gate)"]:::future
     HOOK["Hook ad (social) · anti-guru, 5-sec intrigue"]
     AGENT["AI agent engages · asks/branches/follows up · don't break the loop"]
     TOLL["$10 toll · verified human, real card"]:::gate
@@ -68,6 +70,7 @@ flowchart TD
     ONB["Onboard → Cockpit · coaching, credits"]:::own
     CRM["Sales-cycle CRM · PHASE 3-4 · thin/own then buy · tracks lead→close"]:::future
 
+    DEF -.-> HOOK
     HOOK --> AGENT --> TOLL --> INTAKE --> SORT
     SORT --> C
     SORT --> B
@@ -90,4 +93,4 @@ cheap entry in, coaching is the conversion. (Naming: company = Bioniq Trader, th
 coaching = "Lab" — see brand_funnel_architecture.md.)
 
 ## INDEX LINE
-`knowledge/funnel_routing_and_closer.md | business-plan, marketing, coaching | PUBLIC | captured | The door + the 3-bucket sort + the closer. $10 = verification toll (verified human on a real card), not revenue. Buckets: noob→course-as-destination/sim-6-months (deferred pipeline); half-knowledge→develop; ICP(ready)→Mark closes 1:1 (contact→call→Zoom→close), course offered IN PARALLEL at 90% off, never as a detour. Locks: Mark is the human closer NOW by design; the course must still be offered to the ICP (it was the hook). Reconstructed Chat-5 from Chat-4's summary.`
+`knowledge/funnel_routing_and_closer.md | business-plan, marketing, coaching | PUBLIC | captured | The door + the 3-bucket sort + the closer. $10 = verification toll (verified human on a real card), not revenue. Buckets: noob→course-as-destination/sim-6-months (deferred pipeline); half-knowledge→develop; ICP(ready)→Mark closes 1:1 (contact→call→Zoom→close), course offered IN PARALLEL at 90% off, never as a detour. Locks: Mark is the human closer NOW by design; the course must still be offered to the ICP (it was the hook). Reconstructed Chat-5 from Chat-4's summary. CHANGED FROM PRIOR (Chat 7): whole funnel DEFERRED-not-abandoned — coach path only, ~6-mo results gate.`

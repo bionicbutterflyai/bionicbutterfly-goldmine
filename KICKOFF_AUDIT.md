@@ -1,5 +1,5 @@
 *TAGS: build, business-plan | AUDIENCE: the waking Claude.*
-*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-06-15, Chat 7 (+strategy_become_bioniq_first → 40 active .md docs: the CHANGED-FROM-PRIOR reprioritization — center of gravity moved to "founder becomes the proven trader first, business downstream/optional" + the NORTH STAR + trading-identity resolution (A+ selectivity across both tools, continuation-read edge frontier) + AI-analysis guardrails + architecture stance. Earlier Chat 7: +trader_as_athlete_physiology_layer → 39; +trade_importer_and_journal_origin → 38; RESTORED teachable_vs_unteachable_boundary → 37; DIFFERENTIATION THESIS + Zella read; MODEL TIERING; +trade_coaching_method CORE → 36. Chat 6: +operating_system + NEW root AGENTS.md; +build_blueprint +qubed_indicator_spec, /content; +bioniq_q_logic; +security_and_secrets + SECRETS SCAN) | STATUS: captured*
+*CREATED: 2026-06-06, Chat 5 | UPDATED: 2026-07-11, Chat 8 (yellow flag RETIRED as moot — MCP working, GEX readable visually not by data, per Mark `CHANGED FROM PRIOR`; count stays 40; new non-md: tech_tool_stack.svg. Earlier Chat 7: (+strategy_become_bioniq_first → 40 active .md docs: the CHANGED-FROM-PRIOR reprioritization — center of gravity moved to "founder becomes the proven trader first, business downstream/optional" + the NORTH STAR + trading-identity resolution (A+ selectivity across both tools, continuation-read edge frontier) + AI-analysis guardrails + architecture stance. Earlier Chat 7: +trader_as_athlete_physiology_layer → 39; +trade_importer_and_journal_origin → 38; RESTORED teachable_vs_unteachable_boundary → 37; DIFFERENTIATION THESIS + Zella read; MODEL TIERING; +trade_coaching_method CORE → 36. Chat 6: +operating_system + NEW root AGENTS.md; +build_blueprint +qubed_indicator_spec, /content; +bioniq_q_logic; +security_and_secrets + SECRETS SCAN) | STATUS: captured*
 *PURPOSE: the master checklist a new Claude RUNS at kickoff, then REPORTS, then STOPS. No improvising.*
 
 # KICKOFF AUDIT — run this, report, then WAIT for Mark
@@ -66,9 +66,10 @@ knowledge/: [ ] strat_zone_taxonomy [ ] dpmo_gate_indicator [ ] data_provenance_
 
 ## STEP 4 — STATE READOUT (tell Mark where things stand, in his own minutes)
 - [ ] Summarize the NEXT MAIN TASK from HANDOFF.md IN-FLIGHT and the open items — **report them, don't
-      start them.** (As of Chat 5 the standing yellow flag = proving the Bookmap/GEX *read*; the retire-it
-      step is **Mark capturing ~10 real trades with Bookmap + GEX images at entry** — that's Mark's to do,
-      not a doc to generate. GEX cross-checks against Tanuki-drawn levels; Bookmap is the hard read.)
+      start them.** (`CHANGED FROM PRIOR`, Chat 8: the Chat-5 standing yellow flag — proving the
+      Bookmap/GEX *read* via ~10 captured trades — is **RETIRED as MOOT**: MCP is working and GEX was
+      confirmed readable **VISUALLY, not by data**. Remaining open sub-question: whether MCP reads ORDER
+      FLOW — Mark's to test/answer; report it, don't act on it.)
 
 ## STEP 5 — REPORT, THEN STOP
 - [ ] Produce ONE concise report: **"100% — all good"** OR a short **flagged-issues** list (file + what's off).

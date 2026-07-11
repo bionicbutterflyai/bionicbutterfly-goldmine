@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="380" viewBox="0 0 720 380" font-family="Arial, Helvetica, sans-serif">
+  <style>
+    .t{font-weight:bold;font-size:12px}.s{font-size:10px}
+    .b{rx:8;stroke-width:1}
+    text{dominant-baseline:central;text-anchor:middle}
+  </style>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#888" stroke-width="1.5" stroke-linecap="round"/></marker></defs>
+  <rect width="720" height="380" fill="#ffffff"/>
+  <text x="20" y="20" text-anchor="start" class="t" font-size="14" fill="#1B3A5B">Bioniq Trader — 7-tool stack (paired with the tool-stack Mermaid in tech_architecture_skeleton.md)</text>
+
+  <!-- users -->
+  <rect class="b" x="225" y="40" width="120" height="40" fill="#EEF1F4" stroke="#6B7785"/><text x="285" y="60" class="t" fill="#2A2F36">Trader</text>
+  <rect class="b" x="375" y="40" width="120" height="40" fill="#EEF1F4" stroke="#6B7785"/><text x="435" y="60" class="t" fill="#2A2F36">Coach</text>
+  <line x1="360" y1="80" x2="360" y2="100" stroke="#888" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <!-- edge -->
+  <rect class="b" x="130" y="102" width="200" height="46" fill="#EEF1F4" stroke="#6B7785"/><text x="230" y="119" class="t" fill="#2A2F36">Netlify</text><text x="230" y="135" class="s" fill="#2A2F36">host + deploy</text>
+  <rect class="b" x="372" y="102" width="226" height="46" fill="#EEF1F4" stroke="#6B7785"/><text x="485" y="119" class="t" fill="#2A2F36">Cloudflare · CDN / security / .ai</text><text x="485" y="135" class="s" fill="#2A2F36">+ AI Gateway (cache / meter)</text>
+  <line x1="360" y1="148" x2="360" y2="172" stroke="#888" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="360" y="162" class="s" fill="#555">THE PLATFORM — services</text>
+
+  <!-- services -->
+  <rect class="b" x="20" y="174" width="158" height="70" fill="#E1F5EE" stroke="#0F6E56"/><text x="99" y="194" class="t" fill="#04342C">Supabase</text><text x="99" y="212" class="s" fill="#04342C">auth · dossier</text><text x="99" y="228" class="s" fill="#04342C">credit_ledger</text>
+  <rect class="b" x="190" y="174" width="170" height="70" fill="#ECE9FB" stroke="#534AB7"/><text x="275" y="194" class="t" fill="#26215C">Anthropic · Claude</text><text x="275" y="212" class="s" fill="#26215C">the coaching brain</text><text x="275" y="228" class="s" fill="#26215C">via CF AI Gateway</text>
+  <rect class="b" x="372" y="174" width="156" height="70" fill="#FAEEDA" stroke="#854F0B"/><text x="450" y="194" class="t" fill="#412402">ElevenLabs</text><text x="450" y="212" class="s" fill="#412402">pre-render premium</text><text x="450" y="228" class="s" fill="#412402">voice = default</text>
+  <rect class="b" x="540" y="174" width="158" height="70" fill="#EAF3DE" stroke="#3B6D11" stroke-dasharray="5 3"/><text x="619" y="194" class="t" fill="#173404">Stripe · Phase 2</text><text x="619" y="212" class="s" fill="#173404">toll · subs · credits</text><text x="619" y="228" class="s" fill="#173404">+ token billing</text>
+
+  <!-- source + marketing -->
+  <rect class="b" x="20" y="282" width="330" height="56" fill="#EEF1F4" stroke="#6B7785"/><text x="185" y="302" class="t" fill="#2A2F36">GitHub · repo = MEMORY + deploy source</text><text x="185" y="320" class="s" fill="#2A2F36">feeds Netlify deploy + Claude's context</text>
+  <line x1="120" y1="282" x2="120" y2="246" stroke="#888" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#a)"/>
+  <rect class="b" x="372" y="282" width="326" height="56" fill="#FBE7E3" stroke="#B5462F" stroke-dasharray="5 3"/><text x="535" y="302" class="t" fill="#5A1B0F">invideo.io → FINN · marketing video</text><text x="535" y="320" class="s" fill="#5A1B0F">top-of-funnel content (separate from platform)</text>
+</svg>

@@ -34,7 +34,7 @@ TAKEAWAY: we're early and correct, not nutty. This doc is the moat for HOW we bu
 - **Numbered addressing.** Everything is numbered (areas 1-11, pieces 8.4). Mark says a number, Claude opens
   it. No pasting, no re-explaining.
 - **Bank discipline.** Bank on Mark's explicit GO only, as ONE full-repo zip → replace-all (never batches,
-  never keep-both). Propagate every dependent VIEW the same session (the Propagation Law). **The bank
+  never keep-both). Propagate every dependent VIEW the same session (the Propagation Law) — **including VISUAL views: the Mermaid maps + SVGs, not just prose (Chat 8 — the maps-drift lesson).** **The bank
   SEQUENCE (added Chat 7 after a wrong-repo near-miss): confirm repo is `bionicbutterfly-goldmine` →
   extract zip → commit → push → audit.** The FIRST step is non-negotiable: eyeball the repo name
   (`bionicbutterflyai/bionicbutterfly-goldmine`, PUBLIC, no lock) BEFORE dropping files — the public goldmine,
